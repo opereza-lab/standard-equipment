@@ -7,9 +7,25 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-  --font-heading: var(--font-sans);
+  --font-sans: var(--font-inter), "Inter", helvetica, arial, sans-serif;
+  --font-heading: var(--font-inter), "Inter", helvetica, arial, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  /* Standard Equipment brand colors */
+  --color-se-blue: #0d1528;        /* navy principal */
+  --color-se-blue-dark: #06101e;   /* navy muy oscuro */
+  --color-se-blue-mid: #1a2f4e;    /* navy medio */
+  --color-se-blue-light: #6baed6;  /* azul claro — textos y contrastes */
+  --color-se-orange: #e07820;      /* naranja acento */
+  --color-se-orange-dark: #b86018; /* naranja oscuro hover */
+  --color-se-red: #e07820;         /* alias legacy */
+  --color-se-red-dark: #b86018;    /* alias legacy */
+  --color-se-gray: #f8f9fa;
+  --color-se-gray-mid: #e9ecef;
+  --color-se-text: #212529;
+  --color-se-muted: #6c757d;
+  --color-se-navy: #0a0f1e;        /* navy profundo — fondos oscuros */
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -18,11 +34,6 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -49,82 +60,274 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: #ffffff;
+  --foreground: #212529;
+  --card: #ffffff;
+  --card-foreground: #212529;
+  --popover: #ffffff;
+  --popover-foreground: #212529;
+  --primary: #0d1528;
+  --primary-foreground: #ffffff;
+  --secondary: #f8f9fa;
+  --secondary-foreground: #212529;
+  --muted: #f8f9fa;
+  --muted-foreground: #6c757d;
+  --accent: #e07820;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --border: #e9ecef;
+  --input: #e9ecef;
+  --ring: #0d1528;
+  --radius: 0.5rem;
+  --sidebar: #f8f9fa;
+  --sidebar-foreground: #212529;
+  --sidebar-primary: #0d1528;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e9ecef;
+  --sidebar-accent-foreground: #212529;
+  --sidebar-border: #e9ecef;
+  --sidebar-ring: #0d1528;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212529;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.15;
   }
   html {
-    @apply font-sans;
+    scroll-behavior: smooth;
   }
+}
+
+/* Navbar scroll behavior */
+.navbar-scrolled {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(8px);
+}
+
+/* Dropdown animations */
+.dropdown-menu {
+  animation: dropdownIn 0.18s ease-out;
+  transform-origin: top center;
+}
+
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-6px) scaleY(0.97); }
+  to   { opacity: 1; transform: translateY(0) scaleY(1); }
+}
+
+/* ── Split Button — rectangular con animación split hover ────────── */
+.btn-split {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 34px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  transition: color 0.38s ease;
+  white-space: nowrap;
+}
+
+/* Mitad superior: entra de DERECHA a IZQUIERDA */
+/* Ocupa el área completa y se recorta a la mitad superior con clip-path  */
+/* → sin gap de subpíxel posible entre las dos mitades                    */
+.btn-split-top {
+  position: absolute;
+  inset: 0;
+  border: none;
+  clip-path: inset(0 0 50% 0);
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Mitad inferior: entra de IZQUIERDA a DERECHA */
+.btn-split-bottom {
+  position: absolute;
+  inset: 0;
+  border: none;
+  clip-path: inset(50% 0 0 0);
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Contenido siempre encima de las capas */
+.btn-split-content {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ── Variante DARK: navy → naranja ───────────────────────────────── */
+.btn-split-dark {
+  background: #0d1528;
+  color: #ffffff;
+}
+.btn-split-dark .btn-split-top,
+.btn-split-dark .btn-split-bottom {
+  background: #e07820;
+  transform: translateX(100%);  /* top empieza fuera por la derecha */
+}
+.btn-split-dark .btn-split-bottom {
+  transform: translateX(-100%); /* bottom empieza fuera por la izquierda */
+}
+.btn-split-dark:hover .btn-split-top,
+.btn-split-dark:hover .btn-split-bottom {
+  transform: translateX(0);
+}
+
+/* ── Variante ORANGE: naranja → navy ─────────────────────────────── */
+.btn-split-orange {
+  background: #e07820;
+  color: #ffffff;
+}
+.btn-split-orange .btn-split-top,
+.btn-split-orange .btn-split-bottom {
+  background: #0d1528;
+  transform: translateX(100%);
+}
+.btn-split-orange .btn-split-bottom {
+  transform: translateX(-100%);
+}
+.btn-split-orange:hover .btn-split-top,
+.btn-split-orange:hover .btn-split-bottom {
+  transform: translateX(0);
+}
+
+/* ── Variante LIGHT: blanco → naranja ────────────────────────────── */
+.btn-split-light {
+  background: #ffffff;
+  color: #0d1528;
+}
+.btn-split-light .btn-split-top,
+.btn-split-light .btn-split-bottom {
+  background: #e07820;
+  transform: translateX(100%);
+}
+.btn-split-light .btn-split-bottom {
+  transform: translateX(-100%);
+}
+.btn-split-light:hover .btn-split-top,
+.btn-split-light:hover .btn-split-bottom {
+  transform: translateX(0);
+}
+.btn-split-light:hover {
+  color: #ffffff;
+}
+
+/* ── Compatibilidad legacy (por si quedan referencias) ───────────── */
+.btn-pill { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; text-decoration: none; }
+.btn-primary-pill, .btn-red-pill { background: #e07820; color: #fff; border-radius: 0; padding: 12px 24px; }
+.btn-outline-pill { background: transparent; color: #0d1528; border: 1.5px solid #0d1528; border-radius: 0; padding: 12px 24px; }
+.btn-white-pill { background: #fff; color: #0d1528; border-radius: 0; padding: 12px 24px; }
+
+/* Section headings (SPT Labtech style) */
+.section-heading {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: #212529;
+}
+
+.section-heading-accent {
+  color: #0d1528;
+  font-weight: 700;
+}
+
+.section-heading-red {
+  color: #e07820;
+}
+
+/* Hero heading */
+.hero-heading {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+/* Fade up animation for sections */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out both;
+}
+
+/* Industry card hover */
+.industry-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.industry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 76, 129, 0.15);
+}
+
+/* Overlay oscuro en reposo → 40% más claro en hover */
+.industry-overlay {
+  background: rgba(10, 15, 30, 0.44);
+  transition: background 0.5s ease;
+}
+.industry-card:hover .industry-overlay {
+  background: rgba(10, 15, 30, 0.15);
+}
+
+/* Product showcase alternating sections */
+.product-showcase-section:nth-child(even) .product-image-col {
+  order: 2;
+}
+.product-showcase-section:nth-child(even) .product-text-col {
+  order: 1;
+}
+
+/* Specs table */
+.specs-table tr:nth-child(even) td {
+  background-color: #f8f9fa;
+}
+
+/* WhatsApp button pulse */
+@keyframes waPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70%  { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.wa-pulse {
+  animation: waPulse 2.5s ease-in-out infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Image overlay helper */
+.img-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,31,60,0.75) 0%, rgba(10,31,60,0.45) 60%, rgba(0,0,0,0.2) 100%);
 }
