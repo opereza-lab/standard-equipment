@@ -8,24 +8,16 @@ export default function CTABanner() {
     <section className="relative overflow-hidden" style={{ minHeight: "420px" }}>
       {/* Background image */}
       <Image
-        src="/images/welding-blue.jpg"
+        src="/images/grinding-sparks-wide.jpg"
         alt="Trabajemos juntos"
         fill
         className="object-cover object-center"
         sizes="100vw"
       />
 
-      {/* Dark overlay */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, rgba(10,31,60,0.92) 0%, rgba(10,31,60,0.75) 60%, rgba(15,76,129,0.5) 100%)",
-        }}
-      />
+      {/* Overlay mínimo solo para legibilidad del texto */}
+      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.35)" }} />
 
-      {/* Red accent line top */}
-      <div className="absolute top-0 left-0 right-0 h-1" style={{ background: "#e07820" }} />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center py-20">

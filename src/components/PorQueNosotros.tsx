@@ -42,7 +42,7 @@ const reasons = [
 
 export default function PorQueNosotros() {
   return (
-    <section className="relative py-20" style={{ backgroundImage: "url('/images/steel-rods.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}>
+    <section className="relative py-20" style={{ backgroundImage: "url('/images/grinding-sparks-wide.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}>
       {/* Overlay */}
       <div className="absolute inset-0" style={{ background: "rgba(10,31,60,0.93)" }} />
 

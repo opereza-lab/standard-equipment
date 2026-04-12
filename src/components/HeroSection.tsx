@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section
       className="relative w-full overflow-hidden"
-      style={{ height: "100svh", minHeight: "620px" }}
+      style={{ height: "72vw", minHeight: "520px", maxHeight: "780px" }}
     >
       {/* Background image */}
       <Image

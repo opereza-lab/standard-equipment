@@ -22,7 +22,7 @@ const productos = [
     category: "Construcción",
     btnLabel: "Capacho Roll Over",
     imageLeft: false,
-    bgColor: "#f0f4f8",
+    bgColor: "#06101e",
   },
   {
     id: "big-bag",
@@ -42,7 +42,7 @@ const productos = [
     category: "Materiales a Granel",
     btnLabel: "Big Bag",
     imageLeft: true,
-    bgColor: "#ffffff",
+    bgColor: "#0d1528",
   },
   {
     id: "truckshop",
@@ -62,7 +62,7 @@ const productos = [
     category: "Minería",
     btnLabel: "Equipamiento Truckshop",
     imageLeft: false,
-    bgColor: "#f0f4f8",
+    bgColor: "#06101e",
   },
 ];
 
@@ -85,8 +85,7 @@ export default function ProductosDestacados() {
               <div className="flex-1 max-w-xl">
                 {/* Category badge */}
                 <span
-                  className="inline-block text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1.5 rounded-full"
-                  style={{ background: "rgba(15,76,129,0.1)", color: "#0d1528" }}
+                  className="inline-block text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1.5 rounded-full bg-white/10 text-white/80"
                 >
                   {producto.category}
                 </span>
@@ -98,7 +97,7 @@ export default function ProductosDestacados() {
                     fontSize: "clamp(1.8rem, 3.5vw, 3rem)",
                     fontWeight: 300,
                     lineHeight: 1.15,
-                    color: "#212529",
+                    color: "#ffffff",
                   }}
                 >
                   {producto.heading}{" "}
@@ -107,7 +106,7 @@ export default function ProductosDestacados() {
                 </h2>
 
                 <p
-                  className="text-[#495057] mb-7 leading-relaxed"
+                  className="text-white/80 mb-7 leading-relaxed"
                   style={{ fontSize: "1.05rem" }}
                 >
                   {producto.description}
@@ -119,11 +118,11 @@ export default function ProductosDestacados() {
                     <li key={feat} className="flex items-start gap-3">
                       <span
                         className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                        style={{ background: "#0d1528" }}
+                        style={{ background: "#e07820" }}
                       >
                         <CheckIcon className="w-3 h-3 text-white" />
                       </span>
-                      <span className="text-[#495057] text-sm">{feat}</span>
+                      <span className="text-white/75 text-sm">{feat}</span>
                     </li>
                   ))}
                 </ul>

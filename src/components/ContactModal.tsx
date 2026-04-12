@@ -58,7 +58,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
   }
 
   const inputClass =
-    "w-full px-4 py-3 rounded-lg border border-[#e9ecef] text-[#212529] text-sm placeholder:text-[#adb5bd] focus:outline-none focus:border-[#0d1528] focus:ring-2 focus:ring-[#0d1528]/20 transition-all";
+    "w-full px-4 py-3 rounded-lg border border-white/20 bg-white/10 text-white text-sm placeholder:text-white/40 focus:outline-none focus:border-[#6baed6] focus:ring-2 focus:ring-[#6baed6]/20 transition-all";
 
   return (
     <div
@@ -67,13 +67,13 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
       <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto"
-        style={{ boxShadow: "0 24px 80px rgba(0,0,0,0.25)" }}
+        className="rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto"
+        style={{ backgroundColor: "#0d1528", boxShadow: "0 24px 80px rgba(0,0,0,0.5)" }}
       >
         {/* Header */}
         <div
-          className="flex items-center justify-between px-6 py-5 border-b border-[#f0f0f0]"
-          style={{ background: "linear-gradient(135deg, #0d1528 0%, #1a3a5c 100%)" }}
+          className="flex items-center justify-between px-6 py-5 border-b border-white/10"
+          style={{ background: "linear-gradient(135deg, #06101e 0%, #1a2f4e 100%)" }}
         >
           <div>
             <h2 className="text-white font-semibold text-lg">
@@ -94,7 +94,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
         {/* Form */}
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-[#495057] uppercase tracking-wide mb-1.5">
+            <label className="block text-xs font-semibold text-white/70 uppercase tracking-wide mb-1.5">
               Nombre *
             </label>
             <input
@@ -109,7 +109,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#495057] uppercase tracking-wide mb-1.5">
+            <label className="block text-xs font-semibold text-white/70 uppercase tracking-wide mb-1.5">
               Empresa *
             </label>
             <input
@@ -124,7 +124,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-[#495057] uppercase tracking-wide mb-1.5">
+            <label className="block text-xs font-semibold text-white/70 uppercase tracking-wide mb-1.5">
               Cargo *
             </label>
             <input
@@ -140,7 +140,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-[#495057] uppercase tracking-wide mb-1.5">
+              <label className="block text-xs font-semibold text-white/70 uppercase tracking-wide mb-1.5">
                 Teléfono *
               </label>
               <input
@@ -154,7 +154,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-[#495057] uppercase tracking-wide mb-1.5">
+              <label className="block text-xs font-semibold text-white/70 uppercase tracking-wide mb-1.5">
                 Email *
               </label>
               <input
@@ -179,7 +179,7 @@ export default function ContactModal({ isOpen, onClose, producto = "" }: Contact
             Enviar por WhatsApp
           </SplitButton>
 
-          <p className="text-center text-[#adb5bd] text-xs">
+          <p className="text-center text-white/40 text-xs">
             Al enviar, se abrirá WhatsApp con tu consulta lista.
             <br />No enviamos emails ni almacenamos tus datos.
           </p>

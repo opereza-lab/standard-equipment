@@ -62,7 +62,7 @@ const industrias = [
 
 export default function IndustriasSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20" style={{ backgroundColor: "#0d1528" }}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
         {/* Heading */}
         <div className="mb-14">
@@ -73,7 +73,7 @@ export default function IndustriasSection() {
             <span className="section-heading-accent">Soluciones</span> para cada industria
             <span style={{ color: "#e07820" }}>.</span>
           </h2>
-          <p className="text-[#6c757d] mt-4 max-w-2xl text-lg">
+          <p className="text-[#6baed6] mt-4 max-w-2xl text-lg">
             Fabricamos equipamiento que se adapta a las condiciones más exigentes del trabajo industrial chileno.
           </p>
         </div>
@@ -88,7 +88,8 @@ export default function IndustriasSection() {
                 href={ind.href}
                 target={ind.external ? "_blank" : undefined}
                 rel={ind.external ? "noopener noreferrer" : undefined}
-                className="industry-card group block bg-white border border-[#e9ecef] rounded-xl overflow-hidden hover:border-[#0d1528]/30"
+                className="industry-card group block border border-white/10 rounded-xl overflow-hidden hover:border-[#6baed6]/40"
+                style={{ backgroundColor: "#1a2f4e" }}
               >
                 {/* Image — overlay oscuro por defecto, se aclara en hover */}
                 <div className="relative h-48 overflow-hidden bg-[#0d1528]">
@@ -113,12 +114,11 @@ export default function IndustriasSection() {
                 {/* Content */}
                 <div className="p-5">
                   <h3
-                    className="text-lg font-semibold mb-2 group-hover:text-[#6baed6] transition-colors"
-                    style={{ color: "#212529" }}
+                    className="text-lg font-semibold mb-2 group-hover:text-[#6baed6] transition-colors text-white"
                   >
                     {ind.name}
                   </h3>
-                  <p className="text-[#6c757d] text-sm mb-4 leading-relaxed">
+                  <p className="text-[#6baed6] text-sm mb-4 leading-relaxed">
                     {ind.description}
                   </p>
 
@@ -127,7 +127,7 @@ export default function IndustriasSection() {
                     {ind.products.map((p) => (
                       <span
                         key={p}
-                        className="text-xs px-2.5 py-1 rounded-full bg-[#f0f4f8] text-[#495057]"
+                        className="text-xs px-2.5 py-1 rounded-full bg-white/10 text-white/80"
                       >
                         {p}
                       </span>

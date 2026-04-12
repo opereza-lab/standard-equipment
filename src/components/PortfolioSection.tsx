@@ -31,7 +31,7 @@ const proyectos = [
 
 export default function PortfolioSection() {
   return (
-    <section className="py-20 bg-[#f8f9fa]">
+    <section className="py-20" style={{ backgroundColor: "#06101e" }}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
@@ -55,7 +55,8 @@ export default function PortfolioSection() {
           {proyectos.map((proy) => (
             <div
               key={proy.project}
-              className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-[#e9ecef]"
+              className="group rounded-xl overflow-hidden hover:shadow-lg transition-shadow border border-white/10"
+              style={{ backgroundColor: "#1a2f4e" }}
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">
@@ -69,7 +70,7 @@ export default function PortfolioSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span
                   className="absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full text-white"
-                  style={{ background: "#0d1528" }}
+                  style={{ background: "#e07820" }}
                 >
                   {proy.tag}
                 </span>
@@ -77,15 +78,14 @@ export default function PortfolioSection() {
 
               {/* Content */}
               <div className="p-5">
-                <p className="text-[#6c757d] text-xs uppercase tracking-wide mb-1">
+                <p className="text-[#6baed6] text-xs uppercase tracking-wide mb-1">
                   {proy.client}
                 </p>
-                <h3 className="font-semibold text-[#212529] mb-3 text-base leading-snug">
+                <h3 className="font-semibold text-white mb-3 text-base leading-snug">
                   {proy.project}
                 </h3>
                 <div
-                  className="flex items-start gap-2 p-3 rounded-lg"
-                  style={{ background: "rgba(15,76,129,0.06)" }}
+                  className="flex items-start gap-2 p-3 rounded-lg bg-white/10"
                 >
                   <span className="text-[#e07820] mt-0.5">→</span>
                   <p className="text-[#6baed6] text-sm font-medium">{proy.result}</p>

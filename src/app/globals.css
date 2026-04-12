@@ -60,33 +60,33 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #212529;
-  --card: #ffffff;
-  --card-foreground: #212529;
-  --popover: #ffffff;
-  --popover-foreground: #212529;
+  --background: #0d1528;
+  --foreground: #ffffff;
+  --card: #1a2f4e;
+  --card-foreground: #ffffff;
+  --popover: #1a2f4e;
+  --popover-foreground: #ffffff;
   --primary: #0d1528;
   --primary-foreground: #ffffff;
-  --secondary: #f8f9fa;
-  --secondary-foreground: #212529;
-  --muted: #f8f9fa;
-  --muted-foreground: #6c757d;
+  --secondary: #1a2f4e;
+  --secondary-foreground: #ffffff;
+  --muted: #1a2f4e;
+  --muted-foreground: #6baed6;
   --accent: #e07820;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #e9ecef;
-  --input: #e9ecef;
-  --ring: #0d1528;
+  --border: rgba(255,255,255,0.1);
+  --input: rgba(255,255,255,0.1);
+  --ring: #6baed6;
   --radius: 0.5rem;
-  --sidebar: #f8f9fa;
-  --sidebar-foreground: #212529;
+  --sidebar: #06101e;
+  --sidebar-foreground: #ffffff;
   --sidebar-primary: #0d1528;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e9ecef;
-  --sidebar-accent-foreground: #212529;
-  --sidebar-border: #e9ecef;
-  --sidebar-ring: #0d1528;
+  --sidebar-accent: rgba(255,255,255,0.1);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255,255,255,0.1);
+  --sidebar-ring: #6baed6;
 }
 
 @layer base {
@@ -98,7 +98,8 @@
     font-family: var(--font-sans);
     font-size: 16px;
     line-height: 1.6;
-    color: #212529;
+    background-color: #0d1528;
+    color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -247,11 +248,11 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 300;
   line-height: 1.15;
-  color: #212529;
+  color: #ffffff;
 }
 
 .section-heading-accent {
-  color: #0d1528;
+  color: #6baed6;
   font-weight: 700;
 }
 
@@ -305,7 +306,7 @@
 
 /* Specs table */
 .specs-table tr:nth-child(even) td {
-  background-color: #f8f9fa;
+  background-color: rgba(255,255,255,0.05);
 }
 
 /* WhatsApp button pulse */
