@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { WhatsAppIcon, XIcon } from "./icons";
+import { WhatsAppIcon } from "./icons";
 
 export default function WhatsAppButton() {
   const [tooltipVisible, setTooltipVisible] = useState(false);

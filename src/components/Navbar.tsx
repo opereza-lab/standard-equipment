@@ -36,16 +36,15 @@ const navItems: NavItem[] = [
   {
     label: "Minería",
     children: [
-      { label: "Bases de Traslado", href: "/mineria/bases-de-traslado" },
-      { label: "Atril Neumáticos OTR", href: "/mineria/atril-neumaticos-otr" },
-      { label: "Soporte Balde Face Shovel", href: "/mineria/soporte-balde-face-shovel" },
+      { label: "Atril Neumáticos OTR", href: "/productos/atril-neumaticos-otr" },
+      { label: "Soporte Balde Face Shovel", href: "/productos/soporte-baldes-face-shovel" },
+      { label: "Bases Cilindros Hidráulicos Heavy Duty", href: "/mineria/bases-cilindros-hidraulicos" },
       {
         label: "Equipamiento Truckshop",
         children: [
-          { label: "Pinochos CAEX", href: "/mineria/equipamiento-truckshop/pinochos-caex" },
-          { label: "Pinochos Cargadores Frontales", href: "/mineria/equipamiento-truckshop/pinochos-cargadores-frontales" },
           { label: "Rack Maniobras", href: "/mineria/equipamiento-truckshop/rack-maniobras" },
           { label: "Rack Polines", href: "/mineria/equipamiento-truckshop/rack-polines" },
+          { label: "Rack Martillos DTH", href: "/mineria/equipamiento-truckshop/rack-martillos-dth" },
         ],
       },
     ],
@@ -83,7 +82,7 @@ function DropdownMenu({ item, depth = 0 }: { item: NavItem; depth?: number }) {
         href={item.href || "#"}
         target={item.external ? "_blank" : undefined}
         rel={item.external ? "noopener noreferrer" : undefined}
-        className="block px-4 py-2 text-sm text-[#212529] hover:text-[#6baed6] hover:bg-[#f0f4f8] transition-colors whitespace-nowrap"
+        className="block px-4 py-2 text-sm text-white/85 hover:text-[#6baed6] hover:bg-white/10 transition-colors whitespace-nowrap"
         onClick={() => setOpen(false)}
       >
         {item.label}
@@ -99,7 +98,7 @@ function DropdownMenu({ item, depth = 0 }: { item: NavItem; depth?: number }) {
       onMouseLeave={() => setOpen(false)}
     >
       <button
-        className={`flex items-center gap-1 px-4 py-2 text-sm text-[#212529] hover:text-[#6baed6] hover:bg-[#f0f4f8] transition-colors whitespace-nowrap w-full text-left ${
+        className={`flex items-center gap-1 px-4 py-2 text-sm text-white/85 hover:text-[#6baed6] hover:bg-white/10 transition-colors whitespace-nowrap w-full text-left ${
           depth === 0 ? "rounded" : ""
         }`}
         onClick={() => setOpen((v) => !v)}
@@ -111,7 +110,7 @@ function DropdownMenu({ item, depth = 0 }: { item: NavItem; depth?: number }) {
       </button>
       {open && (
         <div
-          className={`absolute z-50 bg-white border border-[#e9ecef] rounded shadow-lg min-w-[220px] dropdown-menu ${
+          className={`absolute z-50 border border-white/10 rounded shadow-lg min-w-[220px] dropdown-menu ${
             depth === 0 ? "top-full left-0" : "top-0 left-full"
           }`}
         >
@@ -124,7 +123,7 @@ function DropdownMenu({ item, depth = 0 }: { item: NavItem; depth?: number }) {
                 href={child.href || "#"}
                 target={child.external ? "_blank" : undefined}
                 rel={child.external ? "noopener noreferrer" : undefined}
-                className="block px-4 py-2.5 text-sm text-[#212529] hover:text-[#6baed6] hover:bg-[#f0f4f8] transition-colors border-b border-[#f0f0f0] last:border-b-0 whitespace-nowrap"
+                className="block px-4 py-2.5 text-sm text-white/85 hover:text-[#6baed6] hover:bg-white/10 transition-colors border-b border-white/10 last:border-b-0 whitespace-nowrap"
                 onClick={() => setOpen(false)}
               >
                 {child.label}
@@ -153,16 +152,16 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 ${
           scrolled ? "navbar-scrolled" : ""
         }`}
-        style={{ height: "80px" }}
+        style={{ height: "80px", background: "#0d1528" }}
       >
         <div className="max-w-[1400px] mx-auto px-6 h-full flex items-center justify-between gap-6">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-white.png"
               alt="Standard Equipment"
               width={200}
               height={56}
@@ -184,7 +183,7 @@ export default function Navbar() {
                   href={item.href || "#"}
                   target={item.external ? "_blank" : undefined}
                   rel={item.external ? "noopener noreferrer" : undefined}
-                  className="px-3 py-2 text-sm text-[#212529] hover:text-[#6baed6] transition-colors whitespace-nowrap"
+                  className="px-3 py-2 text-sm text-white/85 hover:text-[#6baed6] transition-colors whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
@@ -201,7 +200,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 text-[#212529]"
+            className="lg:hidden p-2 text-white"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Menú"
           >
@@ -217,15 +216,15 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div
-          className="fixed inset-0 z-40 bg-white pt-20 overflow-y-auto lg:hidden"
-          style={{ top: "80px" }}
+          className="fixed inset-0 z-40 overflow-y-auto lg:hidden"
+          style={{ background: "#0d1528", top: "80px" }}
         >
           <nav className="px-4 py-4 space-y-1">
             {navItems.map((item) =>
               item.children ? (
                 <div key={item.label}>
                   <button
-                    className="w-full flex items-center justify-between px-3 py-3 text-[#212529] font-medium text-left border-b border-[#f0f0f0]"
+                    className="w-full flex items-center justify-between px-3 py-3 text-white font-medium text-left border-b border-white/10"
                     onClick={() =>
                       setMobileExpanded(
                         mobileExpanded === item.label ? null : item.label
@@ -240,18 +239,18 @@ export default function Navbar() {
                     />
                   </button>
                   {mobileExpanded === item.label && (
-                    <div className="pl-4 space-y-0.5 bg-[#f8f9fa] rounded-b">
+                    <div className="pl-4 space-y-0.5 bg-white/5 rounded-b">
                       {item.children.map((child) =>
                         child.children ? (
                           <div key={child.label}>
-                            <div className="px-3 py-2 text-sm font-semibold text-[#0d1528]">
+                            <div className="px-3 py-2 text-sm font-semibold text-[#6baed6]">
                               {child.label}
                             </div>
                             {child.children.map((sub) => (
                               <Link
                                 key={sub.label}
                                 href={sub.href || "#"}
-                                className="block px-6 py-2 text-sm text-[#495057] hover:text-[#6baed6]"
+                                className="block px-6 py-2 text-sm text-white/75 hover:text-[#6baed6]"
                                 onClick={() => setMobileOpen(false)}
                               >
                                 {sub.label}
@@ -263,7 +262,7 @@ export default function Navbar() {
                             key={child.label}
                             href={child.href || "#"}
                             target={child.external ? "_blank" : undefined}
-                            className="block px-3 py-2.5 text-sm text-[#495057] hover:text-[#6baed6] border-b border-[#eeeeee]"
+                            className="block px-3 py-2.5 text-sm text-white/75 hover:text-[#6baed6] border-b border-white/10"
                             onClick={() => setMobileOpen(false)}
                           >
                             {child.label}
@@ -278,7 +277,7 @@ export default function Navbar() {
                   key={item.label}
                   href={item.href || "#"}
                   target={item.external ? "_blank" : undefined}
-                  className="block px-3 py-3 text-[#212529] font-medium border-b border-[#f0f0f0] hover:text-[#6baed6]"
+                  className="block px-3 py-3 text-white font-medium border-b border-white/10 hover:text-[#6baed6]"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}

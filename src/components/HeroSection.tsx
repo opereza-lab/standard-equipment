@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRightIcon } from "./icons";
 import SplitButton from "./SplitButton";
 
 export default function HeroSection() {

@@ -6,6 +6,7 @@ import PorQueNosotros from "@/components/PorQueNosotros";
 import PortfolioSection from "@/components/PortfolioSection";
 import CTABanner from "@/components/CTABanner";
 import ClientesSection from "@/components/ClientesSection";
+import ContactoSection from "@/components/ContactoSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -21,6 +22,7 @@ export default function HomePage() {
         <PortfolioSection />
         <CTABanner />
         <ClientesSection />
+        <ContactoSection />
       </main>
       <Footer />
       <WhatsAppButton />

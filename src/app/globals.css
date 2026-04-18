@@ -122,6 +122,7 @@
 .dropdown-menu {
   animation: dropdownIn 0.18s ease-out;
   transform-origin: top center;
+  background: #0d1528;
 }
 
 @keyframes dropdownIn {

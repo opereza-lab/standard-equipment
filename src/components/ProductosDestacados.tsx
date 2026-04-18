@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { CheckIcon } from "./icons";
 import SplitButton from "./SplitButton";
 
@@ -68,12 +67,20 @@ const productos = [
 
 export default function ProductosDestacados() {
   return (
-    <section className="py-4">
-      {productos.map((producto, idx) => (
+    <section
+      className="py-4"
+      style={{
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)), url('/images/industrias/ind-fondo.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {productos.map((producto) => (
         <div
           key={producto.id}
           className="product-showcase-section"
-          style={{ backgroundColor: producto.bgColor }}
+          style={{ backgroundColor: "transparent" }}
         >
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 py-20">
             <div

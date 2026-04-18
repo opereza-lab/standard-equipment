@@ -15,10 +15,11 @@ const industrias = [
   {
     name: "Minería",
     description: "Bases de traslado, atriles y equipamiento para operaciones CAEX y cargadores frontales.",
-    href: "/mineria/bases-de-traslado",
-    image: "/images/industrias/min-regular2.jpg",
+    href: "/productos/atril-neumaticos-otr",
+    image: "/images/industrias/min-regular6.jpg",
+    objectPosition: "center 25%",
     icon: MiningIcon,
-    products: ["Bases de Traslado", "Atril OTR", "Pinochos CAEX", "Rack Polines"],
+    products: ["Atril OTR", "Soporte Baldes Face Shovel", "Pinochos CAEX", "Rack Polines"],
     color: "#0d1528",
   },
   {
@@ -97,7 +98,8 @@ export default function IndustriasSection() {
                     src={ind.image}
                     alt={ind.name}
                     fill
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={{ objectPosition: (ind as { objectPosition?: string }).objectPosition ?? "center" }}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   {/* Overlay: 65% oscuro en reposo → 25% en hover (≈40% menos oscuro) */}

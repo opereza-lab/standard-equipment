@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { WhatsAppIcon } from "./icons";
 import SplitButton from "./SplitButton";
 
