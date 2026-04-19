@@ -18,7 +18,7 @@ const navItems: NavItem[] = [
     label: "Construcción",
     children: [
       { label: "Capachos Concretos Roll Over", href: "/construccion/capachos-concretos-roll-over" },
-      { label: "Capachos de Escombros", href: "/construccion/capachos-de-escombros" },
+      { label: "Capachos de Escombros", href: "/productos/capacho-escombros-autovolteo" },
       { label: "Capachos Escombros Alta Capacidad", href: "/construccion/capachos-de-escombros-alta-capacidad" },
       { label: "Balde Descarga Directa a Camión", href: "/construccion/balde-para-escombros-con-descarga-directa-a-camion" },
       { label: "Bandejas para Escombros", href: "/construccion/bandejas-para-escombros" },
