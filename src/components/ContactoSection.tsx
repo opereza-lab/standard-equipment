@@ -10,21 +10,34 @@ const IMAGEN_FONDO = "/images/grinding-wide.jpg";
 
 export default function ContactoSection() {
   const [enviado, setEnviado] = useState(false);
+  const [enviando, setEnviando] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setEnviando(true);
+    setError("");
+
     const form = e.currentTarget;
     const nombre = (form.elements.namedItem("nombre") as HTMLInputElement).value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const empresa = (form.elements.namedItem("empresa") as HTMLInputElement).value;
     const mensaje = (form.elements.namedItem("mensaje") as HTMLTextAreaElement).value;
 
-    const subject = encodeURIComponent(`Consulta de ${nombre} — ${empresa}`);
-    const body = encodeURIComponent(
-      `Nombre: ${nombre}\nEmpresa: ${empresa}\nEmail: ${email}\n\nMensaje:\n${mensaje}`
-    );
-    window.location.href = `mailto:contacto@standard-equipment.cl?subject=${subject}&body=${body}`;
-    setEnviado(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, empresa, email, mensaje }),
+      });
+
+      if (!res.ok) throw new Error("Error al enviar");
+      setEnviado(true);
+    } catch {
+      setError("Hubo un error al enviar. Por favor intenta nuevamente.");
+    } finally {
+      setEnviando(false);
+    }
   }
 
   return (
@@ -90,12 +103,16 @@ export default function ContactoSection() {
                   placeholder="¿En qué podemos ayudarte?"
                 />
               </div>
+              {error && (
+                <p className="text-red-400 text-sm">{error}</p>
+              )}
               <button
                 type="submit"
-                className="self-start px-10 py-4 text-white text-sm font-bold uppercase tracking-widest transition-opacity hover:opacity-85 mt-2"
+                disabled={enviando}
+                className="self-start px-10 py-4 text-white text-sm font-bold uppercase tracking-widest transition-opacity hover:opacity-85 mt-2 disabled:opacity-50"
                 style={{ background: "#e07820" }}
               >
-                Enviar Consulta
+                {enviando ? "Enviando..." : "Enviar Consulta"}
               </button>
             </form>
           )}
