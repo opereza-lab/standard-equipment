@@ -249,7 +249,7 @@ export default function SoporteBaldesFaceShovel() {
           <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { nombre: "Atril Neumáticos OTR", desc: "Plataforma de trabajo segura para cambio de neumáticos en equipos de minería.", href: "/productos/atril-neumaticos-otr", img: "/images/productos/atril-neumaticos/hero-1.png" },
+              { nombre: "Atril Neumáticos OTR", desc: "Plataforma de trabajo segura para inspección de neumáticos mineros.", href: "/productos/atril-neumaticos-otr", img: "/images/productos/atril-neumaticos/hero-1.jpeg" },
             ].map((prod) => (
               <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
                 <div className="relative h-44 overflow-hidden">
