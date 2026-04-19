@@ -249,16 +249,23 @@ export default function SoporteBaldesFaceShovel() {
           <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { nombre: "Capacho para Escombros con Autovolteo", desc: "Descarga controlada exclusivamente por la grúa, sin equipos de apoyo.", href: "/productos/capacho-escombros-autovolteo" },
+              { nombre: "Capacho para Escombros con Autovolteo", desc: "Descarga controlada exclusivamente por la grúa, sin equipos de apoyo.", href: "/productos/capacho-escombros-autovolteo", img: "/images/productos/capacho-autovolteo/hero-1.png" },
             ].map((prod) => (
-              <div key={prod.nombre} className="p-6 border border-white/10 flex flex-col gap-3 hover:border-[#e07820] transition-colors">
-                <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
-                <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
-                <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
-                <a href={prod.href} className="text-[#e07820] text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
-                  Ver Producto →
-                </a>
-              </div>
+              <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
+                <div className="relative h-44 overflow-hidden">
+                  <Image src={prod.img} alt={prod.nombre} fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+                <div className="p-5 flex flex-col gap-2 flex-1" style={{ background: "#0d1528" }}>
+                  <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
+                  <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
+                  <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
+                  <span className="text-[#e07820] text-xs font-bold uppercase tracking-widest group-hover:opacity-70 transition-opacity">
+                    Ver Producto →
+                  </span>
+                </div>
+              </a>
             ))}
           </div>
         </div>
