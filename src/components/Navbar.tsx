@@ -58,7 +58,6 @@ const navItems: NavItem[] = [
   },
   { label: "Servicios de Ingeniería", href: "https://www.standard-ingenieria.com", external: true },
   { label: "Portafolio", href: "/portafolio" },
-  { label: "Blog", href: "/blog" },
   { label: "Contacto", href: "/contacto" },
 ];
 

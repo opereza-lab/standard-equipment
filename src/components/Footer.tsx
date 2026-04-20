@@ -7,7 +7,7 @@ const footerNav = [
     title: "Construcción",
     links: [
       { label: "Capachos Roll Over", href: "/construccion/capachos-concretos-roll-over" },
-      { label: "Capachos Escombros", href: "/construccion/capachos-de-escombros" },
+      { label: "Capachos Escombros", href: "/productos/capacho-escombros-autovolteo" },
       { label: "Bandejas para Escombros", href: "/construccion/bandejas-para-escombros" },
       { label: "Transportador de Barras", href: "/construccion/transportador-de-barras" },
       { label: "Porta Pallets", href: "/construccion/porta-palets" },
@@ -17,7 +17,7 @@ const footerNav = [
     title: "Minería",
     links: [
       { label: "Bases de Traslado", href: "/mineria/bases-de-traslado" },
-      { label: "Atril Neumáticos OTR", href: "/mineria/atril-neumaticos-otr" },
+      { label: "Atril Neumáticos OTR", href: "/productos/atril-neumaticos-otr" },
       { label: "Pinochos CAEX", href: "/mineria/equipamiento-truckshop/pinochos-caex" },
       { label: "Rack Maniobras", href: "/mineria/equipamiento-truckshop/rack-maniobras" },
     ],
@@ -26,7 +26,6 @@ const footerNav = [
     title: "Empresa",
     links: [
       { label: "Portafolio", href: "/portafolio" },
-      { label: "Blog / Recursos", href: "/blog" },
       { label: "Contacto", href: "/contacto" },
       { label: "Servicios de Ingeniería", href: "https://www.standard-ingenieria.com", external: true },
     ],
@@ -142,9 +141,6 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <Link href="/privacidad" className="hover:text-white/70 transition-colors">
               Política de Privacidad
-            </Link>
-            <Link href="/terminos" className="hover:text-white/70 transition-colors">
-              Términos de Uso
             </Link>
           </div>
         </div>
