@@ -84,7 +84,7 @@ export default function PortaPaletsPage() {
       </section>
 
       {/* ── CTA FINAL ────────────────────────────────────────── */}
-      <section style={{ background: "#0d1528", borderTop: "4px solid #e07820" }} className="py-16">
+      <section style={{ background: "#0d1528" }} className="py-16">
         <div className="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-3xl font-bold text-white mb-2">¿Te interesa este equipo?</h2>

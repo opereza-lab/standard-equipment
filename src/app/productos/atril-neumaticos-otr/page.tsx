@@ -1,92 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { PROYECTOS } from "@/data/portfolio";
+import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
 
 const HERO_IMAGES = [
   "/images/productos/atril-neumaticos/hero-1.jpeg",
   "/images/productos/atril-neumaticos/hero-2.jpeg",
 ];
-
-const SLUG_TAG = "Minería";
-const proyectosRelacionados = PROYECTOS.filter((p) => p.tag === SLUG_TAG);
-
-const VISIBLE = 4;
-
-function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
-  const [index, setIndex] = useState(0);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
-  const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - VISIBLE, i + 1)), [proyectos.length]);
-  const canPrev = index > 0;
-  const canNext = index < proyectos.length - VISIBLE;
-
-  if (proyectos.length === 0) return null;
-
-  const startHover = (fn: () => void) => { fn(); intervalRef.current = setInterval(fn, 900); };
-  const stopHover = () => { if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null; } };
-
-  return (
-    <section style={{ background: "#0d1528" }} className="py-20">
-      <div className="max-w-[1600px] mx-auto px-6 md:px-16">
-        <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Portafolio</p>
-        <h2 className="text-3xl font-bold text-white mb-12">Proyectos Relacionados</h2>
-        <div className="relative flex items-center gap-6">
-          <button onClick={prev} onMouseEnter={() => canPrev && startHover(prev)} onMouseLeave={stopHover}
-            disabled={!canPrev} style={{ opacity: canPrev ? 1 : 0.2, background: "none", border: "none", padding: 0, cursor: canPrev ? "pointer" : "default" }} aria-label="Anterior">
-            <svg width="48" height="14" viewBox="0 0 48 14" fill="none">
-              <line x1="48" y1="7" x2="10" y2="7" stroke="#e07820" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M14 2L5 7L14 12" stroke="#e07820" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
-          <div className="overflow-hidden flex-1">
-            <div className="flex gap-6 transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(calc(-${index} * (100% / ${VISIBLE} + 8px)))` }}>
-              {proyectos.map((proy) => (
-                <div key={proy.image}
-                  className="group rounded-xl overflow-hidden border border-white/10 flex flex-col flex-shrink-0"
-                  style={{ width: `calc((100% - ${(VISIBLE - 1) * 24}px) / ${VISIBLE})`, backgroundColor: "#1a2f4e" }}>
-                  <div className="relative h-40 overflow-hidden">
-                    <Image src={proy.image} alt={proy.project} fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                    <span className="absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 text-white" style={{ background: "#e07820" }}>{proy.tag}</span>
-                  </div>
-                  <div className="p-4 flex flex-col flex-1">
-                    <p className={`text-[#6baed6] text-xs tracking-wide mb-1${"rawClient" in proy && proy.rawClient ? "" : " uppercase"}`}>{proy.client}</p>
-                    <h3 className="font-semibold text-white mb-2 text-sm leading-snug">{proy.project}</h3>
-                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-white/10 mt-auto">
-                      <span className="text-[#e07820] mt-0.5 text-sm">→</span>
-                      <p className="text-[#6baed6] text-xs font-medium text-justify">{proy.result}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <button onClick={next} onMouseEnter={() => canNext && startHover(next)} onMouseLeave={stopHover}
-            disabled={!canNext} style={{ opacity: canNext ? 1 : 0.2, background: "none", border: "none", padding: 0, cursor: canNext ? "pointer" : "default" }} aria-label="Siguiente">
-            <svg width="48" height="14" viewBox="0 0 48 14" fill="none">
-              <line x1="0" y1="7" x2="38" y2="7" stroke="#e07820" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M34 2L43 7L34 12" stroke="#e07820" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
-        </div>
-        {proyectos.length > VISIBLE && (
-          <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: proyectos.length - VISIBLE + 1 }).map((_, i) => (
-              <button key={i} onClick={() => setIndex(i)} className="w-2 h-2 rounded-full transition-all"
-                style={{ background: i === index ? "#e07820" : "rgba(255,255,255,0.25)" }} aria-label={`Ir a ${i + 1}`} />
-            ))}
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
 
 export default function AtrilNeumaticosOTR() {
   const [heroIndex, setHeroIndex] = useState(0);
@@ -244,37 +167,10 @@ export default function AtrilNeumaticosOTR() {
         </div>
       </section>
 
-      {/* ── OTROS PRODUCTOS ──────────────────────────────────── */}
-      <section style={{ background: "#0d1528" }} className="py-20">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
-          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Línea Minería</p>
-          <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { nombre: "Soporte Baldes Face Shovel", desc: "Cambio de elementos de desgaste sin retirar el balde del equipo.", href: "/productos/soporte-baldes-face-shovel", img: "/images/productos/soporte-faceshovel/hero-1.png" },
-            ].map((prod) => (
-              <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
-                <div className="relative h-44 overflow-hidden">
-                  <Image src={prod.img} alt={prod.nombre} fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                </div>
-                <div className="p-5 flex flex-col gap-2 flex-1" style={{ background: "#0d1528" }}>
-                  <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
-                  <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
-                  <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
-                  <span className="text-[#e07820] text-xs font-bold uppercase tracking-widest group-hover:opacity-70 transition-opacity">
-                    Ver Producto →
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductosCarruselMineria excludeId="atril-neumaticos-otr" />
 
       {/* ── CTA FINAL ────────────────────────────────────────── */}
-      <section id="contacto" style={{ background: "#0d1528", borderTop: "4px solid #e07820" }} className="py-16">
+      <section id="contacto" style={{ background: "#0d1528" }} className="py-16">
         <div className="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-3xl font-bold text-white mb-2">¿Te interesa este equipo?</h2>

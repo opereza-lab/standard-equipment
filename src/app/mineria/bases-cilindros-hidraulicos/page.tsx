@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
 
-export default function BasesDeTrasladoPage() {
+export default function BasesCilindrosPage() {
   return (
     <>
       <Navbar />
@@ -17,13 +17,13 @@ export default function BasesDeTrasladoPage() {
         <div className="absolute right-0" style={{ maxWidth: "38%", bottom: "16px", zIndex: 2 }}>
           <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
             <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
-              Bases
+              Bases Cilindros
             </h1>
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
-              de Traslado
+              Hidráulicos Heavy Duty
             </h2>
             <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
-              Bases de traslado diseñadas y fabricadas a medida para operaciones de minería, garantizando la seguridad y eficiencia en el movimiento de equipos pesados.
+              Bases para cilindros hidráulicos Heavy Duty, diseñadas para el soporte seguro durante mantención de equipos de alto tonelaje en faenas mineras.
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
               {[
@@ -51,10 +51,10 @@ export default function BasesDeTrasladoPage() {
               <tbody>
                 {[
                   ["Material", "Acero Estructural"],
-                  ["Piezas de Desgaste", "Acero HB 400"],
+                  ["Clasificación", "Heavy Duty"],
                   ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
-                  ["Aplicación", "Minería a Rajo Abierto / Subterránea"],
-                  ["Fabricación", "A medida según equipo"],
+                  ["Aplicación", "Minería a Rajo Abierto"],
+                  ["Fabricación", "A medida según modelo de equipo"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
@@ -70,8 +70,8 @@ export default function BasesDeTrasladoPage() {
             <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>¿Dónde se Utiliza?</h2>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { sector: "Minería Rajo Abierto", detalle: "Traslado y posicionamiento de equipos en faenas de rajo abierto" },
-                { sector: "Minería Subterránea", detalle: "Soluciones adaptadas para el movimiento de equipos en minería subterránea" },
+                { sector: "Minería Rajo Abierto", detalle: "Soporte de cilindros hidráulicos durante mantención de camiones CAEX y equipos pesados" },
+                { sector: "Truckshop", detalle: "Talleres de mantención de equipos de alto tonelaje en faenas mineras" },
               ].map((s) => (
                 <div key={s.sector} className="p-5 border-t-2" style={{ borderColor: "#e07820", background: "#f5f7fa" }}>
                   <p className="font-bold text-sm mb-1 uppercase tracking-wide" style={{ color: "#0d1528" }}>{s.sector}</p>
@@ -83,7 +83,7 @@ export default function BasesDeTrasladoPage() {
         </div>
       </section>
 
-      <ProductosCarruselMineria excludeId="bases-de-traslado" />
+      <ProductosCarruselMineria excludeId="bases-cilindros-hidraulicos" />
 
       {/* ── CTA FINAL ────────────────────────────────────────── */}
       <section style={{ background: "#0d1528" }} className="py-16">

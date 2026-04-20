@@ -41,6 +41,7 @@ const navItems: NavItem[] = [
       { label: "Bases Cilindros Hidráulicos Heavy Duty", href: "/mineria/bases-cilindros-hidraulicos" },
       {
         label: "Equipamiento Truckshop",
+        href: "/mineria/equipamiento-truckshop",
         children: [
           { label: "Rack Maniobras", href: "/mineria/equipamiento-truckshop/rack-maniobras" },
           { label: "Rack Polines", href: "/mineria/equipamiento-truckshop/rack-polines" },
@@ -102,7 +103,17 @@ function DropdownMenu({ item, depth = 0 }: { item: NavItem; depth?: number }) {
         }`}
         onClick={() => setOpen((v) => !v)}
       >
-        {item.label}
+        {item.href ? (
+          <Link
+            href={item.href}
+            className="flex-1"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {item.label}
+          </Link>
+        ) : (
+          item.label
+        )}
         <ChevronDownIcon
           className={`w-3.5 h-3.5 transition-transform duration-200 ${open ? "rotate-180" : ""} ${depth > 0 ? "-rotate-90" : ""}`}
         />

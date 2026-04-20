@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import Image from "next/image";
+import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
 
 export default function PinochosCAEXPage() {
   return (
@@ -83,36 +83,10 @@ export default function PinochosCAEXPage() {
         </div>
       </section>
 
-      {/* ── OTROS PRODUCTOS MINERÍA ──────────────────────────── */}
-      <section style={{ background: "#0d1528" }} className="py-20">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
-          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Línea Minería</p>
-          <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { nombre: "Atril Neumáticos OTR", desc: "Plataforma de trabajo segura para inspección de neumáticos mineros.", href: "/productos/atril-neumaticos-otr", img: "/images/productos/atril-neumaticos/hero-1.jpeg" },
-              { nombre: "Soporte Baldes Face Shovel", desc: "Cambio de elementos de desgaste sin retirar el balde del equipo.", href: "/productos/soporte-baldes-face-shovel", img: "/images/productos/soporte-faceshovel/hero-1.png" },
-            ].map((prod) => (
-              <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
-                <div className="relative h-44 overflow-hidden">
-                  <Image src={prod.img} alt={prod.nombre} fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                </div>
-                <div className="p-5 flex flex-col gap-2 flex-1" style={{ background: "#0d1528" }}>
-                  <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
-                  <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
-                  <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
-                  <span className="text-[#e07820] text-xs font-bold uppercase tracking-widest group-hover:opacity-70 transition-opacity">Ver Producto →</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductosCarruselMineria excludeId="pinochos-caex" />
 
       {/* ── CTA FINAL ────────────────────────────────────────── */}
-      <section style={{ background: "#0d1528", borderTop: "4px solid #e07820" }} className="py-16">
+      <section style={{ background: "#0d1528" }} className="py-16">
         <div className="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-3xl font-bold text-white mb-2">¿Te interesa este equipo?</h2>

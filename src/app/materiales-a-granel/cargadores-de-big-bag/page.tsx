@@ -3,32 +3,32 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+import Image from "next/image";
 
-export default function BasesDeTrasladoPage() {
+export default function CargadoresBigBagPage() {
   return (
     <>
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/inspection-factory.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/warehouse-hero.jpg')" }} />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
         <div className="absolute right-0" style={{ maxWidth: "38%", bottom: "16px", zIndex: 2 }}>
           <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
             <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
-              Bases
+              Cargadores
             </h1>
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
-              de Traslado
+              de Big Bag
             </h2>
             <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
-              Bases de traslado diseñadas y fabricadas a medida para operaciones de minería, garantizando la seguridad y eficiencia en el movimiento de equipos pesados.
+              Sistemas de carga de Big Bag diseñados y fabricados a medida para el envasado eficiente de materiales a granel en industria y minería.
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
               {[
                 { top: "Material", bottom: "Acero Estructural" },
-                { top: "Aplicación", bottom: "Minería" },
+                { top: "Aplicación", bottom: "Granel / Industria" },
                 { top: "Certificados", bottom: "MC, WPS-PQR" },
               ].map((s) => (
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
@@ -51,10 +51,10 @@ export default function BasesDeTrasladoPage() {
               <tbody>
                 {[
                   ["Material", "Acero Estructural"],
-                  ["Piezas de Desgaste", "Acero HB 400"],
+                  ["Capacidad", "A definir según requerimiento"],
                   ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
-                  ["Aplicación", "Minería a Rajo Abierto / Subterránea"],
-                  ["Fabricación", "A medida según equipo"],
+                  ["Aplicación", "Materiales a Granel / Industria"],
+                  ["Fabricación", "A medida"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
@@ -70,8 +70,8 @@ export default function BasesDeTrasladoPage() {
             <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>¿Dónde se Utiliza?</h2>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { sector: "Minería Rajo Abierto", detalle: "Traslado y posicionamiento de equipos en faenas de rajo abierto" },
-                { sector: "Minería Subterránea", detalle: "Soluciones adaptadas para el movimiento de equipos en minería subterránea" },
+                { sector: "Industria Alimentaria", detalle: "Envasado de granos, harinas y productos alimenticios a granel" },
+                { sector: "Minería e Industria", detalle: "Carga de áridos, concentrados y materiales pulverulentos" },
               ].map((s) => (
                 <div key={s.sector} className="p-5 border-t-2" style={{ borderColor: "#e07820", background: "#f5f7fa" }}>
                   <p className="font-bold text-sm mb-1 uppercase tracking-wide" style={{ color: "#0d1528" }}>{s.sector}</p>
@@ -83,7 +83,32 @@ export default function BasesDeTrasladoPage() {
         </div>
       </section>
 
-      <ProductosCarruselMineria excludeId="bases-de-traslado" />
+      {/* ── OTROS PRODUCTOS GRANEL ───────────────────────────── */}
+      <section style={{ background: "#0d1528" }} className="py-20">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
+          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Línea Materiales a Granel</p>
+          <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { nombre: "Descargadores de Big Bag", desc: "Sistemas de descarga controlada de Big Bag para materiales a granel.", href: "/materiales-a-granel/descargadores-de-big-bag", img: "/images/steel-rods.jpg" },
+            ].map((prod) => (
+              <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
+                <div className="relative h-44 overflow-hidden">
+                  <Image src={prod.img} alt={prod.nombre} fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+                <div className="p-5 flex flex-col gap-2 flex-1" style={{ background: "#0d1528" }}>
+                  <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
+                  <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
+                  <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
+                  <span className="text-[#e07820] text-xs font-bold uppercase tracking-widest group-hover:opacity-70 transition-opacity">Ver Producto →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA FINAL ────────────────────────────────────────── */}
       <section style={{ background: "#0d1528" }} className="py-16">
