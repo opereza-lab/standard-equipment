@@ -5,7 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductContactButton from "@/components/ProductContactButton";
-import { CheckIcon, ArrowRightIcon } from "@/components/icons";
+import { CheckIcon } from "@/components/icons";
+import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
 
 export const metadata: Metadata = {
   title: "Capacho Concretos Roll Over | Standard Equipment",
@@ -359,44 +360,8 @@ export default function CapachoRollOverPage() {
           </div>
         </section>
 
-        {/* 10. PRODUCTOS RELACIONADOS */}
-        <section className="py-16 bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <h2 className="section-heading mb-10">
-              Productos <span className="section-heading-accent">relacionados</span>
-              <span style={{ color: "#e07820" }}>.</span>
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {productosRelacionados.map((prod) => (
-                <Link
-                  key={prod.name}
-                  href={prod.href}
-                  className="group industry-card block bg-white border border-[#e9ecef] rounded-xl overflow-hidden hover:border-[#0d1528]/30"
-                >
-                  <div className="relative h-44 overflow-hidden bg-[#f8f9fa]">
-                    <Image
-                      src={prod.image}
-                      alt={prod.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-semibold text-[#212529] mb-2 group-hover:text-[#0d1528] transition-colors">
-                      {prod.name}
-                    </h3>
-                    <p className="text-[#6c757d] text-sm">{prod.description}</p>
-                    <div className="mt-3 flex items-center gap-1 text-[#0d1528] text-sm font-semibold group-hover:gap-2 transition-all">
-                      Ver producto <ArrowRightIcon className="w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
+      <ProductosCarruselConstruccion excludeId="capachos-concretos-roll-over" />
 
       <Footer />
       <WhatsAppButton />

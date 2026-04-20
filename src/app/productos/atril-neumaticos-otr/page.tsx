@@ -244,9 +244,6 @@ export default function AtrilNeumaticosOTR() {
         </div>
       </section>
 
-      {/* ── PROYECTOS RELACIONADOS ───────────────────────────── */}
-      <ProyectosCarrusel proyectos={proyectosRelacionados} />
-
       {/* ── OTROS PRODUCTOS ──────────────────────────────────── */}
       <section style={{ background: "#0d1528" }} className="py-20">
         <div className="max-w-[1400px] mx-auto px-6 md:px-16">
