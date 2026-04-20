@@ -278,7 +278,7 @@ export default function SoporteBaldesFaceShovel() {
             <h2 className="text-3xl font-bold text-white mb-2">¿Te interesa este equipo?</h2>
             <p className="text-white/60">Envíanos tu consulta — te respondemos directamente, sin intermediarios.</p>
           </div>
-          <a href="mailto:contacto@standard-equipment.cl?subject=Solicitud de Cotización — Soporte Baldes Face Shovel"
+          <a href="/contacto"
             className="flex-shrink-0 inline-flex items-center gap-3 px-10 py-4 font-bold text-white text-sm tracking-widest uppercase transition-opacity hover:opacity-85"
             style={{ background: "#e07820" }}>
             Solicitar Cotización

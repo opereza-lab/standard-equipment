@@ -408,7 +408,7 @@ export default function CapachoEscombrosAutovolteo() {
             </p>
           </div>
           <a
-            href="mailto:contacto@standard-equipment.cl?subject=Solicitud de Cotización — Capacho Autovolteo"
+            href="/contacto"
             className="flex-shrink-0 inline-flex items-center gap-3 px-10 py-4 font-bold text-white text-sm tracking-widest uppercase transition-opacity hover:opacity-85"
             style={{ background: "#e07820" }}
           >
