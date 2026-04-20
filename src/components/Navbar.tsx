@@ -193,7 +193,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <SplitButton href="https://wa.me/56229381290" variant="orange" external className="text-sm">
+            <SplitButton href="/contacto" variant="orange" className="text-sm">
               Consultar ahora
             </SplitButton>
           </div>

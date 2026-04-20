@@ -372,25 +372,26 @@ export default function CapachoEscombrosAutovolteo() {
           <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { nombre: "Capachos Roll Over",       desc: "Descarga lateral controlada para hormigón y áridos." },
-              { nombre: "Bandejas para Escombros",  desc: "Retiro de material en pisos sin uso de la grúa." },
-              { nombre: "Transportador de Barras",  desc: "Traslado seguro de barras de acero en obra." },
-              { nombre: "Porta Pallets",            desc: "Izaje y traslado de pallets con grúa torre." },
+              { nombre: "Capachos Roll Over",      desc: "Descarga lateral controlada para hormigón y áridos.", href: "/construccion/capachos-concretos-roll-over", img: "/images/crane-steel.jpg" },
+              { nombre: "Bandejas para Escombros", desc: "Retiro de material en pisos sin uso de la grúa.",     href: "/construccion/bandejas-para-escombros",         img: "/images/heavy-factory.jpg" },
+              { nombre: "Transportador de Barras", desc: "Traslado seguro de barras de acero en obra.",         href: "/construccion/transportador-de-barras",         img: "/images/steel-rods.jpg" },
+              { nombre: "Porta Pallets",           desc: "Izaje y traslado de pallets con grúa torre.",         href: "/construccion/porta-palets",                    img: "/images/warehouse-hero.jpg" },
             ].map((prod) => (
-              <div
-                key={prod.nombre}
-                className="p-6 border border-white/10 flex flex-col gap-3 hover:border-[#e07820] transition-colors"
-              >
-                <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
-                <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
-                <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
-                <a
-                  href="#"
-                  className="text-[#e07820] text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity"
-                >
-                  Ver Producto →
-                </a>
-              </div>
+              <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
+                <div className="relative h-44 overflow-hidden">
+                  <Image src={prod.img} alt={prod.nombre} fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+                <div className="p-5 flex flex-col gap-2 flex-1" style={{ background: "#0d1528" }}>
+                  <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
+                  <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
+                  <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
+                  <span className="text-[#e07820] text-xs font-bold uppercase tracking-widest group-hover:opacity-70 transition-opacity">
+                    Ver Producto →
+                  </span>
+                </div>
+              </a>
             ))}
           </div>
         </div>
