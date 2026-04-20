@@ -137,10 +137,7 @@ export default function IndustriasSection() {
                   </div>
 
                   {/* CTA */}
-                  <div
-                    className="flex items-center gap-1.5 text-sm font-semibold group-hover:gap-2.5 transition-all"
-                    style={{ color: ind.color }}
-                  >
+                  <div className="flex items-center gap-1.5 text-sm font-bold text-white group-hover:text-[#e07820] group-hover:gap-2.5 transition-all">
                     Ver productos
                     <ArrowRightIcon className="w-4 h-4" />
                   </div>
