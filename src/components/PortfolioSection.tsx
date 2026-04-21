@@ -26,15 +26,13 @@ export default function PortfolioSection() {
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  useEffect(() => {
-    setIndex((i) => Math.min(i, Math.max(0, proyectos.length - visible)));
-  }, [visible]);
+  const safeIndex = Math.min(index, Math.max(0, proyectos.length - visible));
 
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
   const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - visible, i + 1)), [visible]);
 
-  const canPrev = index > 0;
-  const canNext = index < proyectos.length - visible;
+  const canPrev = safeIndex > 0;
+  const canNext = safeIndex < proyectos.length - visible;
 
   const startHover = (fn: () => void) => {
     fn(); // mueve inmediatamente al hacer hover
@@ -90,7 +88,7 @@ export default function PortfolioSection() {
         <div className="overflow-hidden flex-1">
           <div
             className="flex gap-6 transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(calc(-${index} * (100% / ${visible} + 24px)))` }}
+            style={{ transform: `translateX(calc(-${safeIndex} * (100% / ${visible} + 24px)))` }}
           >
             {proyectos.map((proy) => (
               <div
@@ -159,7 +157,7 @@ export default function PortfolioSection() {
               key={i}
               onClick={() => setIndex(i)}
               className="w-2 h-2 rounded-full transition-all"
-              style={{ background: i === index ? "#e07820" : "rgba(255,255,255,0.25)" }}
+              style={{ background: i === safeIndex ? "#e07820" : "rgba(255,255,255,0.25)" }}
               aria-label={`Ir a ${i + 1}`}
             />
           ))}

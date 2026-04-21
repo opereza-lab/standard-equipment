@@ -33,14 +33,12 @@ function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  useEffect(() => {
-    setIndex((i) => Math.min(i, Math.max(0, proyectos.length - visible)));
-  }, [visible, proyectos.length]);
+  const safeIndex = Math.min(index, Math.max(0, proyectos.length - visible));
 
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
   const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - visible, i + 1)), [proyectos.length, visible]);
-  const canPrev = index > 0;
-  const canNext = index < proyectos.length - visible;
+  const canPrev = safeIndex > 0;
+  const canNext = safeIndex < proyectos.length - visible;
 
   if (proyectos.length === 0) return null;
 
@@ -62,7 +60,7 @@ function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
           </button>
           <div className="overflow-hidden flex-1">
             <div className="flex gap-6 transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(calc(-${index} * (100% / ${visible} + 24px)))` }}>
+              style={{ transform: `translateX(calc(-${safeIndex} * (100% / ${visible} + 24px)))` }}>
               {proyectos.map((proy) => (
                 <div key={proy.image}
                   className="group rounded-xl overflow-hidden border border-white/10 flex flex-col flex-shrink-0"
@@ -97,7 +95,7 @@ function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
           <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: proyectos.length - visible + 1 }).map((_, i) => (
               <button key={i} onClick={() => setIndex(i)} className="w-2 h-2 rounded-full transition-all"
-                style={{ background: i === index ? "#e07820" : "rgba(255,255,255,0.25)" }} aria-label={`Ir a ${i + 1}`} />
+                style={{ background: i === safeIndex ? "#e07820" : "rgba(255,255,255,0.25)" }} aria-label={`Ir a ${i + 1}`} />
             ))}
           </div>
         )}
@@ -138,7 +136,7 @@ export default function CapachoClientPage() {
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
               con Autovolteo
             </h2>
-            <p className="text-white/75 leading-relaxed mb-4 text-center" style={{ fontSize: "16px", width: 0, minWidth: "100%" }}>
+            <p className="hidden sm:block text-white/75 leading-relaxed mb-4 text-center" style={{ fontSize: "16px", width: 0, minWidth: "100%" }}>
               &quot;Sistema de descarga operado exclusivamente por la grúa&quot;<br />
               <span className="block mt-1">— sin equipos de apoyo, sin cambio de maniobra —</span>
             </p>

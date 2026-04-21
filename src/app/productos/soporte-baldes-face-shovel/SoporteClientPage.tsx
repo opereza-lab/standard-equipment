@@ -40,7 +40,7 @@ export default function SoporteClientPage() {
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
               Face Shovel
             </h2>
-            <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
+            <p className="hidden sm:block text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
               Pensado, Diseñado y Calculado para garantizar la Seguridad de las operaciones de inspección y mantención haciendo posible el cambio de elementos de desgaste sin que se haga necesario retirar el Balde del equipo, optimizando así la disponibilidad de su equipo.
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>

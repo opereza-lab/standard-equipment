@@ -41,7 +41,7 @@ export default function AtrilClientPage() {
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
               OTR
             </h2>
-            <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
+            <p className="hidden sm:block text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
               Diseñado para el almacenaje temporario de Neumáticos de equipos mineros, cuenta con plataforma para una segura inspección de llantas. Admite neumáticos desde 27R49 hasta 59/80 R63.
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>

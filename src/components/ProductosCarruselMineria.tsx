@@ -28,14 +28,12 @@ export default function ProductosCarruselMineria({ excludeId }: Props) {
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  useEffect(() => {
-    setIndex((i) => Math.min(i, Math.max(0, productos.length - visible)));
-  }, [visible, productos.length]);
+  const safeIndex = Math.min(index, Math.max(0, productos.length - visible));
 
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
   const next = useCallback(() => setIndex((i) => Math.min(productos.length - visible, i + 1)), [productos.length, visible]);
-  const canPrev = index > 0;
-  const canNext = index < productos.length - visible;
+  const canPrev = safeIndex > 0;
+  const canNext = safeIndex < productos.length - visible;
 
   const startHover = (fn: () => void) => { fn(); intervalRef.current = setInterval(fn, 900); };
   const stopHover = () => { if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null; } };
@@ -64,7 +62,7 @@ export default function ProductosCarruselMineria({ excludeId }: Props) {
           <div className="overflow-hidden flex-1">
             <div
               className="flex gap-6 transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(calc(-${index} * (100% / ${visible} + 24px)))` }}
+              style={{ transform: `translateX(calc(-${safeIndex} * (100% / ${visible} + 24px)))` }}
             >
               {productos.map((prod: ProductoMineria) => (
                 <a
@@ -129,7 +127,7 @@ export default function ProductosCarruselMineria({ excludeId }: Props) {
                 key={i}
                 onClick={() => setIndex(i)}
                 className="w-2 h-2 rounded-full transition-all"
-                style={{ background: i === index ? "#e07820" : "rgba(255,255,255,0.25)" }}
+                style={{ background: i === safeIndex ? "#e07820" : "rgba(255,255,255,0.25)" }}
                 aria-label={`Ir a ${i + 1}`}
               />
             ))}
