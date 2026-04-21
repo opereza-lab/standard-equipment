@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     google: "Uuxd5wCX4fH5GuTfTiiUee1DQpK-jb2D8yF4U78YtmM",
   },
   title: {
-    default: "Standard Equipment | Ingeniería Mecánica y Fabricación Industrial en Chile",
+    default: "Standard Equipment | Ingeniería aplicada al diseño de soluciones para Construcción, Minería e Industria en General",
     template: "%s | Standard Equipment",
   },
   description:
