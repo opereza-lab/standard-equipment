@@ -11,6 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "Uuxd5wCX4fH5GuTfTiiUee1DQpK-jb2D8yF4U78YtmM",
+  },
   title: {
     default: "Standard Equipment | Fabricación de Equipamiento Industrial en Chile",
     template: "%s | Standard Equipment",
