@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Standard Equipment",
   },
   description:
-    "Más de 20 años fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile. Capachos, atriles OTR, soportes Face Shovel, racks y más.",
+    "Empresa de Ingeniería Mecánica aplicada a la Fabricación de equipos para los rubros de Minería, Construcción, manejo de Materiales a granel e Industria en General con más de 20 años de experiencia.",
   keywords: [
     "equipamiento industrial Chile",
     "fabricación equipos minería",
