@@ -1,9 +1,23 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Equipamiento Truckshop Minero | Racks y Accesorios Chile",
+  description: "Equipamiento truckshop para talleres de mantención de equipos mineros. Racks de maniobras, polines y martillos DTH. Acero estructural certificado MC, WPS-PQR.",
+  keywords: [
+    "equipamiento truckshop",
+    "equipamiento truckshop minería",
+    "racks truckshop minero",
+    "taller mantención minería",
+    "rack maniobras truckshop",
+    "rack polines minería",
+    "rack martillos DTH",
+    "accesorios truckshop Chile",
+  ],
+};
 
 const productos = [
   {

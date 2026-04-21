@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
+
+export const metadata: Metadata = {
+  title: "Porta Pallets Construcción | Izaje Grúa Torre Chile",
+  description: "Porta pallets para izaje y distribución de materiales paletizados en obras en altura mediante grúa torre. Certificado MC, WPS-PQR. Fabricación a medida en Chile.",
+  keywords: [
+    "porta pallets construcción",
+    "porta palets grúa torre",
+    "izaje pallets construcción",
+    "accesorios grúa torre",
+    "transporte vertical materiales",
+    "porta pallets obras en altura",
+  ],
+};
 
 export default function PortaPaletsPage() {
   return (

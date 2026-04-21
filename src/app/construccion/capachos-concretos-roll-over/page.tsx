@@ -9,10 +9,20 @@ import { CheckIcon } from "@/components/icons";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
 
 export const metadata: Metadata = {
-  title: "Capacho Concretos Roll Over | Standard Equipment",
-  description:
-    "Capacho Roll Over para vaciado de hormigón. Estructura en acero ASTM A36, mecanismo de volcamiento lateral. Capacidades de 0.5 a 3 m³. Fabricación a medida.",
-  keywords: "capacho roll over, capacho concreto, vaciado hormigon, construccion, Standard Equipment",
+  title: "Capacho Concretos Roll Over | Vaciado Hormigón Chile",
+  description: "Capacho Roll Over para vaciado controlado de hormigón desde grúa. Sin derrames, volcamiento lateral 180°. 0.5 a 3 m³. Acero ASTM A36 + AR400. Certificado MC, WPS-PQR.",
+  keywords: [
+    "capacho roll over",
+    "capacho concreto",
+    "vaciado hormigón grúa",
+    "capacho hormigón construcción",
+    "capacho concreto Chile",
+    "vaciado hormigón altura",
+    "capacho concreto metro",
+    "metro de Santiago",
+    "construcción metro Santiago",
+    "grúas torre hormigón",
+  ],
 };
 
 const caracteristicas = [

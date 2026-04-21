@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+
+export const metadata: Metadata = {
+  title: "Rack Martillos DTH y Martillos de Fondo | Minería Chile",
+  description: "Rack para almacenamiento de martillos DTH y martillos de fondo en faenas de perforación minera. Equipamiento truckshop certificado, fabricado en acero estructural en Chile.",
+  keywords: [
+    "rack martillos DTH",
+    "rack martillos de fondo",
+    "almacenamiento martillos perforación",
+    "martillos DTH minería",
+    "equipamiento truckshop",
+    "rack perforación minería Chile",
+  ],
+};
 
 export default function RackMartillosDTHPage() {
   return (

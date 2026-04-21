@@ -1,9 +1,27 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
+
+export const metadata: Metadata = {
+  title: "Balde Escombros Descarga Directa a Camión | Construcción Chile",
+  description: "Balde para escombros con descarga directa a camión. Optimiza el retiro de material en obra sin operaciones intermedias. Certificado MC, WPS-PQR. Piques y túneles Chile.",
+  keywords: [
+    "balde escombros descarga directa",
+    "balde descarga directa camión",
+    "balde escombros construcción",
+    "balde escombros piques",
+    "retiro escombros grúa torre",
+    "construcción metro",
+    "metro de Santiago",
+    "piques y túneles",
+    "movimiento de tierra",
+    "galerías construcción",
+    "línea 7 metro",
+    "línea 9 metro",
+  ],
+};
 
 export default function BaldeDescargaDirectaPage() {
   return (

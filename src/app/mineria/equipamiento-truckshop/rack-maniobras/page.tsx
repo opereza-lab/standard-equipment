@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+
+export const metadata: Metadata = {
+  title: "Rack Maniobras Truckshop | Equipamiento Minería Chile",
+  description: "Rack de maniobras para talleres de mantención de equipos mineros de gran tonelaje. Equipamiento truckshop fabricado en acero estructural con certificación en Chile.",
+  keywords: [
+    "rack maniobras",
+    "rack maniobras truckshop",
+    "equipamiento truckshop",
+    "equipamiento truckshop minería",
+    "rack minería Chile",
+    "taller mantención minería",
+  ],
+};
 
 export default function RackManiobraPage() {
   return (

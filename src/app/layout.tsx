@@ -11,16 +11,66 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Standard Equipment | Soluciones de Ingeniería Industrial",
+  title: {
+    default: "Standard Equipment | Fabricación de Equipamiento Industrial en Chile",
+    template: "%s | Standard Equipment",
+  },
   description:
-    "Fabricantes de equipamiento industrial para construcción, minería, materiales a granel y más. Diseño y fabricación en acero a medida.",
-  keywords:
-    "equipamiento industrial, construcción, minería, big bag, capachos, Standard Equipment, Chile",
+    "Más de 20 años fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile. Capachos, atriles OTR, soportes Face Shovel, racks y más.",
+  keywords: [
+    "equipamiento industrial Chile",
+    "fabricación equipos minería",
+    "capachos de escombros",
+    "capachos roll over",
+    "atril neumáticos OTR",
+    "soporte baldes face shovel",
+    "equipos construcción Chile",
+    "big bag cargadores descargadores",
+    "rack truckshop minería",
+    "fabricación acero a medida",
+    "equipamiento minería rajo abierto",
+    "equipos CAEX",
+    "Standard Equipment Chile",
+    "equipamiento industrial Santiago",
+  ],
+  authors: [{ name: "Standard Equipment", url: "https://www.standard-equipment.cl" }],
+  creator: "Standard Equipment",
+  metadataBase: new URL("https://www.standard-equipment.cl"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Standard Equipment | Soluciones de Ingeniería Industrial",
+    title: "Standard Equipment | Fabricación de Equipamiento Industrial en Chile",
     description:
-      "Fabricantes de equipamiento industrial para construcción, minería y materiales a granel.",
+      "Más de 20 años fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile.",
     type: "website",
+    url: "https://www.standard-equipment.cl",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Standard Equipment - Equipamiento Industrial Chile",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Standard Equipment | Equipamiento Industrial Chile",
+    description: "Fabricación de equipamiento industrial en acero a medida para construcción y minería.",
+    images: ["/images/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -32,6 +82,37 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">{children}</body>
+      {/* Schema.org — datos estructurados para Google */}
+      <Script id="schema-org" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Standard Equipment",
+        "url": "https://www.standard-equipment.cl",
+        "logo": "https://www.standard-equipment.cl/images/logo-white.png",
+        "description": "Más de 20 años fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santiago",
+          "addressCountry": "CL"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+56-2-2938-1290",
+          "contactType": "sales",
+          "email": "contacto@standard-equipment.cl",
+          "availableLanguage": "Spanish"
+        },
+        "sameAs": [],
+        "areaServed": "CL",
+        "knowsAbout": [
+          "Equipamiento industrial",
+          "Fabricación en acero",
+          "Equipamiento minería",
+          "Equipamiento construcción",
+          "Materiales a granel"
+        ]
+      })}} />
+
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-NKW84WEWRN" strategy="afterInteractive" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];

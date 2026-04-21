@@ -1,8 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title: "Cargadores de Big Bag y Maxisacos | Standard Equipment Chile",
+  description: "Cargadores de Big Bag y maxisacos fabricados a medida en Chile. Sistemas de llenado para materiales a granel en industria y minería. Cargadores de maxisacos con certificación.",
+  keywords: [
+    "cargadores de big bag",
+    "cargadores de maxisacos",
+    "cargador big bag Chile",
+    "llenado big bag",
+    "envasado a granel",
+    "cargador maxisaco industrial",
+    "equipos big bag Chile",
+  ],
+};
 import Image from "next/image";
 
 export default function CargadoresBigBagPage() {

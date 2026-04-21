@@ -1,9 +1,27 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
+
+export const metadata: Metadata = {
+  title: "Capachos de Escombros Alta Capacidad | Construcción Chile",
+  description: "Capachos de escombros de alta capacidad para obras de gran volumen. Fabricados en acero estructural con certificación MC y WPS-PQR. Piques, túneles y construcción en Chile.",
+  keywords: [
+    "capachos escombros alta capacidad",
+    "capachos de escombros construcción",
+    "capachos piques",
+    "capachos piques y túneles",
+    "movimiento de tierra piques",
+    "grúas torre construcción",
+    "galerías construcción",
+    "construcción metro",
+    "metro de Santiago",
+    "línea 7 metro",
+    "línea 9 metro",
+    "retiro escombros obras civiles",
+  ],
+};
 
 export default function CapachosAltaCapacidadPage() {
   return (

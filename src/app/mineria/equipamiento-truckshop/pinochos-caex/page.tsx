@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+
+export const metadata: Metadata = {
+  title: "Pinochos CAEX y Cargador Frontal | Minería Chile",
+  description: "Pinochos para camiones CAEX y cargadores frontales fabricados en acero de alta resistencia. Para operaciones de mantenimiento en faenas mineras a rajo abierto en Chile.",
+  keywords: [
+    "pinochos CAEX",
+    "pinochos cargador frontal",
+    "pinochos camiones minería",
+    "pinochos CAEX Chile",
+    "mantenimiento CAEX",
+    "equipamiento truckshop",
+  ],
+};
 
 export default function PinochosCAEXPage() {
   return (

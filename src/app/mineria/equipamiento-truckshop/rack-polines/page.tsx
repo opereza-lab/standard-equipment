@@ -1,9 +1,20 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+
+export const metadata: Metadata = {
+  title: "Rack Polines Truckshop | Almacenamiento Minería Chile",
+  description: "Rack para almacenamiento y organización de polines en talleres truckshop mineros. Fabricado en acero estructural con certificación para minería a rajo abierto.",
+  keywords: [
+    "rack polines",
+    "rack polines truckshop",
+    "almacenamiento polines minería",
+    "equipamiento truckshop",
+    "rack minería Chile",
+  ],
+};
 
 export default function RackPolinesPagina() {
   return (

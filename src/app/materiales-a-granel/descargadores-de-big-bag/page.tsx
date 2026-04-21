@@ -1,8 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title: "Descargadores de Big Bag y Maxisacos | Standard Equipment Chile",
+  description: "Descargadores de Big Bag y maxisacos para vaciado controlado de materiales a granel. Fabricación a medida en Chile para industria química, alimentaria y minería.",
+  keywords: [
+    "descargadores de big bag",
+    "descargadores de maxisacos",
+    "descargador big bag Chile",
+    "vaciado big bag",
+    "vaciado maxisaco",
+    "descarga materiales a granel",
+    "equipos descarga big bag",
+  ],
+};
 import Image from "next/image";
 
 export default function DescargadoresBigBagPage() {

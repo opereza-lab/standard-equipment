@@ -1,9 +1,20 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+
+export const metadata: Metadata = {
+  title: "Bases de Traslado Equipos Mineros | Standard Equipment Chile",
+  description: "Bases de traslado diseñadas a medida para equipos pesados en minería. Fabricadas en acero estructural con acero HB400 en piezas de desgaste. Certificación MC y WPS-PQR.",
+  keywords: [
+    "bases de traslado minería",
+    "bases traslado equipos pesados",
+    "traslado equipos mineros Chile",
+    "bases traslado rajo abierto",
+    "bases traslado minería subterránea",
+  ],
+};
 
 export default function BasesDeTrasladoPage() {
   return (

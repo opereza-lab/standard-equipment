@@ -1,8 +1,25 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title: "Cabina de Limpieza de Polvos | Prevención Silicosis HSEC",
+  description: "Cabinas de limpieza de polvos para minería e industria. Prevención de silicosis y enfermedades profesionales. Cumplimiento HSEC y normativa PLANESI. Cabina desempolvado y ducha de aire.",
+  keywords: [
+    "cabinas de limpieza de polvos",
+    "cabina de limpieza de personal",
+    "planesi",
+    "silicosis",
+    "salud ocupacional",
+    "HSEC",
+    "enfermedades profesionales",
+    "cabina desempolvado",
+    "ducha de aire",
+    "prevención silicosis minería",
+    "higiene industrial Chile",
+  ],
+};
 import Image from "next/image";
 
 export default function CabinaLimpiezaPolvoPage() {

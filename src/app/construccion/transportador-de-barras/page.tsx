@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
+
+export const metadata: Metadata = {
+  title: "Transportador de Barras de Acero | Construcción Chile",
+  description: "Transportador para traslado seguro de barras de acero en obras de construcción. Optimiza la logística de materiales en altura. Certificado MC, WPS-PQR. Fabricación a medida.",
+  keywords: [
+    "transportador de barras",
+    "transportador barras de acero",
+    "traslado barras acero construcción",
+    "transporte barras obras altura",
+    "logística materiales construcción",
+    "accesorios izaje construcción Chile",
+  ],
+};
 
 export default function TransportadorDeBarrasPage() {
   return (

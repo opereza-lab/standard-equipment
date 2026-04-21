@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
+
+export const metadata: Metadata = {
+  title: "Bandejas para Escombros | Construcción en Altura Chile",
+  description: "Bandejas para retiro de escombros por piso sin uso de grúa. Fabricadas en acero estructural ASTM A36 con certificación MC y WPS-PQR. Para construcción en altura en Chile.",
+  keywords: [
+    "bandejas para escombros",
+    "bandejas escombros construcción",
+    "retiro escombros por piso",
+    "bandejas escombros altura",
+    "construcción en altura Chile",
+    "demolición escombros",
+  ],
+};
 
 export default function BandejasEscombrosPage() {
   return (

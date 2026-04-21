@@ -1,8 +1,23 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title: "Soplador de Polvo Industrial | Ducha de Aire HSEC",
+  description: "Soplador de polvo industrial para desempolvado de personal y equipos. Solución para prevención de silicosis y cumplimiento HSEC. Ducha de aire para minería e industria en Chile.",
+  keywords: [
+    "soplador de polvo",
+    "ducha de aire",
+    "cabina desempolvado",
+    "silicosis",
+    "HSEC",
+    "planesi",
+    "salud ocupacional",
+    "desempolvado industrial",
+    "soplador polvo minería Chile",
+  ],
+};
 import Image from "next/image";
 
 export default function SopladorDePolvoPage() {
