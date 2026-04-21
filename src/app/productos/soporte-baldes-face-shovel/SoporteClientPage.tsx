@@ -32,9 +32,9 @@ export default function SoporteClientPage() {
             style={{ backgroundImage: `url('${img}')`, opacity: i === heroIndex ? 1 : 0 }} />
         ))}
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute right-0" style={{ maxWidth: "38%", bottom: "16px", zIndex: 2 }}>
-          <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
-            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
+        <div className="absolute left-0 right-0 md:left-auto md:right-0 bottom-0 md:bottom-4 w-full md:max-w-[38%]" style={{ zIndex: 2 }}>
+          <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
+            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
               Soporte Baldes
             </h1>
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>

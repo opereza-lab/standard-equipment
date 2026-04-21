@@ -1,23 +1,40 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import SplitButton from "./SplitButton";
 import { PROYECTOS } from "@/data/portfolio";
 
 const proyectos = PROYECTOS;
 
-const VISIBLE = 4;
+function useVisibleCount() {
+  const [visible, setVisible] = useState(4);
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      setVisible(w < 640 ? 1 : w < 1024 ? 2 : 4);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+  return visible;
+}
 
 export default function PortfolioSection() {
+  const visible = useVisibleCount();
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  useEffect(() => {
+    setIndex((i) => Math.min(i, Math.max(0, proyectos.length - visible)));
+  }, [visible]);
+
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
-  const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - VISIBLE, i + 1)), []);
+  const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - visible, i + 1)), [visible]);
 
   const canPrev = index > 0;
-  const canNext = index < proyectos.length - VISIBLE;
+  const canNext = index < proyectos.length - visible;
 
   const startHover = (fn: () => void) => {
     fn(); // mueve inmediatamente al hacer hover
@@ -73,13 +90,13 @@ export default function PortfolioSection() {
         <div className="overflow-hidden flex-1">
           <div
             className="flex gap-6 transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(calc(-${index} * (100% / ${VISIBLE} + 8px)))` }}
+            style={{ transform: `translateX(calc(-${index} * (100% / ${visible} + 24px)))` }}
           >
             {proyectos.map((proy) => (
               <div
                 key={proy.image}
                 className="group rounded-xl overflow-hidden border border-white/10 flex flex-col flex-shrink-0"
-                style={{ width: `calc((100% - ${(VISIBLE - 1) * 24}px) / ${VISIBLE})`, backgroundColor: "#1a2f4e" }}
+                style={{ width: `calc((100% - ${(visible - 1) * 24}px) / ${visible})`, backgroundColor: "#1a2f4e" }}
               >
                 {/* Image */}
                 <div className="relative h-40 overflow-hidden">
@@ -137,7 +154,7 @@ export default function PortfolioSection() {
 
         {/* Dots */}
         <div className="flex justify-center gap-2 mt-8">
-          {Array.from({ length: proyectos.length - VISIBLE + 1 }).map((_, i) => (
+          {Array.from({ length: proyectos.length - visible + 1 }).map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}

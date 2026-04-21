@@ -2,6 +2,20 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef, useCallback } from "react";
+
+function useVisibleCount() {
+  const [visible, setVisible] = useState(4);
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      setVisible(w < 640 ? 1 : w < 1024 ? 2 : 4);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+  return visible;
+}
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { PROYECTOS } from "@/data/portfolio";
@@ -14,15 +28,19 @@ const HERO_IMAGES = [
   "/images/productos/capacho-autovolteo/hero-2.png",
 ];
 
-const VISIBLE = 4;
-
 function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
+  const visible = useVisibleCount();
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    setIndex((i) => Math.min(i, Math.max(0, proyectos.length - visible)));
+  }, [visible, proyectos.length]);
+
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
-  const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - VISIBLE, i + 1)), [proyectos.length]);
+  const next = useCallback(() => setIndex((i) => Math.min(proyectos.length - visible, i + 1)), [proyectos.length, visible]);
   const canPrev = index > 0;
-  const canNext = index < proyectos.length - VISIBLE;
+  const canNext = index < proyectos.length - visible;
 
   if (proyectos.length === 0) return null;
 
@@ -44,11 +62,11 @@ function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
           </button>
           <div className="overflow-hidden flex-1">
             <div className="flex gap-6 transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(calc(-${index} * (100% / ${VISIBLE} + 8px)))` }}>
+              style={{ transform: `translateX(calc(-${index} * (100% / ${visible} + 24px)))` }}>
               {proyectos.map((proy) => (
                 <div key={proy.image}
                   className="group rounded-xl overflow-hidden border border-white/10 flex flex-col flex-shrink-0"
-                  style={{ width: `calc((100% - ${(VISIBLE - 1) * 24}px) / ${VISIBLE})`, backgroundColor: "#1a2f4e" }}>
+                  style={{ width: `calc((100% - ${(visible - 1) * 24}px) / ${visible})`, backgroundColor: "#1a2f4e" }}>
                   <div className="relative h-40 overflow-hidden">
                     <Image src={proy.image} alt={proy.project} fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
@@ -75,9 +93,9 @@ function ProyectosCarrusel({ proyectos }: { proyectos: typeof PROYECTOS }) {
             </svg>
           </button>
         </div>
-        {proyectos.length > VISIBLE && (
+        {proyectos.length > visible && (
           <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: proyectos.length - VISIBLE + 1 }).map((_, i) => (
+            {Array.from({ length: proyectos.length - visible + 1 }).map((_, i) => (
               <button key={i} onClick={() => setIndex(i)} className="w-2 h-2 rounded-full transition-all"
                 style={{ background: i === index ? "#e07820" : "rgba(255,255,255,0.25)" }} aria-label={`Ir a ${i + 1}`} />
             ))}
@@ -112,9 +130,9 @@ export default function CapachoClientPage() {
           />
         ))}
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute left-0" style={{ maxWidth: "42%", bottom: "16px", zIndex: 2 }}>
-          <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
-            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
+        <div className="absolute left-0 bottom-0 md:bottom-4 w-full md:max-w-[42%]" style={{ zIndex: 2 }}>
+          <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
+            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
               Capacho para Escombros
             </h1>
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>

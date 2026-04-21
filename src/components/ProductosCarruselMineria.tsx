@@ -1,10 +1,22 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { PRODUCTOS_MINERIA, type ProductoMineria } from "@/data/productos-mineria";
 
-const VISIBLE = 4;
+function useVisibleCount() {
+  const [visible, setVisible] = useState(4);
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      setVisible(w < 640 ? 1 : w < 1024 ? 2 : 4);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+  return visible;
+}
 
 interface Props {
   excludeId: string;
@@ -12,13 +24,18 @@ interface Props {
 
 export default function ProductosCarruselMineria({ excludeId }: Props) {
   const productos = PRODUCTOS_MINERIA.filter((p) => p.id !== excludeId);
+  const visible = useVisibleCount();
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  useEffect(() => {
+    setIndex((i) => Math.min(i, Math.max(0, productos.length - visible)));
+  }, [visible, productos.length]);
+
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
-  const next = useCallback(() => setIndex((i) => Math.min(productos.length - VISIBLE, i + 1)), [productos.length]);
+  const next = useCallback(() => setIndex((i) => Math.min(productos.length - visible, i + 1)), [productos.length, visible]);
   const canPrev = index > 0;
-  const canNext = index < productos.length - VISIBLE;
+  const canNext = index < productos.length - visible;
 
   const startHover = (fn: () => void) => { fn(); intervalRef.current = setInterval(fn, 900); };
   const stopHover = () => { if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null; } };
@@ -47,14 +64,14 @@ export default function ProductosCarruselMineria({ excludeId }: Props) {
           <div className="overflow-hidden flex-1">
             <div
               className="flex gap-6 transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(calc(-${index} * (100% / ${VISIBLE} + 8px)))` }}
+              style={{ transform: `translateX(calc(-${index} * (100% / ${visible} + 24px)))` }}
             >
               {productos.map((prod: ProductoMineria) => (
                 <a
                   key={prod.id}
                   href={prod.href}
                   className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors flex-shrink-0"
-                  style={{ width: `calc((100% - ${(VISIBLE - 1) * 24}px) / ${VISIBLE})`, backgroundColor: "#1a2f4e" }}
+                  style={{ width: `calc((100% - ${(visible - 1) * 24}px) / ${visible})`, backgroundColor: "#1a2f4e" }}
                 >
                   <div className="relative h-44 overflow-hidden bg-[#0d1528]">
                     {prod.img ? (
@@ -105,9 +122,9 @@ export default function ProductosCarruselMineria({ excludeId }: Props) {
           </button>
         </div>
 
-        {productos.length > VISIBLE && (
+        {productos.length > visible && (
           <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: productos.length - VISIBLE + 1 }).map((_, i) => (
+            {Array.from({ length: productos.length - visible + 1 }).map((_, i) => (
               <button
                 key={i}
                 onClick={() => setIndex(i)}
