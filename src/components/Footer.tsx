@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MailIcon, MapPinIcon, LinkedInIcon, WhatsAppIcon, InstagramIcon, VimeoIcon, YouTubeIcon, FacebookIcon } from "./icons";
+import { MailIcon, MapPinIcon, LinkedInIcon, WhatsAppIcon, InstagramIcon, VimeoIcon, YouTubeIcon } from "./icons";
 
 const footerNav = [
   {
@@ -82,11 +82,10 @@ export default function Footer() {
             {/* Social */}
             <div className="flex items-center gap-2 mt-6">
               {[
-                { label: "LinkedIn",   icon: <LinkedInIcon   className="w-4 h-4" />, href: "#" },
-                { label: "Instagram",  icon: <InstagramIcon  className="w-4 h-4" />, href: "#" },
-                { label: "Facebook",   icon: <FacebookIcon   className="w-4 h-4" />, href: "#" },
-                { label: "YouTube",    icon: <YouTubeIcon    className="w-4 h-4" />, href: "#" },
-                { label: "Vimeo",      icon: <VimeoIcon      className="w-4 h-4" />, href: "#" },
+                { label: "LinkedIn",  icon: <LinkedInIcon  className="w-4 h-4" />, href: "https://www.linkedin.com/company/standardequipmentcl" },
+                { label: "Instagram", icon: <InstagramIcon className="w-4 h-4" />, href: "https://www.instagram.com/standard__equipment" },
+                { label: "YouTube",   icon: <YouTubeIcon   className="w-4 h-4" />, href: "https://www.youtube.com/@Standard-Equipment" },
+                { label: "Vimeo",     icon: <VimeoIcon     className="w-4 h-4" />, href: "https://www.vimeo.com/standardequipmentchile" },
               ].map(({ label, icon, href }) => (
                 <a
                   key={label}
