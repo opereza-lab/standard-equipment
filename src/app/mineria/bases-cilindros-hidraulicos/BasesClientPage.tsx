@@ -1,0 +1,246 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
+
+const HERO_IMAGES = [
+  "/images/productos/bases-cilindro/HERO-1.png",
+  "/images/productos/bases-cilindro/HERO-2.jpg",
+];
+
+export default function BasesClientPage() {
+  const [heroIndex, setHeroIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHeroIndex((i) => (i + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+
+      {/* ── HERO CARRUSEL 21:9 ───────────────────────────────── */}
+      <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
+        {HERO_IMAGES.map((img, i) => (
+          <div
+            key={img}
+            className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+            style={{ backgroundImage: `url('${img}')`, opacity: i === heroIndex ? 1 : 0 }}
+          />
+        ))}
+        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
+        <div className="absolute left-0 bottom-0 md:bottom-4 w-full md:max-w-[42%]" style={{ zIndex: 2 }}>
+          <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
+            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
+              Bases Cilindros
+            </h1>
+            <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
+              Hidráulicos Heavy Duty
+            </h2>
+            <p className="hidden sm:block text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
+              Bases para cilindros hidráulicos Heavy Duty con acero galvanizado, eslingas certificadas incluidas y cáncamos de izaje — para mantención segura en faenas mineras.
+            </p>
+            <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
+              {[
+                { top: "Material",    bottom: "Acero Galvanizado" },
+                { top: "Horquilla",   bottom: "3 a 15 Ton." },
+                { top: "Certificados", bottom: "MC, WPS-PQR" },
+              ].map((s) => (
+                <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
+                  <p className="text-white font-bold text-sm uppercase tracking-wide">{s.top}</p>
+                  <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIAGRAMA TÉCNICO ─────────────────────────────────── */}
+      <section style={{ background: "#f5f7fa" }} className="py-20">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
+          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
+          <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex items-center justify-center bg-white p-8 shadow-sm">
+              <div className="relative w-full" style={{ aspectRatio: "580/440" }}>
+                <Image
+                  src="/images/productos/bases-cilindro/render-principal.png"
+                  alt="Diagrama técnico Base Cilindros Hidráulicos Heavy Duty"
+                  fill
+                  className="object-contain"
+                  sizes="50vw"
+                />
+                {[
+                  { top: "15%", left: "50%", titulo: "Cáncamos de Izaje",              desc: "Cáncamos certificados para izaje seguro del cilindro durante las operaciones de mantención." },
+                  { top: "45%", left: "18%", titulo: "Ranuras para Horquilla",          desc: "Compatibles con grúas horquilla de capacidad 3 a 15 ton." },
+                  { top: "72%", left: "70%", titulo: "Superficie Antideslizante",       desc: "En las canoas de soporte, garantiza la estabilidad del cilindro." },
+                  { top: "30%", left: "82%", titulo: "Tapas con Rosca Central",         desc: "Fabricadas en polímero de alta resistencia para protección de los extremos del cilindro." },
+                ].map((h, i) => (
+                  <div key={i} className="absolute group"
+                    style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
+                    <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                      <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                      <svg width="17" height="17" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                        <path fillRule="evenodd" fill="#cc0000"
+                          d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                      <p className="text-white text-xs font-bold mb-1">{h.titulo}</p>
+                      <p className="text-white/75 text-xs leading-snug">{h.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Leyenda */}
+            <div className="flex flex-col gap-4">
+              {[
+                { comp: "Cáncamos de Izaje",        desc: "Cáncamos certificados para izaje seguro del cilindro durante las operaciones de mantención." },
+                { comp: "Ranuras para Horquilla",    desc: "Compatibles con grúas horquilla de capacidad 3 a 15 ton." },
+                { comp: "Superficie Antideslizante", desc: "En las canoas de soporte, garantiza la estabilidad del cilindro." },
+                { comp: "Tapas con Rosca Central",   desc: "Fabricadas en polímero de alta resistencia para protección de los extremos del cilindro." },
+              ].map((item) => (
+                <div key={item.comp} className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
+                  <div>
+                    <p className="font-bold text-sm mb-1" style={{ color: "#0d1528" }}>{item.comp}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed text-justify">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CARACTERÍSTICAS ──────────────────────────────────── */}
+      <section style={{ background: "#0d1528" }} className="py-20">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
+          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Equipamiento</p>
+          <h2 className="text-3xl font-bold text-white mb-12">Características del Equipo</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                titulo: "Ranuras de Carga para Horquillas",
+                desc: "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton.",
+                icon: "🔩",
+              },
+              {
+                titulo: "Superficie Antideslizante",
+                desc: "En las canoas de soporte para una sujeción segura del cilindro.",
+                icon: "🔧",
+              },
+              {
+                titulo: "Acero Galvanizado",
+                desc: "Garantiza durabilidad en las más adversas condiciones de faena.",
+                icon: "⚙️",
+              },
+              {
+                titulo: "Eslingas de Amarre",
+                desc: "Eslingas de Amarre Certificadas, incluidas con el equipo.",
+                icon: "🔗",
+              },
+              {
+                titulo: "Cáncamos de Izaje",
+                desc: "Cáncamos Certificados para izaje seguro durante la mantención.",
+                icon: "🏗️",
+              },
+              {
+                titulo: "Tapas con Rosca Central",
+                desc: "Fabricadas en Polímero de Alta Resistencia para proteger los extremos del cilindro.",
+                icon: "🛡️",
+              },
+            ].map((item) => (
+              <div
+                key={item.titulo}
+                className="flex flex-col gap-3 p-6 border border-white/10 hover:border-[#e07820] transition-colors"
+                style={{ background: "#0a1020" }}
+              >
+                <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
+                <p className="text-white font-bold text-sm uppercase tracking-wide leading-snug">{item.titulo}</p>
+                <p className="text-white/50 text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FICHA TÉCNICA ────────────────────────────────────── */}
+      <section style={{ background: "#ffffff" }} className="py-20">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Especificaciones</p>
+            <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>Ficha Técnica</h2>
+            <table className="w-full text-sm border-collapse">
+              <tbody>
+                {[
+                  ["Material",             "Acero Estructural Galvanizado"],
+                  ["Clasificación",        "Heavy Duty"],
+                  ["Ranuras Horquilla",    "Compatibles 3 a 15 Ton."],
+                  ["Superficie",           "Antideslizante en canoas de soporte"],
+                  ["Eslingas",             "De amarre certificadas, incluidas"],
+                  ["Cáncamos",             "De izaje certificados"],
+                  ["Tapas",               "Polímero de alta resistencia, rosca central"],
+                  ["Certificación",        "Memoria de Cálculo, WPS-PQR, Materiales"],
+                  ["Fabricación",          "A medida según modelo de equipo"],
+                ].map(([label, value], i) => (
+                  <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
+                    <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
+                      style={{ color: "#0d1528", borderLeft: "3px solid #e07820" }}>{label}</td>
+                    <td className="px-4 py-3 text-gray-600">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Sectores de Aplicación</p>
+            <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>¿Dónde se Utiliza?</h2>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { sector: "Minería Rajo Abierto", detalle: "Soporte de cilindros hidráulicos durante mantención de camiones CAEX y equipos pesados" },
+                { sector: "Truckshop",            detalle: "Talleres de mantención de equipos de alto tonelaje en faenas mineras" },
+              ].map((s) => (
+                <div key={s.sector} className="p-5 border-t-2" style={{ borderColor: "#e07820", background: "#f5f7fa" }}>
+                  <p className="font-bold text-sm mb-1 uppercase tracking-wide" style={{ color: "#0d1528" }}>{s.sector}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{s.detalle}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ProductosCarruselMineria excludeId="bases-cilindros-hidraulicos" />
+
+      {/* ── CTA FINAL ────────────────────────────────────────── */}
+      <section style={{ background: "#0d1528" }} className="py-16">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-2">¿Te interesa este equipo?</h2>
+            <p className="text-white/60">Envíanos tu consulta — te respondemos directamente, sin intermediarios.</p>
+          </div>
+          <a
+            href="/contacto"
+            className="flex-shrink-0 inline-flex items-center gap-3 px-10 py-4 font-bold text-white text-sm tracking-widest uppercase transition-opacity hover:opacity-85"
+            style={{ background: "#e07820" }}
+          >
+            Solicitar Cotización
+          </a>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
