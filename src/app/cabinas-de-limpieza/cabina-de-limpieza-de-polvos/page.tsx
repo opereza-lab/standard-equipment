@@ -69,7 +69,7 @@ export default function CabinaLimpiezaPolvoPage() {
                 {[
                   ["Material", "Acero Estructural"],
                   ["Sistema", "Limpieza por soplado de aire a presión"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
                   ["Aplicación", "Industria / Minería / Construcción"],
                   ["Fabricación", "A medida"],
                 ].map(([label, value], i) => (

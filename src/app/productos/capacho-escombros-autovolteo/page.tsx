@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CapachoClientPage from "./CapachoClientPage";
 
 export const metadata: Metadata = {
-  title: "Capacho para Escombros con Autovolteo | Construcción Chile",
+  title: "Capacho Escombros con Autovolteo | Construcción Chile",
   description: "Capacho autovolteo para retiro de escombros operado exclusivamente por la grúa. Sin equipos de apoyo, sin cambio de maniobra. 1 a 3 m³. Certificado MC, WPS-PQR. Chile.",
   keywords: [
     "capachos escombros",

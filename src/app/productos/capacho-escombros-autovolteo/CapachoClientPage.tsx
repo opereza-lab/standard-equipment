@@ -131,7 +131,7 @@ export default function CapachoClientPage() {
         <div className="absolute left-0 bottom-0 md:bottom-4 w-full" style={{ zIndex: 2, maxWidth: "535px" }}>
           <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
             <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
-              Capacho para Escombros
+              Capacho Escombros
             </h1>
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
               con Autovolteo
@@ -144,7 +144,7 @@ export default function CapachoClientPage() {
               {[
                 { top: "Capacidades",    bottom: "1 – 3 m³" },
                 { top: "Material",     bottom: "Acero Estructural" },
-                { top: "Certificados", bottom: "MC, WPS-PQS, Materiales" },
+                { top: "Certificados", bottom: "MC, WPS-PQS" },
               ].map((s) => (
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
                   <p className="text-white font-bold text-sm uppercase tracking-wide">{s.top}</p>
@@ -252,7 +252,7 @@ export default function CapachoClientPage() {
                   ["Estructura",          "Acero estructural"],
                   ["Fondo",              "Reforzado"],
                   ["Volteo",             "Sin cambio de maniobra"],
-                  ["Certificación",      "MC, WPS-PQR, Materiales"],
+                  ["Certificación",      "MC, WPS-PQR"],
                   ["Fabricación",        "A medida según requerimiento"],
                   ["Aplicación",         "Construcción / Demolición"],
                 ].map(([label, value], i) => (

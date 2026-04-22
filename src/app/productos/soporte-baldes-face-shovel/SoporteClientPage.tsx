@@ -47,7 +47,7 @@ export default function SoporteClientPage() {
               {[
                 { top: "Diseño",       bottom: "para Distintos Modelos de Palas Hidráulicas" },
                 { top: "Materiales",   bottom: "Ac. Estructural + Ac. Antidesgaste" },
-                { top: "Certificados", bottom: "MC, WPS-PQR, Materiales" },
+                { top: "Certificados", bottom: "MC, WPS-PQR" },
               ].map((s) => (
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
                   <p className="text-white font-bold text-sm uppercase tracking-wide">{s.top}</p>
@@ -130,7 +130,7 @@ export default function SoporteClientPage() {
                   ["Compatibilidad",     "Disponible para distintos modelos de palas Face Shovel"],
                   ["Material",           "Acero Estructural"],
                   ["Piezas de Desgaste", "Acero HB 400"],
-                  ["Certificación",      "Memoria de Cálculo, WPS-PQR, Materiales"],
+                  ["Certificación",      "Memoria de Cálculo, WPS-PQR"],
                   ["Aplicación",         "Minería a Rajo Abierto"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>

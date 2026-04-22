@@ -62,7 +62,7 @@ export default function RackPolinesPagina() {
               <tbody>
                 {[
                   ["Material", "Acero Estructural"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
                   ["Aplicación", "Truckshop / Minería"],
                   ["Capacidad", "A definir según requerimiento"],
                   ["Fabricación", "A medida"],

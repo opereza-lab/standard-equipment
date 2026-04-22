@@ -48,7 +48,7 @@ export default function AtrilClientPage() {
               {[
                 { top: "Carga de Diseño", bottom: "15 Ton." },
                 { top: "Material",        bottom: "Ac. Estructural" },
-                { top: "Certificados",    bottom: "MC, WPS-PQR, Materiales" },
+                { top: "Certificados",    bottom: "MC, WPS-PQR" },
               ].map((s) => (
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
                   <p className="text-white font-bold text-sm uppercase tracking-wide">{s.top}</p>
@@ -133,7 +133,7 @@ export default function AtrilClientPage() {
                 {[
                   ["Compatibilidad",     "Distintos tamaños de neumáticos OTR"],
                   ["Material",           "Acero Estructural"],
-                  ["Certificación",      "Memoria de Cálculo, WPS-PQR, Materiales"],
+                  ["Certificación",      "Memoria de Cálculo, WPS-PQR"],
                   ["Aplicación",         "Minería a Rajo Abierto / Minería Subterránea"],
                   ["Seguridad",          "Plataforma con parrilla de piso antideslizante, ganchos para fijación de neumático con slingas ratchet, barandas delimitadoras de zona de trabajo"],
                   ["Manipulación",       "Pockets para grúa horquilla"],
