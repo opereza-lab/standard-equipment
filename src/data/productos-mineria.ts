@@ -33,7 +33,7 @@ export const PRODUCTOS_MINERIA: ProductoMineria[] = [
     nombre: "Bases Cilindros Hidráulicos",
     desc: "Soporte Heavy Duty para cilindros hidráulicos durante mantención de CAEX.",
     href: "/mineria/bases-cilindros-hidraulicos",
-    img: "/images/workers-corridor.jpg",
+    img: "/images/productos/bases-cilindro/render-principal2.png",
   },
   {
     id: "pinochos-caex",
