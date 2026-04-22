@@ -71,17 +71,19 @@ export default function BasesClientPage() {
             <div className="flex items-center justify-center bg-white p-8 shadow-sm">
               <div className="relative w-full" style={{ aspectRatio: "580/440" }}>
                 <Image
-                  src="/images/productos/bases-cilindro/render-principal.png"
+                  src="/images/productos/bases-cilindro/render-principal2.png"
                   alt="Diagrama técnico Base Cilindros Hidráulicos Heavy Duty"
                   fill
                   className="object-contain"
                   sizes="50vw"
                 />
                 {[
-                  { top: "15%", left: "50%", titulo: "Cáncamos de Izaje",              desc: "Cáncamos certificados para izaje seguro del cilindro durante las operaciones de mantención." },
-                  { top: "45%", left: "18%", titulo: "Ranuras para Horquilla",          desc: "Compatibles con grúas horquilla de capacidad 3 a 15 ton." },
-                  { top: "72%", left: "70%", titulo: "Superficie Antideslizante",       desc: "En las canoas de soporte, garantiza la estabilidad del cilindro." },
-                  { top: "30%", left: "82%", titulo: "Tapas con Rosca Central",         desc: "Fabricadas en polímero de alta resistencia para protección de los extremos del cilindro." },
+                  { top: "12%", left: "45%", titulo: "Cáncamos de Izaje",              desc: "Cáncamos Certificados para izaje seguro durante la mantención." },
+                  { top: "42%", left: "10%", titulo: "Ranuras para Horquilla",         desc: "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton." },
+                  { top: "80%", left: "38%", titulo: "Superficie Antideslizante",      desc: "En las canoas de soporte para sujeción segura del cilindro." },
+                  { top: "35%", left: "88%", titulo: "Tapas con Rosca Central",        desc: "Fabricadas en Polímero de Alta Resistencia para proteger los extremos del cilindro." },
+                  { top: "55%", left: "65%", titulo: "Eslingas de Amarre",             desc: "Eslingas de Amarre Certificadas, incluidas con el equipo." },
+                  { top: "70%", left: "20%", titulo: "Acero Galvanizado",              desc: "Garantiza durabilidad en las más adversas condiciones de faena." },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
@@ -105,10 +107,12 @@ export default function BasesClientPage() {
             {/* Leyenda */}
             <div className="flex flex-col gap-4">
               {[
-                { comp: "Cáncamos de Izaje",        desc: "Cáncamos certificados para izaje seguro del cilindro durante las operaciones de mantención." },
-                { comp: "Ranuras para Horquilla",    desc: "Compatibles con grúas horquilla de capacidad 3 a 15 ton." },
-                { comp: "Superficie Antideslizante", desc: "En las canoas de soporte, garantiza la estabilidad del cilindro." },
-                { comp: "Tapas con Rosca Central",   desc: "Fabricadas en polímero de alta resistencia para protección de los extremos del cilindro." },
+                { comp: "Ranuras de Carga para Horquillas", desc: "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton." },
+                { comp: "Superficie Antideslizante",        desc: "En las canoas de soporte para sujeción segura del cilindro." },
+                { comp: "Acero Galvanizado",                desc: "Garantiza durabilidad en las más adversas condiciones de faena." },
+                { comp: "Eslingas de Amarre",               desc: "Eslingas de Amarre Certificadas, incluidas con el equipo." },
+                { comp: "Cáncamos de Izaje",                desc: "Cáncamos Certificados para izaje seguro durante la mantención." },
+                { comp: "Tapas con Rosca Central",          desc: "Fabricadas en Polímero de Alta Resistencia para proteger los extremos del cilindro." },
               ].map((item) => (
                 <div key={item.comp} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
