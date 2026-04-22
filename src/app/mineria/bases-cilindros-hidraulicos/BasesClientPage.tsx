@@ -43,8 +43,8 @@ export default function BasesClientPage() {
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
               Hidráulicos Heavy Duty
             </h2>
-            <p className="hidden sm:block text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
-              Bases para cilindros hidráulicos Heavy Duty con acero galvanizado, eslingas certificadas incluidas y cáncamos de izaje — para mantención segura en faenas mineras.
+            <p className="hidden sm:block text-white/75 leading-relaxed mb-4 text-center" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
+              Base de traslado para Cilindros Hidraulicos Heavy Duty
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
               {[
