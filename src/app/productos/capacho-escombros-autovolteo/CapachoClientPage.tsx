@@ -128,7 +128,7 @@ export default function CapachoClientPage() {
           />
         ))}
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute left-0 bottom-0 md:bottom-4 w-full md:max-w-[42%]" style={{ zIndex: 2 }}>
+        <div className="absolute left-0 bottom-0 md:bottom-4 w-full" style={{ zIndex: 2, maxWidth: "525px" }}>
           <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
             <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
               Capacho para Escombros
