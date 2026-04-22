@@ -36,7 +36,7 @@ export default function AtrilClientPage() {
         <div className="absolute left-0 bottom-0 md:bottom-4 w-full" style={{ zIndex: 2, maxWidth: "535px" }}>
           <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
             <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
-              Atril para Neumáticos
+              Atril Neumáticos
             </h1>
             <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
               OTR
