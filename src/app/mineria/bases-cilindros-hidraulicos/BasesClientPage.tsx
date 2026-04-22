@@ -127,58 +127,6 @@ export default function BasesClientPage() {
         </div>
       </section>
 
-      {/* ── CARACTERÍSTICAS ──────────────────────────────────── */}
-      <section style={{ background: "#0d1528" }} className="py-20">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
-          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Equipamiento</p>
-          <h2 className="text-3xl font-bold text-white mb-12">Características del Equipo</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                titulo: "Ranuras de Carga para Horquillas",
-                desc: "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton.",
-                icon: "🔩",
-              },
-              {
-                titulo: "Superficie Antideslizante",
-                desc: "En las canoas de soporte para una sujeción segura del cilindro.",
-                icon: "🔧",
-              },
-              {
-                titulo: "Acero Galvanizado",
-                desc: "Garantiza durabilidad en las más adversas condiciones de faena.",
-                icon: "⚙️",
-              },
-              {
-                titulo: "Eslingas de Amarre",
-                desc: "Eslingas de Amarre Certificadas, incluidas con el equipo.",
-                icon: "🔗",
-              },
-              {
-                titulo: "Cáncamos de Izaje",
-                desc: "Cáncamos Certificados para izaje seguro durante la mantención.",
-                icon: "🏗️",
-              },
-              {
-                titulo: "Tapas con Rosca Central",
-                desc: "Fabricadas en Polímero de Alta Resistencia para proteger los extremos del cilindro.",
-                icon: "🛡️",
-              },
-            ].map((item) => (
-              <div
-                key={item.titulo}
-                className="flex flex-col gap-3 p-6 border border-white/10 hover:border-[#e07820] transition-colors"
-                style={{ background: "#0a1020" }}
-              >
-                <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
-                <p className="text-white font-bold text-sm uppercase tracking-wide leading-snug">{item.titulo}</p>
-                <p className="text-white/50 text-xs leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── FICHA TÉCNICA ────────────────────────────────────── */}
       <section style={{ background: "#ffffff" }} className="py-20">
         <div className="max-w-[1400px] mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -188,15 +136,15 @@ export default function BasesClientPage() {
             <table className="w-full text-sm border-collapse">
               <tbody>
                 {[
-                  ["Material",             "Acero Estructural Galvanizado"],
-                  ["Clasificación",        "Heavy Duty"],
-                  ["Ranuras Horquilla",    "Compatibles 3 a 15 Ton."],
-                  ["Superficie",           "Antideslizante en canoas de soporte"],
-                  ["Eslingas",             "De amarre certificadas, incluidas"],
-                  ["Cáncamos",             "De izaje certificados"],
-                  ["Tapas",               "Polímero de alta resistencia, rosca central"],
-                  ["Certificación",        "Memoria de Cálculo, WPS-PQR, Materiales"],
-                  ["Fabricación",          "A medida según modelo de equipo"],
+                  ["Material",                        "Acero Galvanizado"],
+                  ["Clasificación",                   "Heavy Duty"],
+                  ["Ranuras de Carga para Horquillas", "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton."],
+                  ["Superficie Antideslizante",        "En las canoas de soporte"],
+                  ["Eslingas de Amarre",               "Eslingas de Amarre Certificadas, Incluidas"],
+                  ["Cáncamos de Izaje",                "Cáncamos Certificados"],
+                  ["Tapas con Rosca Central",          "Fabricadas en Polímero de Alta Resistencia"],
+                  ["Certificación",                    "Memoria de Cálculo, WPS-PQR, Materiales"],
+                  ["Fabricación",                      "A medida según modelo de equipo"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
