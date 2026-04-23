@@ -43,6 +43,13 @@ export const PRODUCTOS_MINERIA: ProductoMineria[] = [
     img: "/images/mechanic-red.jpg",
   },
   {
+    id: "rack-maniobras",
+    nombre: "Rack Maniobras",
+    desc: "Rack móvil para almacenamiento de maniobras de izaje en talleres truckshop.",
+    href: "/mineria/equipamiento-truckshop/rack-maniobras",
+    img: "/images/productos/rack-maniobras/hero-1.png",
+  },
+  {
     id: "equipamiento-truckshop",
     nombre: "Equipamiento Truckshop",
     desc: "Racks y soluciones de almacenamiento certificados para talleres de mantención.",
