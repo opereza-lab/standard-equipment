@@ -29,12 +29,9 @@ export default function RackManiobraPage() {
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
         <div className="absolute left-0 bottom-0 md:bottom-4 w-full" style={{ maxWidth: "535px", zIndex: 2 }}>
           <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
-            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)" }}>
-              Rack
+            <h1 className="text-white font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
+              Rack Maniobras
             </h1>
-            <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
-              Maniobras
-            </h2>
             <p className="hidden sm:block text-white/75 leading-relaxed mb-4 text-center" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
               Rack móvil para almacenamiento de Maniobras de Izaje
             </p>
@@ -71,7 +68,7 @@ export default function RackManiobraPage() {
                 />
                 {[
                   { top: "28%", left: "50%", titulo: "Ganchos de Almacenamiento",   desc: "Capacidad de 200 Kg. por gancho a 1,6 mts. de altura." },
-                  { top: "55%", left: "18%", titulo: "Ruedas Heavy Duty con Freno", desc: "Para traslado suave en taller y posicionamiento seguro. Desmontables." },
+                  { top: "55%", left: "18%", titulo: "Ruedas Heavy Duty con Freno", desc: "Para traslado suave en taller y posicionamiento seguro (Desmontables)." },
                   { top: "80%", left: "38%", titulo: "Ranuras para Grúa Horquilla", desc: "Permite la carga y traslado del rack con grúa horquilla." },
                   { top: "55%", left: "82%", titulo: "Estructura Customizable",      desc: "Espacios de almacenamiento adaptables a los requerimientos del cliente." },
                 ].map((h, i) => (
@@ -98,7 +95,7 @@ export default function RackManiobraPage() {
             <div className="flex flex-col gap-4">
               {[
                 { comp: "Ganchos de Almacenamiento",   desc: "Capacidad de 200 Kg. por gancho, a una cómoda altura de 1,6 mts." },
-                { comp: "Ruedas Heavy Duty con Freno", desc: "Para un suave traslado en taller y seguro posicionamiento. Desmontables." },
+                { comp: "Ruedas Heavy Duty con Freno (Desmontables)", desc: "Para un suave traslado en taller y seguro posicionamiento." },
                 { comp: "Ranuras para Grúa Horquilla", desc: "Permite la carga y el traslado del rack con grúa horquilla." },
                 { comp: "Estructura Customizable",     desc: "Espacios de almacenamiento adaptables a los requerimientos del cliente." },
               ].map((item) => (
@@ -127,7 +124,7 @@ export default function RackManiobraPage() {
                   ["Material",             "Acero Galvanizado"],
                   ["Capacidad por Gancho", "200 Kg."],
                   ["Altura de Gancho",     "1,6 mts."],
-                  ["Movilidad",            "Ruedas Heavy Duty con freno, desmontables"],
+                  ["Movilidad",            "Ruedas Heavy Duty con freno (Desmontables)"],
                   ["Manipulación",         "Ranuras de carga para grúa horquilla"],
                   ["Certificación",        "Memoria de Cálculo, WPS-PQR"],
                   ["Fabricación",          "Customizable según requerimiento del cliente"],
