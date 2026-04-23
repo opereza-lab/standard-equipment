@@ -27,17 +27,17 @@ export default function RackManiobraPage() {
         <div className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/productos/rack-maniobras/hero-1.png')" }} />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute left-0 bottom-0 md:bottom-4 w-full" style={{ maxWidth: "535px", zIndex: 2 }}>
+        <div className="absolute right-0 bottom-0 md:bottom-4" style={{ maxWidth: "535px", zIndex: 2 }}>
           <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
-            <h1 className="text-white font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
-              Rack Maniobras
+            <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
+              <span className="text-white">Rack </span><span style={{ color: "#e07820" }}>Maniobras</span>
             </h1>
             <p className="hidden sm:block text-white/75 leading-relaxed mb-4 text-center" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
               Rack móvil para almacenamiento de Maniobras de Izaje
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
               {[
-                { top: "Material",     bottom: "Acero Galvanizado" },
+                { top: "Material",     bottom: "Acero Estructural" },
                 { top: "Capacidad",    bottom: "2 Ton." },
                 { top: "Certificados", bottom: "MC, WPS-PQR" },
               ].map((s) => (
