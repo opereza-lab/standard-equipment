@@ -135,12 +135,12 @@ export default function CabinaLimpiezaPolvoPage() {
               <span style={{ color: "#e07820" }}>.</span>
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
+              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440", maxWidth: "480px" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal1.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="50vw"
                 />
                 {[
@@ -193,12 +193,12 @@ export default function CabinaLimpiezaPolvoPage() {
         <section style={{ background: "#ffffff" }} className="py-20">
           <div className="max-w-[1400px] mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
+              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440", maxWidth: "480px" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principa2.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="50vw"
                 />
                 {[
