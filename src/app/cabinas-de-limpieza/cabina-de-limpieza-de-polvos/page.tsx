@@ -75,7 +75,7 @@ export default function CabinaLimpiezaPolvoPage() {
             src="/images/productos/cabina-de-limpieza/hero-1.jpg"
             alt="Cabina de Limpieza — Standard Equipment"
             fill
-            className="object-contain object-center"
+            className="object-cover object-center"
             priority
             sizes="100vw"
           />
