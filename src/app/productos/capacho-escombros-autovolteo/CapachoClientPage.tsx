@@ -180,14 +180,13 @@ export default function CapachoClientPage() {
           <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
           <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative flex items-center justify-center bg-white p-8 shadow-sm">
+            <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
               <Image
                 src="/images/productos/capacho-autovolteo/render-principal.png"
                 alt="Diagrama técnico del capacho autovolteo"
-                width={580}
-                height={440}
-                className="object-contain w-full"
-                style={{ maxHeight: "420px" }}
+                fill
+                className="object-cover"
+                sizes="50vw"
               />
               {[
                 { top: "6%",  left: "52%", titulo: "Gancho de Izaje",         desc: "Incluye Grillete Certificado." },

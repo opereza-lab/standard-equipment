@@ -57,13 +57,12 @@ export default function RackManiobraPage() {
           <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
           <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex items-center justify-center bg-white p-8 shadow-sm">
-              <div className="relative w-full" style={{ aspectRatio: "580/440" }}>
+            <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
                 <Image
                   src="/images/productos/rack-maniobras/render-principal.png"
                   alt="Diagrama técnico Rack Maniobras"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   sizes="50vw"
                 />
                 {[
@@ -88,7 +87,6 @@ export default function RackManiobraPage() {
                     </div>
                   </div>
                 ))}
-              </div>
             </div>
 
             {/* Leyenda */}
