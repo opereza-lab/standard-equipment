@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ProductContactButton from "@/components/ProductContactButton";
+import { CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Cabina de Limpieza de Polvos | Prevención Silicosis HSEC",
@@ -20,127 +24,234 @@ export const metadata: Metadata = {
     "higiene industrial Chile",
   ],
 };
-import Image from "next/image";
+
+const caracteristicas = [
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+];
+
+const especificaciones = [
+  { label: "Material", value: "Lorem ipsum" },
+  { label: "Sistema", value: "Lorem ipsum dolor sit amet" },
+  { label: "Certificación", value: "Lorem ipsum" },
+  { label: "Aplicación", value: "Lorem ipsum / Lorem ipsum" },
+  { label: "Fabricación", value: "Lorem ipsum" },
+];
+
+const aplicaciones = [
+  {
+    industria: "Lorem ipsum",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
+    image: "/images/inspection-factory.jpg",
+  },
+  {
+    industria: "Lorem ipsum",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
+    image: "/images/workers-corridor.jpg",
+  },
+  {
+    industria: "Lorem ipsum",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
+    image: "/images/heavy-factory.jpg",
+  },
+];
 
 export default function CabinaLimpiezaPolvoPage() {
   return (
     <>
       <Navbar />
 
-      {/* ── HERO ─────────────────────────────────────────────── */}
-      <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/workers-corridor.jpg')" }} />
-        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute right-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
-          <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
-            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
-              Cabina de Limpieza
-            </h1>
-            <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
-              de Polvos
+      <main>
+        {/* 1. HERO */}
+        <section
+          className="relative overflow-hidden"
+          style={{ height: "70vh", minHeight: "520px", paddingTop: "80px" }}
+        >
+          <Image
+            src="/images/productos/cabina-de-limpieza/hero-1.jpg"
+            alt="Cabina de Limpieza — Standard Equipment"
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="100vw"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(10,31,60,0.88) 0%, rgba(10,31,60,0.6) 60%, rgba(0,0,0,0.3) 100%)",
+            }}
+          />
+          <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#0d1528]" />
+
+          <div className="relative z-10 h-full flex items-center">
+            <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 w-full">
+              <nav className="flex items-center gap-2 text-white/50 text-sm mb-6">
+                <Link href="/" className="hover:text-white/80 transition-colors">Inicio</Link>
+                <span>/</span>
+                <Link href="/cabinas-de-limpieza" className="hover:text-white/80 transition-colors">Cabinas de Limpieza</Link>
+                <span>/</span>
+                <span className="text-white/80">Cabina de Limpieza</span>
+              </nav>
+
+              <span className="inline-block text-[#e07820] font-semibold text-xs uppercase tracking-widest mb-4">
+                Cabinas de Limpieza
+              </span>
+              <h1
+                className="text-white mb-4"
+                style={{
+                  fontSize: "clamp(2.2rem, 5vw, 4rem)",
+                  fontWeight: 300,
+                  lineHeight: 1.1,
+                }}
+              >
+                Cabina de{" "}
+                <strong style={{ fontWeight: 700 }}>Limpieza</strong>
+                <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
+              </h1>
+              <p className="text-white/80 text-lg mb-8 max-w-lg font-light">
+                Lorem ipsum dolor sit amet consectetur. Sin derrames, sin pérdidas.
+              </p>
+
+              <ProductContactButton producto="Cabina de Limpieza" />
+            </div>
+          </div>
+        </section>
+
+        {/* 2. DESCRIPCIÓN CORTA */}
+        <section className="py-14 bg-white">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+            <div className="max-w-3xl">
+              <p className="text-[#495057] leading-relaxed" style={{ fontSize: "1.15rem" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. CARACTERÍSTICAS */}
+        <section className="py-16 bg-[#f8f9fa]">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="section-heading mb-8">
+                  <span className="section-heading-accent">Características</span> técnicas
+                  <span style={{ color: "#e07820" }}>.</span>
+                </h2>
+                <ul className="space-y-3">
+                  {caracteristicas.map((feat, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span
+                        className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
+                        style={{ background: "#0d1528" }}
+                      >
+                        <CheckIcon className="w-3 h-3 text-white" />
+                      </span>
+                      <span className="text-[#495057]">{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="relative rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "4/3" }}>
+                <Image
+                  src="/images/productos/cabina-de-limpieza/hero-1.jpg"
+                  alt="Cabina de Limpieza"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute top-0 right-0 w-16 h-1 bg-[#e07820]" />
+                <div className="absolute top-0 right-0 w-1 h-16 bg-[#e07820]" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. ESPECIFICACIONES TÉCNICAS */}
+        <section className="py-16 bg-white">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+            <h2 className="section-heading mb-10">
+              Especificaciones <span className="section-heading-accent">técnicas</span>
+              <span style={{ color: "#e07820" }}>.</span>
             </h2>
-            <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
-              Cabina de limpieza de polvos diseñada para la higienización de personas y equipos en entornos industriales con presencia de material particulado.
+            <div className="overflow-x-auto rounded-xl border border-[#e9ecef]">
+              <table className="w-full text-sm specs-table">
+                <tbody>
+                  {especificaciones.map((spec, i) => (
+                    <tr key={spec.label} className={i % 2 === 0 ? "bg-white" : "bg-[#f8f9fa]"}>
+                      <td className="px-6 py-4 font-semibold text-[#212529] w-1/3 border-b border-[#f0f0f0]">
+                        {spec.label}
+                      </td>
+                      <td className="px-6 py-4 text-[#495057] border-b border-[#f0f0f0]">
+                        {spec.value}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-[#6c757d] text-sm mt-4">
+              * Especificaciones pueden variar según requerimientos del cliente. Consulta por diseños a medida.
             </p>
-            <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
-              {[
-                { top: "Material", bottom: "Acero Estructural" },
-                { top: "Aplicación", bottom: "Industria / Minería" },
-                { top: "Certificados", bottom: "MC, WPS-PQR" },
-              ].map((s) => (
-                <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
-                  <p className="text-white font-bold text-sm uppercase tracking-wide">{s.top}</p>
-                  <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
+          </div>
+        </section>
+
+        {/* 5. APLICACIONES */}
+        <section className="py-16 bg-[#f8f9fa]">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+            <h2 className="section-heading mb-10">
+              Aplicaciones y <span className="section-heading-accent">casos de uso</span>
+              <span style={{ color: "#e07820" }}>.</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {aplicaciones.map((ap) => (
+                <div key={ap.industria} className="group bg-white border border-[#e9ecef] rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="relative h-44 overflow-hidden">
+                    <Image
+                      src={ap.image}
+                      alt={ap.industria}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <h3 className="absolute bottom-3 left-4 right-4 text-white font-semibold text-sm">
+                      {ap.industria}
+                    </h3>
+                  </div>
+                  <div className="p-4">
+                    <p className="text-[#495057] text-sm leading-relaxed">{ap.descripcion}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── FICHA TÉCNICA ────────────────────────────────────── */}
-      <section style={{ background: "#ffffff" }} className="py-20">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <div>
-            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Especificaciones</p>
-            <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>Ficha Técnica</h2>
-            <table className="w-full text-sm border-collapse">
-              <tbody>
-                {[
-                  ["Material", "Acero Estructural"],
-                  ["Sistema", "Limpieza por soplado de aire a presión"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
-                  ["Aplicación", "Industria / Minería / Construcción"],
-                  ["Fabricación", "A medida"],
-                ].map(([label, value], i) => (
-                  <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
-                    <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
-                      style={{ color: "#0d1528", borderLeft: "3px solid #e07820" }}>{label}</td>
-                    <td className="px-4 py-3 text-gray-600">{value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div>
-            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Sectores de Aplicación</p>
-            <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>¿Dónde se Utiliza?</h2>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { sector: "Minería", detalle: "Control de polvo en zonas de tránsito de personal y equipos en faenas mineras" },
-                { sector: "Industria", detalle: "Higienización en plantas industriales con presencia de material particulado" },
-              ].map((s) => (
-                <div key={s.sector} className="p-5 border-t-2" style={{ borderColor: "#e07820", background: "#f5f7fa" }}>
-                  <p className="font-bold text-sm mb-1 uppercase tracking-wide" style={{ color: "#0d1528" }}>{s.sector}</p>
-                  <p className="text-gray-500 text-xs leading-relaxed">{s.detalle}</p>
-                </div>
-              ))}
+        {/* 6. CTA FINAL */}
+        <section
+          className="relative py-16 overflow-hidden"
+          style={{
+            background: "linear-gradient(135deg, #0d1528 0%, #1a3a5c 60%, #06101e 100%)",
+          }}
+        >
+          <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h2 className="text-white text-2xl md:text-3xl font-light mb-2">
+                ¿Te interesa este producto?
+              </h2>
+              <p className="text-white/70">Cotizamos sin compromiso en menos de 48 horas.</p>
             </div>
+            <ProductContactButton producto="Cabina de Limpieza" large />
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── OTROS PRODUCTOS CABINAS ──────────────────────────── */}
-      <section style={{ background: "#0d1528" }} className="py-20">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
-          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Línea Cabinas de Limpieza</p>
-          <h2 className="text-3xl font-bold text-white mb-12">Otros Productos</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { nombre: "Soplador de Polvo", desc: "Sistema de soplado para limpieza de polvo en equipos y vehículos industriales.", href: "/cabinas-de-limpieza/soplador-de-polvo", img: "/images/inspection-factory.jpg" },
-            ].map((prod) => (
-              <a key={prod.nombre} href={prod.href} className="group border border-white/10 flex flex-col overflow-hidden hover:border-[#e07820] transition-colors">
-                <div className="relative h-44 overflow-hidden">
-                  <Image src={prod.img} alt={prod.nombre} fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="25vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                </div>
-                <div className="p-5 flex flex-col gap-2 flex-1" style={{ background: "#0d1528" }}>
-                  <div className="w-8 h-0.5" style={{ background: "#e07820" }} />
-                  <h3 className="font-bold text-white text-sm uppercase tracking-wide">{prod.nombre}</h3>
-                  <p className="text-white/50 text-xs leading-relaxed flex-1">{prod.desc}</p>
-                  <span className="text-[#e07820] text-xs font-bold uppercase tracking-widest group-hover:opacity-70 transition-opacity">Ver Producto →</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA FINAL ────────────────────────────────────────── */}
-      <section style={{ background: "#0d1528" }} className="py-16">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-2">¿Te interesa este equipo?</h2>
-            <p className="text-white/60">Envíanos tu consulta — te respondemos directamente, sin intermediarios.</p>
-          </div>
-          <a href="/contacto"
-            className="flex-shrink-0 inline-flex items-center gap-3 px-10 py-4 font-bold text-white text-sm tracking-widest uppercase transition-opacity hover:opacity-85"
-            style={{ background: "#e07820" }}>
-            Solicitar Cotización
-          </a>
-        </div>
-      </section>
+      </main>
 
       <Footer />
       <WhatsAppButton />
