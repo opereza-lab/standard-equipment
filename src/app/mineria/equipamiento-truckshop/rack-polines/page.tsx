@@ -56,20 +56,20 @@ export default function RackPolinesPagina() {
           <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
           <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative w-full overflow-hidden bg-white shadow-sm">
+            <div className="flex items-center justify-center bg-white p-8 shadow-sm">
               <div className="relative w-full" style={{ aspectRatio: "580/440" }}>
                 <Image
                   src="/images/productos/rack-polines/render-principal.png"
                   alt="Diagrama técnico Rack Polines"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="50vw"
                 />
                 {[
-                  { top: "12%", left: "13%", titulo: "Ganchos de Izaje",                           desc: "" },
-                  { top: "52%", left: "82%", titulo: "Eslingas de Seguridad",                      desc: "" },
-                  { top: "80%", left: "13%", titulo: "Estructura de Acero Estructural Optimizada", desc: "" },
-                  { top: "87%", left: "52%", titulo: "Horquilla",                                  desc: "" },
+                  { top: "12%", left: "13%", titulo: "Ganchos de Izaje" },
+                  { top: "52%", left: "82%", titulo: "Eslingas de Seguridad" },
+                  { top: "80%", left: "13%", titulo: "Estructura de Acero Estructural Optimizada" },
+                  { top: "87%", left: "52%", titulo: "Pockets para Grúa Horquilla" },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
@@ -82,8 +82,7 @@ export default function RackPolinesPagina() {
                     </div>
                     <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                       style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
-                      <p className="text-white text-xs font-bold mb-1">{h.titulo}</p>
-                      <p className="text-white/75 text-xs leading-snug">{h.desc}</p>
+                      <p className="text-white text-xs font-bold">{h.titulo}</p>
                     </div>
                   </div>
                 ))}
@@ -96,7 +95,7 @@ export default function RackPolinesPagina() {
                 { comp: "Ganchos de Izaje",                           desc: "Para izaje seguro del rack completo con grúa." },
                 { comp: "Eslingas de Seguridad",                      desc: "Fijación extra de los polines para un almacenamiento seguro sin desplazamiento." },
                 { comp: "Estructura de Acero Estructural Optimizada", desc: "Geometría diseñada para contener los polines en condiciones exigentes de faena." },
-                { comp: "Horquilla",                                  desc: "Pockets para grúa horquilla que permiten la carga y traslado del rack." },
+                { comp: "Pockets para Grúa Horquilla",                                  desc: "Pockets para grúa horquilla que permiten la carga y traslado del rack." },
               ].map((item) => (
                 <div key={item.comp} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
@@ -126,7 +125,7 @@ export default function RackPolinesPagina() {
                   ["Certificación", "MC, WPS-PQR, Materiales"],
                   ["Aplicación", "Minería Rajo Abierto, Minería Subterránea, Cementeras, Caleras"],
                   ["Seguridad", "Geometría optimizada para contener los polines sin desplazamiento, eslingas ratchet de seguridad extra"],
-                  ["Manipulación", "Pockets para grúa Horquilla y orejas de izaje"],
+                  ["Manipulación", "Pockets para grúa Pockets para Grúa Horquilla y orejas de izaje"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
