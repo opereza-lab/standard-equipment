@@ -25,7 +25,7 @@ export default function RackPolinesPagina() {
       <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/rack-polines/hero-1.png')" }} />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute right-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
+        <div className="absolute left-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
           <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
             <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
               <span className="text-white">Rack </span><span style={{ color: "#e07820" }}>Polines</span>
@@ -58,11 +58,13 @@ export default function RackPolinesPagina() {
             <table className="w-full text-sm border-collapse">
               <tbody>
                 {[
-                  ["Material", "Acero Estructural"],
+                  ["Compatibilidad", "De acuerdo a solicitud del cliente"],
+                  ["Material", "Acero al Carbono"],
                   ["Carga de Diseño", "F.S 4"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
-                  ["Aplicación", "Truckshop / Minería"],
-                  ["Fabricación", "Customizable según requerimiento"],
+                  ["Certificación", "MC, WPS-PQR, Materiales"],
+                  ["Aplicación", "Minería Rajo Abierto, Minería Subterránea, Cementeras, Caleras"],
+                  ["Seguridad", "Geometría optimizada para contener los polines sin desplazamiento, eslingas ratchet de seguridad extra"],
+                  ["Manipulación", "Pockets para grúa Horquilla y orejas de izaje"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
@@ -78,8 +80,10 @@ export default function RackPolinesPagina() {
             <h2 className="text-3xl font-bold mb-8" style={{ color: "#0d1528" }}>¿Dónde se Utiliza?</h2>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { sector: "Truckshop Minero", detalle: "Organización y almacenamiento de polines en talleres de mantención minera" },
-                { sector: "Mantención Equipos", detalle: "Gestión de componentes durante mantención de camiones de alto tonelaje" },
+                { sector: "Minería Rajo Abierto", detalle: "Almacenamiento y organización de polines en faenas mineras a cielo abierto" },
+                { sector: "Minería Subterránea", detalle: "Gestión de polines en túneles y galerías subterráneas" },
+                { sector: "Cementeras", detalle: "Almacenamiento de polines en plantas de producción de cemento" },
+                { sector: "Caleras", detalle: "Organización de polines en procesos industriales de cal" },
               ].map((s) => (
                 <div key={s.sector} className="p-5 border-t-2" style={{ borderColor: "#e07820", background: "#f5f7fa" }}>
                   <p className="font-bold text-sm mb-1 uppercase tracking-wide" style={{ color: "#0d1528" }}>{s.sector}</p>
