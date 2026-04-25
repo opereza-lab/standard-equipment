@@ -22,13 +22,6 @@ export const PRODUCTOS_MINERIA: ProductoMineria[] = [
     img: "/images/productos/soporte-faceshovel/hero-1.png",
   },
   {
-    id: "bases-de-traslado",
-    nombre: "Bases de Traslado",
-    desc: "Bases a medida para traslado seguro de equipos pesados en faenas mineras.",
-    href: "/mineria/bases-de-traslado",
-    img: "/images/inspection-factory.jpg",
-  },
-  {
     id: "bases-cilindros-hidraulicos",
     nombre: "Bases Cilindros Hidráulicos",
     desc: "Soporte Heavy Duty para cilindros hidráulicos durante mantención de CAEX.",
@@ -36,11 +29,11 @@ export const PRODUCTOS_MINERIA: ProductoMineria[] = [
     img: "/images/productos/bases-cilindro/render-principal2.png",
   },
   {
-    id: "pinochos-caex",
-    nombre: "Pinochos CAEX",
-    desc: "Pinochos de alta resistencia para operaciones de mantenimiento en faenas mineras.",
-    href: "/mineria/equipamiento-truckshop/pinochos-caex",
-    img: "/images/mechanic-red.jpg",
+    id: "rack-polines",
+    nombre: "Rack Polines",
+    desc: "Rack de almacenamiento de polines customizable para talleres truckshop.",
+    href: "/mineria/equipamiento-truckshop/rack-polines",
+    img: "/images/productos/rack-polines/hero-1.png",
   },
   {
     id: "rack-maniobras",
