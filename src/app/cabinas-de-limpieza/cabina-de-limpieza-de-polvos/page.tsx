@@ -75,16 +75,9 @@ export default function CabinaLimpiezaPolvoPage() {
             src="/images/productos/cabina-de-limpieza/hero-1.jpg"
             alt="Cabina de Limpieza — Standard Equipment"
             fill
-            className="object-cover object-center"
+            className="object-contain object-center"
             priority
             sizes="100vw"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(10,31,60,0.88) 0%, rgba(10,31,60,0.6) 60%, rgba(0,0,0,0.3) 100%)",
-            }}
           />
           <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#0d1528]" />
 
