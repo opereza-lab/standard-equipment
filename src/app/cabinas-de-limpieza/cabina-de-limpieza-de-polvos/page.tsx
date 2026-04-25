@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -67,50 +66,29 @@ export default function CabinaLimpiezaPolvoPage() {
 
       <main>
         {/* 1. HERO */}
-        <section
-          className="relative overflow-hidden"
-          style={{ height: "70vh", minHeight: "520px", paddingTop: "80px" }}
-        >
-          <Image
-            src="/images/productos/cabina-de-limpieza/hero-1.jpg"
-            alt="Cabina de Limpieza — Standard Equipment"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#0d1528]" />
-
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 w-full">
-              <nav className="flex items-center gap-2 text-white/50 text-sm mb-6">
-                <Link href="/" className="hover:text-white/80 transition-colors">Inicio</Link>
-                <span>/</span>
-                <Link href="/cabinas-de-limpieza" className="hover:text-white/80 transition-colors">Cabinas de Limpieza</Link>
-                <span>/</span>
-                <span className="text-white/80">Cabina de Limpieza</span>
-              </nav>
-
-              <span className="inline-block text-[#e07820] font-semibold text-xs uppercase tracking-widest mb-4">
-                Cabinas de Limpieza
-              </span>
-              <h1
-                className="text-white mb-4"
-                style={{
-                  fontSize: "clamp(2.2rem, 5vw, 4rem)",
-                  fontWeight: 300,
-                  lineHeight: 1.1,
-                }}
-              >
-                Cabina de{" "}
-                <strong style={{ fontWeight: 700 }}>Limpieza</strong>
-                <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
+        <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/cabina-de-limpieza/hero-1.jpg')" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.45)", zIndex: 1 }} />
+          <div className="absolute left-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
+            <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
+              <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
+                <span className="text-white">Cabina de </span><span style={{ color: "#e07820" }}>Limpieza</span>
               </h1>
-              <p className="text-white/80 text-lg mb-8 max-w-lg font-light">
-                Lorem ipsum dolor sit amet consectetur. Sin derrames, sin pérdidas.
+              <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
               </p>
-
-              <ProductContactButton producto="Cabina de Limpieza" />
+              <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
+                {[
+                  { top: "Lorem", bottom: "Lorem ipsum" },
+                  { top: "Lorem", bottom: "Lorem ipsum" },
+                  { top: "Lorem", bottom: "Lorem ipsum" },
+                ].map((s) => (
+                  <div key={s.top + s.bottom} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
+                    <p className="text-white font-bold text-sm uppercase tracking-wide" style={{ whiteSpace: "nowrap" }}>{s.top}</p>
+                    <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
