@@ -133,6 +133,127 @@ export default function CabinaLimpiezaPolvoPage() {
           </div>
         </section>
 
+        {/* 3. DIAGRAMA TÉCNICO — RENDER 1 */}
+        <section style={{ background: "#f5f7fa" }} className="py-20">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-16">
+            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
+            <h2 className="section-heading mb-12">
+              Diagrama <span className="section-heading-accent">Técnico</span>
+              <span style={{ color: "#e07820" }}>.</span>
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
+                <Image
+                  src="/images/productos/cabina-de-limpieza/render-principal1.png"
+                  alt="Diagrama técnico Cabina de Limpieza — vista 1"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
+                {[
+                  { top: "8%",  left: "22%", titulo: "Lorem ipsum componente" },
+                  { top: "43%", left: "26%", titulo: "Lorem ipsum componente" },
+                  { top: "78%", left: "18%", titulo: "Lorem ipsum componente" },
+                  { top: "20%", left: "70%", titulo: "Lorem ipsum componente" },
+                  { top: "55%", left: "85%", titulo: "Lorem ipsum componente" },
+                  { top: "86%", left: "80%", titulo: "Lorem ipsum componente" },
+                ].map((h, i) => (
+                  <div key={i} className="absolute group"
+                    style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
+                    <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                      <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                      <svg width="17" height="17" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                        <path fillRule="evenodd" fill="#cc0000"
+                          d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                      <p className="text-white text-xs font-bold">{h.titulo}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-col gap-4">
+                {[
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                ].map((item) => (
+                  <div key={item.comp + Math.random()} className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
+                    <div>
+                      <p className="font-bold text-sm mb-1" style={{ color: "#0d1528" }}>{item.comp}</p>
+                      <p className="text-gray-500 text-xs leading-relaxed text-justify">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. DIAGRAMA TÉCNICO — RENDER 2 */}
+        <section style={{ background: "#ffffff" }} className="py-20">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
+                <Image
+                  src="/images/productos/cabina-de-limpieza/render-principa2.png"
+                  alt="Diagrama técnico Cabina de Limpieza — vista 2"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
+                {[
+                  { top: "8%",  left: "35%", titulo: "Lorem ipsum componente" },
+                  { top: "35%", left: "33%", titulo: "Lorem ipsum componente" },
+                  { top: "43%", left: "16%", titulo: "Lorem ipsum componente" },
+                  { top: "65%", left: "17%", titulo: "Lorem ipsum componente" },
+                  { top: "83%", left: "11%", titulo: "Lorem ipsum componente" },
+                  { top: "58%", left: "82%", titulo: "Lorem ipsum componente" },
+                ].map((h, i) => (
+                  <div key={i} className="absolute group"
+                    style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
+                    <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                      <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                      <svg width="17" height="17" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                        <path fillRule="evenodd" fill="#cc0000"
+                          d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                      <p className="text-white text-xs font-bold">{h.titulo}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-col gap-4">
+                {[
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                  { comp: "Lorem ipsum componente", desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod." },
+                ].map((item) => (
+                  <div key={item.comp + Math.random()} className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
+                    <div>
+                      <p className="font-bold text-sm mb-1" style={{ color: "#0d1528" }}>{item.comp}</p>
+                      <p className="text-gray-500 text-xs leading-relaxed text-justify">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 3. CARACTERÍSTICAS */}
         <section className="py-16 bg-[#f8f9fa]">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
