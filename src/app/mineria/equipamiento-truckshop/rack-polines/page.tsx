@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -42,6 +43,69 @@ export default function RackPolinesPagina() {
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
                   <p className="text-white font-bold text-sm uppercase tracking-wide" style={{ whiteSpace: "nowrap" }}>{s.top}</p>
                   <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIAGRAMA TÉCNICO ─────────────────────────────────── */}
+      <section style={{ background: "#f5f7fa" }} className="py-20">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
+          <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
+          <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex items-center justify-center bg-white p-8 shadow-sm">
+              <div className="relative w-full" style={{ aspectRatio: "580/440" }}>
+                <Image
+                  src="/images/productos/rack-polines/render-principal.png"
+                  alt="Diagrama técnico Rack Polines"
+                  fill
+                  className="object-contain"
+                  sizes="50vw"
+                />
+                {[
+                  { top: "25%", left: "50%", titulo: "Estructura en Acero al Carbono",            desc: "Material de alta resistencia para condiciones exigentes de faena." },
+                  { top: "50%", left: "20%", titulo: "Geometría Optimizada",                      desc: "Contiene los polines sin desplazamiento durante el almacenamiento y traslado." },
+                  { top: "70%", left: "40%", titulo: "Pockets para Grúa Horquilla",               desc: "Permite la carga y traslado del rack con grúa horquilla." },
+                  { top: "40%", left: "78%", titulo: "Orejas de Izaje",                           desc: "Para izaje seguro del rack completo con grúa." },
+                  { top: "65%", left: "72%", titulo: "Eslingas Ratchet de Seguridad",             desc: "Fijación extra de los polines para un almacenamiento seguro." },
+                ].map((h, i) => (
+                  <div key={i} className="absolute group"
+                    style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
+                    <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                      <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                      <svg width="17" height="17" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                        <path fillRule="evenodd" fill="#cc0000"
+                          d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                      <p className="text-white text-xs font-bold mb-1">{h.titulo}</p>
+                      <p className="text-white/75 text-xs leading-snug">{h.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Leyenda */}
+            <div className="flex flex-col gap-4">
+              {[
+                { comp: "Estructura en Acero al Carbono",   desc: "Material de alta resistencia para condiciones exigentes de faena." },
+                { comp: "Geometría Optimizada",             desc: "Contiene los polines sin desplazamiento durante el almacenamiento y traslado." },
+                { comp: "Pockets para Grúa Horquilla",      desc: "Permite la carga y traslado del rack con grúa horquilla." },
+                { comp: "Orejas de Izaje",                  desc: "Para izaje seguro del rack completo con grúa." },
+                { comp: "Eslingas Ratchet de Seguridad",    desc: "Fijación extra de los polines para un almacenamiento seguro." },
+              ].map((item) => (
+                <div key={item.comp} className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
+                  <div>
+                    <p className="font-bold text-sm mb-1" style={{ color: "#0d1528" }}>{item.comp}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed text-justify">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
