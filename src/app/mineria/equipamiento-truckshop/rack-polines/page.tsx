@@ -66,11 +66,10 @@ export default function RackPolinesPagina() {
                   sizes="50vw"
                 />
                 {[
-                  { top: "25%", left: "50%", titulo: "Estructura en Acero al Carbono",            desc: "Material de alta resistencia para condiciones exigentes de faena." },
-                  { top: "50%", left: "20%", titulo: "Geometría Optimizada",                      desc: "Contiene los polines sin desplazamiento durante el almacenamiento y traslado." },
-                  { top: "70%", left: "40%", titulo: "Pockets para Grúa Horquilla",               desc: "Permite la carga y traslado del rack con grúa horquilla." },
-                  { top: "40%", left: "78%", titulo: "Orejas de Izaje",                           desc: "Para izaje seguro del rack completo con grúa." },
-                  { top: "65%", left: "72%", titulo: "Eslingas Ratchet de Seguridad",             desc: "Fijación extra de los polines para un almacenamiento seguro." },
+                  { top: "12%", left: "13%", titulo: "Ganchos de Izaje",                              desc: "Para izaje seguro del rack completo con grúa." },
+                  { top: "52%", left: "82%", titulo: "Eslingas de Seguridad",                         desc: "Fijación extra de los polines para un almacenamiento seguro sin desplazamiento." },
+                  { top: "80%", left: "13%", titulo: "Estructura de Acero Estructural Optimizada",    desc: "Geometría diseñada para contener los polines en condiciones exigentes de faena." },
+                  { top: "87%", left: "52%", titulo: "Horquilla",                                     desc: "Pockets para grúa horquilla que permiten la carga y traslado del rack." },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
@@ -94,11 +93,10 @@ export default function RackPolinesPagina() {
             {/* Leyenda */}
             <div className="flex flex-col gap-4">
               {[
-                { comp: "Estructura en Acero al Carbono",   desc: "Material de alta resistencia para condiciones exigentes de faena." },
-                { comp: "Geometría Optimizada",             desc: "Contiene los polines sin desplazamiento durante el almacenamiento y traslado." },
-                { comp: "Pockets para Grúa Horquilla",      desc: "Permite la carga y traslado del rack con grúa horquilla." },
-                { comp: "Orejas de Izaje",                  desc: "Para izaje seguro del rack completo con grúa." },
-                { comp: "Eslingas Ratchet de Seguridad",    desc: "Fijación extra de los polines para un almacenamiento seguro." },
+                { comp: "Ganchos de Izaje",                           desc: "Para izaje seguro del rack completo con grúa." },
+                { comp: "Eslingas de Seguridad",                      desc: "Fijación extra de los polines para un almacenamiento seguro sin desplazamiento." },
+                { comp: "Estructura de Acero Estructural Optimizada", desc: "Geometría diseñada para contener los polines en condiciones exigentes de faena." },
+                { comp: "Horquilla",                                  desc: "Pockets para grúa horquilla que permiten la carga y traslado del rack." },
               ].map((item) => (
                 <div key={item.comp} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
