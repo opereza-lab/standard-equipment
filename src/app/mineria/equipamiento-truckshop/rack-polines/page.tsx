@@ -23,23 +23,20 @@ export default function RackPolinesPagina() {
 
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/workers-corridor.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/rack-polines/hero-1.png')" }} />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
         <div className="absolute right-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
-          <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
-            <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
-              Rack
+          <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
+            <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
+              <span className="text-white">Rack </span><span style={{ color: "#e07820" }}>Polines</span>
             </h1>
-            <h2 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", color: "#e07820" }}>
-              Polines
-            </h2>
             <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
-              Rack de polines para almacenamiento y organización en talleres de mantención de equipos mineros de gran tonelaje.
+              Rack de almacenamiento de Polines customizable
             </p>
             <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
               {[
+                { top: "Carga de Diseño", bottom: "F.S 4" },
                 { top: "Material", bottom: "Acero Estructural" },
-                { top: "Aplicación", bottom: "Truckshop" },
                 { top: "Certificados", bottom: "MC, WPS-PQR" },
               ].map((s) => (
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
@@ -62,10 +59,10 @@ export default function RackPolinesPagina() {
               <tbody>
                 {[
                   ["Material", "Acero Estructural"],
+                  ["Carga de Diseño", "F.S 4"],
                   ["Certificación", "Memoria de Cálculo, WPS-PQR"],
                   ["Aplicación", "Truckshop / Minería"],
-                  ["Capacidad", "A definir según requerimiento"],
-                  ["Fabricación", "A medida"],
+                  ["Fabricación", "Customizable según requerimiento"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
