@@ -66,10 +66,10 @@ export default function RackPolinesPagina() {
                   sizes="50vw"
                 />
                 {[
-                  { top: "12%", left: "13%", titulo: "Ganchos de Izaje",                              desc: "Para izaje seguro del rack completo con grúa." },
-                  { top: "52%", left: "82%", titulo: "Eslingas de Seguridad",                         desc: "Fijación extra de los polines para un almacenamiento seguro sin desplazamiento." },
-                  { top: "80%", left: "13%", titulo: "Estructura de Acero Estructural Optimizada",    desc: "Geometría diseñada para contener los polines en condiciones exigentes de faena." },
-                  { top: "87%", left: "52%", titulo: "Horquilla",                                     desc: "Pockets para grúa horquilla que permiten la carga y traslado del rack." },
+                  { top: "12%", left: "13%", titulo: "Ganchos de Izaje",                           desc: "" },
+                  { top: "52%", left: "82%", titulo: "Eslingas de Seguridad",                      desc: "" },
+                  { top: "80%", left: "13%", titulo: "Estructura de Acero Estructural Optimizada", desc: "" },
+                  { top: "87%", left: "52%", titulo: "Horquilla",                                  desc: "" },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
