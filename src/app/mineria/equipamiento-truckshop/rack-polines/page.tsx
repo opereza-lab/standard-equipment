@@ -40,7 +40,7 @@ export default function RackPolinesPagina() {
                 { top: "Certificados", bottom: "MC, WPS-PQR" },
               ].map((s) => (
                 <div key={s.top} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
-                  <p className="text-white font-bold text-sm uppercase tracking-wide">{s.top}</p>
+                  <p className="text-white font-bold text-sm uppercase tracking-wide" style={{ whiteSpace: "nowrap" }}>{s.top}</p>
                   <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
                 </div>
               ))}
