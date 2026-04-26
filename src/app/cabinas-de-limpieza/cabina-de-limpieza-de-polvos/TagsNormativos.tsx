@@ -42,7 +42,7 @@ export default function TagsNormativos() {
           onClick={() => setOpen(null)}
         >
           <div
-            className="relative w-[67vw] max-h-[67vh] overflow-y-auto"
+            className="relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botón cerrar */}
@@ -60,10 +60,11 @@ export default function TagsNormativos() {
                 alt={open}
                 width={1920}
                 height={1080}
-                className="w-full h-auto block rounded-xl"
+                style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", background: "transparent" }}
+                className="block"
               />
             ) : (
-              <div className="bg-white rounded-xl p-12 text-center text-gray-400">
+              <div className="rounded-xl p-12 text-center text-gray-300" style={{ background: "rgba(255,255,255,0.1)" }}>
                 — contenido por agregar —
               </div>
             )}
