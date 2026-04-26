@@ -55,12 +55,14 @@ export default function TagsNormativos() {
             </button>
 
             {TAGS.find((t) => t.alt === open)?.infografia ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={TAGS.find((t) => t.alt === open)!.infografia!}
-                alt={open}
-                style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block", borderRadius: "20px", overflow: "hidden" }}
-              />
+              <div style={{ borderRadius: "20px", overflow: "hidden", display: "inline-block", maxHeight: "67vh", maxWidth: "90vw" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={TAGS.find((t) => t.alt === open)!.infografia!}
+                  alt={open}
+                  style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block" }}
+                />
+              </div>
             ) : (
               <div className="rounded-xl p-12 text-center text-gray-300" style={{ background: "rgba(255,255,255,0.1)" }}>
                 — contenido por agregar —
