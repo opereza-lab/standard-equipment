@@ -189,19 +189,37 @@ export default function CabinaLimpiezaPolvoPage() {
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Tag 1 — OSHA */}
-              <div className="flex items-center gap-4 px-8 py-6" style={{ background: "#0d1528" }}>
-                <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>OSHA</span>
-                <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>29 CFR<br />1910.242(b)</span>
-              </div>
+              <details className="group">
+                <summary className="flex items-center gap-4 px-8 py-6 cursor-pointer list-none" style={{ background: "#0d1528" }}>
+                  <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>OSHA</span>
+                  <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>29 CFR<br />1910.242(b)</span>
+                  <span className="ml-auto text-white/50 text-xl group-open:rotate-180 transition-transform">▾</span>
+                </summary>
+                <div className="px-8 py-6 bg-white border border-[#e9ecef]">
+                  <p className="text-[#495057] text-sm">— contenido por agregar —</p>
+                </div>
+              </details>
               {/* Tag 2 — DS 594 */}
-              <div className="flex items-center gap-4 px-8 py-6" style={{ background: "#0d1528" }}>
-                <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>DS 594</span>
-                <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>Exposición al<br />ruido en el trabajo</span>
-              </div>
+              <details className="group">
+                <summary className="flex items-center gap-4 px-8 py-6 cursor-pointer list-none" style={{ background: "#0d1528" }}>
+                  <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>DS 594</span>
+                  <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>Exposición al<br />ruido en el trabajo</span>
+                  <span className="ml-auto text-white/50 text-xl group-open:rotate-180 transition-transform">▾</span>
+                </summary>
+                <div className="px-8 py-6 bg-white border border-[#e9ecef]">
+                  <p className="text-[#495057] text-sm">— contenido por agregar —</p>
+                </div>
+              </details>
               {/* Tag 3 — HEPA */}
-              <div className="flex items-center justify-center px-8 py-6" style={{ background: "#0d1528" }}>
-                <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>HEPA</span>
-              </div>
+              <details className="group">
+                <summary className="flex items-center justify-between px-8 py-6 cursor-pointer list-none" style={{ background: "#0d1528" }}>
+                  <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>HEPA</span>
+                  <span className="ml-auto text-white/50 text-xl group-open:rotate-180 transition-transform">▾</span>
+                </summary>
+                <div className="px-8 py-6 bg-white border border-[#e9ecef]">
+                  <p className="text-[#495057] text-sm">— contenido por agregar —</p>
+                </div>
+              </details>
             </div>
           </div>
         </section>
