@@ -55,12 +55,12 @@ export default function TagsNormativos() {
             </button>
 
             {TAGS.find((t) => t.alt === open)?.infografia ? (
-              <div style={{ borderRadius: "70px", overflow: "hidden", display: "inline-flex", lineHeight: 0 }}>
+              <div style={{ borderRadius: "35px", overflow: "hidden", display: "inline-flex", lineHeight: 0 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={TAGS.find((t) => t.alt === open)!.infografia!}
                   alt={open}
-                  style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block" }}
+                  style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block", marginBottom: "-3px" }}
                 />
               </div>
             ) : (
