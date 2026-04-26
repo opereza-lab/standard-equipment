@@ -210,10 +210,19 @@ export default function CabinaLimpiezaPolvoPage() {
               </details>
               {/* Tag 2 — DS 594 */}
               <details className="group">
-                <summary className="flex items-center gap-4 px-8 py-6 cursor-pointer list-none" style={{ background: "#0d1528" }}>
-                  <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>DS 594</span>
-                  <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>Exposición al<br />ruido en el trabajo</span>
-                  <span className="ml-auto text-white/50 text-xl group-open:rotate-180 transition-transform">▾</span>
+                <summary className="block cursor-pointer list-none relative">
+                  <Image
+                    src="/images/productos/cabina-de-limpieza/tag-osha.png"
+                    alt="DS 594"
+                    width={900}
+                    height={1100}
+                    className="w-full h-auto block"
+                  />
+                  <div className="flex items-center justify-center py-3" style={{ background: "#0d1528" }}>
+                    <svg className="group-open:rotate-180 transition-transform duration-300" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <polyline points="6,10 16,22 26,10" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </summary>
                 <div className="px-8 py-6 bg-white border border-[#e9ecef]">
                   <p className="text-[#495057] text-sm">— contenido por agregar —</p>
@@ -221,9 +230,19 @@ export default function CabinaLimpiezaPolvoPage() {
               </details>
               {/* Tag 3 — HEPA */}
               <details className="group">
-                <summary className="flex items-center justify-between px-8 py-6 cursor-pointer list-none" style={{ background: "#0d1528" }}>
-                  <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>HEPA</span>
-                  <span className="ml-auto text-white/50 text-xl group-open:rotate-180 transition-transform">▾</span>
+                <summary className="block cursor-pointer list-none relative">
+                  <Image
+                    src="/images/productos/cabina-de-limpieza/tag-osha.png"
+                    alt="HEPA"
+                    width={900}
+                    height={1100}
+                    className="w-full h-auto block"
+                  />
+                  <div className="flex items-center justify-center py-3" style={{ background: "#0d1528" }}>
+                    <svg className="group-open:rotate-180 transition-transform duration-300" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <polyline points="6,10 16,22 26,10" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </summary>
                 <div className="px-8 py-6 bg-white border border-[#e9ecef]">
                   <p className="text-[#495057] text-sm">— contenido por agregar —</p>
