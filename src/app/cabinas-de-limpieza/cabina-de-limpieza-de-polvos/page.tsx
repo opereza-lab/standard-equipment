@@ -110,9 +110,9 @@ export default function CabinaLimpiezaPolvoPage() {
             <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
             <h2 className="text-3xl font-bold" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
           </div>
-          <div className="grid grid-cols-3 gap-0 items-start">
+          <div className="w-full grid grid-cols-3 gap-0 items-center">
               {/* Render 1 — 7 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ height: "520px" }}>
+              <div className="relative w-full shadow-sm" style={{ height: "620px" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal1.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
@@ -149,7 +149,7 @@ export default function CabinaLimpiezaPolvoPage() {
               <div />
 
               {/* Render 2 — 6 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ height: "520px" }}>
+              <div className="relative w-full shadow-sm" style={{ height: "620px" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal2.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
