@@ -42,7 +42,7 @@ export default function TagsNormativos() {
           onClick={() => setOpen(null)}
         >
           <div
-            className="relative w-[95vw] max-h-[95vh] overflow-y-auto"
+            className="relative w-[67vw] max-h-[67vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botón cerrar */}
