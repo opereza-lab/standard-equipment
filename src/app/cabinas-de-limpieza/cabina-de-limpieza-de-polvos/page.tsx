@@ -188,66 +188,32 @@ export default function CabinaLimpiezaPolvoPage() {
         <section className="py-16 bg-[#f8f9fa]">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Tag 1 — OSHA */}
-              <details className="group">
-                <summary className="block cursor-pointer list-none relative">
-                  <Image
-                    src="/images/productos/cabina-de-limpieza/tag-osha.png"
-                    alt="OSHA 29 CFR 1910.242(b)"
-                    width={900}
-                    height={1100}
-                    className="w-full h-auto block"
-                  />
-                  <div className="flex items-center justify-center py-3" style={{ background: "#0d1528" }}>
-                    <svg className="group-open:rotate-180 transition-transform duration-300" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                      <polyline points="6,10 16,22 26,10" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+              {[
+                { src: "/images/productos/cabina-de-limpieza/tag-osha.png", alt: "OSHA 29 CFR 1910.242(b)" },
+                { src: "/images/productos/cabina-de-limpieza/tag-osha.png", alt: "DS 594" },
+                { src: "/images/productos/cabina-de-limpieza/tag-osha.png", alt: "HEPA" },
+              ].map((tag) => (
+                <details key={tag.alt} className="group overflow-hidden rounded-2xl">
+                  <summary className="block cursor-pointer list-none relative">
+                    <Image
+                      src={tag.src}
+                      alt={tag.alt}
+                      width={900}
+                      height={1100}
+                      className="w-full h-auto block rounded-2xl"
+                    />
+                    {/* Flecha overlay — transparente, integrada en la imagen */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full" style={{ background: "rgba(0,0,0,0.35)" }}>
+                      <svg className="group-open:rotate-180 transition-transform duration-300" width="22" height="22" viewBox="0 0 32 32" fill="none">
+                        <polyline points="6,10 16,22 26,10" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-8 py-6 bg-white border border-[#e9ecef] rounded-b-2xl">
+                    <p className="text-[#495057] text-sm">— contenido por agregar —</p>
                   </div>
-                </summary>
-                <div className="px-8 py-6 bg-white border border-[#e9ecef]">
-                  <p className="text-[#495057] text-sm">— contenido por agregar —</p>
-                </div>
-              </details>
-              {/* Tag 2 — DS 594 */}
-              <details className="group">
-                <summary className="block cursor-pointer list-none relative">
-                  <Image
-                    src="/images/productos/cabina-de-limpieza/tag-osha.png"
-                    alt="DS 594"
-                    width={900}
-                    height={1100}
-                    className="w-full h-auto block"
-                  />
-                  <div className="flex items-center justify-center py-3" style={{ background: "#0d1528" }}>
-                    <svg className="group-open:rotate-180 transition-transform duration-300" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                      <polyline points="6,10 16,22 26,10" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                </summary>
-                <div className="px-8 py-6 bg-white border border-[#e9ecef]">
-                  <p className="text-[#495057] text-sm">— contenido por agregar —</p>
-                </div>
-              </details>
-              {/* Tag 3 — HEPA */}
-              <details className="group">
-                <summary className="block cursor-pointer list-none relative">
-                  <Image
-                    src="/images/productos/cabina-de-limpieza/tag-osha.png"
-                    alt="HEPA"
-                    width={900}
-                    height={1100}
-                    className="w-full h-auto block"
-                  />
-                  <div className="flex items-center justify-center py-3" style={{ background: "#0d1528" }}>
-                    <svg className="group-open:rotate-180 transition-transform duration-300" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                      <polyline points="6,10 16,22 26,10" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                </summary>
-                <div className="px-8 py-6 bg-white border border-[#e9ecef]">
-                  <p className="text-[#495057] text-sm">— contenido por agregar —</p>
-                </div>
-              </details>
+                </details>
+              ))}
             </div>
           </div>
         </section>
