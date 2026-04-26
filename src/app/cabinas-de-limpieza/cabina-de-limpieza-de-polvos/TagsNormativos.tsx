@@ -96,7 +96,7 @@ export default function TagsNormativos() {
                   <img
                     src={TAGS.find((t) => t.alt === open)!.infografia!}
                     alt={open}
-                    style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block", marginBottom: "-3px" }}
+                    style={{ maxHeight: "80vh", width: "auto", maxWidth: "90vw", display: "block", marginBottom: "-3px" }}
                   />
                 </div>
                 {/* Botón descargar */}
