@@ -93,14 +93,14 @@ export default function CabinaLimpiezaPolvoPage() {
         </section>
 
         {/* 2. DESCRIPCIÓN CORTA */}
-        <section className="py-14" style={{ background: "#1a1a1a" }}>
+        <section className="py-14" style={{ background: "#0d1528" }}>
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 text-center">
             <p className="text-white leading-relaxed" style={{ fontSize: "clamp(1.1rem, 2vw, 1.5rem)", fontStyle: "italic" }}>
-              <span className="text-white opacity-60 mr-1" style={{ fontSize: "2em", lineHeight: 0, verticalAlign: "-0.4em" }}>"</span>
-              La <span style={{ color: "#e8b84b" }}>conducta del trabajador</span> para eliminar el polvo de su ropa
-              es <span style={{ color: "#e8b84b" }}>sopletearse</span> con <span style={{ color: "#e8b84b" }}>Aire Comprimido</span>, lo que conlleva
+              <span className="text-white opacity-40 mr-1" style={{ fontSize: "2em", lineHeight: 0, verticalAlign: "-0.4em" }}>"</span>
+              La <span style={{ color: "#e07820" }}>conducta del trabajador</span> para eliminar el polvo de su ropa
+              es <span style={{ color: "#e07820" }}>sopletearse</span> con <span style={{ color: "#e07820" }}>Aire Comprimido</span>, lo que conlleva
               varios riesgos asociados
-              <span className="text-white opacity-60 ml-1" style={{ fontSize: "2em", lineHeight: 0, verticalAlign: "-0.4em" }}>"</span>
+              <span className="text-white opacity-40 ml-1" style={{ fontSize: "2em", lineHeight: 0, verticalAlign: "-0.4em" }}>"</span>
             </p>
           </div>
         </section>
