@@ -96,7 +96,7 @@ export default function CabinaLimpiezaPolvoPage() {
         <section className="py-14 bg-white">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="max-w-3xl">
-              <p className="text-[#495057] leading-relaxed" style={{ fontSize: "1.15rem" }}>
+              <p className="font-bold leading-snug" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", color: "#0d1528" }}>
                 &ldquo;La <span style={{ color: "#e07820" }}>conducta del trabajador</span> para eliminar el polvo de su ropa es <span style={{ color: "#e07820" }}>sopletearse</span> con <span style={{ color: "#e07820" }}>Aire Comprimido</span>, lo que conlleva varios riesgos asociados&rdquo;
               </p>
             </div>
