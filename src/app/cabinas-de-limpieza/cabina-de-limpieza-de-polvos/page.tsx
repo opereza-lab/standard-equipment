@@ -112,7 +112,8 @@ export default function CabinaLimpiezaPolvoPage() {
               Diagrama <span className="section-heading-accent">Técnico</span>
               <span style={{ color: "#e07820" }}>.</span>
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
               {/* Render 1 — 7 hotspots */}
               <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
                 <Image
@@ -181,7 +182,6 @@ export default function CabinaLimpiezaPolvoPage() {
                 ))}
               </div>
             </div>
-          </div>
         </section>
 
         {/* 3. CARACTERÍSTICAS */}
