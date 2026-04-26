@@ -33,6 +33,7 @@ export default function TagsNormativos() {
         }
       `}</style>
 
+      <div className="max-w-[80%] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {TAGS.map((tag) => (
           <div
@@ -61,6 +62,7 @@ export default function TagsNormativos() {
             </div>
           </div>
         ))}
+      </div>
       </div>
 
       {/* Modal */}
