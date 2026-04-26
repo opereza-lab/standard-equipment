@@ -71,7 +71,7 @@ export default function CabinaLimpiezaPolvoPage() {
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/cabina-de-limpieza/hero-1.jpg')" }} />
 
           {/* Bloque superior izquierdo — tagline */}
-          <div className="absolute flex items-center gap-1" style={{ top: "28%", left: "3%", zIndex: 2 }}>
+          <div className="absolute flex items-center gap-0" style={{ top: "28%", left: "3%", zIndex: 2 }}>
             {/* STANDARD vertical */}
             <span
               className="text-white uppercase select-none"
