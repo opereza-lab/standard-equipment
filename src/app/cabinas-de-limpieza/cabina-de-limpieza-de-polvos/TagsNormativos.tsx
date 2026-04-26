@@ -7,6 +7,7 @@ const TAGS = [
   { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "OSHA 29 CFR 1910.242(b)", label: "¿Qué dice OSHA?",   infografia: "/images/productos/cabina-de-limpieza/infografia-osha.jpg" },
   { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "DS 594",                  label: "¿Qué dice el DS 594 respecto al ruido?", infografia: "/images/productos/cabina-de-limpieza/infografía-ruido.png" },
   { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "HEPA",                    label: "¿Por qué usar filtros HEPA?",   infografia: "/images/productos/cabina-de-limpieza/infografia-hepa.png" },
+  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "Tag 4",                   label: "Nuestra Cabina",               infografia: null },
 ];
 
 export default function TagsNormativos() {
@@ -34,7 +35,7 @@ export default function TagsNormativos() {
       `}</style>
 
       <div className="max-w-[80%] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {TAGS.map((tag) => (
           <div
             key={tag.alt}
