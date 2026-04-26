@@ -209,9 +209,21 @@ export default function CabinaLimpiezaPolvoPage() {
                       </svg>
                     </div>
                   </summary>
-                  <div className="px-8 py-6 bg-white border border-[#e9ecef] rounded-b-2xl">
-                    <p className="text-[#495057] text-sm">— contenido por agregar —</p>
-                  </div>
+                  {tag.alt === "OSHA 29 CFR 1910.242(b)" ? (
+                    <div className="relative left-1/2 -translate-x-1/2 w-screen py-8" style={{ background: "#f8f9fa" }}>
+                      <Image
+                        src="/images/productos/cabina-de-limpieza/infografia-osha.jpg"
+                        alt="Infografía OSHA 29 CFR 1910.242(b)"
+                        width={1920}
+                        height={1080}
+                        className="w-full h-auto block mx-auto"
+                      />
+                    </div>
+                  ) : (
+                    <div className="px-8 py-6 bg-white border border-[#e9ecef]">
+                      <p className="text-[#495057] text-sm">— contenido por agregar —</p>
+                    </div>
+                  )}
                 </details>
               ))}
             </div>
