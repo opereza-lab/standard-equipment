@@ -105,20 +105,18 @@ export default function CabinaLimpiezaPolvoPage() {
 
         {/* 3. DIAGRAMA TÉCNICO */}
         <section style={{ background: "#f5f7fa" }} className="py-20">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-16 mb-12">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-16">
             <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
-            <h2 className="text-3xl font-bold" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px", width: "100%" }}>
+            <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 2fr", gap: "4px" }}>
               {/* Render 1 — 7 hotspots */}
-              <div className="relative shadow-sm">
+              <div className="relative shadow-sm" style={{ aspectRatio: "4/3" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal1.jpg"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
-                  width={1000}
-                  height={750}
-                  className="w-full h-auto block"
-                  sizes="50vw"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
                 />
                 {[
                   { top: "5%",  left: "22%", titulo: "Lorem ipsum componente" },
@@ -146,14 +144,13 @@ export default function CabinaLimpiezaPolvoPage() {
                 ))}
               </div>
               {/* Render 2 — 6 hotspots */}
-              <div className="relative shadow-sm">
+              <div className="relative shadow-sm" style={{ aspectRatio: "4/3" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal2.jpg"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
-                  width={1000}
-                  height={750}
-                  className="w-full h-auto block"
-                  sizes="50vw"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
                 />
                 {[
                   { top: "5%",  left: "28%", titulo: "Lorem ipsum componente" },
@@ -179,7 +176,10 @@ export default function CabinaLimpiezaPolvoPage() {
                   </div>
                 ))}
               </div>
+              {/* Empty space on the right */}
+              <div />
             </div>
+          </div>
         </section>
 
         {/* 3. CARACTERÍSTICAS */}
