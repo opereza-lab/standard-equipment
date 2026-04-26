@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Barlow_Condensed } from "next/font/google";
 import Script from "next/script";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
@@ -8,6 +8,14 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-barlow-condensed",
+  subsets: ["latin"],
+  weight: ["800", "900"],
+  style: ["italic"],
   display: "swap",
 });
 
@@ -85,7 +93,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col antialiased">
+      <body className={`min-h-full flex flex-col antialiased ${inter.variable} ${barlowCondensed.variable}`}>
         {children}
         <WhatsAppButton />
       </body>

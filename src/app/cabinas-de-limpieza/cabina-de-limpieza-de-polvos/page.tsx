@@ -74,8 +74,8 @@ export default function CabinaLimpiezaPolvoPage() {
           <div className="absolute flex items-center gap-3" style={{ top: "8%", left: "3%", zIndex: 2 }}>
             {/* STANDARD vertical */}
             <span
-              className="text-white/40 font-bold tracking-[0.25em] uppercase select-none"
-              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", fontSize: "clamp(0.55rem, 0.8vw, 0.75rem)", letterSpacing: "0.3em" }}
+              className="text-white/40 uppercase select-none"
+              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", fontSize: "clamp(0.6rem, 0.85vw, 0.8rem)", letterSpacing: "0.25em", fontFamily: "var(--font-barlow-condensed)", fontWeight: 900, fontStyle: "italic" }}
             >
               STANDARD
             </span>
