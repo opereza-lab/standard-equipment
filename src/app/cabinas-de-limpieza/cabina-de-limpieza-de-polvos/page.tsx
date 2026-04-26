@@ -126,7 +126,7 @@ export default function CabinaLimpiezaPolvoPage() {
               {/* Render 2 */}
               <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
                 <Image
-                  src="/images/productos/cabina-de-limpieza/render-principa2.png"
+                  src="/images/productos/cabina-de-limpieza/render-principal2.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
                   fill
                   className="object-contain"
