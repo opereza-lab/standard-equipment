@@ -111,12 +111,13 @@ export default function CabinaLimpiezaPolvoPage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px", width: "100%" }}>
               {/* Render 1 — 7 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ aspectRatio: "4/3" }}>
+              <div className="relative shadow-sm">
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal1.jpg"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
-                  fill
-                  className="object-cover"
+                  width={1000}
+                  height={750}
+                  className="w-full h-auto block"
                   sizes="50vw"
                 />
                 {[
@@ -145,12 +146,13 @@ export default function CabinaLimpiezaPolvoPage() {
                 ))}
               </div>
               {/* Render 2 — 6 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ aspectRatio: "4/3" }}>
+              <div className="relative shadow-sm">
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal2.jpg"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
-                  fill
-                  className="object-cover"
+                  width={1000}
+                  height={750}
+                  className="w-full h-auto block"
                   sizes="50vw"
                 />
                 {[
