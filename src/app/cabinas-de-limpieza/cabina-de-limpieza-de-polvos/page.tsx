@@ -117,7 +117,7 @@ export default function CabinaLimpiezaPolvoPage() {
                   src="/images/productos/cabina-de-limpieza/render-principal1.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   sizes="50vw"
                 />
                 {[
@@ -154,7 +154,7 @@ export default function CabinaLimpiezaPolvoPage() {
                   src="/images/productos/cabina-de-limpieza/render-principal2.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   sizes="50vw"
                 />
                 {[
