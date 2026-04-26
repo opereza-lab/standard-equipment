@@ -80,11 +80,11 @@ export default function CabinaLimpiezaPolvoPage() {
               STANDARD
             </span>
             {/* Texto principal */}
-            <div className="px-6 py-5" style={{ background: "rgba(0,0,0,0.45)", fontFamily: "'Roboto', sans-serif" }}>
-              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)", letterSpacing: "0.06em" }}>
+            <div className="px-6 py-5" style={{ background: "rgba(0,0,0,0.45)", fontFamily: "var(--font-inter)" }}>
+              <p className="text-white leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)", letterSpacing: "0.06em", fontWeight: 800 }}>
                 Simple, efectiva
               </p>
-              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)", letterSpacing: "0.06em" }}>
+              <p className="text-white leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)", letterSpacing: "0.06em", fontWeight: 800 }}>
                 mínima mantención
               </p>
             </div>
