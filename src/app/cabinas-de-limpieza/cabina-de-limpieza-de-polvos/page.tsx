@@ -68,7 +68,6 @@ export default function CabinaLimpiezaPolvoPage() {
         {/* 1. HERO */}
         <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/cabina-de-limpieza/hero-1.jpg')" }} />
-          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.45)", zIndex: 1 }} />
           <div className="absolute left-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
             <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
               <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
@@ -110,11 +109,11 @@ export default function CabinaLimpiezaPolvoPage() {
             <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
             <h2 className="text-3xl font-bold" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", width: "100%" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px", width: "100%" }}>
               {/* Render 1 — 7 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ height: "620px" }}>
+              <div className="relative w-full shadow-sm" style={{ aspectRatio: "4/3" }}>
                 <Image
-                  src="/images/productos/cabina-de-limpieza/render-principal1.png"
+                  src="/images/productos/cabina-de-limpieza/render-principal1.jpg"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
                   fill
                   className="object-cover"
@@ -145,13 +144,10 @@ export default function CabinaLimpiezaPolvoPage() {
                   </div>
                 ))}
               </div>
-              {/* Espacio central intencional */}
-              <div />
-
               {/* Render 2 — 6 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ height: "620px" }}>
+              <div className="relative w-full shadow-sm" style={{ aspectRatio: "4/3" }}>
                 <Image
-                  src="/images/productos/cabina-de-limpieza/render-principal2.png"
+                  src="/images/productos/cabina-de-limpieza/render-principal2.jpg"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
                   fill
                   className="object-cover"
