@@ -75,7 +75,7 @@ export default function CabinaLimpiezaPolvoPage() {
             {/* STANDARD vertical */}
             <span
               className="text-white uppercase select-none"
-              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", fontSize: "clamp(0.6rem, 0.85vw, 0.8rem)", letterSpacing: "0.25em", fontFamily: "var(--font-barlow-condensed)", fontWeight: 900, fontStyle: "italic" }}
+              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", fontSize: "clamp(0.6rem, 0.85vw, 0.8rem)", letterSpacing: "0.25em", fontFamily: "var(--font-barlow-condensed)", fontWeight: 900, fontStyle: "normal" }}
             >
               STANDARD
             </span>
