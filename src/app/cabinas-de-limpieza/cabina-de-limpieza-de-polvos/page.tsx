@@ -108,12 +108,9 @@ export default function CabinaLimpiezaPolvoPage() {
         <section style={{ background: "#f5f7fa" }} className="py-20">
           <div className="max-w-[1400px] mx-auto px-6 md:px-16">
             <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
-            <h2 className="section-heading mb-12">
-              Diagrama <span className="section-heading-accent">Técnico</span>
-              <span style={{ color: "#e07820" }}>.</span>
-            </h2>
+            <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-start">
               {/* Render 1 — 7 hotspots */}
               <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440", maxWidth: "480px", marginRight: "auto" }}>
                 <Image
