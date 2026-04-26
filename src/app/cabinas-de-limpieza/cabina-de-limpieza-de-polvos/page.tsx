@@ -77,15 +77,16 @@ export default function CabinaLimpiezaPolvoPage() {
                 Lorem ipsum dolor sit amet consectetur adipiscing elit.
               </p>
               <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
-                <div className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
-                  <p className="text-white font-black uppercase leading-none" style={{ fontSize: "1.1rem" }}>OSHA <span className="font-normal text-white/70" style={{ fontSize: "0.65rem" }}>29 CFR 1910.242(b)</span></p>
-                </div>
-                <div className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
-                  <p className="text-white font-black uppercase leading-none" style={{ fontSize: "1.1rem" }}>DS 594 <span className="font-normal text-white/70" style={{ fontSize: "0.65rem" }}>Exposición al ruido en el trabajo</span></p>
-                </div>
-                <div className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
-                  <p className="text-white font-black uppercase leading-none" style={{ fontSize: "1.1rem" }}>HEPA</p>
-                </div>
+                {[
+                  { top: "Lorem", bottom: "Lorem ipsum" },
+                  { top: "Lorem", bottom: "Lorem ipsum" },
+                  { top: "Lorem", bottom: "Lorem ipsum" },
+                ].map((s) => (
+                  <div key={s.top + s.bottom} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
+                    <p className="text-white font-bold text-sm uppercase tracking-wide" style={{ whiteSpace: "nowrap" }}>{s.top}</p>
+                    <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -183,40 +184,23 @@ export default function CabinaLimpiezaPolvoPage() {
           </div>
         </section>
 
-        {/* 3. CARACTERÍSTICAS */}
+        {/* 3. TAGS NORMATIVOS */}
         <section className="py-16 bg-[#f8f9fa]">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="section-heading mb-8">
-                  <span className="section-heading-accent">Características</span> técnicas
-                  <span style={{ color: "#e07820" }}>.</span>
-                </h2>
-                <ul className="space-y-3">
-                  {caracteristicas.map((feat, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span
-                        className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                        style={{ background: "#0d1528" }}
-                      >
-                        <CheckIcon className="w-3 h-3 text-white" />
-                      </span>
-                      <span className="text-[#495057]">{feat}</span>
-                    </li>
-                  ))}
-                </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Tag 1 — OSHA */}
+              <div className="flex items-center gap-4 px-8 py-6" style={{ background: "#0d1528" }}>
+                <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>OSHA</span>
+                <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>29 CFR<br />1910.242(b)</span>
               </div>
-
-              <div className="relative rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "4/3" }}>
-                <Image
-                  src="/images/productos/cabina-de-limpieza/hero-1.jpg"
-                  alt="Cabina de Limpieza"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-                <div className="absolute top-0 right-0 w-16 h-1 bg-[#e07820]" />
-                <div className="absolute top-0 right-0 w-1 h-16 bg-[#e07820]" />
+              {/* Tag 2 — DS 594 */}
+              <div className="flex items-center gap-4 px-8 py-6" style={{ background: "#0d1528" }}>
+                <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>DS 594</span>
+                <span className="text-white/70 font-medium" style={{ fontSize: "0.85rem", lineHeight: 1.3 }}>Exposición al<br />ruido en el trabajo</span>
+              </div>
+              {/* Tag 3 — HEPA */}
+              <div className="flex items-center justify-center px-8 py-6" style={{ background: "#0d1528" }}>
+                <span className="text-white font-black uppercase" style={{ fontSize: "2.2rem", lineHeight: 1 }}>HEPA</span>
               </div>
             </div>
           </div>
