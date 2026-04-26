@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const TAGS = [
-  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "OSHA 29 CFR 1910.242(b)", infografia: "/images/productos/cabina-de-limpieza/infografia-osha.jpg" },
-  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "DS 594",                  infografia: null },
-  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "HEPA",                     infografia: null },
+  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "OSHA 29 CFR 1910.242(b)", label: "¿Qué dice OSHA?",   infografia: "/images/productos/cabina-de-limpieza/infografia-osha.jpg" },
+  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "DS 594",                  label: "¿Qué dice DS 594?", infografia: null },
+  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "HEPA",                    label: "¿Qué dice HEPA?",   infografia: null },
 ];
 
 export default function TagsNormativos() {
@@ -54,7 +54,7 @@ export default function TagsNormativos() {
               style={{ background: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.18) 55%, transparent 100%)" }}
             >
               <span className="text-white font-semibold text-sm tracking-wide flex items-center gap-2">
-                Ver infografía
+                {tag.label}
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
