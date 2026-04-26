@@ -54,9 +54,9 @@ export default function TagsNormativos() {
               className="absolute inset-0 flex flex-col items-center justify-end pb-8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ background: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.18) 55%, transparent 100%)" }}
             >
-              <span className="text-white font-semibold text-sm tracking-wide flex items-center gap-2">
-                {tag.label}
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+              <span className="text-white font-semibold text-sm tracking-wide flex items-center gap-2 text-center px-4">
+                <span className="text-center">{tag.label}</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
