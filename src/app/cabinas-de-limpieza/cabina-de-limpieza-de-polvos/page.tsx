@@ -106,13 +106,9 @@ export default function CabinaLimpiezaPolvoPage() {
 
         {/* 3. DIAGRAMA TÉCNICO */}
         <section style={{ background: "#f5f7fa" }} className="py-20">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-16">
-            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
-            <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
-          </div>
-          <div className="grid grid-cols-2 gap-0 items-start">
+          <div className="grid grid-cols-3 gap-0 items-center">
               {/* Render 1 — 7 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
+              <div className="relative w-full shadow-sm" style={{ height: "520px" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal1.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 1"
@@ -145,8 +141,14 @@ export default function CabinaLimpiezaPolvoPage() {
                   </div>
                 ))}
               </div>
+              {/* Título central */}
+              <div className="px-8 text-center">
+                <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
+                <h2 className="text-3xl font-bold" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
+              </div>
+
               {/* Render 2 — 6 hotspots */}
-              <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
+              <div className="relative w-full shadow-sm" style={{ height: "520px" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal2.png"
                   alt="Diagrama técnico Cabina de Limpieza — vista 2"
