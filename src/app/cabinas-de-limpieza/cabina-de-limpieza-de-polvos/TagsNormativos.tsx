@@ -55,13 +55,11 @@ export default function TagsNormativos() {
             </button>
 
             {TAGS.find((t) => t.alt === open)?.infografia ? (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 src={TAGS.find((t) => t.alt === open)!.infografia!}
                 alt={open}
-                width={1920}
-                height={1080}
-                style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", background: "transparent" }}
-                className="block"
+                style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block", background: "transparent" }}
               />
             ) : (
               <div className="rounded-xl p-12 text-center text-gray-300" style={{ background: "rgba(255,255,255,0.1)" }}>
