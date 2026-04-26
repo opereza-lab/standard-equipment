@@ -77,16 +77,15 @@ export default function CabinaLimpiezaPolvoPage() {
                 Lorem ipsum dolor sit amet consectetur adipiscing elit.
               </p>
               <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
-                {[
-                  { top: "Lorem", bottom: "Lorem ipsum" },
-                  { top: "Lorem", bottom: "Lorem ipsum" },
-                  { top: "Lorem", bottom: "Lorem ipsum" },
-                ].map((s) => (
-                  <div key={s.top + s.bottom} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
-                    <p className="text-white font-bold text-sm uppercase tracking-wide" style={{ whiteSpace: "nowrap" }}>{s.top}</p>
-                    <p className="text-white/40 text-xs mt-0.5">{s.bottom}</p>
-                  </div>
-                ))}
+                <div className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
+                  <p className="text-white font-black uppercase leading-none" style={{ fontSize: "1.1rem" }}>OSHA <span className="font-normal text-white/70" style={{ fontSize: "0.65rem" }}>29 CFR 1910.242(b)</span></p>
+                </div>
+                <div className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
+                  <p className="text-white font-black uppercase leading-none" style={{ fontSize: "1.1rem" }}>DS 594 <span className="font-normal text-white/70" style={{ fontSize: "0.65rem" }}>Exposición al ruido en el trabajo</span></p>
+                </div>
+                <div className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
+                  <p className="text-white font-black uppercase leading-none" style={{ fontSize: "1.1rem" }}>HEPA</p>
+                </div>
               </div>
             </div>
           </div>
