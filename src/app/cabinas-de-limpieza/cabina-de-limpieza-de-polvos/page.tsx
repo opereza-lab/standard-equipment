@@ -98,6 +98,10 @@ export default function CabinaLimpiezaPolvoPage() {
             <p className="font-bold leading-snug" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", color: "#0d1528" }}>
               &ldquo;La <span style={{ color: "#e07820" }}>conducta del trabajador</span> para eliminar el polvo de su ropa es <span style={{ color: "#e07820" }}>sopletearse</span> con <span style={{ color: "#e07820" }}>Aire Comprimido</span>, lo que conlleva varios riesgos asociados&rdquo;
             </p>
+            <div style={{ height: "2.5rem" }} />
+            <p className="font-bold leading-snug" style={{ fontSize: "clamp(1.6rem, 3vw, 2.3rem)", color: "#0d1528" }}>
+              Nuestra cabina de limpieza <span style={{ color: "#e07820" }}>no modifica la conducta del trabajador</span>, <span style={{ color: "#e07820" }}>Elimina la fuente del riesgo</span>.
+            </p>
           </div>
         </section>
 
