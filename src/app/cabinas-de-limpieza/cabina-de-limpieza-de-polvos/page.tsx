@@ -71,20 +71,20 @@ export default function CabinaLimpiezaPolvoPage() {
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/cabina-de-limpieza/hero-1.jpg')" }} />
 
           {/* Bloque superior izquierdo — tagline */}
-          <div className="absolute flex items-center gap-3" style={{ top: "28%", left: "3%", zIndex: 2 }}>
+          <div className="absolute flex items-center gap-1" style={{ top: "28%", left: "3%", zIndex: 2 }}>
             {/* STANDARD vertical */}
             <span
-              className="text-white/40 uppercase select-none"
+              className="text-white uppercase select-none"
               style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", fontSize: "clamp(0.6rem, 0.85vw, 0.8rem)", letterSpacing: "0.25em", fontFamily: "var(--font-barlow-condensed)", fontWeight: 900, fontStyle: "italic" }}
             >
               STANDARD
             </span>
             {/* Texto principal */}
             <div className="px-6 py-5" style={{ background: "rgba(0,0,0,0.45)", fontFamily: "'Roboto', sans-serif" }}>
-              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)" }}>
+              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)", letterSpacing: "0.06em" }}>
                 Simple, efectiva
               </p>
-              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)" }}>
+              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)", letterSpacing: "0.06em" }}>
                 mínima mantención
               </p>
             </div>
