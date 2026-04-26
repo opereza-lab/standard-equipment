@@ -106,7 +106,11 @@ export default function CabinaLimpiezaPolvoPage() {
 
         {/* 3. DIAGRAMA TÉCNICO */}
         <section style={{ background: "#f5f7fa" }} className="py-20">
-          <div className="grid grid-cols-3 gap-0 items-center">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-16 mb-12">
+            <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
+            <h2 className="text-3xl font-bold" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
+          </div>
+          <div className="grid grid-cols-3 gap-0 items-start">
               {/* Render 1 — 7 hotspots */}
               <div className="relative w-full shadow-sm" style={{ height: "520px" }}>
                 <Image
@@ -141,11 +145,8 @@ export default function CabinaLimpiezaPolvoPage() {
                   </div>
                 ))}
               </div>
-              {/* Título central */}
-              <div className="px-8 text-center">
-                <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
-                <h2 className="text-3xl font-bold" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
-              </div>
+              {/* Espacio central intencional */}
+              <div />
 
               {/* Render 2 — 6 hotspots */}
               <div className="relative w-full shadow-sm" style={{ height: "520px" }}>
