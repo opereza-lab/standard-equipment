@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const TAGS = [
   { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "OSHA 29 CFR 1910.242(b)", label: "¿Qué dice OSHA?",   infografia: "/images/productos/cabina-de-limpieza/infografia-osha.jpg" },
-  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "DS 594",                  label: "¿Qué dice DS 594?", infografia: null },
+  { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "DS 594",                  label: "¿Qué dice DS 594?", infografia: "/images/productos/cabina-de-limpieza/infografía-ruido.png" },
   { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "HEPA",                    label: "¿Qué dice HEPA?",   infografia: null },
 ];
 
