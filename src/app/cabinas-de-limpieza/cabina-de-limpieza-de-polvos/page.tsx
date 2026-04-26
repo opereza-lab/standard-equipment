@@ -111,7 +111,7 @@ export default function CabinaLimpiezaPolvoPage() {
           <div className="max-w-[1400px] mx-auto px-6 md:px-16">
             <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">Componentes</p>
             <h2 className="text-3xl font-bold mb-12" style={{ color: "#0d1528" }}>Diagrama Técnico</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1.2fr 1.6fr", gap: "4px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1.44fr 1.44fr 1.12fr", gap: "4px" }}>
               {/* Render 1 — 7 hotspots */}
               <div className="relative shadow-sm" style={{ aspectRatio: "4/3" }}>
                 <Image
