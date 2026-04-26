@@ -90,13 +90,28 @@ export default function TagsNormativos() {
             </button>
 
             {TAGS.find((t) => t.alt === open)?.infografia ? (
-              <div style={{ borderRadius: "48px", overflow: "hidden", display: "inline-flex", lineHeight: 0 }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={TAGS.find((t) => t.alt === open)!.infografia!}
-                  alt={open}
-                  style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block", marginBottom: "-3px" }}
-                />
+              <div className="flex flex-col items-center gap-3">
+                <div style={{ borderRadius: "48px", overflow: "hidden", display: "inline-flex", lineHeight: 0 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={TAGS.find((t) => t.alt === open)!.infografia!}
+                    alt={open}
+                    style={{ maxHeight: "67vh", width: "auto", maxWidth: "90vw", display: "block", marginBottom: "-3px" }}
+                  />
+                </div>
+                {/* Botón descargar */}
+                <a
+                  href={TAGS.find((t) => t.alt === open)!.infografia!}
+                  download
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/20"
+                  style={{ background: "rgba(255,255,255,0.12)", backdropFilter: "blur(6px)" }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3v13M7 11l5 5 5-5M3 21h18" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Descargar infografía
+                </a>
               </div>
             ) : (
               <div className="rounded-xl p-12 text-center text-gray-300" style={{ background: "rgba(255,255,255,0.1)" }}>
