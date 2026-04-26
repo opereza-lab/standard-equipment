@@ -209,6 +209,9 @@ export default function CabinaLimpiezaPolvoPage() {
         {/* 3. TAGS NORMATIVOS */}
         <section className="py-16 bg-[#f8f9fa]">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+            <h2 className="section-heading mb-10">
+              ¿Qué dice la <span className="section-heading-accent">legislación vigente</span> sobre los riesgos asociados a la limpieza de polvo en ropa<span style={{ color: "#e07820" }}>?</span>
+            </h2>
             <TagsNormativos />
           </div>
         </section>
