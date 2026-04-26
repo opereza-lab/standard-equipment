@@ -113,7 +113,7 @@ export default function CabinaLimpiezaPolvoPage() {
               <span style={{ color: "#e07820" }}>.</span>
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              {/* Render 1 */}
+              {/* Render 1 — 7 hotspots */}
               <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal1.png"
@@ -122,8 +122,32 @@ export default function CabinaLimpiezaPolvoPage() {
                   className="object-contain"
                   sizes="50vw"
                 />
+                {[
+                  { top: "5%",  left: "22%", titulo: "Lorem ipsum componente" },
+                  { top: "32%", left: "17%", titulo: "Lorem ipsum componente" },
+                  { top: "58%", left: "35%", titulo: "Lorem ipsum componente" },
+                  { top: "88%", left: "18%", titulo: "Lorem ipsum componente" },
+                  { top: "10%", left: "72%", titulo: "Lorem ipsum componente" },
+                  { top: "35%", left: "78%", titulo: "Lorem ipsum componente" },
+                  { top: "88%", left: "70%", titulo: "Lorem ipsum componente" },
+                ].map((h, i) => (
+                  <div key={i} className="absolute group"
+                    style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
+                    <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                      <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                      <svg width="17" height="17" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                        <path fillRule="evenodd" fill="#cc0000"
+                          d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                      <p className="text-white text-xs font-bold">{h.titulo}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              {/* Render 2 */}
+              {/* Render 2 — 6 hotspots */}
               <div className="relative w-full shadow-sm" style={{ aspectRatio: "580/440" }}>
                 <Image
                   src="/images/productos/cabina-de-limpieza/render-principal2.png"
@@ -132,6 +156,29 @@ export default function CabinaLimpiezaPolvoPage() {
                   className="object-contain"
                   sizes="50vw"
                 />
+                {[
+                  { top: "5%",  left: "28%", titulo: "Lorem ipsum componente" },
+                  { top: "33%", left: "30%", titulo: "Lorem ipsum componente" },
+                  { top: "50%", left: "14%", titulo: "Lorem ipsum componente" },
+                  { top: "72%", left: "20%", titulo: "Lorem ipsum componente" },
+                  { top: "10%", left: "78%", titulo: "Lorem ipsum componente" },
+                  { top: "55%", left: "82%", titulo: "Lorem ipsum componente" },
+                ].map((h, i) => (
+                  <div key={i} className="absolute group"
+                    style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
+                    <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                      <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                      <svg width="17" height="17" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                        <path fillRule="evenodd" fill="#cc0000"
+                          d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-48 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                      <p className="text-white text-xs font-bold">{h.titulo}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
