@@ -69,6 +69,27 @@ export default function CabinaLimpiezaPolvoPage() {
         {/* 1. HERO */}
         <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/productos/cabina-de-limpieza/hero-1.jpg')" }} />
+
+          {/* Bloque superior izquierdo — tagline */}
+          <div className="absolute flex items-center gap-3" style={{ top: "8%", left: "3%", zIndex: 2 }}>
+            {/* STANDARD vertical */}
+            <span
+              className="text-white/40 font-bold tracking-[0.25em] uppercase select-none"
+              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", fontSize: "clamp(0.55rem, 0.8vw, 0.75rem)", letterSpacing: "0.3em" }}
+            >
+              STANDARD
+            </span>
+            {/* Texto principal */}
+            <div className="px-6 py-5" style={{ background: "rgba(0,0,0,0.45)", fontFamily: "'Roboto', sans-serif" }}>
+              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)" }}>
+                Simple, efectiva
+              </p>
+              <p className="text-white font-bold leading-tight" style={{ fontSize: "clamp(1.1rem, 2.2vw, 2rem)" }}>
+                mínima mantención
+              </p>
+            </div>
+          </div>
+
           <div className="absolute left-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
             <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
               <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
