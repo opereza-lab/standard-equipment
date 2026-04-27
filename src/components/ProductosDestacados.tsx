@@ -157,6 +157,11 @@ export default function ProductosDestacados() {
                     className="object-cover object-center transition-transform duration-500 group-hover/img:scale-105"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
+                  {/* Overlay oscuro en reposo → se aclara en hover */}
+                  <div
+                    className="absolute inset-0 pointer-events-none transition-opacity duration-500 opacity-60 group-hover/img:opacity-0"
+                    style={{ background: "rgba(0,0,0,0.55)" }}
+                  />
                   {/* Overlay degradado — integra con fondo + oculta timestamp */}
                   <div
                     className="absolute inset-0 pointer-events-none"
