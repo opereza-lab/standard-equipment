@@ -104,7 +104,7 @@ export default function PorQueNosotros() {
                 </span>
                 <h3 className="text-white font-semibold">{reason.title}</h3>
               </div>
-              <p className="text-white/60 text-sm leading-relaxed">{reason.description}</p>
+              <p className="text-white/60 text-sm leading-relaxed text-justify">{reason.description}</p>
             </div>
           ))}
         </div>
