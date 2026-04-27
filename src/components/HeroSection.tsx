@@ -58,7 +58,7 @@ export default function HeroSection() {
               className="text-white/90 mb-10 max-w-xl"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
             >
-              Diseñamos y fabricamos equipamiento de acero a medida para{" "}
+              Diseñamos y fabricamos equipos de acero a medida para{" "}
               <span style={{ color: "#61a8e8", fontWeight: 500 }}>
                 construcción, minería y materiales a granel
               </span>
