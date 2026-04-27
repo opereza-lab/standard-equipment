@@ -34,9 +34,9 @@ const reasons = [
       "Entendemos que cada día de inactividad cuesta dinero. Nos comprometemos con plazos reales y los cumplimos.",
   },
   {
-    title: "Certificación de materiales",
+    title: "Certificaciones",
     description:
-      "Usamos acero ASTM A36 y A572 con certificados de calidad. Toda la soldadura bajo normas AWS D1.1.",
+      "Nuestros productos están respaldados por certificados de Materiales, Procedimientos de Soldadura y Soldadores Calificados, y Memorias de Cálculo.",
   },
 ];
 
