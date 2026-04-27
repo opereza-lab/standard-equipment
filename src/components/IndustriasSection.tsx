@@ -104,18 +104,6 @@ export default function IndustriasSection() {
                   />
                   {/* Overlay base */}
                   <div className="industry-overlay absolute inset-0" />
-                  {/* Hover overlay con texto */}
-                  <div
-                    className="absolute inset-0 flex items-end justify-center pb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 55%, transparent 100%)" }}
-                  >
-                    <span className="text-white font-semibold text-sm tracking-wide flex items-center gap-2">
-                      Ver productos
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
                   {/* Icon badge */}
                   <div
                     className="absolute top-4 left-4 w-10 h-10 rounded-lg flex items-center justify-center"
