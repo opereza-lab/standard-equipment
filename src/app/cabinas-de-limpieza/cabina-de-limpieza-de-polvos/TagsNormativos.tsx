@@ -7,7 +7,7 @@ const TAGS = [
   { src: "/images/productos/cabina-de-limpieza/tag-osha.png",  alt: "OSHA 29 CFR 1910.242(b)", label: "¿Qué dice OSHA?",   infografia: "/images/productos/cabina-de-limpieza/infografia-osha.jpg" },
   { src: "/images/productos/cabina-de-limpieza/tag-ds594-ruido.png", alt: "DS 594",             label: "¿Qué dice el DS 594 respecto al ruido?", infografia: "/images/productos/cabina-de-limpieza/infografía-ruido.png" },
   { src: "/images/productos/cabina-de-limpieza/tag-ds594-hepa.png", alt: "HEPA",               label: "¿Por qué usar filtros HEPA?",   infografia: "/images/productos/cabina-de-limpieza/infografia-hepa.png" },
-  { src: "/images/productos/cabina-de-limpieza/tag-nuestra-cabina.png", alt: "Nuestra Cabina", label: "Nuestra Cabina",               infografia: null },
+  { src: "/images/productos/cabina-de-limpieza/tag-nuestra-cabina.png", alt: "Nuestra Cabina", label: "Nuestra Cabina",               infografia: "/images/productos/cabina-de-limpieza/infografia-cabina-standard.jpg" },
 ];
 
 export default function TagsNormativos() {
