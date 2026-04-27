@@ -89,11 +89,11 @@ export default function IndustriasSection() {
                 href={ind.href}
                 target={ind.external ? "_blank" : undefined}
                 rel={ind.external ? "noopener noreferrer" : undefined}
-                className="industry-card group block border border-white/10 rounded-xl overflow-hidden hover:border-[#6baed6]/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                className="industry-card group block border border-white/10 rounded-xl hover:border-[#6baed6]/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
                 style={{ backgroundColor: "#1a2f4e" }}
               >
                 {/* Image — overlay oscuro por defecto, se aclara en hover */}
-                <div className="relative h-48 overflow-hidden bg-[#0d1528]">
+                <div className="relative h-48 overflow-hidden rounded-t-xl bg-[#0d1528]">
                   <Image
                     src={ind.image}
                     alt={ind.name}
