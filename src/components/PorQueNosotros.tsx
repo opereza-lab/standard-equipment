@@ -9,19 +9,19 @@ const stats = [
 
 const reasons = [
   {
-    title: "Fabricación propia",
+    title: "Fabricación",
     description:
-      "Todo el equipamiento es fabricado en nuestras plantas con control de calidad en cada etapa. Sin intermediarios, sin sorpresas.",
+      "Procesos exhaustivos de Ingeniería para desarrollar equipos de gran funcionalidad e innovación.",
   },
   {
     title: "Ingeniería a medida",
     description:
-      "Adaptamos cada diseño a tu operación. Dimensiones, materiales y capacidades según tus requerimientos específicos.",
+      "Contamos con nuestra línea de productos, pero atendemos requerimientos especiales a través de nuestro departamento de Ingeniería.",
   },
   {
-    title: "Experiencia minera y constructora",
+    title: "Experiencia",
     description:
-      "Trabajamos con las principales empresas de construcción y minería de Chile. Conocemos las condiciones reales de campo.",
+      "Diseño Mecánico, Ingeniería, Fabricación, Montaje, Normativas de Seguridad y procedimientos con distintos actores de la Minería, Construcción e Industria nos proporcionan herramientas para desarrollar nuestros equipos de manera integral, no dejando nada al azar.",
   },
   {
     title: "Soporte técnico permanente",
