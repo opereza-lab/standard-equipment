@@ -14,7 +14,7 @@ const reasons = [
       "Procesos exhaustivos de Ingeniería para desarrollar equipos de gran funcionalidad e innovación.",
   },
   {
-    title: "Ingeniería a medida",
+    title: "Ingeniería",
     description:
       "Contamos con nuestra línea de productos, pero atendemos requerimientos especiales a través de nuestro departamento de Ingeniería.",
   },
