@@ -3,8 +3,8 @@ import { CheckIcon } from "./icons";
 const stats = [
   { value: "20+", label: "años de experiencia" },
   { value: "500+", label: "proyectos entregados" },
-  { value: "100%", label: "acero estructural certificado" },
-  { value: "48h", label: "cotización a medida" },
+  { value: "100%", label: "materiales y componentes certificados" },
+  { value: "48h", label: "tiempo promedio de respuesta a cotizaciones" },
 ];
 
 const reasons = [
