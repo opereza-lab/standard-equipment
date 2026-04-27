@@ -40,14 +40,15 @@ export default function TagsNormativos() {
           <div
             key={tag.alt}
             className="relative overflow-hidden rounded-2xl cursor-pointer group"
+            style={{ aspectRatio: "9/11" }}
             onClick={() => setOpen(tag.alt)}
           >
             <Image
               src={tag.src}
               alt={tag.alt}
-              width={900}
-              height={1100}
-              className="w-full h-auto block rounded-2xl transition-transform duration-500 group-hover:scale-105"
+              fill
+              className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+              sizes="25vw"
             />
             {/* Overlay hover con texto */}
             <div
