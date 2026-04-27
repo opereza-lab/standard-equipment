@@ -141,9 +141,9 @@ export default function ProductosDestacados() {
               </div>
 
               {/* Image col */}
-              <div className="flex-1 w-full">
+              <div className="flex-1 w-full group/img">
                 <div
-                  className="relative rounded-2xl overflow-hidden"
+                  className="relative rounded-2xl overflow-hidden transition-all duration-500 group-hover/img:-translate-y-3 group-hover/img:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)]"
                   style={{
                     aspectRatio: "4/3",
                     boxShadow: "0 8px 48px rgba(224,120,32,0.18), 0 2px 24px rgba(0,0,0,0.5)",
@@ -154,7 +154,7 @@ export default function ProductosDestacados() {
                     src={producto.image}
                     alt={producto.headingAccent}
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-center transition-transform duration-500 group-hover/img:scale-105"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   {/* Overlay degradado — integra con fondo + oculta timestamp */}
