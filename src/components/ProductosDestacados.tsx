@@ -36,7 +36,7 @@ const productos = [
       "Control gravimétrico, parámetros productivos entregados vía remota",
       "Dispensadores de Pallets automatizados",
     ],
-    image: "/images/warehouse-hero.jpg",
+    image: "/images/hero-granel-small.jpg",
     href: "/materiales-a-granel/cargadores-de-big-bag",
     category: "Materiales a Granel",
     btnLabel: "Equipamiento para materiales a granel",
