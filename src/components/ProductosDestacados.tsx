@@ -56,7 +56,7 @@ const productos = [
       "Diseños pensando en la seguridad, durabilidad y eficiencia",
       "Garantizamos la manipulación segura de nuestros equipos",
     ],
-    image: "/images/workers-corridor.jpg",
+    image: "/images/mineria-hero-small.jpg",
     href: "/mineria/equipamiento-truckshop/pinochos-caex",
     category: "Minería",
     btnLabel: "Equipamiento para minería",
