@@ -143,8 +143,12 @@ export default function ProductosDestacados() {
               {/* Image col */}
               <div className="flex-1 w-full">
                 <div
-                  className="relative rounded-2xl overflow-hidden shadow-2xl"
-                  style={{ aspectRatio: "4/3" }}
+                  className="relative rounded-2xl overflow-hidden"
+                  style={{
+                    aspectRatio: "4/3",
+                    boxShadow: "0 8px 48px rgba(224,120,32,0.18), 0 2px 24px rgba(0,0,0,0.5)",
+                    border: "1px solid rgba(224,120,32,0.25)",
+                  }}
                 >
                   <Image
                     src={producto.image}
@@ -153,15 +157,23 @@ export default function ProductosDestacados() {
                     className="object-cover object-center"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  {/* Blue accent corner */}
+                  {/* Overlay degradado — integra con fondo + oculta timestamp */}
                   <div
-                    className="absolute top-0 left-0 w-16 h-1"
-                    style={{ background: "#0d1528" }}
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background: "linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, transparent 30%, transparent 60%, rgba(0,0,0,0.65) 100%)",
+                    }}
                   />
+                  {/* Overlay lateral izquierdo — fusiona con el texto */}
                   <div
-                    className="absolute top-0 left-0 w-1 h-16"
-                    style={{ background: "#0d1528" }}
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background: "linear-gradient(to right, rgba(6,16,30,0.55) 0%, transparent 40%)",
+                    }}
                   />
+                  {/* Borde naranja top-left */}
+                  <div className="absolute top-0 left-0 w-16 h-[2px]" style={{ background: "#e07820" }} />
+                  <div className="absolute top-0 left-0 w-[2px] h-16" style={{ background: "#e07820" }} />
                 </div>
               </div>
             </div>
