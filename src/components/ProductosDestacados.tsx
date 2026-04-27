@@ -16,7 +16,7 @@ const productos = [
       "La carga suspendida es un riesgo crítico, nuestros equipos están calculados para no fallar",
       "Compatible con grúas torre y grúas móviles",
     ],
-    image: "/images/crane-steel.jpg",
+    image: "/images/hero-construccion-smaill.png",
     href: "/construccion/capachos-concretos-roll-over",
     category: "Construcción",
     btnLabel: "Equipamiento para construcción",
