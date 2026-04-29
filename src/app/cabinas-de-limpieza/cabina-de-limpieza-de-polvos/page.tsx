@@ -132,8 +132,7 @@ export default function CabinaLimpiezaPolvoPage() {
           <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
             {/* Header */}
             <div className="text-center mb-10">
-              <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">En acción</p>
-              <h2 className="text-white text-3xl font-bold">Cabina de Limpieza <span style={{ color: "#e07820" }}>Standard</span></h2>
+<h2 className="text-white text-3xl font-bold">Cabina de Limpieza <span style={{ color: "#e07820" }}>Standard</span></h2>
             </div>
             {/* Video */}
             <div
