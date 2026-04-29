@@ -251,7 +251,7 @@ export default function CapachoClientPage() {
                   ["Estructura",          "Acero estructural"],
                   ["Fondo",              "Reforzado"],
                   ["Volteo",             "Sin cambio de maniobra"],
-                  ["Certificación",      "MC, WPS-PQR"],
+                  ["Certificación",      "MC, WPS-PQR, Materiales"],
                   ["Fabricación",        "A medida según requerimiento"],
                   ["Aplicación",         "Construcción / Demolición"],
                 ].map(([label, value], i) => (
