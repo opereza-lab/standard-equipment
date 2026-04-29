@@ -28,8 +28,8 @@ export default function HeroSection() {
         className="absolute left-0 z-10 px-8 py-6"
         style={{
           bottom: "57px",
-          width: "55%",
-          maxWidth: "820px",
+          width: "45%",
+          maxWidth: "680px",
           background: "rgba(0,0,0,0.55)",
           backdropFilter: "blur(2px)",
         }}
@@ -58,9 +58,8 @@ export default function HeroSection() {
         >
           Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
           <span style={{ color: "#e07820", fontWeight: 500 }}>
-            Construcción, Minería y manejo de Materiales a Granel
+            Construcción, Minería y manejo de Materiales a Granel.
           </span>
-          , con más de 20 años de experiencia respaldando a la Industria.
         </p>
       </div>
 
