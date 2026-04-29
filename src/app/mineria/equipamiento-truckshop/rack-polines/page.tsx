@@ -92,7 +92,7 @@ export default function RackPolinesPagina() {
               {[
                 { comp: "Ganchos de Izaje",                           desc: "Para izaje seguro del rack completo con grúa." },
                 { comp: "Eslingas de Seguridad",                      desc: "Fijación extra de los polines para un almacenamiento seguro sin desplazamiento." },
-                { comp: "Estructura de Acero Estructural Optimizada", desc: "Geometría diseñada para contener los polines en condiciones exigentes de faena." },
+                { comp: "Estructura de Acero Estructural Optimizada", desc: "Diseñado para almacenar polines de correas transportadoras sin posibilidad de volcamiento." },
                 { comp: "Pockets para Grúa Horquilla",                                  desc: "Pockets para grúa horquilla que permiten la carga y traslado del rack." },
               ].map((item) => (
                 <div key={item.comp} className="flex gap-4 items-start">
