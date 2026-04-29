@@ -71,12 +71,21 @@ export default function HeroSection() {
       />
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/50">
-        <span className="text-xs uppercase tracking-widest">Explorar</span>
-        <div
-          className="w-px h-8 bg-white/40"
-          style={{ animation: "pulse 2s ease-in-out infinite" }}
-        />
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <span className="text-white/60 text-xs font-semibold uppercase tracking-[0.25em]">Scroll Down</span>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0" }}>
+          <div
+            className="w-px bg-white/50"
+            style={{
+              height: "36px",
+              transformOrigin: "top",
+              animation: "scrollLine 1.8s ease-in-out infinite",
+            }}
+          />
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style={{ opacity: 0.6 }}>
+            <path d="M1 1L5 5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
       </div>
     </section>
   );

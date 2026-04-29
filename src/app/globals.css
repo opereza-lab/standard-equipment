@@ -269,6 +269,12 @@
   color: #ffffff;
 }
 
+/* Scroll down arrow animation */
+@keyframes scrollLine {
+  0%, 100% { transform: scaleY(1); opacity: 0.5; }
+  50%       { transform: scaleY(1.6); opacity: 1; }
+}
+
 /* Fade up animation for sections */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
