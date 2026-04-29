@@ -25,7 +25,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center" style={{ paddingTop: "80px" }}>
-        <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8 w-full">
+        <div className="max-w-[1400px] mx-auto w-full" style={{ paddingLeft: "12px" }}>
 
           {/* Cuadro negro transparente */}
           <div
@@ -41,7 +41,7 @@ export default function HeroSection() {
             </p>
 
             {/* Main heading */}
-            <h1 className="hero-heading mb-6">
+            <h1 className="hero-heading mb-6" style={{ fontSize: "clamp(2.4rem, 5.6vw, 4.4rem)" }}>
               Equipamiento que{" "}
               <span style={{ fontWeight: 700 }}>trabaja</span>
               <br />
