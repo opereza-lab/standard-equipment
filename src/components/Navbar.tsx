@@ -40,7 +40,7 @@ const navItems: NavItem[] = [
       { label: "Soporte Balde Face Shovel", href: "/productos/soporte-baldes-face-shovel" },
       { label: "Bases Cilindros Hidráulicos Heavy Duty", href: "/mineria/bases-cilindros-hidraulicos" },
       {
-        label: "Racks y Acc. Mantención y Seguridad",
+        label: "Rack y Accesorios Mantención",
         href: "/mineria/equipamiento-truckshop",
         children: [
           { label: "Rack Maniobras", href: "/mineria/equipamiento-truckshop/rack-maniobras" },
