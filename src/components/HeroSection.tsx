@@ -23,46 +23,47 @@ export default function HeroSection() {
         style={{ background: "rgba(0,0,0,0.45)" }}
       />
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center" style={{ paddingTop: "80px" }}>
-        <div className="max-w-[1400px] mx-auto w-full" style={{ paddingLeft: "12px" }}>
+      {/* Cuadro negro transparente — posición absoluta desde el borde izquierdo */}
+      <div
+        className="absolute left-0 z-10 px-8 py-6"
+        style={{
+          top: "50%",
+          transform: "translateY(-50%)",
+          marginTop: "40px",
+          width: "55%",
+          maxWidth: "820px",
+          background: "rgba(0,0,0,0.55)",
+          backdropFilter: "blur(2px)",
+        }}
+      >
+        {/* Pre-heading label */}
+        <p
+          className="text-[#e07820] font-semibold text-sm md:text-base uppercase tracking-widest mb-4"
+          style={{ letterSpacing: "0.15em" }}
+        >
+          Innovación · Chile
+        </p>
 
-          {/* Cuadro negro transparente */}
-          <div
-            className="max-w-[900px] px-8 py-5"
-            style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(2px)" }}
-          >
-            {/* Pre-heading label */}
-            <p
-              className="text-[#e07820] font-semibold text-sm md:text-base uppercase tracking-widest mb-5"
-              style={{ letterSpacing: "0.15em" }}
-            >
-              Innovación · Chile
-            </p>
+        {/* Main heading */}
+        <h1 className="hero-heading mb-5" style={{ fontSize: "clamp(2.4rem, 5.6vw, 4.4rem)" }}>
+          Equipamiento que{" "}
+          <span style={{ fontWeight: 700 }}>trabaja</span>
+          <br />
+          tan duro como tú
+          <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
+        </h1>
 
-            {/* Main heading */}
-            <h1 className="hero-heading mb-6" style={{ fontSize: "clamp(2.4rem, 5.6vw, 4.4rem)" }}>
-              Equipamiento que{" "}
-              <span style={{ fontWeight: 700 }}>trabaja</span>
-              <br />
-              tan duro como tú
-              <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
-            </h1>
-
-            {/* Subtitle */}
-            <p
-              className="text-white/90 text-justify"
-              style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
-            >
-              Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
-              <span style={{ color: "#61a8e8", fontWeight: 500 }}>
-                Construcción, Minería y manejo de Materiales a Granel
-              </span>
-              , con más de 20 años de experiencia respaldando a la Industria.
-            </p>
-          </div>
-
-        </div>
+        {/* Subtitle */}
+        <p
+          className="text-white/90 text-justify"
+          style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
+        >
+          Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
+          <span style={{ color: "#61a8e8", fontWeight: 500 }}>
+            Construcción, Minería y manejo de Materiales a Granel
+          </span>
+          , con más de 20 años de experiencia respaldando a la Industria.
+        </p>
       </div>
 
       {/* Bottom fade */}
