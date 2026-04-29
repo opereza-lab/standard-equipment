@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SplitButton from "./SplitButton";
 
 export default function HeroSection() {
   return (
@@ -7,35 +6,32 @@ export default function HeroSection() {
       className="relative w-full overflow-hidden"
       style={{ height: "72vw", minHeight: "520px", maxHeight: "780px" }}
     >
-      {/* Background image */}
+      {/* Background image — mirrored horizontally */}
       <Image
-        src="/images/heavy-factory.jpg"
+        src="/images/grinding-wide.jpg"
         alt="Standard Equipment — Fabricación industrial de precisión"
         fill
         className="object-cover object-center"
         priority
         sizes="100vw"
+        style={{ transform: "scaleX(-1)" }}
       />
 
-      {/* Dark overlay (SPT-style gradient) */}
+      {/* Dark overlay */}
       <div
         className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, rgba(10,31,60,0.80) 0%, rgba(10,31,60,0.55) 55%, rgba(0,0,0,0.25) 100%)",
-        }}
-      />
-
-      {/* Blue accent bar at left edge */}
-      <div
-        className="absolute left-0 top-0 bottom-0 w-1"
-        style={{ background: "#0d1528" }}
+        style={{ background: "rgba(0,0,0,0.45)" }}
       />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center" style={{ paddingTop: "80px" }}>
         <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 w-full">
-          <div className="max-w-3xl">
+
+          {/* Cuadro negro transparente */}
+          <div
+            className="max-w-2xl px-8 py-8"
+            style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(2px)" }}
+          >
             {/* Pre-heading label */}
             <p
               className="text-[#e07820] font-semibold text-sm md:text-base uppercase tracking-widest mb-5"
@@ -44,7 +40,7 @@ export default function HeroSection() {
               Innovación · Chile
             </p>
 
-            {/* Main heading — SPT style: thin weight, large */}
+            {/* Main heading */}
             <h1 className="hero-heading mb-6">
               Equipamiento que{" "}
               <span style={{ fontWeight: 700 }}>trabaja</span>
@@ -55,7 +51,7 @@ export default function HeroSection() {
 
             {/* Subtitle */}
             <p
-              className="text-white/90 mb-10 max-w-xl text-justify"
+              className="text-white/90 text-justify"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
             >
               Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
@@ -64,26 +60,15 @@ export default function HeroSection() {
               </span>
               , con más de 20 años de experiencia respaldando a la Industria.
             </p>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <SplitButton href="/construccion/capachos-concretos-roll-over" variant="orange">
-                Productos
-              </SplitButton>
-              <SplitButton href="https://wa.me/56229381290" variant="light" external>
-                Consultar por WhatsApp
-              </SplitButton>
-            </div>
           </div>
+
         </div>
       </div>
 
       {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-24"
-        style={{
-          background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.08))",
-        }}
+        style={{ background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.08))" }}
       />
 
       {/* Scroll indicator */}
