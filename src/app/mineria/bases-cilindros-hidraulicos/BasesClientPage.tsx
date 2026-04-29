@@ -78,7 +78,7 @@ export default function BasesClientPage() {
                 />
                 {[
                   { top: "48%", left: "12%", titulo: "Estructura en Acero Galvanizado",           desc: "Garantiza durabilidad en las más adversas condiciones de faena." },
-                  { top: "72%", left: "30%", titulo: "Superficie Antideslizante en Canoas",       desc: "En las canoas de soporte para sujeción segura del cilindro durante la mantención." },
+                  { top: "72%", left: "30%", titulo: "Superficie Antideslizante en Canoas",       desc: "En las canoas de soporte para sujeción segura del cilindro durante traslado y almacenamiento." },
                   { top: "78%", left: "50%", titulo: "Pockets para Carga con Grúa Horquilla",    desc: "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton." },
                   { top: "42%", left: "68%", titulo: "Eslingas Ratchet Certificadas",             desc: "Eslingas de Amarre Ratchet Certificadas, incluidas con el equipo." },
                   { top: "72%", left: "78%", titulo: "Ganchos de Izaje Certificados",             desc: "Ganchos certificados para izaje seguro del cilindro durante la mantención." },
@@ -105,7 +105,7 @@ export default function BasesClientPage() {
             <div className="flex flex-col gap-4">
               {[
                 { comp: "Estructura en Acero Galvanizado",        desc: "Garantiza durabilidad en las más adversas condiciones de faena." },
-                { comp: "Superficie Antideslizante en Canoas",    desc: "En las canoas de soporte para sujeción segura del cilindro durante la mantención." },
+                { comp: "Superficie Antideslizante en Canoas",    desc: "En las canoas de soporte para sujeción segura del cilindro durante traslado y almacenamiento." },
                 { comp: "Pockets para Carga con Grúa Horquilla", desc: "Compatibles con Grúas Horquilla de capacidad 3 a 15 ton." },
                 { comp: "Eslingas Ratchet Certificadas",          desc: "Eslingas de Amarre Ratchet Certificadas, incluidas con el equipo." },
                 { comp: "Ganchos de Izaje Certificados",          desc: "Ganchos certificados para izaje seguro del cilindro durante la mantención." },
