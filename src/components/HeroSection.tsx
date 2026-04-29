@@ -27,9 +27,7 @@ export default function HeroSection() {
       <div
         className="absolute left-0 z-10 px-8 py-6"
         style={{
-          top: "50%",
-          transform: "translateY(-50%)",
-          marginTop: "40px",
+          bottom: "57px",
           width: "55%",
           maxWidth: "820px",
           background: "rgba(0,0,0,0.55)",
@@ -45,7 +43,7 @@ export default function HeroSection() {
         </p>
 
         {/* Main heading */}
-        <h1 className="hero-heading mb-5" style={{ fontSize: "clamp(2.4rem, 5.6vw, 4.4rem)" }}>
+        <h1 className="hero-heading mb-5" style={{ fontSize: "clamp(1.8rem, 4.2vw, 3.3rem)" }}>
           Equipamiento que{" "}
           <span style={{ fontWeight: 700 }}>trabaja</span>
           <br />
@@ -56,10 +54,10 @@ export default function HeroSection() {
         {/* Subtitle */}
         <p
           className="text-white/90 text-justify"
-          style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
+          style={{ fontSize: "clamp(0.8rem, 1.44vw, 1rem)", lineHeight: "1.65", fontWeight: 300 }}
         >
           Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
-          <span style={{ color: "#61a8e8", fontWeight: 500 }}>
+          <span style={{ color: "#e07820", fontWeight: 500 }}>
             Construcción, Minería y manejo de Materiales a Granel
           </span>
           , con más de 20 años de experiencia respaldando a la Industria.
