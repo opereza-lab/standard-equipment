@@ -127,6 +127,23 @@ export default function CabinaLimpiezaPolvoPage() {
           </div>
         </section>
 
+        {/* VIDEO VIMEO */}
+        <section className="py-12 bg-white">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+            <div
+              className="relative w-full rounded-2xl overflow-hidden shadow-2xl"
+              style={{ paddingBottom: "56.25%" /* 16:9 */ }}
+            >
+              <iframe
+                src="https://player.vimeo.com/video/1187540266?autoplay=0&title=0&byline=0&portrait=0"
+                className="absolute inset-0 w-full h-full"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         {/* 3. DIAGRAMA TÉCNICO */}
         <section style={{ background: "#f5f7fa" }} className="py-20">
           <div className="max-w-[1400px] mx-auto px-6 md:px-16">
