@@ -63,7 +63,7 @@ export default function BasesDeTrasladoPage() {
                 {[
                   ["Material", "Acero Estructural"],
                   ["Piezas de Desgaste", "Acero HB 400"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Minería a Rajo Abierto / Subterránea"],
                   ["Fabricación", "A medida según equipo"],
                 ].map(([label, value], i) => (

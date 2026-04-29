@@ -124,7 +124,7 @@ export default function RackManiobraPage() {
                   ["Altura de Gancho",     "1,6 mts."],
                   ["Movilidad",            "Ruedas Heavy Duty con freno (Desmontables)"],
                   ["Manipulación",         "Ranuras de carga para grúa horquilla"],
-                  ["Certificación",        "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación",        "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Fabricación",          "Customizable según requerimiento del cliente"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>

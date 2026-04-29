@@ -67,7 +67,7 @@ export default function SopladorDePolvoPage() {
                 {[
                   ["Material", "Acero Estructural"],
                   ["Sistema", "Soplado de aire a presión"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Industria / Minería / Construcción"],
                   ["Fabricación", "A medida"],
                 ].map(([label, value], i) => (

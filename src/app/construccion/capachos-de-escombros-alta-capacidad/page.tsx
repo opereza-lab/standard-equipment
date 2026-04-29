@@ -70,7 +70,7 @@ export default function CapachosAltaCapacidadPage() {
                 {[
                   ["Material", "Acero Estructural"],
                   ["Capacidad", "Alta capacidad — a definir según requerimiento"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Construcción / Obras Civiles"],
                   ["Fabricación", "A medida"],
                 ].map(([label, value], i) => (

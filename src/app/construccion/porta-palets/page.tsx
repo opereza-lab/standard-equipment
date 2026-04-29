@@ -65,7 +65,7 @@ export default function PortaPaletsPage() {
                   ["Material", "Acero Estructural ASTM A36"],
                   ["Capacidad", "A definir según proyecto"],
                   ["Sistema de Izaje", "Grúa Torre"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Fabricación", "A medida según requerimiento"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>

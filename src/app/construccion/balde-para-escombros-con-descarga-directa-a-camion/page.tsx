@@ -70,7 +70,7 @@ export default function BaldeDescargaDirectaPage() {
                 {[
                   ["Material", "Acero Estructural"],
                   ["Sistema", "Descarga directa — sin equipos auxiliares"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Construcción / Obras Civiles"],
                   ["Fabricación", "A medida"],
                 ].map(([label, value], i) => (

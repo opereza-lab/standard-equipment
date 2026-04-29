@@ -65,7 +65,7 @@ export default function DescargadoresBigBagPage() {
                 {[
                   ["Material", "Acero Estructural"],
                   ["Capacidad", "A definir según requerimiento"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Materiales a Granel / Industria"],
                   ["Fabricación", "A medida"],
                 ].map(([label, value], i) => (

@@ -64,7 +64,7 @@ export default function BandejasEscombrosPage() {
                 {[
                   ["Material", "Acero Estructural ASTM A36"],
                   ["Capacidad", "A definir según proyecto"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Construcción en altura"],
                   ["Fabricación", "A medida según requerimiento"],
                 ].map(([label, value], i) => (

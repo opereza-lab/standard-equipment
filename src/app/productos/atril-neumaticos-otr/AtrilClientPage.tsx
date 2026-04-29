@@ -131,7 +131,7 @@ export default function AtrilClientPage() {
                 {[
                   ["Compatibilidad",     "Distintos tamaños de neumáticos OTR"],
                   ["Material",           "Acero Estructural"],
-                  ["Certificación",      "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación",      "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación",         "Minería a Rajo Abierto / Minería Subterránea"],
                   ["Seguridad",          "Plataforma con parrilla de piso antideslizante, ganchos para fijación de neumático con slingas ratchet, barandas delimitadoras de zona de trabajo"],
                   ["Manipulación",       "Pockets para grúa horquilla"],

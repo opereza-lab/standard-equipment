@@ -128,7 +128,7 @@ export default function SoporteClientPage() {
                   ["Compatibilidad",     "Disponible para distintos modelos de palas Face Shovel"],
                   ["Material",           "Acero Estructural"],
                   ["Piezas de Desgaste", "Acero HB 400"],
-                  ["Certificación",      "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación",      "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación",         "Minería a Rajo Abierto"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>

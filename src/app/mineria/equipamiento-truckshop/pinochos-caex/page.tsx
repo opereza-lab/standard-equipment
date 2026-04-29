@@ -64,7 +64,7 @@ export default function PinochosCAEXPage() {
                 {[
                   ["Compatibilidad", "Distintos modelos de camiones CAEX"],
                   ["Material", "Acero de Alta Resistencia"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Minería a Rajo Abierto"],
                   ["Fabricación", "A medida según modelo de equipo"],
                 ].map(([label, value], i) => (

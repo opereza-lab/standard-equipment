@@ -63,7 +63,7 @@ export default function RackMartillosDTHPage() {
               <tbody>
                 {[
                   ["Material", "Acero Estructural"],
-                  ["Certificación", "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación", "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Aplicación", "Minería / Perforación"],
                   ["Capacidad", "A definir según requerimiento"],
                   ["Fabricación", "A medida"],

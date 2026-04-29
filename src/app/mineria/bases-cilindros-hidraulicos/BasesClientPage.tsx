@@ -139,7 +139,7 @@ export default function BasesClientPage() {
                   ["Eslingas Ratchet Certificadas",         "Incluidas con el equipo"],
                   ["Ganchos de Izaje Certificados",         "Para izaje seguro del cilindro"],
                   ["Tapas con Rosca Central",               "Fabricadas en Polímero de Alta Resistencia"],
-                  ["Certificación",                    "Memoria de Cálculo, WPS-PQR"],
+                  ["Certificación",                    "Memoria de Cálculo, WPS-PQR, Materiales"],
                   ["Fabricación",                      "A medida según modelo de equipo"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
