@@ -9,7 +9,7 @@ export default function HeroSection() {
     >
       {/* Background image */}
       <Image
-        src="/images/grinding-wide.jpg"
+        src="/images/heavy-factory.jpg"
         alt="Standard Equipment — Fabricación industrial de precisión"
         fill
         className="object-cover object-center"
@@ -55,7 +55,7 @@ export default function HeroSection() {
 
             {/* Subtitle */}
             <p
-              className="text-white/90 mb-10 max-w-xl"
+              className="text-white/90 mb-10 max-w-xl text-justify"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
             >
               Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
