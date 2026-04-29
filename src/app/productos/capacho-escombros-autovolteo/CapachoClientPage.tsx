@@ -156,23 +156,6 @@ export default function CapachoClientPage() {
         </div>
       </section>
 
-      {/* ── BARRA DE DESTACADOS ───────────────────────────────── */}
-      <section style={{ background: "#e07820" }}>
-        <div className="max-w-[1400px] mx-auto px-6 md:px-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#0d1528]">
-            {[
-              "Descarga solo con la grúa",
-              "Sin equipos de apoyo",
-              "Volteo sin cambio de maniobra",
-              "Fondo reforzado — mayor vida útil",
-            ].map((txt) => (
-              <div key={txt} className="px-6 py-5 text-white text-sm font-semibold text-center">
-                {txt}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── DIAGRAMA TÉCNICO ─────────────────────────────────── */}
       <section style={{ background: "#f5f7fa" }} className="py-20">
