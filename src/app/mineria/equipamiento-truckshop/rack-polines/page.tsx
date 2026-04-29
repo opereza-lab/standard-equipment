@@ -123,7 +123,7 @@ export default function RackPolinesPagina() {
                   ["Certificación", "MC, WPS-PQR, Materiales"],
                   ["Aplicación", "Minería Rajo Abierto, Minería Subterránea, Cementeras, Caleras"],
                   ["Seguridad", "Geometría optimizada para contener los polines sin desplazamiento, eslingas ratchet de seguridad extra"],
-                  ["Manipulación", "Pockets para grúa Pockets para Grúa Horquilla y orejas de izaje"],
+                  ["Manipulación", "Pockets para Grúa Horquilla y orejas de izaje"],
                 ].map(([label, value], i) => (
                   <tr key={label} style={{ background: i % 2 === 0 ? "#f5f7fa" : "#ffffff" }}>
                     <td className="px-4 py-3 font-semibold text-xs uppercase tracking-wide w-52"
