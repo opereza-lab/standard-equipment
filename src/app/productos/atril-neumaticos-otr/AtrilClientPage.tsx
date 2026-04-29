@@ -78,7 +78,7 @@ export default function AtrilClientPage() {
                   { top: "50%", left: "27%", titulo: "Ganchos de Sujeción",                                     desc: "Para fijar el neumático al atril mediante eslingas ratchet de seguridad." },
                   { top: "72%", left: "18%", titulo: "Estructura A-Frame",                                     desc: "Fabricada en acero estructural de alta resistencia para soportar neumáticos OTR de gran tonelaje." },
                   { top: "62%", left: "82%", titulo: "Plataforma de Trabajo con Barandas y Grating Galvanizado", desc: "Superficie antideslizante para inspección segura del neumático en faena." },
-                  { top: "90%", left: "50%", titulo: "Geometría Anti Vuelco",                                  desc: "Garantiza la estabilidad del atril." },
+                  { top: "90%", left: "50%", titulo: "Geometría Anti Vuelco",                                  desc: "Garantiza tanto que el neumático no se voltee, como la estabilidad del atril ante todo evento." },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
@@ -104,7 +104,7 @@ export default function AtrilClientPage() {
                 { comp: "Ganchos de Sujeción",                          desc: "Para fijar el neumático al atril mediante eslingas ratchet de seguridad." },
                 { comp: "Estructura A-Frame",                                      desc: "Fabricada en acero estructural de alta resistencia para soportar neumáticos OTR de gran tonelaje." },
                 { comp: "Plataforma de Trabajo con Barandas y Grating Galvanizado", desc: "Superficie antideslizante para inspección segura del neumático en faena." },
-                { comp: "Geometría Anti Vuelco",                                    desc: "Garantiza la estabilidad del atril." },
+                { comp: "Geometría Anti Vuelco",                                    desc: "Garantiza tanto que el neumático no se voltee, como la estabilidad del atril ante todo evento." },
               ].map((item) => (
                 <div key={item.comp} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 w-3 h-3 mt-1" style={{ background: "#e07820" }} />
