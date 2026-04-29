@@ -41,7 +41,7 @@ export default function HeroSection() {
               className="text-[#e07820] font-semibold text-sm md:text-base uppercase tracking-widest mb-5"
               style={{ letterSpacing: "0.15em" }}
             >
-              Ingeniería Industrial · Chile
+              Innovación · Chile
             </p>
 
             {/* Main heading — SPT style: thin weight, large */}
