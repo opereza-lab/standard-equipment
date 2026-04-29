@@ -128,11 +128,21 @@ export default function CabinaLimpiezaPolvoPage() {
         </section>
 
         {/* VIDEO VIMEO */}
-        <section className="py-12 bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+        <section className="py-20" style={{ background: "linear-gradient(135deg, #06101e 0%, #0d1528 60%, #06101e 100%)" }}>
+          <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
+            {/* Header */}
+            <div className="text-center mb-10">
+              <p className="text-[#e07820] text-xs font-bold tracking-widest uppercase mb-3">En acción</p>
+              <h2 className="text-white text-3xl font-bold">Cabina de Limpieza <span style={{ color: "#e07820" }}>Standard</span></h2>
+            </div>
+            {/* Video */}
             <div
-              className="relative w-full rounded-2xl overflow-hidden shadow-2xl"
-              style={{ paddingBottom: "56.25%" /* 16:9 */ }}
+              className="relative w-full rounded-2xl overflow-hidden"
+              style={{
+                paddingBottom: "56.25%",
+                border: "1px solid rgba(224,120,32,0.3)",
+                boxShadow: "0 0 60px rgba(0,0,0,0.6), 0 0 30px rgba(224,120,32,0.1)",
+              }}
             >
               <iframe
                 src="https://player.vimeo.com/video/1187540266?autoplay=0&title=0&byline=0&portrait=0"
