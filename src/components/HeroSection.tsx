@@ -25,11 +25,11 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center" style={{ paddingTop: "80px" }}>
-        <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 w-full">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8 w-full">
 
           {/* Cuadro negro transparente */}
           <div
-            className="max-w-2xl px-8 py-8"
+            className="max-w-[900px] px-8 py-5"
             style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(2px)" }}
           >
             {/* Pre-heading label */}
