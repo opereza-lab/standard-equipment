@@ -270,9 +270,9 @@
 }
 
 /* Scroll down arrow animation */
-@keyframes scrollLine {
-  0%, 100% { transform: scaleY(1); opacity: 0.5; }
-  50%       { transform: scaleY(1.6); opacity: 1; }
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50%       { transform: translateY(6px); opacity: 1; }
 }
 
 /* Fade up animation for sections */
