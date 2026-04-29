@@ -9,7 +9,7 @@ export default function HeroSection() {
     >
       {/* Background image */}
       <Image
-        src="/images/welding-blue.jpg"
+        src="/images/grinding-wide.jpg"
         alt="Standard Equipment — Fabricación industrial de precisión"
         fill
         className="object-cover object-center"
@@ -58,11 +58,11 @@ export default function HeroSection() {
               className="text-white/90 mb-10 max-w-xl"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", lineHeight: "1.65", fontWeight: 300 }}
             >
-              Diseñamos y fabricamos equipos de acero a medida para{" "}
+              Ingeniería Mecánica especializada en el diseño y fabricación de equipos para la{" "}
               <span style={{ color: "#61a8e8", fontWeight: 500 }}>
-                construcción, minería y materiales a granel
+                Construcción, Minería y manejo de Materiales a Granel
               </span>
-              , con más de 20 años respaldando a la industria.
+              , con más de 20 años de experiencia respaldando a la Industria.
             </p>
 
             {/* CTAs */}
