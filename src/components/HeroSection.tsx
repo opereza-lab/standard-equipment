@@ -28,8 +28,8 @@ export default function HeroSection() {
         className="absolute left-0 z-10 px-8 py-4"
         style={{
           bottom: "57px",
-          width: "45%",
-          maxWidth: "680px",
+          width: "50%",
+          maxWidth: "750px",
           background: "rgba(0,0,0,0.55)",
           backdropFilter: "blur(2px)",
         }}
