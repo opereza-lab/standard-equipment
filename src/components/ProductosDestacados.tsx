@@ -35,6 +35,7 @@ const productos = [
       "Accesorios para manipulación de Maxisacos con grúa horquilla",
       "Control gravimétrico, parámetros productivos entregados vía remota",
       "Dispensadores de Pallets automatizados",
+      "Nivel de automatización según la necesidad del cliente",
     ],
     image: "/images/hero-granel-small.jpg",
     href: "/materiales-a-granel/cargadores-de-big-bag",
