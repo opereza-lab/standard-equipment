@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     google: "Uuxd5wCX4fH5GuTfTiiUee1DQpK-jb2D8yF4U78YtmM",
   },
   title: {
-    default: "Standard Equipment | Ingeniería aplicada al diseño de soluciones para Construcción, Minería e Industria en General",
+    default: "Standard Equipment | Ingeniería, Diseño, Fabricación",
     template: "%s | Standard Equipment",
   },
   description:
-    "Empresa de Ingeniería Mecánica aplicada a la Fabricación de equipos para los rubros de Minería, Construcción, manejo de Materiales a granel e Industria en General con más de 20 años de experiencia.",
+    "Fabricamos equipamiento industrial para minería, construcción y materiales a granel. Más de 20 años de experiencia.",
   keywords: [
     "equipamiento industrial Chile",
     "fabricación equipos minería",
