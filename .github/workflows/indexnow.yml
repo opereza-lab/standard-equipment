@@ -1,0 +1,45 @@
+name: Notify Bing IndexNow
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel deployment
+        run: sleep 180
+
+      - name: Fetch sitemap and submit to IndexNow
+        run: |
+          # Fetch sitemap
+          SITEMAP=$(curl -s https://www.standard-equipment.cl/sitemap.xml)
+
+          # Extract URLs
+          URLS=$(echo "$SITEMAP" | grep -oP '(?<=<loc>)[^<]+' | head -50)
+
+          # Build JSON array
+          URL_ARRAY=$(echo "$URLS" | jq -R . | jq -s .)
+
+          echo "Submitting URLs:"
+          echo "$URL_ARRAY"
+
+          # Submit to IndexNow
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{
+              \"host\": \"www.standard-equipment.cl\",
+              \"key\": \"66be3f11218f4cb2ba294b1233e96e69\",
+              \"keyLocation\": \"https://www.standard-equipment.cl/66be3f11218f4cb2ba294b1233e96e69.txt\",
+              \"urlList\": $URL_ARRAY
+            }")
+
+          echo "IndexNow response: $RESPONSE"
+
+          if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
+            echo "✅ URLs submitted successfully to Bing"
+          else
+            echo "❌ Error submitting URLs: HTTP $RESPONSE"
+            exit 1
+          fi
