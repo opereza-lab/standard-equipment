@@ -96,13 +96,13 @@ export default function CabinaLimpiezaPolvoPage() {
                 <span className="text-white">Cabina de </span><span style={{ color: "#e07820" }}>Limpieza</span>
               </h1>
               <p className="text-white/75 leading-relaxed mb-4" style={{ fontSize: "15px", width: 0, minWidth: "100%" }}>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                No requiere instalación ni líneas de aire comprimido, la posicionas, la enchufas y al toque de un botón ya está operando.
               </p>
               <div className="grid grid-cols-3 gap-px" style={{ background: "rgba(255,255,255,0.1)" }}>
                 {[
-                  { top: "Lorem", bottom: "Lorem ipsum" },
-                  { top: "Lorem", bottom: "Lorem ipsum" },
-                  { top: "Lorem", bottom: "Lorem ipsum" },
+                  { top: "Aire Soplado", bottom: "2.5 PSIG · 1400 lt/min" },
+                  { top: "Tipo de Filtro", bottom: "HEPA" },
+                  { top: "Plug & Play", bottom: "Sin instalación" },
                 ].map((s) => (
                   <div key={s.top + s.bottom} className="px-3 py-3 text-center" style={{ background: "rgba(13,21,40,0.9)" }}>
                     <p className="text-white font-bold text-sm uppercase tracking-wide" style={{ whiteSpace: "nowrap" }}>{s.top}</p>
