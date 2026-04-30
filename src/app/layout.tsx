@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Standard Equipment | Fabricación de Equipamiento Industrial en Chile",
+    title: "Standard Equipment | Ingeniería, Diseño, Fabricación",
     description:
-      "Más de 20 años fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile.",
+      "Fabricamos equipamiento industrial para minería, construcción y materiales a granel. Más de 20 años de experiencia.",
     type: "website",
     url: "https://www.standard-equipment.cl",
     siteName: "Standard Equipment",
@@ -70,8 +70,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Standard Equipment | Equipamiento Industrial Chile",
-    description: "Fabricación de equipamiento industrial en acero a medida para construcción y minería.",
+    title: "Standard Equipment | Ingeniería, Diseño, Fabricación",
+    description: "Fabricamos equipamiento industrial para minería, construcción y materiales a granel. Más de 20 años de experiencia.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -104,7 +104,7 @@ export default function RootLayout({
         "name": "Standard Equipment",
         "url": "https://www.standard-equipment.cl",
         "logo": "https://www.standard-equipment.cl/images/logo-white.png",
-        "description": "Más de 20 años fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile.",
+        "description": "Fabricamos equipamiento industrial para minería, construcción y materiales a granel. Más de 20 años de experiencia.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Santiago",
