@@ -36,7 +36,7 @@ const reasons = [
   {
     title: "Respaldo y trazabilidad",
     description:
-      "Nuestros productos están respaldados por certificados de Materiales, Procedimientos de Soldadura y Soldadores Calificados, y Memorias de Cálculo.",
+      "Nuestros productos están respaldados por certificados de Materiales, Procedimientos de Soldadura, Soldadores Calificados, y Memorias de Cálculo.",
   },
 ];
 
