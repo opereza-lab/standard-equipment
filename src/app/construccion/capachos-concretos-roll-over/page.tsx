@@ -254,7 +254,8 @@ export default function CapachoRollOverPage() {
         <section className="py-16 bg-[#f8f9fa]">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <h2 className="section-heading mb-8">
-              Galería <span style={{ color: "#e07820" }}>.</span>
+              Nuestra <span className="section-heading-accent">Fabricación</span>
+              <span style={{ color: "#e07820" }}>.</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
