@@ -268,11 +268,11 @@ export default function CapachoRollOverPage() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 "/images/productos/capacho-roll-ver/capacho-roll-over-1.png",
-                "/images/productos/capacho-roll-ver/capacho-roll-over-2.png",
-                "/images/productos/capacho-roll-ver/capacho-roll-over-3.png",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-2.jpg",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-3.jpg",
                 "/images/productos/capacho-roll-ver/capacho-roll-over-4.jpeg",
-                "/images/productos/capacho-roll-ver/capacho-roll-over-5.png",
-                "/images/productos/capacho-roll-ver/capacho-roll-over-6.png",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-5.jpg",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-6.jpg",
               ].map((img, i) => (
                 <div key={i} className="group/img">
                   <div
