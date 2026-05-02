@@ -251,10 +251,18 @@ export default function CapachoRollOverPage() {
         </section>
 
         {/* 5. GALERÍA */}
-        <section className="py-16 bg-[#f8f9fa]">
+        <section
+          className="py-16"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)), url('/images/heavy-factory.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        >
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <h2 className="section-heading mb-8">
-              Nuestra <span className="section-heading-accent">Fabricación</span>
+            <h2 className="mb-8" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 300, color: "#ffffff" }}>
+              Nuestra <strong style={{ fontWeight: 700 }}>Fabricación</strong>
               <span style={{ color: "#e07820" }}>.</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -266,18 +274,38 @@ export default function CapachoRollOverPage() {
                 "/images/productos/capacho-roll-ver/capacho-roll-over-5.png",
                 "/images/productos/capacho-roll-ver/capacho-roll-over-6.png",
               ].map((img, i) => (
-                <div
-                  key={i}
-                  className="relative rounded-xl overflow-hidden bg-[#e9ecef] group cursor-pointer"
-                  style={{ aspectRatio: "4/3" }}
-                >
-                  <Image
-                    src={img}
-                    alt={`Capacho Roll Over vista ${i + 1}`}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                  />
+                <div key={i} className="group/img">
+                  <div
+                    className="relative rounded-xl overflow-hidden transition-all duration-500 group-hover/img:-translate-y-3 group-hover/img:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)] cursor-pointer"
+                    style={{
+                      aspectRatio: "4/3",
+                      boxShadow: "0 8px 48px rgba(224,120,32,0.18), 0 2px 24px rgba(0,0,0,0.5)",
+                      border: "1px solid rgba(224,120,32,0.25)",
+                    }}
+                  >
+                    <Image
+                      src={img}
+                      alt={`Capacho Roll Over vista ${i + 1}`}
+                      fill
+                      className="object-cover object-center transition-transform duration-500 group-hover/img:scale-105"
+                      sizes="(max-width: 768px) 50vw, 33vw"
+                    />
+                    {/* Overlay oscuro en reposo → se aclara en hover */}
+                    <div
+                      className="absolute inset-0 pointer-events-none transition-opacity duration-500 opacity-60 group-hover/img:opacity-0"
+                      style={{ background: "rgba(0,0,0,0.55)" }}
+                    />
+                    {/* Degradado inferior */}
+                    <div
+                      className="absolute inset-0 pointer-events-none"
+                      style={{
+                        background: "linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.65) 100%)",
+                      }}
+                    />
+                    {/* Esquinas naranjas */}
+                    <div className="absolute top-0 left-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
+                    <div className="absolute top-0 left-0 w-[2px] h-10" style={{ background: "#e07820" }} />
+                  </div>
                 </div>
               ))}
             </div>
