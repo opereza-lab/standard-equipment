@@ -268,7 +268,7 @@ export default function CapachoRollOverPage() {
                 <div
                   key={i}
                   className="relative rounded-xl overflow-hidden bg-[#e9ecef] group cursor-pointer"
-                  style={{ aspectRatio: i === 0 || i === 3 ? "4/3" : "1/1" }}
+                  style={{ aspectRatio: "4/3" }}
                 >
                   <Image
                     src={img}
