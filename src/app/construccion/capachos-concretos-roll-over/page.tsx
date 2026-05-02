@@ -258,12 +258,12 @@ export default function CapachoRollOverPage() {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
-                "/images/crane-steel.jpg",
-                "/images/grinding-sparks-wide.jpg",
-                "/images/welding-blue.jpg",
-                "/images/pipe-grinding.jpg",
-                "/images/welding-portrait.jpg",
-                "/images/inspection-factory.jpg",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-1.png",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-2.png",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-3.png",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-4.jpeg",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-5.png",
+                "/images/productos/capacho-roll-ver/capacho-roll-over-6.png",
               ].map((img, i) => (
                 <div
                   key={i}
@@ -280,9 +280,6 @@ export default function CapachoRollOverPage() {
                 </div>
               ))}
             </div>
-            <p className="text-[#6c757d] text-sm mt-4 text-center">
-              Imágenes de producto disponibles próximamente. Contáctanos para ver catálogo completo.
-            </p>
           </div>
         </section>
 
