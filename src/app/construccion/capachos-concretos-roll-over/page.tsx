@@ -117,14 +117,15 @@ export default function CapachoRollOverPage() {
           className="relative overflow-hidden"
           style={{ height: "70vh", minHeight: "520px", paddingTop: "80px" }}
         >
-          <Image
-            src="/images/crane-steel.jpg"
-            alt="Capacho Concretos Roll Over — Standard Equipment"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          >
+            <source src="/videos/capacho-roll-over-hero.mp4" type="video/mp4" />
+          </video>
           <div
             className="absolute inset-0"
             style={{
