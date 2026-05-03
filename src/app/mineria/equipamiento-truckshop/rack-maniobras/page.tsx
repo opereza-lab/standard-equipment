@@ -27,7 +27,7 @@ export default function RackManiobraPage() {
         <div className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/productos/rack-maniobras/hero-1.png')" }} />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute right-0 bottom-0 md:bottom-4" style={{ maxWidth: "535px", zIndex: 2 }}>
+        <div className="absolute right-0 top-0 md:top-20" style={{ maxWidth: "535px", zIndex: 2 }}>
           <div className="px-6 py-5 md:px-10 md:py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
             <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
               <span className="text-white">Rack </span><span style={{ color: "#e07820" }}>Maniobras</span>
