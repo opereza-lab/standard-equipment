@@ -114,9 +114,10 @@ export default function CapachoRollOverPage() {
       <main>
         {/* 1. HERO */}
         <section
-          className="relative overflow-hidden"
-          style={{ height: "70vh", minHeight: "520px", paddingTop: "80px" }}
+          className="relative w-full overflow-hidden"
+          style={{ height: "72vw", minHeight: "520px", maxHeight: "780px" }}
         >
+          {/* Background video */}
           <video
             autoPlay
             muted
@@ -126,46 +127,64 @@ export default function CapachoRollOverPage() {
           >
             <source src="/videos/capacho-roll-over-hero1.mp4" type="video/mp4" />
           </video>
+
+          {/* Dark overlay */}
           <div
             className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(10,31,60,0.88) 0%, rgba(10,31,60,0.6) 60%, rgba(0,0,0,0.3) 100%)",
-            }}
+            style={{ background: "rgba(0,0,0,0.45)" }}
           />
-          {/* Blue left stripe */}
-          <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0d1528]" />
 
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 w-full">
-              <nav className="flex items-center gap-2 text-white/50 text-sm mb-6">
-                <Link href="/" className="hover:text-white/80 transition-colors">Inicio</Link>
-                <span>/</span>
-                <Link href="/construccion/capachos-concretos-roll-over" className="hover:text-white/80 transition-colors">Construcción</Link>
-                <span>/</span>
-                <span className="text-white/80">Capacho Roll Over</span>
-              </nav>
+          {/* Cuadro negro transparente */}
+          <div
+            className="absolute left-0 z-10 px-8 py-4"
+            style={{
+              bottom: "57px",
+              width: "50%",
+              maxWidth: "750px",
+              background: "rgba(0,0,0,0.55)",
+              backdropFilter: "blur(2px)",
+            }}
+          >
+            <p
+              className="text-[#e07820] font-semibold text-sm md:text-base uppercase tracking-widest mb-4"
+              style={{ letterSpacing: "0.15em" }}
+            >
+              Construcción · Chile
+            </p>
 
-              <span className="inline-block text-[#e07820] font-semibold text-xs uppercase tracking-widest mb-4">
-                Construcción
+            <h1 className="hero-heading mb-5" style={{ fontSize: "clamp(1.8rem, 4.2vw, 3.3rem)" }}>
+              Capachos Concretos{" "}
+              <span style={{ fontWeight: 700 }}>Roll Over</span>
+              <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
+            </h1>
+
+            <p
+              className="text-white/90 text-justify"
+              style={{ fontSize: "clamp(0.8rem, 1.44vw, 1rem)", lineHeight: "1.65", fontWeight: 300 }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              <span style={{ color: "#e07820", fontWeight: 500 }}>
+                Ut enim ad minim veniam, quis nostrud exercitation.
               </span>
-              <h1
-                className="text-white mb-4"
-                style={{
-                  fontSize: "clamp(2.2rem, 5vw, 4rem)",
-                  fontWeight: 300,
-                  lineHeight: 1.1,
-                }}
-              >
-                Capacho Concretos{" "}
-                <strong style={{ fontWeight: 700 }}>Roll Over</strong>
-                <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
-              </h1>
-              <p className="text-white/80 text-lg mb-8 max-w-lg font-light">
-                Control total del vaciado de hormigón. Sin derrames, sin pérdidas.
-              </p>
+            </p>
+          </div>
 
-              <ProductContactButton producto="Capacho Concretos Roll Over" />
+          {/* Bottom fade */}
+          <div
+            className="absolute bottom-0 left-0 right-0 h-24"
+            style={{ background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.08))" }}
+          />
+
+          {/* Scroll indicator */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+            <span className="text-white/90 text-xs font-semibold uppercase tracking-[0.25em]">Scroll Down</span>
+            <div
+              style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0", animation: "scrollBounce 1.8s ease-in-out infinite" }}
+            >
+              <div className="w-px bg-white/80" style={{ height: "36px" }} />
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style={{ opacity: 0.9 }}>
+                <path d="M1 1L5 5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
           </div>
         </section>
