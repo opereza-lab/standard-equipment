@@ -113,17 +113,14 @@ export default function CapachoRollOverPage() {
 
       <main>
         {/* 1. HERO */}
-        <section
-          className="relative w-full overflow-hidden"
-          style={{ height: "calc(100vw * 9 / 21)", minHeight: "400px", maxHeight: "700px" }}
-        >
-          {/* Background video */}
+        <section className="relative w-full overflow-hidden">
+          {/* Background video — sin object-fit para no recortar ni hacer zoom */}
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="w-full block"
           >
             <source src="/videos/capacho-roll-over-hero1.mp4" type="video/mp4" />
           </video>
