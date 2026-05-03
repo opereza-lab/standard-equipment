@@ -115,7 +115,7 @@ export default function CapachoRollOverPage() {
         {/* 1. HERO */}
         <section
           className="relative w-full overflow-hidden"
-          style={{ height: "72vw", minHeight: "520px", maxHeight: "780px" }}
+          style={{ height: "calc(100vw * 9 / 21)", minHeight: "400px", maxHeight: "700px" }}
         >
           {/* Background video */}
           <video
