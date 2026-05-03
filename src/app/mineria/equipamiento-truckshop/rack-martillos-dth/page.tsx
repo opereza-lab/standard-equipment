@@ -26,7 +26,7 @@ export default function RackMartillosDTHPage() {
       <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "420px" }}>
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/mechanic-red.jpg')" }} />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }} />
-        <div className="absolute right-0" style={{ maxWidth: "535px", top: "80px", zIndex: 2 }}>
+        <div className="absolute right-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
           <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.65)" }}>
             <h1 className="text-white font-black uppercase leading-none" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
               Rack Martillos

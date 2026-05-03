@@ -90,7 +90,7 @@ export default function CabinaLimpiezaPolvoPage() {
             </div>
           </div>
 
-          <div className="absolute left-0" style={{ maxWidth: "535px", top: "80px", zIndex: 2 }}>
+          <div className="absolute left-0" style={{ maxWidth: "535px", bottom: "16px", zIndex: 2 }}>
             <div className="px-10 py-8 flex flex-col gap-2" style={{ background: "rgba(13,21,40,0.82)" }}>
               <h1 className="font-black uppercase leading-none mb-3" style={{ fontSize: "clamp(1rem, 1.9vw, 2rem)", whiteSpace: "nowrap" }}>
                 <span className="text-white">Cabina de </span><span style={{ color: "#e07820" }}>Limpieza</span>
