@@ -358,12 +358,36 @@ export default function CapachoRollOverPage() {
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-              {/* Contenido editable — izquierda */}
+              {/* Contenido — izquierda */}
               <div>
                 <h3 className="mb-6" style={{ fontSize: "clamp(1.4rem, 2.2vw, 1.8rem)", fontWeight: 700, color: "#ffffff" }}>
                   Accesorios<span style={{ color: "#e07820" }}>.</span>
                 </h3>
-                {/* ↓ contenido editable ↓ */}
+                <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", overflow: "hidden" }}>
+                  <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1.25rem" }}>
+                    <thead>
+                      <tr style={{ background: "rgba(255,255,255,0.08)" }}>
+                        {["Accesorio", "Descripción", "Compatibilidad"].map((h) => (
+                          <th key={h} className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { acc: "—", desc: "—", comp: "—" },
+                        { acc: "—", desc: "—", comp: "—" },
+                        { acc: "—", desc: "—", comp: "—" },
+                        { acc: "—", desc: "—", comp: "—" },
+                      ].map((row, i, arr) => (
+                        <tr key={i} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
+                          <td className="px-4 py-3 font-bold" style={{ color: "#e07820", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.acc}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.85)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.desc}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.85)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.comp}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               {/* Foto 1:1 con overlay y hover — derecha */}
