@@ -120,6 +120,8 @@ export default function CapachoRollOverPage() {
             "/images/productos/capacho-roll-ver/roll-over-hero2.png",
           ]} />
 
+          {/* Overlay */}
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.45)", zIndex: 1 }} />
 
           {/* Cuadro negro transparente */}
           <div
