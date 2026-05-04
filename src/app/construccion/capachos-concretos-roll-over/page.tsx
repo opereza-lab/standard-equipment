@@ -282,7 +282,7 @@ export default function CapachoRollOverPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
               {/* Foto 1:1 con overlay y hover */}
-              <div className="group/img">
+              <div className="group/img" style={{ maxWidth: "60%" }}>
                 <div
                   className="relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)]"
                   style={{ aspectRatio: "1/1", border: "1px solid rgba(224,120,32,0.25)" }}
