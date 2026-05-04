@@ -50,12 +50,12 @@ export default function HeroCarousel({ images }: { images: string[] }) {
         onClick={prev}
         aria-label="Imagen anterior"
         className="group/arrow absolute left-5 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-200"
-        style={{ background: "rgba(0,0,0,0.28)", border: "1.5px solid rgba(255,255,255,0.18)" }}
+        style={{ background: "rgba(0,0,0,0.6)", border: "1.5px solid rgba(255,255,255,0.18)" }}
         onMouseEnter={(e) =>
-          (e.currentTarget.style.background = "rgba(0,0,0,0.55)")
+          (e.currentTarget.style.background = "rgba(0,0,0,0.82)")
         }
         onMouseLeave={(e) =>
-          (e.currentTarget.style.background = "rgba(0,0,0,0.28)")
+          (e.currentTarget.style.background = "rgba(0,0,0,0.6)")
         }
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -68,12 +68,12 @@ export default function HeroCarousel({ images }: { images: string[] }) {
         onClick={next}
         aria-label="Siguiente imagen"
         className="group/arrow absolute right-5 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-200"
-        style={{ background: "rgba(0,0,0,0.28)", border: "1.5px solid rgba(255,255,255,0.18)" }}
+        style={{ background: "rgba(0,0,0,0.6)", border: "1.5px solid rgba(255,255,255,0.18)" }}
         onMouseEnter={(e) =>
-          (e.currentTarget.style.background = "rgba(0,0,0,0.55)")
+          (e.currentTarget.style.background = "rgba(0,0,0,0.82)")
         }
         onMouseLeave={(e) =>
-          (e.currentTarget.style.background = "rgba(0,0,0,0.28)")
+          (e.currentTarget.style.background = "rgba(0,0,0,0.6)")
         }
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
