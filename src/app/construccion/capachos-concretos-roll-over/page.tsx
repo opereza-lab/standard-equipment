@@ -163,7 +163,7 @@ export default function CapachoRollOverPage() {
           />
 
           {/* Scroll indicator */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style={{ zIndex: 10 }}>
             <span className="text-white/90 text-xs font-semibold uppercase tracking-[0.25em]">Scroll Down</span>
             <div
               style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0", animation: "scrollBounce 1.8s ease-in-out infinite" }}
