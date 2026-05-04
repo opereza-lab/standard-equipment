@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import VideoPlayer from "@/components/VideoPlayer";
+import HeroCarousel from "@/components/HeroCarousel";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductContactButton from "@/components/ProductContactButton";
 import { CheckIcon } from "@/components/icons";
@@ -114,7 +115,10 @@ export default function CapachoRollOverPage() {
       <main>
         {/* 1. HERO */}
         <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "380px" }}>
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/productos/capacho-roll-ver/roll-over-hero.png')" }} />
+          <HeroCarousel images={[
+            "/images/productos/capacho-roll-ver/roll-over-hero1.png",
+            "/images/productos/capacho-roll-ver/roll-over-hero2.png",
+          ]} />
 
 
           {/* Cuadro negro transparente */}
