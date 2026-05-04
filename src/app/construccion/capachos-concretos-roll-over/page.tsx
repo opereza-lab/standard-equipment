@@ -189,48 +189,59 @@ export default function CapachoRollOverPage() {
           </div>
         </section>
 
-        {/* ── LA PARED ─────────────────────────────────────────── */}
-        <section style={{ background: "#06101e", position: "relative", overflow: "hidden" }} className="py-24">
-          {/* Grid de fondo */}
-          <div className="absolute inset-0 pointer-events-none" style={{
-            backgroundImage: "linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
-          }} />
+        {/* ── EL INTERROGATORIO ────────────────────────────────── */}
+        <section style={{ background: "#06101e" }} className="py-20 overflow-hidden">
+          <div className="max-w-[1100px] mx-auto px-6 md:px-16">
 
-          <div className="relative max-w-[1400px] mx-auto px-6 md:px-16">
-            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-16">
+            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-14">
               Antes de seguir — hazte estas preguntas
             </p>
 
-            <div className="flex flex-col">
-              {[
-                "¿Cuánto demora el mixer en entrar a obra para cargar tus capachos?",
-                "¿Tienes que excavar para que la canoa del mixer alcance a tus capachos?",
-                "¿Estás limitado a cargar siempre desde el mismo punto de la obra?",
-              ].map((q, i) => (
-                <div key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)", padding: "clamp(1.2rem, 2.5vw, 2rem) 0" }}>
-                  <p style={{ fontSize: "clamp(1.4rem, 3.8vw, 3.2rem)", fontWeight: 300, color: "rgba(255,255,255,0.28)", lineHeight: 1.15 }}>
-                    {q}
-                  </p>
-                </div>
-              ))}
+            <div className="flex flex-col gap-10">
 
-              {/* Pregunta final — explota */}
-              <div style={{ paddingTop: "clamp(2rem, 4vw, 3.5rem)" }}>
-                <p style={{ fontSize: "clamp(2.2rem, 6.5vw, 6rem)", fontWeight: 900, lineHeight: 1.0, color: "#e07820" }}>
-                  ¿Cuánto tiempo de grúa<br />
-                  y personal pierdes<br />
-                  <span style={{ color: "#ffffff" }}>cada día?</span>
+              <div className="flex items-start gap-5">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>01</span>
+                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
+                  ¿Cuánto demora el <strong style={{ color: "#ffffff", fontWeight: 700 }}>mixer en entrar a obra</strong> para cargar tus capachos?
                 </p>
               </div>
+
+              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
+
+              <div className="flex items-start gap-5">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>02</span>
+                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
+                  ¿Tienes que hacer una <strong style={{ color: "#ffffff", fontWeight: 700 }}>excavación</strong> para que la canoa del mixer alcance a cargar tus capachos?
+                </p>
+              </div>
+
+              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
+
+              <div className="flex items-start gap-5">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>03</span>
+                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
+                  ¿Estás <strong style={{ color: "#ffffff", fontWeight: 700 }}>limitado a cargar siempre desde el mismo punto</strong> de la obra?
+                </p>
+              </div>
+
+              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
+
+              <div className="flex items-start gap-5 pt-4">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>04</span>
+                <p style={{ fontSize: "clamp(1.3rem, 2.8vw, 2.2rem)", fontWeight: 700, color: "#ffffff", lineHeight: 1.25 }}>
+                  ¿Cuántas horas de <span style={{ color: "#e07820" }}>grúa y personal inmovilizado</span> pierdes cada día, cada semana, cada obra?
+                </p>
+              </div>
+
             </div>
 
-            <div className="mt-14 flex items-center gap-5">
+            <div className="mt-16 pt-10 flex items-center gap-5" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
               <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
-              <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", fontWeight: 300 }}>
+              <p style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "rgba(255,255,255,0.55)", fontWeight: 300 }}>
                 Con nuestros <strong style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>Capachos Roll Over</strong> cargás desde cualquier lugar de la obra — incluso <strong style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>a pie de calle</strong>.
               </p>
             </div>
+
           </div>
         </section>
 
