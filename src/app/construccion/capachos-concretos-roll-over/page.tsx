@@ -189,6 +189,66 @@ export default function CapachoRollOverPage() {
           </div>
         </section>
 
+        {/* 2B. EL INTERROGATORIO */}
+        <section style={{ background: "#06101e" }} className="py-20 overflow-hidden">
+          <div className="max-w-[1100px] mx-auto px-6 md:px-16">
+
+            {/* Etiqueta */}
+            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-14">
+              Antes de seguir — hazte estas preguntas
+            </p>
+
+            {/* Preguntas */}
+            <div className="flex flex-col gap-10">
+
+              <div className="flex items-start gap-5 group">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>01</span>
+                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
+                  ¿Cuánto demora el <strong style={{ color: "#ffffff", fontWeight: 700 }}>mixer en entrar a obra</strong> para cargar tus capachos?
+                </p>
+              </div>
+
+              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
+
+              <div className="flex items-start gap-5 group">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>02</span>
+                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
+                  ¿Tienes que hacer una <strong style={{ color: "#ffffff", fontWeight: 700 }}>excavación</strong> para que la canoa del mixer alcance a cargar tus capachos?
+                </p>
+              </div>
+
+              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
+
+              <div className="flex items-start gap-5 group">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>03</span>
+                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
+                  ¿Estás <strong style={{ color: "#ffffff", fontWeight: 700 }}>limitado a cargar siempre desde el mismo punto</strong> de la obra?
+                </p>
+              </div>
+
+              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
+
+              {/* Pregunta de cierre — la más grande */}
+              <div className="flex items-start gap-5 pt-4">
+                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>04</span>
+                <p style={{ fontSize: "clamp(1.3rem, 2.8vw, 2.2rem)", fontWeight: 700, color: "#ffffff", lineHeight: 1.25 }}>
+                  ¿Cuántas horas de <span style={{ color: "#e07820" }}>grúa y personal inmovilizado</span> pierdes cada día, cada semana, cada obra?
+                </p>
+              </div>
+
+            </div>
+
+            {/* Remate */}
+            <div className="mt-16 pt-10" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
+              <p style={{ fontSize: "clamp(1rem, 1.8vw, 1.35rem)", color: "rgba(255,255,255,0.55)", fontWeight: 300, maxWidth: "680px" }}>
+                El <strong style={{ color: "#ffffff", fontWeight: 600 }}>Capacho Roll Over</strong> elimina todas estas restricciones.
+                Se carga <em>donde quieras, cuando quieras</em> — con la misma grúa que ya tienes.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
         {/* 3. CARACTERÍSTICAS */}
         <section className="py-16" style={{ background: "#06101e" }}>
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
