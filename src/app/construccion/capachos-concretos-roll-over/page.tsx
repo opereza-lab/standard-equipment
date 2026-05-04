@@ -187,7 +187,7 @@ export default function CapachoRollOverPage() {
         {/* 3. CARACTERÍSTICAS */}
         <section className="py-16" style={{ background: "#06101e" }}>
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center overflow-visible">
               {/* Features list */}
               <div>
                 <h2 className="mb-8" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 300, color: "#ffffff" }}>

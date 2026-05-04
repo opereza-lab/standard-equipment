@@ -14,7 +14,7 @@ export default function VideoPlayer({ src }: { src: string }) {
   };
 
   return (
-    <div className="group/vid">
+    <div className="group/vid scale-[1.15] origin-center">
       <div
         className="relative rounded-2xl overflow-hidden transition-all duration-500 [transform:perspective(1000px)_rotateY(-4deg)] group-hover/vid:[transform:perspective(1000px)_rotateY(0deg)_translateY(-6px)] group-hover/vid:shadow-[0_24px_60px_rgba(0,0,0,0.5),0_8px_48px_rgba(224,120,32,0.25)]"
         style={{
