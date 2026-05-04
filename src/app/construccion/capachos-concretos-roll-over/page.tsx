@@ -31,7 +31,7 @@ const caracteristicas = [
   "Sistema Anti chorreo",
   "Izaje Calculado de acuerdo a ASM BTH-1:2023",
   "Sistema de descarga completamente desarmable",
-  "Piezas reemplazables — aumenta la vida útil de tu equipo",
+  "Piezas reemplazables — aumenta la vida útil de tu equipo —",
   "Compuerta de descarga de fácil apertura y cierre seguro",
   "Construcción Robusta y duradera",
   "Incluye Grillete certificado",
