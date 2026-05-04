@@ -278,25 +278,65 @@ export default function CapachoRollOverPage() {
               Especificaciones <strong style={{ fontWeight: 700 }}>técnicas</strong>
               <span style={{ color: "#e07820" }}>.</span>
             </h2>
-            <div className="overflow-x-auto rounded-xl" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
-              <table className="w-full text-sm">
-                <tbody>
-                  {especificaciones.map((spec, i) => (
-                    <tr key={spec.label} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
-                      <td className="px-6 py-4 font-semibold w-1/3" style={{ color: "#e07820", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-                        {spec.label}
-                      </td>
-                      <td className="px-6 py-4" style={{ color: "rgba(255,255,255,0.75)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-                        {spec.value}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+              {/* Foto 1:1 con overlay y hover */}
+              <div className="group/img">
+                <div
+                  className="relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)]"
+                  style={{ aspectRatio: "1/1", border: "1px solid rgba(224,120,32,0.25)" }}
+                >
+                  <Image
+                    src="/images/productos/capacho-roll-ver/capacho-roll-over-7.jpg"
+                    alt="Capacho Concretos Roll Over"
+                    fill
+                    className="object-cover"
+                    sizes="50vw"
+                  />
+                  {/* Overlay que desaparece en hover */}
+                  <div
+                    className="absolute inset-0 transition-opacity duration-500 opacity-50 group-hover/img:opacity-0"
+                    style={{ background: "rgba(0,0,0,0.55)" }}
+                  />
+                  {/* Esquinas naranjas */}
+                  <div className="absolute top-0 left-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
+                  <div className="absolute top-0 left-0 w-[2px] h-10" style={{ background: "#e07820" }} />
+                </div>
+              </div>
+
+              {/* Tabla de capacidades */}
+              <div>
+                <h3 className="mb-6" style={{ fontSize: "clamp(1.2rem, 2vw, 1.6rem)", fontWeight: 700, color: "#ffffff" }}>
+                  Capacidades<span style={{ color: "#e07820" }}>.</span>
+                </h3>
+                <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
+                  <table className="w-full text-sm">
+                    <tbody>
+                      {[
+                        { label: "0.75 m³", value: "Lorem ipsum dolor sit amet consectetur" },
+                        { label: "1 m³",    value: "Lorem ipsum dolor sit amet consectetur" },
+                        { label: "1.5 m³",  value: "Lorem ipsum dolor sit amet consectetur" },
+                        { label: "2 m³",    value: "Lorem ipsum dolor sit amet consectetur" },
+                      ].map((row, i) => (
+                        <tr key={row.label} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
+                          <td className="px-6 py-4 font-bold w-1/3" style={{ color: "#e07820", borderBottom: "1px solid rgba(255,255,255,0.06)", fontSize: "1rem" }}>
+                            {row.label}
+                          </td>
+                          <td className="px-6 py-4" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+                            {row.value}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-sm mt-4" style={{ color: "rgba(255,255,255,0.3)" }}>
+                  * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+
             </div>
-            <p className="text-sm mt-4" style={{ color: "rgba(255,255,255,0.35)" }}>
-              * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Especificaciones a confirmar.
-            </p>
           </div>
         </section>
 
