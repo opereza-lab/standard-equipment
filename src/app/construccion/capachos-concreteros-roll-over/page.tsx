@@ -399,8 +399,7 @@ export default function CapachoRollOverPage() {
                       </div>
                       <div className={`absolute left-1/2 -translate-x-1/2 w-44 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none ${h.tooltipDown ? "top-full mt-2" : "bottom-full mb-2"}`}
                         style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
-                        <p className="text-white text-xs font-bold mb-1">{h.titulo}</p>
-                        <p className="text-white/75 text-xs leading-snug">{h.desc}</p>
+                        <p className="text-white text-xs font-bold">{h.titulo}</p>
                       </div>
                     </div>
                   ))}
