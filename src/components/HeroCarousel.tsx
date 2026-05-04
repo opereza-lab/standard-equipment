@@ -82,7 +82,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
       </button>
 
       {/* Rayitas indicadoras */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {images.map((_, i) => (
           <button
             key={i}
@@ -90,8 +90,8 @@ export default function HeroCarousel({ images }: { images: string[] }) {
             aria-label={`Ir a imagen ${i + 1}`}
             className="transition-all duration-300"
             style={{
-              width: i === current ? "36px" : "24px",
-              height: "3px",
+              width: i === current ? "48px" : "32px",
+              height: "5px",
               borderRadius: "2px",
               background: "rgba(255,255,255,0.9)",
               border: "none",
