@@ -125,11 +125,6 @@ export default function CapachoRollOverPage() {
             <source src="/videos/capacho-roll-over-hero.mp4" type="video/mp4" />
           </video>
 
-          {/* Dark overlay */}
-          <div
-            className="absolute inset-0"
-            style={{ background: "rgba(0,0,0,0.45)" }}
-          />
 
           {/* Cuadro negro transparente */}
           <div
