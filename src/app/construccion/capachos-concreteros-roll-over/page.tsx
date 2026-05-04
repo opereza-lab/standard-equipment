@@ -382,7 +382,7 @@ export default function CapachoRollOverPage() {
 
                   {/* Hotspots */}
                   {[
-                    { top: "8%",  left: "73%", titulo: "Accesorio 1", desc: "Descripción del accesorio 1.", tooltipDown: true },
+                    { top: "14%",  left: "73%", titulo: "Accesorio 1", desc: "Descripción del accesorio 1.", tooltipDown: true },
                     { top: "48%", left: "43%", titulo: "Accesorio 2", desc: "Descripción del accesorio 2.", tooltipDown: false },
                   ].map((h, i) => (
                     <div
