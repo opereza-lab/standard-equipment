@@ -27,6 +27,7 @@ export default function VideoPlayer({ src }: { src: string }) {
           ref={videoRef}
           loop
           playsInline
+          muted
           className="w-full h-full object-cover"
           onContextMenu={(e) => e.preventDefault()}
         >
