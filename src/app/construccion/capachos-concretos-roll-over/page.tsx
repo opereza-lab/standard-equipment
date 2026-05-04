@@ -140,7 +140,7 @@ export default function CapachoRollOverPage() {
             </p>
 
             <h1 className="hero-heading mb-5" style={{ fontSize: "clamp(1.8rem, 4.2vw, 3.3rem)" }}>
-              Capachos Concreteros{" "}
+              Capachos Concreteros<br />
               <span style={{ fontWeight: 700 }}>Roll Over</span>
               <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
             </h1>
