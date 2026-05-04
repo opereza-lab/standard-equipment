@@ -27,14 +27,13 @@ export const metadata: Metadata = {
 };
 
 const caracteristicas = [
-  "Estructura en acero ASTM A36 de alta resistencia",
-  "Mecanismo Roll Over de volcamiento lateral sin derrames",
-  "Compuerta de descarga con accionamiento por cable de acero",
-  "Orejas de izaje con certificación de carga (slings, grillete o gancho)",
-  "Superficie interior revestida con plancha antidesgaste AR400",
-  "Pintura epóxica anticorrosión, disponible en color cliente",
-  "Compatible con grúa torre, grúa pluma y horquillas elevadoras",
-  "Fabricación bajo norma AWS D1.1 para soldadura estructural",
+  "Sistema Anti chorreo",
+  "Izaje Calculado de acuerdo a ASM BTH-1:2023",
+  "Sistema de descarga completamente desarmable",
+  "Piezas reemplazables — aumenta la vida útil de tu equipo",
+  "Compuerta de descarga de fácil apertura y cierre seguro",
+  "Construcción Robusta y duradera",
+  "Incluye Grillete certificado",
 ];
 
 const especificaciones = [
