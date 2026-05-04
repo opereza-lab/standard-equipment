@@ -81,8 +81,8 @@ export default function HeroCarousel({ images }: { images: string[] }) {
         </svg>
       </button>
 
-      {/* Rayitas indicadoras abajo al centro */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      {/* Rayitas indicadoras */}
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {images.map((_, i) => (
           <button
             key={i}
@@ -93,7 +93,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
               width: i === current ? "36px" : "24px",
               height: "3px",
               borderRadius: "2px",
-              background: i === current ? "#e07820" : "rgba(255,255,255,0.45)",
+              background: "rgba(255,255,255,0.9)",
               border: "none",
               cursor: "pointer",
               padding: 0,
