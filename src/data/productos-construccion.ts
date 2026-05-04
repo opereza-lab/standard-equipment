@@ -10,9 +10,9 @@ export const PRODUCTOS_CONSTRUCCION: ProductoConstruccion[] = [
   {
     id: "capachos-concreteros-roll-over",
     nombre: "Capachos Concreteros Roll Over",
-    desc: "Descarga lateral controlada para hormigón y áridos.",
+    desc: "Capachos concreteros de Gran Capacidad y Baja Altura de carga",
     href: "/construccion/capachos-concreteros-roll-over",
-    img: "/images/crane-steel.jpg",
+    img: "/images/productos/capacho-roll-ver/roll-over-hero1.png",
   },
   {
     id: "capachos-de-escombros",
