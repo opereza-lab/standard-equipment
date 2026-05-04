@@ -314,9 +314,9 @@ export default function CapachoRollOverPage() {
                   <table className="w-full text-sm">
                     <tbody>
                       {[
-                        { label: "0.75 m³", value: "Lorem ipsum dolor sit amet consectetur" },
-                        { label: "1 m³",    value: "Lorem ipsum dolor sit amet consectetur" },
-                        { label: "1.5 m³",  value: "Lorem ipsum dolor sit amet consectetur" },
+                        { label: "0,75 m³", value: "Lorem ipsum dolor sit amet consectetur" },
+                        { label: "1,0 m³",  value: "Lorem ipsum dolor sit amet consectetur" },
+                        { label: "1,5 m³",  value: "Lorem ipsum dolor sit amet consectetur" },
                         { label: "2 m³",    value: "Lorem ipsum dolor sit amet consectetur" },
                       ].map((row, i) => (
                         <tr key={row.label} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
