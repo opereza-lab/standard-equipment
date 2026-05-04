@@ -59,7 +59,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
         }
       >
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-          <polyline points="15 18 9 12 15 6" stroke="#e07820" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+          <polyline points="15 18 9 12 15 6" stroke="#e07820" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
 
@@ -77,7 +77,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
         }
       >
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-          <polyline points="9 18 15 12 9 6" stroke="#e07820" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+          <polyline points="9 18 15 12 9 6" stroke="#e07820" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
 
