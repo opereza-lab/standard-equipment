@@ -38,16 +38,14 @@ const caracteristicas = [
 ];
 
 const especificaciones = [
-  { label: "Capacidad estándar", value: "0.5 / 1.0 / 1.5 / 2.0 / 3.0 m³" },
-  { label: "Material cuerpo", value: "Acero ASTM A36 e=5mm" },
-  { label: "Revestimiento interior", value: "Plancha AR400 e=6mm" },
-  { label: "Sistema de descarga", value: "Compuerta batiente con cable galvanizado ⌀12mm" },
-  { label: "Tipo de volcamiento", value: "Lateral (Roll Over) 180°" },
-  { label: "Izaje", value: "Orejas 4 puntos / Certificado de carga WLL" },
-  { label: "Acabado exterior", value: "Granallado Sa2.5 + Epóxico 2 capas" },
-  { label: "Tolerancias", value: "±3mm dimensional / ±5% capacidad volumétrica" },
-  { label: "Norma de soldadura", value: "AWS D1.1 Structural Welding Code" },
-  { label: "Tiempo de fabricación", value: "10–15 días hábiles (estándar)" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet consectetur" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet consectetur adipiscing" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet consectetur" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet" },
+  { label: "Lorem ipsum", value: "Lorem ipsum dolor sit amet consectetur adipiscing" },
 ];
 
 const aplicaciones = [
