@@ -49,7 +49,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
       <button
         onClick={prev}
         aria-label="Imagen anterior"
-        className="group/arrow absolute left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center transition-colors duration-200"
+        className="group/arrow absolute left-5 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-200"
         style={{ background: "rgba(0,0,0,0.28)", border: "1.5px solid rgba(255,255,255,0.18)" }}
         onMouseEnter={(e) =>
           (e.currentTarget.style.background = "rgba(0,0,0,0.55)")
@@ -58,7 +58,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
           (e.currentTarget.style.background = "rgba(0,0,0,0.28)")
         }
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <polyline points="15 18 9 12 15 6" stroke="#e07820" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
@@ -67,7 +67,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
       <button
         onClick={next}
         aria-label="Siguiente imagen"
-        className="group/arrow absolute right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center transition-colors duration-200"
+        className="group/arrow absolute right-5 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-200"
         style={{ background: "rgba(0,0,0,0.28)", border: "1.5px solid rgba(255,255,255,0.18)" }}
         onMouseEnter={(e) =>
           (e.currentTarget.style.background = "rgba(0,0,0,0.55)")
@@ -76,7 +76,7 @@ export default function HeroCarousel({ images }: { images: string[] }) {
           (e.currentTarget.style.background = "rgba(0,0,0,0.28)")
         }
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <polyline points="9 18 15 12 9 6" stroke="#e07820" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
