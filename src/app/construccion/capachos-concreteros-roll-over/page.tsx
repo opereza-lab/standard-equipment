@@ -146,13 +146,16 @@ export default function CapachoRollOverPage() {
             </h1>
 
             <p
-              className="text-white/90 text-justify"
-              style={{ fontSize: "clamp(0.8rem, 1.44vw, 1rem)", lineHeight: "1.65", fontWeight: 300 }}
+              className="text-white/80"
+              style={{ fontSize: "clamp(1.1rem, 2vw, 1.55rem)", fontWeight: 300, letterSpacing: "0.04em", lineHeight: 1.3 }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-              <span style={{ color: "#e07820", fontWeight: 500 }}>
-                Ut enim ad minim veniam, quis nostrud exercitation.
-              </span>
+              La nueva forma de trabajar.
+            </p>
+            <p
+              className="text-white/55"
+              style={{ fontSize: "clamp(0.85rem, 1.4vw, 1.1rem)", fontWeight: 300, letterSpacing: "0.06em", lineHeight: 1.4, marginTop: "0.6rem" }}
+            >
+              Gran Capacidad · Baja Altura de Carga
             </p>
           </div>
 
