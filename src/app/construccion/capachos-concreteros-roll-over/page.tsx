@@ -358,8 +358,30 @@ export default function CapachoRollOverPage() {
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-              {/* Contenido — izquierda */}
-              <div>
+              {/* Foto 1:1 — visualmente derecha (order-2) */}
+              <div className="group/img lg:order-2" style={{ maxWidth: "60%", marginLeft: "auto" }}>
+                <div
+                  className="relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)]"
+                  style={{ aspectRatio: "1/1", border: "1px solid rgba(224,120,32,0.25)" }}
+                >
+                  <Image
+                    src="/images/productos/capacho-roll-ver/capacho-roll-over-7.jpg"
+                    alt="Accesorios Capacho Roll Over"
+                    fill
+                    className="object-cover"
+                    sizes="50vw"
+                  />
+                  <div
+                    className="absolute inset-0 transition-opacity duration-500 opacity-50 group-hover/img:opacity-0"
+                    style={{ background: "rgba(0,0,0,0.55)" }}
+                  />
+                  <div className="absolute top-0 right-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
+                  <div className="absolute top-0 right-0 w-[2px] h-10" style={{ background: "#e07820" }} />
+                </div>
+              </div>
+
+              {/* Contenido — visualmente izquierda (order-1) */}
+              <div className="lg:order-1">
                 <h3 className="mb-6" style={{ fontSize: "clamp(1.4rem, 2.2vw, 1.8rem)", fontWeight: 700, color: "#ffffff" }}>
                   Accesorios<span style={{ color: "#e07820" }}>.</span>
                 </h3>
@@ -387,30 +409,6 @@ export default function CapachoRollOverPage() {
                       ))}
                     </tbody>
                   </table>
-                </div>
-              </div>
-
-              {/* Foto 1:1 con overlay y hover — derecha */}
-              <div className="group/img" style={{ maxWidth: "60%", marginLeft: "auto" }}>
-                <div
-                  className="relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)]"
-                  style={{ aspectRatio: "1/1", border: "1px solid rgba(224,120,32,0.25)" }}
-                >
-                  <Image
-                    src="/images/productos/capacho-roll-ver/capacho-roll-over-7.jpg"
-                    alt="Accesorios Capacho Roll Over"
-                    fill
-                    className="object-cover"
-                    sizes="50vw"
-                  />
-                  {/* Overlay que desaparece en hover */}
-                  <div
-                    className="absolute inset-0 transition-opacity duration-500 opacity-50 group-hover/img:opacity-0"
-                    style={{ background: "rgba(0,0,0,0.55)" }}
-                  />
-                  {/* Esquinas naranjas — top-right (espejo) */}
-                  <div className="absolute top-0 right-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
-                  <div className="absolute top-0 right-0 w-[2px] h-10" style={{ background: "#e07820" }} />
                 </div>
               </div>
 
