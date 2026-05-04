@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/", priority: 1.0, changeFrequency: "weekly" as const },
 
     // Construcción
-    { url: "/construccion/capachos-concretos-roll-over", priority: 0.9, changeFrequency: "monthly" as const },
+    { url: "/construccion/capachos-concreteros-roll-over", priority: 0.9, changeFrequency: "monthly" as const },
     { url: "/productos/capacho-escombros-autovolteo", priority: 0.9, changeFrequency: "monthly" as const },
     { url: "/construccion/capachos-de-escombros-alta-capacidad", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/construccion/balde-para-escombros-con-descarga-directa-a-camion", priority: 0.8, changeFrequency: "monthly" as const },

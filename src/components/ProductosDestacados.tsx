@@ -17,7 +17,7 @@ const productos = [
       "Compatible con grúas torre y grúas móviles",
     ],
     image: "/images/hero-construccion-small.png",
-    href: "/construccion/capachos-concretos-roll-over",
+    href: "/construccion/capachos-concreteros-roll-over",
     category: "Construcción",
     btnLabel: "Equipamiento para construcción",
     imageLeft: false,

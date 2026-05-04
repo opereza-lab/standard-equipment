@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  async redirects() {
+    return [
+      {
+        source: "/construccion/capachos-concretos-roll-over",
+        destination: "/construccion/capachos-concreteros-roll-over",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

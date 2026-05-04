@@ -8,10 +8,10 @@ export interface ProductoConstruccion {
 
 export const PRODUCTOS_CONSTRUCCION: ProductoConstruccion[] = [
   {
-    id: "capachos-concretos-roll-over",
-    nombre: "Capachos Concretos Roll Over",
+    id: "capachos-concreteros-roll-over",
+    nombre: "Capachos Concreteros Roll Over",
     desc: "Descarga lateral controlada para hormigón y áridos.",
-    href: "/construccion/capachos-concretos-roll-over",
+    href: "/construccion/capachos-concreteros-roll-over",
     img: "/images/crane-steel.jpg",
   },
   {

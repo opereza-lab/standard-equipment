@@ -6,7 +6,7 @@ const industrias = [
   {
     name: "Construcción",
     description: "Capachos, bandejas y transportadores diseñados para obras de alta exigencia.",
-    href: "/construccion/capachos-concretos-roll-over",
+    href: "/construccion/capachos-concreteros-roll-over",
     image: "/images/industrias/const-regular2.jpg",
     icon: ConstructionIcon,
     products: ["Capachos Roll Over", "Capachos Escombros", "Bandejas", "Porta Pallets"],

@@ -6,7 +6,7 @@ const footerNav = [
   {
     title: "Construcción",
     links: [
-      { label: "Capachos Roll Over", href: "/construccion/capachos-concretos-roll-over" },
+      { label: "Capachos Roll Over", href: "/construccion/capachos-concreteros-roll-over" },
       { label: "Capachos Escombros", href: "/productos/capacho-escombros-autovolteo" },
       { label: "Bandejas para Escombros", href: "/construccion/bandejas-para-escombros" },
       { label: "Transportador de Barras", href: "/construccion/transportador-de-barras" },

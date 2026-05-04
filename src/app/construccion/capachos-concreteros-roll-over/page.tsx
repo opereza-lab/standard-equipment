@@ -421,7 +421,7 @@ export default function CapachoRollOverPage() {
         </section>
 
       </main>
-      <ProductosCarruselConstruccion excludeId="capachos-concretos-roll-over" />
+      <ProductosCarruselConstruccion excludeId="capachos-concreteros-roll-over" />
 
       <Footer />
       <WhatsAppButton />
