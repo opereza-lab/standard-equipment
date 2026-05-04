@@ -309,23 +309,22 @@ export default function CapachoRollOverPage() {
                   <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1.25rem" }}>
                     <thead>
                       <tr style={{ background: "rgba(255,255,255,0.08)" }}>
-                        {["Volumen","Tara","WLL","Total"].map((h) => (
+                        {["Volumen","Tara","WLL"].map((h) => (
                           <th key={h} className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{h}</th>
                         ))}
                       </tr>
                     </thead>
                     <tbody>
                       {[
-                        { vol: "0,75 m³", tara: "—", wll: "—", total: "—" },
-                        { vol: "1,0 m³",  tara: "—", wll: "—", total: "—" },
-                        { vol: "1,5 m³",  tara: "—", wll: "—", total: "—" },
-                        { vol: "2 m³",    tara: "—", wll: "—", total: "—" },
+                        { vol: "0,75 m³", tara: "400 Kg",  wll: "2.250 Kg" },
+                        { vol: "1,0 m³",  tara: "450 Kg",  wll: "3.000 Kg" },
+                        { vol: "1,5 m³",  tara: "605 Kg",  wll: "4.500 Kg" },
+                        { vol: "2 m³",    tara: "660 Kg",  wll: "6.000 Kg" },
                       ].map((row, i, arr) => (
                         <tr key={row.vol} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
                           <td className="px-4 py-3 font-bold" style={{ color: "#e07820", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.vol}</td>
-                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.45)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.tara}</td>
-                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.45)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.wll}</td>
-                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.45)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.total}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.85)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.tara}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.85)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.wll}</td>
                         </tr>
                       ))}
                     </tbody>
