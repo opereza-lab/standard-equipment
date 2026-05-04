@@ -309,7 +309,7 @@ export default function CapachoRollOverPage() {
                   <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1.25rem" }}>
                     <thead>
                       <tr style={{ background: "rgba(255,255,255,0.08)" }}>
-                        {["Volumen","Tara","WLL"].map((h) => (
+                        {["Volumen","Tara","WLL *"].map((h) => (
                           <th key={h} className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{h}</th>
                         ))}
                       </tr>
@@ -330,8 +330,8 @@ export default function CapachoRollOverPage() {
                     </tbody>
                   </table>
                 </div>
-                <p className="text-sm mt-4" style={{ color: "rgba(255,255,255,0.3)" }}>
-                  * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="text-sm mt-4" style={{ color: "rgba(255,255,255,0.5)" }}>
+                  * Límite de carga de trabajo
                 </p>
               </div>
 
