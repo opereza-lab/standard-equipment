@@ -11,7 +11,7 @@ import { CheckIcon } from "@/components/icons";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
 
 export const metadata: Metadata = {
-  title: "Capacho Concretos Roll Over | Vaciado Hormigón Chile",
+  title: "Capacho Concreteros Roll Over | Vaciado Hormigón Chile",
   description: "Capacho Roll Over para vaciado controlado de hormigón desde grúa. Sin derrames, volcamiento lateral 180°. 0.5 a 3 m³. Acero ASTM A36 + AR400. Certificado MC, WPS-PQR.",
   keywords: [
     "capacho roll over",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const caracteristicas = [
   "Sistema Anti chorreo",
-  "Izaje Calculado de acuerdo a ASM BTH-1:2023",
+  "Izaje Calculado de acuerdo a ASME BHT-1-2023",
   "Sistema de descarga completamente desarmable",
   "Piezas reemplazables — aumenta la vida útil de tu equipo —",
   "Compuerta de descarga de fácil apertura y cierre seguro",
@@ -140,7 +140,7 @@ export default function CapachoRollOverPage() {
             </p>
 
             <h1 className="hero-heading mb-5" style={{ fontSize: "clamp(1.8rem, 4.2vw, 3.3rem)" }}>
-              Capachos Concretos{" "}
+              Capachos Concreteros{" "}
               <span style={{ fontWeight: 700 }}>Roll Over</span>
               <span style={{ color: "#e07820", fontWeight: 700 }}>.</span>
             </h1>
@@ -284,7 +284,7 @@ export default function CapachoRollOverPage() {
                 >
                   <Image
                     src="/images/productos/capacho-roll-ver/capacho-roll-over-7.jpg"
-                    alt="Capacho Concretos Roll Over"
+                    alt="Capacho Concreteros Roll Over"
                     fill
                     className="object-cover"
                     sizes="50vw"
@@ -416,7 +416,7 @@ export default function CapachoRollOverPage() {
               </h2>
               <p className="text-white/70">Cotizamos sin compromiso en menos de 48 horas.</p>
             </div>
-            <ProductContactButton producto="Capacho Concretos Roll Over" large />
+            <ProductContactButton producto="Capacho Concreteros Roll Over" large />
           </div>
         </section>
 
