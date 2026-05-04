@@ -379,6 +379,28 @@ export default function CapachoRollOverPage() {
                   {/* Esquinas naranjas — top-right */}
                   <div className="absolute top-0 right-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
                   <div className="absolute top-0 right-0 w-[2px] h-10" style={{ background: "#e07820" }} />
+
+                  {/* Hotspot 1 — top (grillete) */}
+                  <div className="absolute z-20 group/hs1" style={{ left: "73%", top: "8%", transform: "translate(-50%, -50%)" }}>
+                    <div className="relative w-6 h-6 cursor-pointer">
+                      <div className="absolute inset-0 rounded-full animate-ping" style={{ background: "#e07820", opacity: 0.5 }} />
+                      <div className="absolute inset-[5px] rounded-full" style={{ background: "#e07820" }} />
+                    </div>
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/hs1:block whitespace-nowrap rounded px-2 py-1 text-xs font-semibold text-white" style={{ background: "rgba(0,0,0,0.85)", border: "1px solid rgba(224,120,32,0.5)" }}>
+                      Accesorio 1
+                    </div>
+                  </div>
+
+                  {/* Hotspot 2 — middle (compuerta) */}
+                  <div className="absolute z-20 group/hs2" style={{ left: "43%", top: "48%", transform: "translate(-50%, -50%)" }}>
+                    <div className="relative w-6 h-6 cursor-pointer">
+                      <div className="absolute inset-0 rounded-full animate-ping" style={{ background: "#e07820", opacity: 0.5 }} />
+                      <div className="absolute inset-[5px] rounded-full" style={{ background: "#e07820" }} />
+                    </div>
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/hs2:block whitespace-nowrap rounded px-2 py-1 text-xs font-semibold text-white" style={{ background: "rgba(0,0,0,0.85)", border: "1px solid rgba(224,120,32,0.5)" }}>
+                      Accesorio 2
+                    </div>
+                  </div>
                 </div>
               </div>
 
