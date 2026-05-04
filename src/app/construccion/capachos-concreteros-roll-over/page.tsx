@@ -343,7 +343,7 @@ export default function CapachoRollOverPage() {
         </section>
 
         {/* Separador */}
-        <div style={{ height: "1px", background: "#e07820", opacity: 0.5 }} />
+        <div style={{ height: "1px", background: "#e07820" }} />
 
         {/* 5. ACCESORIOS */}
         <section
