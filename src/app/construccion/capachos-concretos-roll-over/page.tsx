@@ -189,53 +189,7 @@ export default function CapachoRollOverPage() {
           </div>
         </section>
 
-        {/* ── OPCIÓN A · LA PARED ─────────────────────────────── */}
-        <section style={{ background: "#06101e", position: "relative", overflow: "hidden" }} className="py-24">
-          {/* Grid de fondo */}
-          <div className="absolute inset-0 pointer-events-none" style={{
-            backgroundImage: "linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
-          }} />
-
-          <div className="relative max-w-[1400px] mx-auto px-6 md:px-16">
-            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-16">
-              Antes de seguir — hazte estas preguntas
-            </p>
-
-            <div className="flex flex-col">
-              {[
-                "¿Cuánto demora el mixer en entrar a obra para cargar tus capachos?",
-                "¿Tienes que excavar para que la canoa del mixer alcance a tus capachos?",
-                "¿Estás limitado a cargar siempre desde el mismo punto de la obra?",
-              ].map((q, i) => (
-                <div key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)", padding: "clamp(1.2rem, 2.5vw, 2rem) 0" }}>
-                  <p style={{ fontSize: "clamp(1.4rem, 3.8vw, 3.2rem)", fontWeight: 300, color: "rgba(255,255,255,0.28)", lineHeight: 1.15 }}>
-                    {q}
-                  </p>
-                </div>
-              ))}
-
-              {/* Pregunta final — explota */}
-              <div style={{ paddingTop: "clamp(2rem, 4vw, 3.5rem)" }}>
-                <p style={{ fontSize: "clamp(2.2rem, 6.5vw, 6rem)", fontWeight: 900, lineHeight: 1.0, color: "#e07820" }}>
-                  ¿Cuánto tiempo de grúa<br />
-                  y personal pierdes<br />
-                  <span style={{ color: "#ffffff" }}>cada día?</span>
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-14 flex items-center gap-5">
-              <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
-              <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", fontWeight: 300 }}>
-                El <strong style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>Roll Over</strong> elimina todas estas restricciones —
-                se carga donde quieras, con la grúa que ya tienes.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ── OPCIÓN B · EL PANEL DE CONTROL ──────────────────── */}
+        {/* ── EL PANEL DE CONTROL ──────────────────────────────── */}
         <section style={{ background: "#0d1528" }} className="py-20">
           <div className="max-w-[1200px] mx-auto px-6 md:px-16">
 
@@ -286,7 +240,7 @@ export default function CapachoRollOverPage() {
             <div className="mt-8 flex items-center gap-5" style={{ paddingTop: "1.5rem", borderTop: "1px solid rgba(224,120,32,0.15)" }}>
               <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
               <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.95rem", fontWeight: 300 }}>
-                El <strong style={{ color: "rgba(255,255,255,0.85)" }}>Capacho Roll Over</strong> resuelve cada uno de estos puntos.
+                Con nuestros <strong style={{ color: "rgba(255,255,255,0.85)" }}>Capachos Roll Over</strong> cargás desde cualquier lugar de la obra — incluso <strong style={{ color: "rgba(255,255,255,0.85)" }}>a pie de calle</strong>.
               </p>
             </div>
 
