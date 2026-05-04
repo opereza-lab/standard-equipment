@@ -374,7 +374,7 @@ export default function CapachoRollOverPage() {
               {/* Tabla de capacidades */}
               <div>
                 <h3 className="mb-6" style={{ fontSize: "clamp(1.4rem, 2.2vw, 1.8rem)", fontWeight: 700, color: "#ffffff" }}>
-                  Accesorios<span style={{ color: "#e07820" }}>.</span>
+                  Capacidades<span style={{ color: "#e07820" }}>.</span>
                 </h3>
                 <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", overflow: "hidden" }}>
                   <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1.25rem" }}>
