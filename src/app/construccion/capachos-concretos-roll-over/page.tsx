@@ -274,11 +274,6 @@ export default function CapachoRollOverPage() {
           }}
         >
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <h2 className="mb-10" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 300, color: "#ffffff" }}>
-              Especificaciones <strong style={{ fontWeight: 700 }}>técnicas</strong>
-              <span style={{ color: "#e07820" }}>.</span>
-            </h2>
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
               {/* Foto 1:1 con overlay y hover */}
@@ -307,25 +302,31 @@ export default function CapachoRollOverPage() {
 
               {/* Tabla de capacidades */}
               <div>
-                <h3 className="mb-6" style={{ fontSize: "clamp(1.2rem, 2vw, 1.6rem)", fontWeight: 700, color: "#ffffff" }}>
+                <h3 className="mb-6" style={{ fontSize: "clamp(1.4rem, 2.2vw, 1.8rem)", fontWeight: 700, color: "#ffffff" }}>
                   Capacidades<span style={{ color: "#e07820" }}>.</span>
                 </h3>
                 <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
                   <table className="w-full text-sm">
+                    <thead>
+                      <tr style={{ background: "rgba(255,255,255,0.08)" }}>
+                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Volumen</th>
+                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Tara</th>
+                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>WLL</th>
+                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Total</th>
+                      </tr>
+                    </thead>
                     <tbody>
                       {[
-                        { label: "0,75 m³", value: "Lorem ipsum dolor sit amet consectetur" },
-                        { label: "1,0 m³",  value: "Lorem ipsum dolor sit amet consectetur" },
-                        { label: "1,5 m³",  value: "Lorem ipsum dolor sit amet consectetur" },
-                        { label: "2 m³",    value: "Lorem ipsum dolor sit amet consectetur" },
+                        { vol: "0,75 m³", tara: "Lorem", wll: "Lorem", total: "Lorem" },
+                        { vol: "1,0 m³",  tara: "Lorem", wll: "Lorem", total: "Lorem" },
+                        { vol: "1,5 m³",  tara: "Lorem", wll: "Lorem", total: "Lorem" },
+                        { vol: "2 m³",    tara: "Lorem", wll: "Lorem", total: "Lorem" },
                       ].map((row, i) => (
-                        <tr key={row.label} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
-                          <td className="px-6 py-4 font-bold w-1/3" style={{ color: "#e07820", borderBottom: "1px solid rgba(255,255,255,0.06)", fontSize: "1rem" }}>
-                            {row.label}
-                          </td>
-                          <td className="px-6 py-4" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-                            {row.value}
-                          </td>
+                        <tr key={row.vol} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
+                          <td className="px-4 py-3 font-bold" style={{ color: "#e07820", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.vol}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.tara}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.wll}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.total}</td>
                         </tr>
                       ))}
                     </tbody>
