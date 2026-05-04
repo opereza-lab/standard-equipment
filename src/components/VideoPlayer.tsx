@@ -40,18 +40,18 @@ export default function VideoPlayer({ src }: { src: string }) {
               style={{ background: "rgba(0,0,0,0.5)" }}
             />
             <div
-              className="absolute inset-0 flex items-center justify-center cursor-pointer"
+              className="absolute inset-0 cursor-pointer"
               onClick={handlePlay}
             >
               <div
-                className="w-14 h-14 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110"
+                className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center transition-transform duration-300 hover:scale-110"
                 style={{
-                  background: "rgba(255,255,255,0.15)",
+                  background: "rgba(255,255,255,0.12)",
                   backdropFilter: "blur(6px)",
-                  border: "1px solid rgba(255,255,255,0.3)",
+                  border: "1px solid rgba(255,255,255,0.25)",
                 }}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style={{ marginLeft: "3px" }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style={{ marginLeft: "2px" }}>
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
