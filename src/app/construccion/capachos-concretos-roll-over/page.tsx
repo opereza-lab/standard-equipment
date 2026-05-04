@@ -184,13 +184,13 @@ export default function CapachoRollOverPage() {
         </section>
 
         {/* 3. CARACTERÍSTICAS */}
-        <section className="py-16 bg-[#f8f9fa]">
+        <section className="py-16" style={{ background: "#06101e" }}>
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Features list */}
               <div>
-                <h2 className="section-heading mb-8">
-                  <span className="section-heading-accent">Características</span> técnicas
+                <h2 className="mb-8" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 300, color: "#ffffff" }}>
+                  <strong style={{ fontWeight: 700 }}>Características</strong> técnicas
                   <span style={{ color: "#e07820" }}>.</span>
                 </h2>
                 <ul className="space-y-3">
@@ -198,11 +198,11 @@ export default function CapachoRollOverPage() {
                     <li key={feat} className="flex items-start gap-3">
                       <span
                         className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                        style={{ background: "#0d1528" }}
+                        style={{ background: "#e07820" }}
                       >
                         <CheckIcon className="w-3 h-3 text-white" />
                       </span>
-                      <span className="text-[#495057]">{feat}</span>
+                      <span className="text-white/75 text-sm">{feat}</span>
                     </li>
                   ))}
                 </ul>
