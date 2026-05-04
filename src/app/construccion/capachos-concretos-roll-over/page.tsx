@@ -178,17 +178,6 @@ export default function CapachoRollOverPage() {
           </div>
         </section>
 
-        {/* 2. DESCRIPCIÓN CORTA */}
-        <section className="py-14 bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <div className="max-w-3xl">
-              <p className="text-[#495057] leading-relaxed" style={{ fontSize: "1.15rem" }}>
-                El <strong className="text-[#0d1528]">Capacho Concretos Roll Over</strong> es un equipo diseñado para el transporte y vaciado controlado de hormigón en obras donde el acceso con camión mixero es inviable. Su mecanismo de volcamiento lateral de 180° permite vaciar el contenido con precisión desde grúa, eliminando derrames y mejorando la seguridad del personal en obra.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ── EL INTERROGATORIO ────────────────────────────────── */}
         <section style={{ background: "#06101e" }} className="py-20 overflow-hidden">
           <div className="max-w-[1100px] mx-auto px-6 md:px-16">
