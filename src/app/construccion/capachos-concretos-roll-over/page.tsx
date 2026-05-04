@@ -113,15 +113,8 @@ export default function CapachoRollOverPage() {
 
       <main>
         {/* 1. HERO */}
-        <section className="relative w-full overflow-hidden">
-          <Image
-            src="/images/productos/capacho-roll-ver/roll-over-hero.png"
-            alt="Capacho Concretos Roll Over — Standard Equipment"
-            width={2560}
-            height={1080}
-            className="w-full block"
-            priority
-          />
+        <section className="relative w-full overflow-hidden" style={{ aspectRatio: "21/9", minHeight: "380px" }}>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/productos/capacho-roll-ver/roll-over-hero.png')" }} />
 
 
           {/* Cuadro negro transparente */}
