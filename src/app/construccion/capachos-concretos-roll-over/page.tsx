@@ -306,7 +306,7 @@ export default function CapachoRollOverPage() {
                   Capacidades<span style={{ color: "#e07820" }}>.</span>
                 </h3>
                 <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", overflow: "hidden" }}>
-                  <table className="w-full text-sm" style={{ borderCollapse: "collapse" }}>
+                  <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1rem" }}>
                     <thead>
                       <tr style={{ background: "rgba(255,255,255,0.08)" }}>
                         {["Volumen","Tara","WLL","Total"].map((h) => (
