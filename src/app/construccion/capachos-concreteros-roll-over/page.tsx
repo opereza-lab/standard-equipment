@@ -359,22 +359,24 @@ export default function CapachoRollOverPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
               {/* Foto 1:1 — visualmente derecha (order-2) */}
-              <div className="group/img lg:order-2" style={{ maxWidth: "60%", marginLeft: "auto" }}>
+              <div className="group/img lg:order-2" style={{ maxWidth: "60%" }}>
                 <div
                   className="relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.6),0_8px_48px_rgba(224,120,32,0.25)]"
                   style={{ aspectRatio: "1/1", border: "1px solid rgba(224,120,32,0.25)" }}
                 >
                   <Image
-                    src="/images/productos/capacho-roll-ver/capacho-roll-over-7.jpg"
+                    src="/images/productos/capacho-roll-ver/capacho-roll-over-8.png"
                     alt="Accesorios Capacho Roll Over"
                     fill
                     className="object-cover"
                     sizes="50vw"
                   />
+                  {/* Overlay que desaparece en hover */}
                   <div
                     className="absolute inset-0 transition-opacity duration-500 opacity-50 group-hover/img:opacity-0"
                     style={{ background: "rgba(0,0,0,0.55)" }}
                   />
+                  {/* Esquinas naranjas — top-right */}
                   <div className="absolute top-0 right-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
                   <div className="absolute top-0 right-0 w-[2px] h-10" style={{ background: "#e07820" }} />
                 </div>
