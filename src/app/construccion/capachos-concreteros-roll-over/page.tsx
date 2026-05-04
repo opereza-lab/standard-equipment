@@ -380,27 +380,30 @@ export default function CapachoRollOverPage() {
                   <div className="absolute top-0 right-0 w-10 h-[2px]" style={{ background: "#e07820" }} />
                   <div className="absolute top-0 right-0 w-[2px] h-10" style={{ background: "#e07820" }} />
 
-                  {/* Hotspot 1 — top (grillete) */}
-                  <div className="absolute z-20 group/hs1" style={{ left: "73%", top: "8%", transform: "translate(-50%, -50%)" }}>
-                    <div className="relative w-6 h-6 cursor-pointer">
-                      <div className="absolute inset-0 rounded-full animate-ping" style={{ background: "#e07820", opacity: 0.5 }} />
-                      <div className="absolute inset-[5px] rounded-full" style={{ background: "#e07820" }} />
+                  {/* Hotspots */}
+                  {[
+                    { top: "8%",  left: "73%", titulo: "Accesorio 1", desc: "Descripción del accesorio 1." },
+                    { top: "48%", left: "43%", titulo: "Accesorio 2", desc: "Descripción del accesorio 2." },
+                  ].map((h, i) => (
+                    <div
+                      key={i}
+                      className="absolute group"
+                      style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}
+                    >
+                      <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
+                        <div className="absolute w-8 h-8 rounded-xl animate-ping opacity-50" style={{ background: "#666666" }} />
+                        <svg width="20" height="20" viewBox="0 0 40 40" style={{ position: "relative", zIndex: 1, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.4))" }}>
+                          <path fillRule="evenodd" fill="#cc0000"
+                            d="M20,0 A20,20 0,1,1 20,40 A20,20 0,1,1 20,0 M16,6 H24 V16 H34 V24 H24 V34 H16 V24 H6 V16 H16 Z" />
+                        </svg>
+                      </div>
+                      <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 w-44 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                        style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                        <p className="text-white text-xs font-bold mb-1">{h.titulo}</p>
+                        <p className="text-white/75 text-xs leading-snug">{h.desc}</p>
+                      </div>
                     </div>
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/hs1:block whitespace-nowrap rounded px-2 py-1 text-xs font-semibold text-white" style={{ background: "rgba(0,0,0,0.85)", border: "1px solid rgba(224,120,32,0.5)" }}>
-                      Accesorio 1
-                    </div>
-                  </div>
-
-                  {/* Hotspot 2 — middle (compuerta) */}
-                  <div className="absolute z-20 group/hs2" style={{ left: "43%", top: "48%", transform: "translate(-50%, -50%)" }}>
-                    <div className="relative w-6 h-6 cursor-pointer">
-                      <div className="absolute inset-0 rounded-full animate-ping" style={{ background: "#e07820", opacity: 0.5 }} />
-                      <div className="absolute inset-[5px] rounded-full" style={{ background: "#e07820" }} />
-                    </div>
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/hs2:block whitespace-nowrap rounded px-2 py-1 text-xs font-semibold text-white" style={{ background: "rgba(0,0,0,0.85)", border: "1px solid rgba(224,120,32,0.5)" }}>
-                      Accesorio 2
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
