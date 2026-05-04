@@ -114,16 +114,14 @@ export default function CapachoRollOverPage() {
       <main>
         {/* 1. HERO */}
         <section className="relative w-full overflow-hidden">
-          {/* Background video — sin object-fit para no recortar ni hacer zoom */}
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
+          <Image
+            src="/images/productos/capacho-roll-ver/roll-over-hero.png"
+            alt="Capacho Concretos Roll Over — Standard Equipment"
+            width={2560}
+            height={1080}
             className="w-full block"
-          >
-            <source src="/videos/capacho-roll-over-hero.mp4" type="video/mp4" />
-          </video>
+            priority
+          />
 
 
           {/* Cuadro negro transparente */}
