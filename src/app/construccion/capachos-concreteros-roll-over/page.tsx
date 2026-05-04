@@ -382,8 +382,8 @@ export default function CapachoRollOverPage() {
 
                   {/* Hotspots */}
                   {[
-                    { top: "14%",  left: "73%", titulo: "Accesorio 1", desc: "Descripción del accesorio 1.", tooltipDown: true },
-                    { top: "48%", left: "43%", titulo: "Accesorio 2", desc: "Descripción del accesorio 2.", tooltipDown: false },
+                    { top: "14%",  left: "73%", titulo: "Barra de apertura de compuerta extendida", desc: "Descripción del accesorio 1.", tooltipDown: true },
+                    { top: "48%", left: "43%", titulo: "Asas de manipulación Manga", desc: "Descripción del accesorio 2.", tooltipDown: false },
                   ].map((h, i) => (
                     <div
                       key={i}
