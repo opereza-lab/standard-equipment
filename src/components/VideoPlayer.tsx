@@ -6,10 +6,15 @@ export default function VideoPlayer({ src }: { src: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
 
-  const handlePlay = () => {
+  const handleToggle = () => {
     if (videoRef.current) {
-      videoRef.current.play();
-      setPlaying(true);
+      if (playing) {
+        videoRef.current.pause();
+        setPlaying(false);
+      } else {
+        videoRef.current.play();
+        setPlaying(true);
+      }
     }
   };
 
@@ -34,32 +39,36 @@ export default function VideoPlayer({ src }: { src: string }) {
           <source src={src} type="video/mp4" />
         </video>
 
-        {/* Overlay + Play — desaparecen al dar play */}
+        {/* Overlay — solo cuando está pausado */}
         {!playing && (
-          <>
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{ background: "rgba(0,0,0,0.5)" }}
-            />
-            <div
-              className="absolute inset-0 cursor-pointer"
-              onClick={handlePlay}
-            >
-              <div
-                className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center transition-transform duration-300 hover:scale-110"
-                style={{
-                  background: "rgba(255,255,255,0.12)",
-                  backdropFilter: "blur(6px)",
-                  border: "1px solid rgba(255,255,255,0.25)",
-                }}
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style={{ marginLeft: "2px" }}>
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </div>
-          </>
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{ background: "rgba(0,0,0,0.5)" }}
+          />
         )}
+
+        {/* Botón play/pause — siempre visible en esquina */}
+        <div
+          className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110 z-10"
+          style={{
+            background: "rgba(255,255,255,0.12)",
+            backdropFilter: "blur(6px)",
+            border: "1px solid rgba(255,255,255,0.25)",
+          }}
+          onClick={handleToggle}
+        >
+          {playing ? (
+            /* Ícono pause */
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+            </svg>
+          ) : (
+            /* Ícono play */
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style={{ marginLeft: "2px" }}>
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          )}
+        </div>
 
         {/* Esquinas naranjas */}
         <div className="absolute top-0 right-0 w-12 h-[2px]" style={{ background: "#e07820" }} />
