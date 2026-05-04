@@ -305,28 +305,27 @@ export default function CapachoRollOverPage() {
                 <h3 className="mb-6" style={{ fontSize: "clamp(1.4rem, 2.2vw, 1.8rem)", fontWeight: 700, color: "#ffffff" }}>
                   Capacidades<span style={{ color: "#e07820" }}>.</span>
                 </h3>
-                <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
-                  <table className="w-full text-sm">
+                <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", overflow: "hidden" }}>
+                  <table className="w-full text-sm" style={{ borderCollapse: "collapse" }}>
                     <thead>
                       <tr style={{ background: "rgba(255,255,255,0.08)" }}>
-                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Volumen</th>
-                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Tara</th>
-                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>WLL</th>
-                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Total</th>
+                        {["Volumen","Tara","WLL","Total"].map((h) => (
+                          <th key={h} className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{h}</th>
+                        ))}
                       </tr>
                     </thead>
                     <tbody>
                       {[
-                        { vol: "0,75 m³", tara: "Lorem", wll: "Lorem", total: "Lorem" },
-                        { vol: "1,0 m³",  tara: "Lorem", wll: "Lorem", total: "Lorem" },
-                        { vol: "1,5 m³",  tara: "Lorem", wll: "Lorem", total: "Lorem" },
-                        { vol: "2 m³",    tara: "Lorem", wll: "Lorem", total: "Lorem" },
-                      ].map((row, i) => (
+                        { vol: "0,75 m³", tara: "—", wll: "—", total: "—" },
+                        { vol: "1,0 m³",  tara: "—", wll: "—", total: "—" },
+                        { vol: "1,5 m³",  tara: "—", wll: "—", total: "—" },
+                        { vol: "2 m³",    tara: "—", wll: "—", total: "—" },
+                      ].map((row, i, arr) => (
                         <tr key={row.vol} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
-                          <td className="px-4 py-3 font-bold" style={{ color: "#e07820", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.vol}</td>
-                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.tara}</td>
-                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.wll}</td>
-                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.55)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>{row.total}</td>
+                          <td className="px-4 py-3 font-bold" style={{ color: "#e07820", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.vol}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.45)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.tara}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.45)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.wll}</td>
+                          <td className="px-4 py-3" style={{ color: "rgba(255,255,255,0.45)", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{row.total}</td>
                         </tr>
                       ))}
                     </tbody>
