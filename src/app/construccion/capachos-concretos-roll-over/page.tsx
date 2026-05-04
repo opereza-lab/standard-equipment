@@ -189,60 +189,104 @@ export default function CapachoRollOverPage() {
           </div>
         </section>
 
-        {/* 2B. EL INTERROGATORIO */}
-        <section style={{ background: "#06101e" }} className="py-20 overflow-hidden">
-          <div className="max-w-[1100px] mx-auto px-6 md:px-16">
+        {/* ── OPCIÓN A · LA PARED ─────────────────────────────── */}
+        <section style={{ background: "#06101e", position: "relative", overflow: "hidden" }} className="py-24">
+          {/* Grid de fondo */}
+          <div className="absolute inset-0 pointer-events-none" style={{
+            backgroundImage: "linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px)",
+            backgroundSize: "64px 64px",
+          }} />
 
-            {/* Etiqueta */}
-            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-14">
+          <div className="relative max-w-[1400px] mx-auto px-6 md:px-16">
+            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-16">
               Antes de seguir — hazte estas preguntas
             </p>
 
-            {/* Preguntas */}
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col">
+              {[
+                "¿Cuánto demora el mixer en entrar a obra para cargar tus capachos?",
+                "¿Tienes que excavar para que la canoa del mixer alcance a tus capachos?",
+                "¿Estás limitado a cargar siempre desde el mismo punto de la obra?",
+              ].map((q, i) => (
+                <div key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)", padding: "clamp(1.2rem, 2.5vw, 2rem) 0" }}>
+                  <p style={{ fontSize: "clamp(1.4rem, 3.8vw, 3.2rem)", fontWeight: 300, color: "rgba(255,255,255,0.28)", lineHeight: 1.15 }}>
+                    {q}
+                  </p>
+                </div>
+              ))}
 
-              <div className="flex items-start gap-5 group">
-                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>01</span>
-                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
-                  ¿Cuánto demora el <strong style={{ color: "#ffffff", fontWeight: 700 }}>mixer en entrar a obra</strong> para cargar tus capachos?
+              {/* Pregunta final — explota */}
+              <div style={{ paddingTop: "clamp(2rem, 4vw, 3.5rem)" }}>
+                <p style={{ fontSize: "clamp(2.2rem, 6.5vw, 6rem)", fontWeight: 900, lineHeight: 1.0, color: "#e07820" }}>
+                  ¿Cuánto tiempo de grúa<br />
+                  y personal pierdes<br />
+                  <span style={{ color: "#ffffff" }}>cada día?</span>
                 </p>
               </div>
-
-              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
-
-              <div className="flex items-start gap-5 group">
-                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>02</span>
-                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
-                  ¿Tienes que hacer una <strong style={{ color: "#ffffff", fontWeight: 700 }}>excavación</strong> para que la canoa del mixer alcance a cargar tus capachos?
-                </p>
-              </div>
-
-              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
-
-              <div className="flex items-start gap-5 group">
-                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>03</span>
-                <p style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.75rem)", fontWeight: 300, color: "rgba(255,255,255,0.82)", lineHeight: 1.35 }}>
-                  ¿Estás <strong style={{ color: "#ffffff", fontWeight: 700 }}>limitado a cargar siempre desde el mismo punto</strong> de la obra?
-                </p>
-              </div>
-
-              <div className="w-full" style={{ height: "1px", background: "rgba(255,255,255,0.07)" }} />
-
-              {/* Pregunta de cierre — la más grande */}
-              <div className="flex items-start gap-5 pt-4">
-                <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(1.8rem, 3vw, 2.6rem)", lineHeight: 1, flexShrink: 0 }}>04</span>
-                <p style={{ fontSize: "clamp(1.3rem, 2.8vw, 2.2rem)", fontWeight: 700, color: "#ffffff", lineHeight: 1.25 }}>
-                  ¿Cuántas horas de <span style={{ color: "#e07820" }}>grúa y personal inmovilizado</span> pierdes cada día, cada semana, cada obra?
-                </p>
-              </div>
-
             </div>
 
-            {/* Remate */}
-            <div className="mt-16 pt-10" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
-              <p style={{ fontSize: "clamp(1rem, 1.8vw, 1.35rem)", color: "rgba(255,255,255,0.55)", fontWeight: 300, maxWidth: "680px" }}>
-                El <strong style={{ color: "#ffffff", fontWeight: 600 }}>Capacho Roll Over</strong> elimina todas estas restricciones.
-                Se carga <em>donde quieras, cuando quieras</em> — con la misma grúa que ya tienes.
+            <div className="mt-14 flex items-center gap-5">
+              <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
+              <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", fontWeight: 300 }}>
+                El <strong style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>Roll Over</strong> elimina todas estas restricciones —
+                se carga donde quieras, con la grúa que ya tienes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── OPCIÓN B · EL PANEL DE CONTROL ──────────────────── */}
+        <section style={{ background: "#0d1528" }} className="py-20">
+          <div className="max-w-[1200px] mx-auto px-6 md:px-16">
+
+            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-10">
+              Diagnóstico de Operación · Equipos de Hormigón
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
+              {[
+                { ref: "REF-01", label: "TIEMPO DE ACCESO",    q: "¿Cuánto demora el mixer en entrar a obra para cargar tus capachos?",               sev: "ALTO" },
+                { ref: "REF-02", label: "PREPARACIÓN TERRENO", q: "¿Tienes que excavar para que la canoa del mixer alcance a cargar tus capachos?",   sev: "ALTO" },
+                { ref: "REF-03", label: "MOVILIDAD OPERATIVA", q: "¿Estás limitado a cargar siempre desde el mismo punto de la obra?",                 sev: "MEDIO" },
+              ].map((item) => (
+                <div key={item.ref} style={{ padding: "2rem", borderBottom: "1px solid rgba(255,255,255,0.07)", borderRight: "1px solid rgba(255,255,255,0.07)" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
+                    <span style={{ color: "#e07820", fontFamily: "monospace", fontSize: "0.7rem", letterSpacing: "0.1em" }}>{item.ref}</span>
+                    <span style={{ background: "rgba(220,38,38,0.12)", color: "#f87171", fontSize: "0.6rem", padding: "2px 8px", fontWeight: 700, letterSpacing: "0.12em", border: "1px solid rgba(220,38,38,0.25)" }}>
+                      {item.sev}
+                    </span>
+                  </div>
+                  <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.62rem", textTransform: "uppercase", letterSpacing: "0.18em", marginBottom: "0.75rem" }}>
+                    {item.label}
+                  </p>
+                  <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "clamp(0.95rem, 1.5vw, 1.15rem)", fontWeight: 400, lineHeight: 1.45 }}>
+                    {item.q}
+                  </p>
+                </div>
+              ))}
+
+              {/* Cuarta — ocupa full width, marcada CRÍTICO */}
+              <div style={{ gridColumn: "1 / -1", padding: "2rem 2rem 2.5rem", background: "rgba(224,120,32,0.06)", borderTop: "2px solid #e07820" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.2rem" }}>
+                  <span style={{ color: "#e07820", fontFamily: "monospace", fontSize: "0.7rem", letterSpacing: "0.1em" }}>REF-04</span>
+                  <span style={{ background: "rgba(220,38,38,0.2)", color: "#ef4444", fontSize: "0.6rem", padding: "2px 10px", fontWeight: 700, letterSpacing: "0.14em", border: "1px solid rgba(220,38,38,0.4)" }}>
+                    CRÍTICO
+                  </span>
+                </div>
+                <p style={{ color: "#e07820", fontSize: "0.62rem", textTransform: "uppercase", letterSpacing: "0.18em", marginBottom: "1rem" }}>
+                  COSTO OPERACIONAL ACUMULADO
+                </p>
+                <p style={{ color: "#ffffff", fontSize: "clamp(1.4rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.2 }}>
+                  ¿Cuántas horas de grúa y personal inmovilizado<br />
+                  pierdes <span style={{ color: "#e07820" }}>cada día, cada semana, cada obra?</span>
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 flex items-center gap-5" style={{ paddingTop: "1.5rem", borderTop: "1px solid rgba(224,120,32,0.15)" }}>
+              <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
+              <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.95rem", fontWeight: 300 }}>
+                El <strong style={{ color: "rgba(255,255,255,0.85)" }}>Capacho Roll Over</strong> resuelve cada uno de estos puntos.
               </p>
             </div>
 
