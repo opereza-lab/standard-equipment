@@ -147,15 +147,15 @@ export default function CapachoRollOverPage() {
 
             <p
               className="text-white/80"
-              style={{ fontSize: "clamp(1.1rem, 2vw, 1.55rem)", fontWeight: 300, letterSpacing: "0.04em", lineHeight: 1.3 }}
+              style={{ fontSize: "clamp(1.1rem, 2vw, 1.55rem)", fontWeight: 300, fontStyle: "italic", letterSpacing: "0.04em", lineHeight: 1.3 }}
             >
-              La <span style={{ color: "#e07820", fontWeight: 500 }}>nueva forma</span> de trabajar.
+              La nueva forma de trabajar.
             </p>
             <p
-              className="text-white/55"
+              className="text-white/80"
               style={{ fontSize: "clamp(0.85rem, 1.4vw, 1.1rem)", fontWeight: 300, letterSpacing: "0.06em", lineHeight: 1.4, marginTop: "0.6rem" }}
             >
-              <span style={{ color: "#e07820", fontWeight: 500 }}>Gran Capacidad</span> a <span style={{ color: "#e07820", fontWeight: 500 }}>Baja Altura</span> de Carga
+              Gran <span style={{ color: "#e07820", fontWeight: 500 }}>Capacidad</span> a Baja <span style={{ color: "#e07820", fontWeight: 500 }}>Altura</span> de Carga
             </p>
           </div>
 
