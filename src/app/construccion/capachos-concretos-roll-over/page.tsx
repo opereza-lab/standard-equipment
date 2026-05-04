@@ -193,7 +193,7 @@ export default function CapachoRollOverPage() {
         <section style={{ background: "#06101e" }} className="py-20 overflow-hidden">
           <div className="max-w-[1100px] mx-auto px-6 md:px-16">
 
-            <p className="text-[#e07820] text-xs font-bold tracking-[0.3em] uppercase mb-14">
+            <p className="text-[#e07820] font-bold uppercase mb-14" style={{ fontSize: "clamp(0.85rem, 1.2vw, 1.1rem)", letterSpacing: "0.2em" }}>
               Antes de seguir — hazte estas preguntas
             </p>
 
@@ -237,8 +237,8 @@ export default function CapachoRollOverPage() {
 
             <div className="mt-16 pt-10 flex items-center gap-5" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
               <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
-              <p style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "rgba(255,255,255,0.55)", fontWeight: 300 }}>
-                Con nuestros <strong style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>Capachos Roll Over</strong> cargás desde cualquier lugar de la obra — incluso <strong style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600 }}>a pie de calle</strong>.
+              <p style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.4rem)", color: "rgba(255,255,255,0.7)", fontWeight: 300 }}>
+                Con nuestros <strong style={{ color: "#ffffff", fontWeight: 600 }}>Capachos Roll Over</strong> cargás desde cualquier lugar de la obra — incluso <strong style={{ color: "#ffffff", fontWeight: 600 }}>a pie de calle</strong>.
               </p>
             </div>
 
