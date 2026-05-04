@@ -51,7 +51,7 @@ export default function VideoPlayer({ src }: { src: string }) {
         <div
           className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110 z-10"
           style={{
-            background: "rgba(255,255,255,0.12)",
+            background: "rgba(0,0,0,0.55)",
             backdropFilter: "blur(6px)",
             border: "1px solid rgba(255,255,255,0.25)",
           }}
