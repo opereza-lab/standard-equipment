@@ -28,6 +28,7 @@ export default function VideoPlayer({ src }: { src: string }) {
           loop
           playsInline
           className="w-full h-full object-cover"
+          onContextMenu={(e) => e.preventDefault()}
         >
           <source src={src} type="video/mp4" />
         </video>
