@@ -13,6 +13,16 @@ const nextConfig: NextConfig = {
         destination: "/construccion/capachos-concreteros-roll-over",
         permanent: true,
       },
+      {
+        source: "/contact-us",
+        destination: "/contacto",
+        permanent: true,
+      },
+      {
+        source: "/portfolio-category/metal",
+        destination: "/portafolio",
+        permanent: true,
+      },
     ];
   },
 };
