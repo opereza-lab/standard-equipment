@@ -282,6 +282,12 @@
   100% { opacity: 0.9; box-shadow: 0 0 6px 2px rgba(224,120,32,0.6); }
 }
 
+/* SVG glow pulsante naranja sobre renders */
+@keyframes svg-glow {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.45; }
+}
+
 /* Fade up animation for sections */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
