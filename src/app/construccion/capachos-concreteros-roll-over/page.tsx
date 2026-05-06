@@ -415,16 +415,16 @@ export default function CapachoRollOverPage() {
                   <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1.25rem" }}>
                     <thead>
                       <tr style={{ background: "rgba(255,255,255,0.08)" }}>
-                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#ffffff", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Accesorio</th>
+                        <th className="px-4 py-3 text-left font-bold" style={{ color: "#e07820", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Accesorio</th>
                       </tr>
                     </thead>
                     <tbody>
                       {[
                         "Asas de manipulación Manga",
-                        "Extensión Barra Apertura compuerta",
+                        "Barra de apertura de compuerta extendida",
                       ].map((acc, i, arr) => (
                         <tr key={i} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
-                          <td className="px-4 py-3 font-bold" style={{ color: "#e07820", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{acc}</td>
+                          <td className="px-4 py-3" style={{ color: "#ffffff", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{acc}</td>
                         </tr>
                       ))}
                     </tbody>
