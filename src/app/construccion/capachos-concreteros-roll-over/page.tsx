@@ -430,6 +430,43 @@ export default function CapachoRollOverPage() {
                     </tbody>
                   </table>
                 </div>
+
+                {/* Bloque de riesgo operacional */}
+                <div className="mt-6 space-y-4">
+
+                  {/* Alerta de riesgo */}
+                  <div className="flex items-start gap-3 px-4 py-3 rounded-lg" style={{ background: "rgba(180,20,20,0.18)", border: "1px solid rgba(200,30,30,0.4)" }}>
+                    <span style={{ fontSize: "1.25rem", lineHeight: 1, flexShrink: 0, marginTop: "2px" }}>⚠️</span>
+                    <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,200,200,0.9)", lineHeight: 1.55 }}>
+                      Un capacho de 750 lts es una{" "}
+                      <strong style={{ color: "#ff6b6b", fontWeight: 700 }}>carga suspendida de más de 2 toneladas</strong>.
+                      Para manipular la manga de descarga, el operador la toma con sus manos o apoya el cuerpo sobre ella —{" "}
+                      <strong style={{ color: "#ff6b6b", fontWeight: 700 }}>quedando directamente bajo la carga suspendida</strong>.
+                      En cualquier industria, incluso caminar bajo una carga suspendida está{" "}
+                      <strong style={{ color: "#ff6b6b", fontWeight: 700 }}>estrictamente prohibido</strong>:
+                      es una de las principales causas de{" "}
+                      <strong style={{ color: "#ff6b6b", fontWeight: 700 }}>accidentes fatales en Chile</strong>.
+                    </p>
+                  </div>
+
+                  {/* Contexto + solución */}
+                  <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
+                    En construcción esta práctica es habitual y se considera{" "}
+                    <em>la única forma</em> de operar un capacho concretero.{" "}
+                    <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
+                  </p>
+
+                  <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
+                    Nuestros capachos Roll Over incluyen accesorios opcionales diseñados para{" "}
+                    <strong style={{ color: "#e07820" }}>sacar al trabajador de la línea de fuego</strong>:{" "}
+                    la <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> permite
+                    operar la compuerta de descarga desde una posición alejada de la carga, y las{" "}
+                    <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
+                    con largos ajustables — permiten la manipulación por 1 ó 2 trabajadores en simultáneo,{" "}
+                    sin exponerse bajo la carga.
+                  </p>
+
+                </div>
               </div>
 
             </div>
