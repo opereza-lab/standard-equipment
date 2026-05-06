@@ -411,7 +411,8 @@ export default function CapachoRollOverPage() {
                 <h3 className="mb-6" style={{ fontSize: "clamp(1.4rem, 2.2vw, 1.8rem)", fontWeight: 700, color: "#ffffff" }}>
                   Accesorios Seguridad Operacional<span style={{ color: "#e07820" }}>.</span>
                 </h3>
-                <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", overflow: "hidden" }}>
+                {/* Tabla con borde izquierdo rojo */}
+                <div style={{ borderRadius: "12px", overflow: "hidden", borderLeft: "3px solid #cc0000", border: "1px solid rgba(255,255,255,0.1)", borderLeftWidth: "3px", borderLeftColor: "#cc0000" }}>
                   <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1.25rem" }}>
                     <thead>
                       <tr style={{ background: "rgba(255,255,255,0.08)" }}>
@@ -434,10 +435,10 @@ export default function CapachoRollOverPage() {
                 {/* Bloque de riesgo operacional */}
                 <div className="mt-6 space-y-4">
 
-                  {/* Alerta de riesgo */}
-                  <div className="flex items-start gap-3 px-4 py-3 rounded-lg" style={{ background: "rgba(180,20,20,0.18)", border: "1px solid rgba(200,30,30,0.4)" }}>
-                    <span style={{ fontSize: "1.25rem", lineHeight: 1, flexShrink: 0, marginTop: "2px" }}>⚠️</span>
-                    <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,200,200,0.9)", lineHeight: 1.55 }}>
+                  {/* Alerta de riesgo — prominente */}
+                  <div className="flex items-start gap-4 px-5 py-4 rounded-lg" style={{ background: "rgba(180,20,20,0.28)", border: "1px solid rgba(204,0,0,0.6)" }}>
+                    <span style={{ fontSize: "2rem", lineHeight: 1, flexShrink: 0, marginTop: "2px" }}>⚠️</span>
+                    <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,200,200,0.95)", lineHeight: 1.6 }}>
                       Un capacho de 750 lts es una{" "}
                       <strong style={{ color: "#ff6b6b", fontWeight: 700 }}>carga suspendida de más de 2 toneladas</strong>.
                       Para manipular la manga de descarga, el operador la toma con sus manos o apoya el cuerpo sobre ella —{" "}
@@ -449,20 +450,22 @@ export default function CapachoRollOverPage() {
                     </p>
                   </div>
 
-                  {/* Contexto + solución */}
+                  {/* Contexto */}
                   <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
                     En construcción esta práctica es habitual y se considera{" "}
                     <em>la única forma</em> de operar un capacho concretero.{" "}
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
                   </p>
 
+                  {/* Solución — palabras clave en naranja */}
                   <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
                     Nuestros capachos Roll Over incluyen accesorios opcionales diseñados para{" "}
                     <strong style={{ color: "#e07820" }}>sacar al trabajador de la línea de fuego</strong>:{" "}
-                    la <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> permite
+                    la <strong style={{ color: "#e07820" }}>Barra de apertura de compuerta extendida</strong> permite
                     operar la compuerta de descarga desde una posición alejada de la carga, y las{" "}
-                    <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
-                    con largos ajustables — permiten la manipulación por 1 ó 2 trabajadores en simultáneo,{" "}
+                    <strong style={{ color: "#e07820" }}>Asas de manipulación de manga</strong> —
+                    con largos ajustables — permiten la manipulación por{" "}
+                    <strong style={{ color: "#e07820" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
                     sin exponerse bajo la carga.
                   </p>
 
