@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
         destination: "/portafolio",
         permanent: true,
       },
+      {
+        source: "/portfolio/standard-list",
+        destination: "/portafolio",
+        permanent: true,
+      },
     ];
   },
 };
