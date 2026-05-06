@@ -457,17 +457,62 @@ export default function CapachoRollOverPage() {
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
                   </p>
 
-                  {/* Solución — palabras clave en naranja */}
-                  <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
-                    Nuestros capachos Roll Over incluyen accesorios opcionales diseñados para{" "}
-                    <strong style={{ color: "#e07820" }}>sacar al trabajador de la línea de fuego</strong>:{" "}
-                    la <strong style={{ color: "#e07820" }}>Barra de apertura de compuerta extendida</strong> permite
-                    operar la compuerta de descarga desde una posición alejada de la carga, y las{" "}
-                    <strong style={{ color: "#e07820" }}>Asas de manipulación de manga</strong> —
-                    con largos ajustables — permiten la manipulación por{" "}
-                    <strong style={{ color: "#e07820" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
-                    sin exponerse bajo la carga.
-                  </p>
+                  {/* Cards de accesorios con renders flotantes */}
+                  <div className="grid grid-cols-2 gap-6 pt-2">
+
+                    {/* Card 1 — Asas de manipulación Manga */}
+                    <div className="flex flex-col items-center text-center gap-3">
+                      <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+                        <Image
+                          src="/images/productos/capacho-roll-ver/accesorio-asas-manga.png"
+                          alt="Asas de manipulación Manga"
+                          fill
+                          className="object-contain"
+                          style={{ mixBlendMode: "screen" }}
+                          sizes="20vw"
+                        />
+                      </div>
+                      <p style={{ fontSize: "clamp(0.75rem, 1vw, 0.85rem)", color: "#e07820", fontWeight: 700, letterSpacing: "0.05em" }}>
+                        Asas de manipulación Manga
+                      </p>
+                      <p style={{ fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)", color: "rgba(255,255,255,0.55)", lineHeight: 1.55 }}>
+                        Largos ajustables. Permite la manipulación por 1 ó 2 trabajadores en simultáneo, alejados de la carga suspendida.
+                      </p>
+                    </div>
+
+                    {/* Card 2 — Barra de apertura con pulse naranja */}
+                    <div className="flex flex-col items-center text-center gap-3">
+                      <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+                        <Image
+                          src="/images/productos/capacho-roll-ver/accesorio-barra-compuerta.png"
+                          alt="Barra de apertura de compuerta extendida"
+                          fill
+                          className="object-contain"
+                          style={{ mixBlendMode: "screen" }}
+                          sizes="20vw"
+                        />
+                        {/* Pulse naranja — palanca lateral derecha */}
+                        <div
+                          className="absolute pointer-events-none"
+                          style={{
+                            top: "32%", left: "68%",
+                            width: "14%", height: "42%",
+                            borderRadius: "40%",
+                            border: "2px solid #e07820",
+                            boxShadow: "0 0 10px 2px rgba(224,120,32,0.5)",
+                            animation: "pulse-ring 1.8s ease-in-out infinite",
+                          }}
+                        />
+                      </div>
+                      <p style={{ fontSize: "clamp(0.75rem, 1vw, 0.85rem)", color: "#e07820", fontWeight: 700, letterSpacing: "0.05em" }}>
+                        Barra de apertura de compuerta extendida
+                      </p>
+                      <p style={{ fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)", color: "rgba(255,255,255,0.55)", lineHeight: 1.55 }}>
+                        Opera la compuerta de descarga desde una posición segura, alejado de la carga suspendida.
+                      </p>
+                    </div>
+
+                  </div>
 
                 </div>
               </div>

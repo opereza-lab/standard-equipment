@@ -275,6 +275,13 @@
   50%       { transform: translateY(6px); opacity: 1; }
 }
 
+/* Pulse ring naranja para highlights en renders */
+@keyframes pulse-ring {
+  0%   { opacity: 0.9; box-shadow: 0 0 6px 2px rgba(224,120,32,0.6); }
+  50%  { opacity: 0.4; box-shadow: 0 0 18px 6px rgba(224,120,32,0.2); }
+  100% { opacity: 0.9; box-shadow: 0 0 6px 2px rgba(224,120,32,0.6); }
+}
+
 /* Fade up animation for sections */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
