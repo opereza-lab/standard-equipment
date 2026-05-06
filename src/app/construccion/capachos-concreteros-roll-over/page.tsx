@@ -478,74 +478,97 @@ export default function CapachoRollOverPage() {
 
         {/* 5b. RENDERS ACCESORIOS — full width */}
         <section className="py-16" style={{ background: "#06101e" }}>
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div className="max-w-[1100px] mx-auto px-6 md:px-10 lg:px-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
 
-              {/* — Asas de manipulación Manga — */}
-              <div className="flex flex-col items-center gap-5">
-                <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+              {/* — 01 Asas de manipulación Manga — */}
+              <div className="flex flex-col items-center gap-4 mx-auto w-full" style={{ maxWidth: "480px" }}>
+                {/* Número */}
+                <div className="w-full">
+                  <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(2rem, 3vw, 2.8rem)", lineHeight: 1, fontFamily: "var(--font-barlow-condensed)", fontStyle: "italic" }}>01</span>
+                </div>
+                {/* Render */}
+                <div className="relative w-full" style={{ height: "280px" }}>
                   <Image
                     src="/images/productos/capacho-roll-ver/accesorio-asas-manga.png"
                     alt="Asas de manipulación Manga"
                     fill
                     className="object-contain"
-                    style={{ mixBlendMode: "screen" }}
                     sizes="(max-width: 768px) 90vw, 45vw"
                   />
                 </div>
-                <div className="text-center">
-                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>
+                {/* Texto */}
+                <div className="w-full pt-2" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
+                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em", marginBottom: "0.4rem" }}>
                     Asas de manipulación Manga
                   </p>
-                  <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "clamp(0.78rem, 1vw, 0.9rem)", lineHeight: 1.6 }}>
+                  <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.85rem", lineHeight: 1.65 }}>
                     Largos ajustables. Permiten la manipulación por 1 ó 2 trabajadores en simultáneo, alejados de la carga suspendida.
                   </p>
                 </div>
               </div>
 
-              {/* — Barra de apertura con SVG overlay — */}
-              <div className="flex flex-col items-center gap-5">
-                <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+              {/* — 02 Barra de apertura con SVG overlay — */}
+              <div className="flex flex-col items-center gap-4 mx-auto w-full" style={{ maxWidth: "480px" }}>
+                {/* Número */}
+                <div className="w-full">
+                  <span style={{ color: "#e07820", fontWeight: 900, fontSize: "clamp(2rem, 3vw, 2.8rem)", lineHeight: 1, fontFamily: "var(--font-barlow-condensed)", fontStyle: "italic" }}>02</span>
+                </div>
+                {/* Render + SVG */}
+                <div className="relative w-full" style={{ height: "280px" }}>
                   <Image
                     src="/images/productos/capacho-roll-ver/accesorio-barra-compuerta.png"
                     alt="Barra de apertura de compuerta extendida"
                     fill
                     className="object-contain"
-                    style={{ mixBlendMode: "screen" }}
                     sizes="(max-width: 768px) 90vw, 45vw"
                   />
-                  {/* SVG — traza la geometría de la barra */}
+                  {/* SVG — traza geometría de la barra. viewBox = dimensiones reales 1200x896 */}
                   <svg
                     className="absolute inset-0 w-full h-full pointer-events-none"
-                    viewBox="0 0 400 300"
+                    viewBox="0 0 1200 896"
+                    preserveAspectRatio="xMidYMid meet"
                     style={{ animation: "svg-glow 1.8s ease-in-out infinite" }}
                   >
                     <defs>
                       <filter id="orange-glow">
-                        <feGaussianBlur stdDeviation="2" result="blur" />
+                        <feGaussianBlur stdDeviation="3" result="blur" />
                         <feMerge>
                           <feMergeNode in="blur" />
                           <feMergeNode in="SourceGraphic" />
                         </feMerge>
                       </filter>
                     </defs>
-                    {/* Trayecto de la barra — pivote → codo → punta */}
+                    {/* Pivote → codo → punta */}
                     <polyline
-                      points="295,202 315,168 332,150 342,134"
+                      points="885,605 945,504 996,450 1026,402"
                       fill="none"
                       stroke="#e07820"
-                      strokeWidth="2.5"
+                      strokeWidth="7"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       filter="url(#orange-glow)"
                     />
-                    {/* Círculo en el pivote */}
-                    <circle cx="295" cy="202" r="5" fill="none" stroke="#e07820" strokeWidth="2" filter="url(#orange-glow)" />
-                    {/* Círculo en la bolita — punta */}
-                    <circle cx="342" cy="134" r="6" fill="none" stroke="#e07820" strokeWidth="2.5" filter="url(#orange-glow)" />
+                    <circle cx="885" cy="605" r="15" fill="none" stroke="#e07820" strokeWidth="6" filter="url(#orange-glow)" />
+                    <circle cx="1026" cy="402" r="18" fill="none" stroke="#e07820" strokeWidth="7" filter="url(#orange-glow)" />
                   </svg>
                 </div>
-                <div className="text-center">
+                {/* Texto */}
+                <div className="w-full pt-2" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
+                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em", marginBottom: "0.4rem" }}>
+                    Barra de apertura de compuerta extendida
+                  </p>
+                  <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.85rem", lineHeight: 1.65 }}>
+                    Opera la compuerta de descarga desde una posición segura, alejado de la carga suspendida.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* 6. GALERÍA */}
                   <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>
                     Barra de apertura de compuerta extendida
                   </p>
