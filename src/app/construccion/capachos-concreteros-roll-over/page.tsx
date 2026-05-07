@@ -569,20 +569,6 @@ export default function CapachoRollOverPage() {
         </section>
 
         {/* 6. GALERÍA */}
-                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>
-                    Barra de apertura de compuerta extendida
-                  </p>
-                  <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "clamp(0.78rem, 1vw, 0.9rem)", lineHeight: 1.6 }}>
-                    Opera la compuerta de descarga desde una posición segura, alejado de la carga suspendida.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* 6. GALERÍA */}
         <section
           className="py-16"
           style={{
