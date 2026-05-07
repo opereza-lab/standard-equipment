@@ -457,17 +457,21 @@ export default function CapachoRollOverPage() {
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
                   </p>
 
-                  {/* Solución — párrafo */}
-                  <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
-                    Nuestros capachos Roll Over incluyen accesorios opcionales diseñados para{" "}
-                    <strong style={{ color: "#e07820" }}>sacar al trabajador de la línea de fuego</strong>:{" "}
-                    la <strong style={{ color: "#e07820" }}>Barra de apertura de compuerta extendida</strong> permite
-                    operar la compuerta de descarga desde una posición alejada de la carga, y las{" "}
-                    <strong style={{ color: "#e07820" }}>Asas de manipulación de manga</strong> —
-                    con largos ajustables — permiten la manipulación por{" "}
-                    <strong style={{ color: "#e07820" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
-                    sin exponerse bajo la carga.
-                  </p>
+                  {/* Solución — statement + detalle */}
+                  <div style={{ paddingTop: "0.5rem", paddingBottom: "0.5rem" }}>
+                    <p style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", color: "#e07820", fontWeight: 700, lineHeight: 1.25, marginBottom: "0.75rem" }}>
+                      Sacar al trabajador<br />de la línea de fuego.
+                    </p>
+                    <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
+                      Nuestros capachos Roll Over incluyen accesorios opcionales para lograrlo:{" "}
+                      la <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> permite
+                      operar desde una posición alejada de la carga, y las{" "}
+                      <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
+                      con largos ajustables — permiten la manipulación por{" "}
+                      <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
+                      sin exponerse bajo la carga.
+                    </p>
+                  </div>
 
                 </div>
               </div>
