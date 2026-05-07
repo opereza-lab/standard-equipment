@@ -503,7 +503,7 @@ export default function CapachoRollOverPage() {
                   Asas de Manipulación Manga
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.8rem, 1vw, 0.9rem)", textAlign: "center", lineHeight: 1.5 }}>
-                  3 puntos de agarre con grip, en cada varillas, largo ajustable con perilla twist pull, conexion rapida a cuerpo central, cilindro central sin estrangulación de caudal de la manga
+                  3 puntos de agarre con grip en cada varilla, largo ajustable con perilla twist pull, conexion rapida a cuerpo central, cilindro central sin estrangulación de caudal de la manga
                 </p>
               </div>
 
