@@ -457,6 +457,17 @@ export default function CapachoRollOverPage() {
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
                   </p>
 
+                  {/* Solución — texto grande que usa el espacio disponible */}
+                  <p style={{ fontSize: "clamp(1.1rem, 1.8vw, 1.4rem)", color: "rgba(255,255,255,0.85)", lineHeight: 1.6, marginTop: "0.5rem" }}>
+                    Nuestros capachos incluyen accesorios opcionales diseñados para{" "}
+                    <strong style={{ color: "#e07820" }}>sacar al trabajador de la línea de fuego</strong>:{" "}
+                    la <strong style={{ color: "#e07820" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
+                    <strong style={{ color: "#e07820" }}>Asas de manipulación de manga</strong> —
+                    con largos ajustables — permiten operar por{" "}
+                    <strong style={{ color: "#e07820" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
+                    sin exponerse bajo la carga.
+                  </p>
+
 
                 </div>
               </div>
@@ -504,11 +515,11 @@ export default function CapachoRollOverPage() {
                   />
                 </div>
                 {/* Texto */}
-                <div className="w-full pt-2" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
-                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em", marginBottom: "0.4rem" }}>
+                <div className="w-full pt-4" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
+                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1.1rem, 1.6vw, 1.3rem)", letterSpacing: "0.04em", marginBottom: "0.6rem" }}>
                     Asas de manipulación Manga
                   </p>
-                  <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.85rem", lineHeight: 1.65 }}>
+                  <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "clamp(0.95rem, 1.3vw, 1.1rem)", lineHeight: 1.7 }}>
                     Largos ajustables. Permiten la manipulación por 1 ó 2 trabajadores en simultáneo, alejados de la carga suspendida.
                   </p>
                 </div>
@@ -560,11 +571,11 @@ export default function CapachoRollOverPage() {
                   </svg>
                 </div>
                 {/* Texto */}
-                <div className="w-full pt-2" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
-                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em", marginBottom: "0.4rem" }}>
+                <div className="w-full pt-4" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
+                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1.1rem, 1.6vw, 1.3rem)", letterSpacing: "0.04em", marginBottom: "0.6rem" }}>
                     Barra de apertura de compuerta extendida
                   </p>
-                  <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.85rem", lineHeight: 1.65 }}>
+                  <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "clamp(0.95rem, 1.3vw, 1.1rem)", lineHeight: 1.7 }}>
                     Opera la compuerta de descarga desde una posición segura, alejado de la carga suspendida.
                   </p>
                 </div>
