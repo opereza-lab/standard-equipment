@@ -382,8 +382,8 @@ export default function CapachoRollOverPage() {
 
                   {/* Hotspots */}
                   {[
-                    { top: "14%",  left: "73%", titulo: "Barra de apertura de compuerta extendida", desc: "Descripción del accesorio 1.", tooltipDown: true },
-                    { top: "48%", left: "43%", titulo: "Asas de manipulación Manga", desc: "Descripción del accesorio 2.", tooltipDown: false },
+                    { top: "14%",  left: "73%", num: "02", titulo: "Barra de apertura de compuerta extendida", tooltipDown: true },
+                    { top: "48%", left: "43%", num: "01", titulo: "Asas de manipulación Manga", tooltipDown: false },
                   ].map((h, i) => (
                     <div
                       key={i}
@@ -399,6 +399,7 @@ export default function CapachoRollOverPage() {
                       </div>
                       <div className={`absolute left-1/2 -translate-x-1/2 w-44 px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none ${h.tooltipDown ? "top-full mt-2" : "bottom-full mb-2"}`}
                         style={{ background: "rgba(60,60,70,0.85)", backdropFilter: "blur(4px)" }}>
+                        <p className="text-xs font-bold" style={{ color: "#e07820" }}>{h.num}</p>
                         <p className="text-white text-xs font-bold">{h.titulo}</p>
                       </div>
                     </div>
