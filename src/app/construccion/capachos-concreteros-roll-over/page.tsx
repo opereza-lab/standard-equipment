@@ -517,6 +517,9 @@ export default function CapachoRollOverPage() {
                     sizes="(max-width: 768px) 90vw, 45vw"
                   />
                 </div>
+                <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1rem, 1.4vw, 1.15rem)", textAlign: "center" }}>
+                  Asas de Manipulación Manga
+                </p>
               </div>
 
               {/* — 02 Barra de apertura con SVG overlay — */}
@@ -564,6 +567,9 @@ export default function CapachoRollOverPage() {
                     <circle cx="1026" cy="402" r="18" fill="none" stroke="#e07820" strokeWidth="7" filter="url(#orange-glow)" />
                   </svg>
                 </div>
+                <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1rem, 1.4vw, 1.15rem)", textAlign: "center" }}>
+                  Barra de apertura de compuerta Extendida
+                </p>
               </div>
 
             </div>
