@@ -425,7 +425,9 @@ export default function CapachoRollOverPage() {
                         "Barra de apertura de compuerta extendida",
                       ].map((acc, i, arr) => (
                         <tr key={i} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
-                          <td className="px-4 py-3" style={{ color: "#ffffff", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>{acc}</td>
+                          <td className="px-4 py-3" style={{ color: "#ffffff", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
+                            <span style={{ color: "#e07820", fontWeight: 700, marginRight: "0.6rem" }}>0{i + 1}</span>{acc}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
