@@ -468,11 +468,7 @@ export default function CapachoRollOverPage() {
                 Sí hay alternativas. Y las tenemos.
               </p>
               <p style={{ fontSize: "clamp(1.1rem, 1.6vw, 1.35rem)", color: "rgba(255,255,255,0.75)", lineHeight: 1.7 }}>
-                La <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
-                <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
-                con largos ajustables — permiten operar por{" "}
-                <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
-                sin exponerse bajo la carga.
+                La <strong style={{ color: "#ffffff" }}>Barra de apertura de compuesta extendida</strong> permite al operador que abre la compuerta de descarga manipulando la cuerda, lo haga alejado de la carga suspendida, y las <strong style={{ color: "#ffffff" }}>asas de manipulación de manga</strong> hacen lo propio, con largos ajustables, permiten la manipulación de la manga por <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultaneo</strong>
               </p>
             </div>
 
