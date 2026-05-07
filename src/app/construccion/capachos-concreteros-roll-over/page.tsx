@@ -451,7 +451,7 @@ export default function CapachoRollOverPage() {
                   </div>
 
                   {/* Contexto */}
-                  <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.65 }}>
+                  <p style={{ fontSize: "clamp(1rem, 1.4vw, 1.2rem)", color: "rgba(255,255,255,0.75)", lineHeight: 1.65 }}>
                     En construcción esta práctica es habitual y se considera{" "}
                     <em>la única forma</em> de operar un capacho concretero.{" "}
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
@@ -467,7 +467,7 @@ export default function CapachoRollOverPage() {
               <p style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)", color: "#e07820", fontWeight: 700, lineHeight: 1.2, marginBottom: "0.75rem" }}>
                 Sí hay alternativas. Y las tenemos.
               </p>
-              <p style={{ fontSize: "clamp(0.85rem, 1.2vw, 1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}>
+              <p style={{ fontSize: "clamp(1.1rem, 1.6vw, 1.35rem)", color: "rgba(255,255,255,0.75)", lineHeight: 1.7 }}>
                 La <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
                 <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
                 con largos ajustables — permiten operar por{" "}
