@@ -522,7 +522,7 @@ export default function CapachoRollOverPage() {
                   {/* Punto pulse naranja sobre la barra */}
                   <div
                     className="absolute pointer-events-none"
-                    style={{ top: "67%", left: "74%", transform: "translate(-50%, -50%)" }}
+                    style={{ top: "45%", left: "74%", transform: "translate(-50%, -50%)" }}
                   >
                     <div className="relative flex items-center justify-center">
                       <div className="absolute rounded-full animate-ping opacity-60" style={{ width: "28px", height: "28px", background: "#e07820" }} />
