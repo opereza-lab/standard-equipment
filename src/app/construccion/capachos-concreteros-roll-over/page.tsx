@@ -440,7 +440,7 @@ export default function CapachoRollOverPage() {
                   {/* Alerta de riesgo — prominente */}
                   <div className="flex items-start gap-4 px-5 py-4 rounded-lg" style={{ background: "rgba(180,20,20,0.28)", border: "1px solid rgba(204,0,0,0.6)" }}>
                     <span style={{ fontSize: "2rem", lineHeight: 1, flexShrink: 0, marginTop: "2px" }}>⚠️</span>
-                    <p style={{ fontSize: "clamp(0.78rem, 1.1vw, 0.9rem)", color: "rgba(255,200,200,0.95)", lineHeight: 1.6 }}>
+                    <p style={{ fontSize: "clamp(0.88rem, 1.2vw, 1rem)", color: "rgba(255,200,200,0.95)", lineHeight: 1.6 }}>
                       Un capacho de 750 lts es una{" "}
                       <strong style={{ color: "#ff6b6b", fontWeight: 700 }}>carga suspendida de más de 2 toneladas</strong>.
                       Para manipular la manga de descarga, el operador la toma con sus manos o apoya el cuerpo sobre ella —{" "}
