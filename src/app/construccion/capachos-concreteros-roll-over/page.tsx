@@ -457,16 +457,19 @@ export default function CapachoRollOverPage() {
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
                   </p>
 
-                  {/* Solución — texto grande que usa el espacio disponible */}
-                  <p style={{ fontSize: "clamp(1.1rem, 1.8vw, 1.4rem)", color: "rgba(255,255,255,0.85)", lineHeight: 1.6, marginTop: "0.5rem" }}>
-                    Nuestros capachos incluyen accesorios opcionales diseñados para{" "}
-                    <strong style={{ color: "#e07820" }}>sacar al trabajador de la línea de fuego</strong>:{" "}
-                    la <strong style={{ color: "#e07820" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
-                    <strong style={{ color: "#e07820" }}>Asas de manipulación de manga</strong> —
-                    con largos ajustables — permiten operar por{" "}
-                    <strong style={{ color: "#e07820" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
-                    sin exponerse bajo la carga.
-                  </p>
+                  {/* Solución — HEADLINE que salta a la vista */}
+                  <div style={{ marginTop: "1.2rem", paddingLeft: "1rem", borderLeft: "3px solid #e07820" }}>
+                    <p style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)", color: "#e07820", fontWeight: 700, lineHeight: 1.2, marginBottom: "0.75rem" }}>
+                      Sí hay alternativas.<br />Y las tenemos.
+                    </p>
+                    <p style={{ fontSize: "clamp(0.85rem, 1.2vw, 1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}>
+                      La <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
+                      <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
+                      con largos ajustables — permiten operar por{" "}
+                      <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
+                      sin exponerse bajo la carga.
+                    </p>
+                  </div>
 
 
                 </div>
@@ -514,15 +517,6 @@ export default function CapachoRollOverPage() {
                     sizes="(max-width: 768px) 90vw, 45vw"
                   />
                 </div>
-                {/* Texto */}
-                <div className="w-full pt-4" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
-                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1.1rem, 1.6vw, 1.3rem)", letterSpacing: "0.04em", marginBottom: "0.6rem" }}>
-                    Asas de manipulación Manga
-                  </p>
-                  <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "clamp(0.95rem, 1.3vw, 1.1rem)", lineHeight: 1.7 }}>
-                    Largos ajustables. Permiten la manipulación por 1 ó 2 trabajadores en simultáneo, alejados de la carga suspendida.
-                  </p>
-                </div>
               </div>
 
               {/* — 02 Barra de apertura con SVG overlay — */}
@@ -569,15 +563,6 @@ export default function CapachoRollOverPage() {
                     <circle cx="885" cy="605" r="15" fill="none" stroke="#e07820" strokeWidth="6" filter="url(#orange-glow)" />
                     <circle cx="1026" cy="402" r="18" fill="none" stroke="#e07820" strokeWidth="7" filter="url(#orange-glow)" />
                   </svg>
-                </div>
-                {/* Texto */}
-                <div className="w-full pt-4" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
-                  <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1.1rem, 1.6vw, 1.3rem)", letterSpacing: "0.04em", marginBottom: "0.6rem" }}>
-                    Barra de apertura de compuerta extendida
-                  </p>
-                  <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "clamp(0.95rem, 1.3vw, 1.1rem)", lineHeight: 1.7 }}>
-                    Opera la compuerta de descarga desde una posición segura, alejado de la carga suspendida.
-                  </p>
                 </div>
               </div>
 
