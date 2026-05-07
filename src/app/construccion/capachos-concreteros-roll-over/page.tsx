@@ -533,6 +533,9 @@ export default function CapachoRollOverPage() {
                 <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1rem, 1.4vw, 1.15rem)", textAlign: "center" }}>
                   Barra de apertura de compuerta Extendida
                 </p>
+                <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.8rem, 1vw, 0.9rem)", textAlign: "center", lineHeight: 1.5 }}>
+                  Angulo ajustable sin retirar el asas, por medio de perrila twist pull
+                </p>
               </div>
 
             </div>
