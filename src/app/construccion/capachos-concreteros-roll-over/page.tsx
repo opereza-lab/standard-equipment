@@ -457,25 +457,25 @@ export default function CapachoRollOverPage() {
                     <strong style={{ color: "#ffffff" }}>¿Pero hay alternativas?</strong> Sí, las hay.
                   </p>
 
-                  {/* Solución — HEADLINE que salta a la vista */}
-                  <div style={{ marginTop: "1.2rem", paddingLeft: "1rem", borderLeft: "3px solid #e07820" }}>
-                    <p style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)", color: "#e07820", fontWeight: 700, lineHeight: 1.2, marginBottom: "0.75rem" }}>
-                      Sí hay alternativas. Y las tenemos.
-                    </p>
-                    <p style={{ fontSize: "clamp(0.85rem, 1.2vw, 1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}>
-                      La <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
-                      <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
-                      con largos ajustables — permiten operar por{" "}
-                      <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
-                      sin exponerse bajo la carga.
-                    </p>
-                  </div>
-
-
                 </div>
               </div>
 
             </div>
+
+            {/* Solución — FULL WIDTH */}
+            <div className="mt-10" style={{ paddingLeft: "1rem", borderLeft: "3px solid #e07820" }}>
+              <p style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)", color: "#e07820", fontWeight: 700, lineHeight: 1.2, marginBottom: "0.75rem" }}>
+                Sí hay alternativas. Y las tenemos.
+              </p>
+              <p style={{ fontSize: "clamp(0.85rem, 1.2vw, 1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}>
+                La <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> y las{" "}
+                <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
+                con largos ajustables — permiten operar por{" "}
+                <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
+                sin exponerse bajo la carga.
+              </p>
+            </div>
+
           </div>
         </section>
 
