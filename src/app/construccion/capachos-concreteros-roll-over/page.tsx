@@ -479,22 +479,6 @@ export default function CapachoRollOverPage() {
         <section className="py-16" style={{ background: "#06101e" }}>
           <div className="max-w-[1100px] mx-auto px-6 md:px-10 lg:px-16">
 
-            {/* Statement centrado — puente visual */}
-            <div className="text-center mb-14">
-              <p style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#e07820", fontWeight: 700, lineHeight: 1.2, marginBottom: "1rem" }}>
-                Sacar al trabajador de la línea de fuego.
-              </p>
-              <p style={{ fontSize: "clamp(1.1rem, 1.5vw, 1.3rem)", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, maxWidth: "960px", margin: "0 auto" }}>
-                Nuestros capachos Roll Over incluyen accesorios opcionales para lograrlo:{" "}
-                la <strong style={{ color: "#ffffff" }}>Barra de apertura de compuerta extendida</strong> permite
-                operar desde una posición alejada de la carga, y las{" "}
-                <strong style={{ color: "#ffffff" }}>Asas de manipulación de manga</strong> —
-                con largos ajustables — permiten la manipulación por{" "}
-                <strong style={{ color: "#ffffff" }}>1 ó 2 trabajadores en simultáneo</strong>,{" "}
-                sin exponerse bajo la carga.
-              </p>
-            </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
 
               {/* — 01 Asas de manipulación Manga — */}
