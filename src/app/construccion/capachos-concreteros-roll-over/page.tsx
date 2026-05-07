@@ -519,35 +519,19 @@ export default function CapachoRollOverPage() {
                     className="object-contain"
                     sizes="(max-width: 768px) 90vw, 45vw"
                   />
-                  {/* SVG — traza geometría de la barra. viewBox = dimensiones reales 1200x896 */}
-                  <svg
-                    className="absolute inset-0 w-full h-full pointer-events-none"
-                    viewBox="0 0 1200 896"
-                    preserveAspectRatio="xMidYMid meet"
-                    style={{ animation: "svg-glow 1.8s ease-in-out infinite" }}
+                  {/* Punto pulse naranja sobre la barra */}
+                  <div
+                    className="absolute pointer-events-none"
+                    style={{ top: "67%", left: "74%", transform: "translate(-50%, -50%)" }}
                   >
-                    <defs>
-                      <filter id="orange-glow">
-                        <feGaussianBlur stdDeviation="3" result="blur" />
-                        <feMerge>
-                          <feMergeNode in="blur" />
-                          <feMergeNode in="SourceGraphic" />
-                        </feMerge>
-                      </filter>
-                    </defs>
-                    {/* Pivote → codo → punta */}
-                    <polyline
-                      points="885,605 945,504 996,450 1026,402"
-                      fill="none"
-                      stroke="#e07820"
-                      strokeWidth="7"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      filter="url(#orange-glow)"
-                    />
-                    <circle cx="885" cy="605" r="15" fill="none" stroke="#e07820" strokeWidth="6" filter="url(#orange-glow)" />
-                    <circle cx="1026" cy="402" r="18" fill="none" stroke="#e07820" strokeWidth="7" filter="url(#orange-glow)" />
-                  </svg>
+                    <div style={{
+                      width: "14px",
+                      height: "14px",
+                      borderRadius: "50%",
+                      background: "#e07820",
+                      animation: "pulse-ring 1.8s ease-in-out infinite",
+                    }} />
+                  </div>
                 </div>
                 <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1rem, 1.4vw, 1.15rem)", textAlign: "center" }}>
                   Barra de apertura de compuerta Extendida
