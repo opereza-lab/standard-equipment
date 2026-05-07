@@ -524,13 +524,10 @@ export default function CapachoRollOverPage() {
                     className="absolute pointer-events-none"
                     style={{ top: "67%", left: "74%", transform: "translate(-50%, -50%)" }}
                   >
-                    <div style={{
-                      width: "14px",
-                      height: "14px",
-                      borderRadius: "50%",
-                      background: "#e07820",
-                      animation: "pulse-ring 1.8s ease-in-out infinite",
-                    }} />
+                    <div className="relative flex items-center justify-center">
+                      <div className="absolute rounded-full animate-ping opacity-60" style={{ width: "28px", height: "28px", background: "#e07820" }} />
+                      <div style={{ width: "14px", height: "14px", borderRadius: "50%", background: "#e07820", position: "relative", zIndex: 1 }} />
+                    </div>
                   </div>
                 </div>
                 <p style={{ color: "#e07820", fontWeight: 700, fontSize: "clamp(1rem, 1.4vw, 1.15rem)", textAlign: "center" }}>
