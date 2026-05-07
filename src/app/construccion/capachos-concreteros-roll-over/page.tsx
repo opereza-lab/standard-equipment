@@ -225,10 +225,9 @@ export default function CapachoRollOverPage() {
 
             </div>
 
-            <div className="mt-16 pt-10 flex items-center gap-5" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
-              <div style={{ width: "44px", height: "2px", background: "#e07820", flexShrink: 0 }} />
+            <div className="mt-16 pt-10" style={{ borderTop: "1px solid rgba(224,120,32,0.3)" }}>
               <p className="lg:whitespace-nowrap" style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.4rem)", color: "rgba(255,255,255,0.7)", fontWeight: 300 }}>
-                Con nuestros <strong style={{ color: "#ffffff", fontWeight: 600 }}>Capachos Roll Over</strong> cargas desde cualquier lugar de la obra — incluso <strong style={{ color: "#ffffff", fontWeight: 600 }}>a pie de calle</strong>.
+                <span style={{ color: "#e07820" }}>"</span>Con nuestros <strong style={{ color: "#ffffff", fontWeight: 600 }}>Capachos Roll Over</strong> cargas desde cualquier lugar de la obra — incluso <strong style={{ color: "#ffffff", fontWeight: 600 }}>a pie de calle</strong>.<span style={{ color: "#e07820" }}>"</span>
               </p>
             </div>
 
