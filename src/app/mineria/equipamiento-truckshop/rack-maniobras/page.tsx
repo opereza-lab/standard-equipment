@@ -6,20 +6,131 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
 
 export const metadata: Metadata = {
-  title: "Rack Maniobras | Equipamiento Truckshop Minería Chile",
-  description: "Rack móvil para almacenamiento de maniobras de izaje. Capacidad 200 Kg. por gancho, ruedas Heavy Duty con freno, ranuras para grúa horquilla. Fabricación customizable.",
+  title: "Rack Maniobras de Izaje | Truckshop Minería | Standard Equipment",
+  description: "Rack Maniobras de Izaje para almacenaje de cadenas, grilletes, eslingas, eslingas de cadena, eslingas de cable y eslabones maestros. Equipamiento Truckshop para minería. Certificado MC, WPS-PQR.",
   keywords: [
+    // Producto principal
     "rack maniobras",
-    "rack maniobras truckshop",
+    "rack maniobras de izaje",
+    "maniobras",
+    "maniobras de izaje",
+    "almacenaje maniobras",
     "almacenamiento maniobras izaje",
-    "equipamiento truckshop minería",
-    "rack minería Chile",
+    "rack almacenamiento maniobras",
+    // Componentes de izaje
+    "cadenas",
+    "cadenas de izaje",
+    "grilletes",
+    "grilletes minería",
+    "eslingas",
+    "eslingas cadena",
+    "eslinga cable",
+    "eslingas de cable",
+    "eslabón maestro",
+    "accesorios de izaje",
+    // Truckshop
+    "truckshop",
+    "truck shop",
+    "equipamiento truckshop",
+    "rack truckshop minería",
+    "taller mantención minería",
+    // General
+    "minería",
+    "minería a rajo abierto",
+    "rack minería",
   ],
+  openGraph: {
+    title: "Rack Maniobras de Izaje | Truckshop Minería | Standard Equipment",
+    description: "Rack Maniobras de Izaje para almacenaje de cadenas, grilletes, eslingas, eslingas de cadena, eslingas de cable y eslabones maestros. Equipamiento Truckshop para minería.",
+    url: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-maniobras",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Rack Maniobras de Izaje",
+  "alternateName": ["Rack Maniobras", "Rack Almacenamiento Maniobras", "Rack Truckshop"],
+  "description": "Rack móvil para almacenaje y organización de maniobras de izaje en Truckshop minero: cadenas, grilletes, eslingas, eslingas de cadena, eslingas de cable y eslabones maestros. Capacidad 200 Kg. por gancho. Ruedas Heavy Duty con freno. Certificado MC y WPS-PQR.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Standard Equipment"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-maniobras",
+  "category": "Equipamiento Truckshop / Almacenaje Maniobras de Izaje",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Empresas mineras, contratistas de mantención, supervisores truckshop"
+  },
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Rack de Maniobras de Izaje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Rack de Maniobras de Izaje es una estructura metálica móvil diseñada para el almacenaje organizado de todos los componentes de izaje utilizados en mantención minera: cadenas, grilletes, eslingas de cadena, eslingas de cable y eslabones maestros. Permite tener las maniobras ordenadas, identificadas y disponibles en el Truckshop o taller de mantención."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué maniobras de izaje se pueden almacenar en el Rack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack de Maniobras de Standard Equipment está diseñado para almacenar cadenas de izaje, grilletes, eslingas de cadena, eslingas de cable, eslabones maestros y otros accesorios de izaje utilizados en la mantención de equipos mineros. Cada gancho soporta hasta 200 Kg., y la estructura es customizable según los requerimientos del cliente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué faenas y talleres está indicado el Rack Maniobras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack Maniobras de Izaje está especialmente indicado para Truckshops mineros y talleres de mantención de equipos de gran tonelaje en minería a rajo abierto. Permite gestionar ordenadamente las maniobras de izaje para CAEX, palas hidráulicas, cargadores frontales y otros equipos de la flota minera."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se traslada el Rack Maniobras dentro del taller?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack Maniobras cuenta con ruedas Heavy Duty con freno desmontables para traslado manual suave dentro del taller, y ranuras de carga para grúa horquilla que permiten moverlo cargado con todas las maniobras sin necesidad de descargar previamente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tiene el Rack Maniobras de Izaje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack Maniobras de Izaje de Standard Equipment cuenta con Memoria de Cálculo estructural (MC) y procedimientos de soldadura calificados WPS-PQR, cumpliendo los estándares de seguridad exigidos en faenas mineras de Chile y Latinoamérica."
+      }
+    }
+  ]
 };
 
 export default function RackManiobraPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }}
+      />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}
