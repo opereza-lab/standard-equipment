@@ -71,6 +71,17 @@ const schemaProduct = {
     "audienceType": "Empresas mineras, contratistas de mantención, supervisores truckshop"
   },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": {
+      "@type": "Organization",
+      "name": "Standard Equipment"
+    }
+  },
 };
 
 const schemaFAQ = {

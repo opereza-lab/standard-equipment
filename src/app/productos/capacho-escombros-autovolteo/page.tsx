@@ -78,6 +78,17 @@ const schemaProduct = {
     "audienceType": "Empresas construcción, contratistas mineros, constructoras de piques y túneles"
   },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": {
+      "@type": "Organization",
+      "name": "Standard Equipment"
+    }
+  },
 };
 
 const schemaFAQ = {

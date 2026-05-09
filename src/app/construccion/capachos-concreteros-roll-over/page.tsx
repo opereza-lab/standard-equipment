@@ -161,6 +161,8 @@ const schemaProduct = {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
     "seller": {
       "@type": "Organization",
       "name": "Standard Equipment"
