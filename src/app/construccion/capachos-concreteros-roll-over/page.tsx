@@ -12,7 +12,7 @@ import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstru
 
 export const metadata: Metadata = {
   title: "Capachos Roll Over | Capachos Concreteros | Standard Equipment",
-  description: "Capachos Roll Over y Capachos Concreteros para vaciado de hormigón y concreto desde grúa. Alternativa a capachos Mammut y cónicos. Volcamiento 180°, 0.5–3 m³. Fabricación propia.",
+  description: "Capachos Roll Over y Capachos Concreteros para vaciado de hormigón y concreto desde grúa. ¿Buscas capachos Mammut o cónicos? Conoce la nueva forma de trabajar. 0.5–3 m³.",
   keywords: [
     // Producto principal
     "capachos",
@@ -182,10 +182,10 @@ const schemaFAQ = {
     },
     {
       "@type": "Question",
-      "name": "¿Cuál es la diferencia entre un Capacho Roll Over y un Capacho Mammut o Cónico?",
+      "name": "¿Buscas capachos tipo Mammut o cónicos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los Capachos Roll Over de Standard Equipment ofrecen volcamiento lateral 180° que elimina la necesidad de que el operador se exponga bajo la carga suspendida. A diferencia de los capachos tipo Mammut o cónicos tradicionales, el Roll Over permite operar la compuerta de descarga de forma segura y desde mayor distancia, reduciendo el riesgo de accidentes fatales en obra."
+        "text": "¿Buscas capachos tipo Mammut o cónicos? Conoce los Capachos Roll Over de Standard Equipment — La nueva forma de trabajar."
       }
     },
     {
