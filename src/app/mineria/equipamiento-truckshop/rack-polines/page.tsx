@@ -6,20 +6,135 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
 
 export const metadata: Metadata = {
-  title: "Rack Polines Truckshop | Almacenamiento Minería Chile",
-  description: "Rack para almacenamiento y organización de polines en talleres truckshop mineros. Fabricado en acero estructural con certificación para minería a rajo abierto.",
+  title: "Rack Polines | Correas Transportadoras | Truckshop Minería | Standard Equipment",
+  description: "Rack Polines para almacenamiento de Polines de Carga, Polines de Retorno y Estaciones de Polines de Correas Transportadoras. Equipamiento Truckshop para mantención minera. Certificado MC, WPS-PQR.",
   keywords: [
+    // Producto
     "rack polines",
-    "rack polines truckshop",
-    "almacenamiento polines minería",
+    "rack polines correas transportadoras",
+    "almacenamiento polines",
+    "rack almacenamiento polines",
+    "rack minería",
+    // Polines — tipos
+    "polin",
+    "polines",
+    "polines correa transportador",
+    "polines correas transportadoras",
+    "polin de retorno",
+    "polin de carga",
+    "estación de polines",
+    "polines minería",
+    // Correas transportadoras
+    "mantención correas transportadoras",
+    "correas transportadoras",
+    "correa transportadora minería",
+    // Truckshop y general
+    "truckshop",
     "equipamiento truckshop",
-    "rack minería Chile",
+    "rack truckshop minería",
+    "minería",
+    "minería a rajo abierto",
+    "taller mantención minería",
   ],
+  openGraph: {
+    title: "Rack Polines | Correas Transportadoras | Truckshop Minería | Standard Equipment",
+    description: "Rack Polines para almacenamiento de Polines de Carga, Polines de Retorno y Estaciones de Polines de Correas Transportadoras. Equipamiento Truckshop para mantención minera.",
+    url: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-polines",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Rack Polines",
+  "alternateName": ["Rack Polines Correas Transportadoras", "Rack Almacenamiento Polines", "Rack Truckshop Polines"],
+  "description": "Rack para almacenamiento y organización de Polines de Carga, Polines de Retorno y Estaciones de Polines de Correas Transportadoras en talleres Truckshop mineros. Fabricado en acero estructural con certificación MC y WPS-PQR.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Standard Equipment"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-polines",
+  "category": "Equipamiento Truckshop / Almacenaje Polines",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": {
+      "@type": "Organization",
+      "name": "Standard Equipment"
+    }
+  },
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Rack de Polines para Correas Transportadoras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Rack de Polines es una estructura metálica certificada diseñada para el almacenamiento organizado de polines de correas transportadoras en talleres Truckshop mineros. Permite gestionar ordenadamente polines de carga, polines de retorno y estaciones de polines, facilitando su acceso durante la mantención de las correas transportadoras."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué tipos de polines se pueden almacenar en el Rack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack de Polines de Standard Equipment está diseñado para almacenar todos los tipos de polines de correas transportadoras: polines de carga, polines de retorno y estaciones de polines completas. Su estructura customizable permite adaptarse a los distintos diámetros y largos de polines utilizados en minería a rajo abierto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué industrias está indicado el Rack de Polines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack de Polines está especialmente indicado para la industria minera (cobre, hierro, litio, oro) donde las correas transportadoras son un activo crítico. Es un elemento esencial del equipamiento Truckshop en faenas de minería a rajo abierto que requieren mantención frecuente de sus sistemas de transporte de mineral."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tiene el Rack Polines de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack Polines de Standard Equipment cuenta con Memoria de Cálculo estructural (MC) y procedimientos de soldadura calificados WPS-PQR, cumpliendo los estándares de seguridad exigidos en faenas mineras de Chile y Latinoamérica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde está disponible el Rack Polines de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack Polines de Standard Equipment está disponible en Chile y toda Latinoamérica, incluyendo Perú, Argentina, Colombia, México, Bolivia y Ecuador. Fabricación nacional chilena con estándares internacionales y customización según los requerimientos de cada faena."
+      }
+    }
+  ]
 };
 
 export default function RackPolinesPagina() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }}
+      />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}
