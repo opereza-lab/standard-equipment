@@ -8,21 +8,52 @@ import { CheckIcon } from "@/components/icons";
 import TagsNormativos from "./TagsNormativos";
 
 export const metadata: Metadata = {
-  title: "Cabina de Limpieza de Polvos | Prevención Silicosis HSEC",
-  description: "Cabinas de limpieza de polvos para minería e industria. Prevención de silicosis y enfermedades profesionales. Cumplimiento HSEC y normativa PLANESI. Cabina desempolvado y ducha de aire.",
+  title: "Cabina de Limpieza de Polvos | Ducha de Aire | Silicosis | Standard Equipment",
+  description: "Cabina de Limpieza de Polvos y Ducha de Aire para control de polvo y prevención de silicosis. Cumple DS 594, PLANESI, OSHA 29 CFR. Solución para minería, construcción e industria en Latinoamérica.",
   keywords: [
-    "cabinas de limpieza de polvos",
+    // Producto
+    "cabina de limpieza de polvos",
     "cabina de limpieza de personal",
-    "planesi",
-    "silicosis",
-    "salud ocupacional",
-    "HSEC",
-    "enfermedades profesionales",
-    "cabina desempolvado",
+    "cabina de desempolvado",
     "ducha de aire",
-    "prevención silicosis minería",
-    "higiene industrial Chile",
+    "cabina desempolvado",
+    "cabinas de limpieza",
+    // Salud y enfermedades
+    "silicosis",
+    "prevención silicosis",
+    "enfermedades respiratorias",
+    "enfermedades profesionales",
+    "salud ocupacional",
+    "polvo",
+    "polvos",
+    "control de polvos",
+    "descontaminación",
+    // Normativa Chile
+    "DS 594",
+    "decreto supremo 594",
+    "PLANESI",
+    "Seremi de Salud",
+    "MINSAL",
+    "HSEC",
+    // Normativa internacional
+    "OSHA",
+    "OSHA 29 CFR",
+    "riesgos del uso del aire comprimido",
+    "aire comprimido",
+    // Industrias
+    "limpieza polvo minería",
+    "limpieza polvo construcción",
+    "higiene industrial",
+    "seguridad laboral",
   ],
+  openGraph: {
+    title: "Cabina de Limpieza de Polvos | Ducha de Aire | Standard Equipment",
+    description: "Cabina de Limpieza de Polvos y Ducha de Aire para prevención de silicosis y control de polvo. Cumple DS 594, PLANESI y OSHA 29 CFR.",
+    url: "https://www.standard-equipment.cl/cabinas-de-limpieza/cabina-de-limpieza-de-polvos",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
 };
 
 const caracteristicas = [
@@ -60,10 +91,91 @@ const aplicaciones = [
   },
 ];
 
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Cabina de Limpieza de Polvos",
+  "alternateName": ["Ducha de Aire", "Cabina de Desempolvado", "Cabina de Limpieza de Personal", "Cabina Desempolvado"],
+  "description": "Cabina de Limpieza de Polvos y Ducha de Aire para control de polvo y prevención de silicosis. Cumple DS 594, PLANESI y OSHA 29 CFR 1910.242(b). Solución para minería, construcción e industria en Latinoamérica.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Standard Equipment"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/cabinas-de-limpieza/cabina-de-limpieza-de-polvos",
+  "category": "Equipos de Higiene Industrial",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Industria minera, construcción, manufactura, empresas HSEC"
+  },
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es una Cabina de Limpieza de Polvos o Ducha de Aire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una Cabina de Limpieza de Polvos (también llamada Ducha de Aire o Cabina de Desempolvado) es un equipo de higiene industrial que elimina el polvo acumulado en ropa y cuerpo de los trabajadores antes de salir de zonas contaminadas. Previene la inhalación de partículas peligrosas como sílice cristalina, reduciendo el riesgo de silicosis y otras enfermedades respiratorias profesionales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué normativas cumple la Cabina de Limpieza de Polvos de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Cabina de Limpieza de Polvos de Standard Equipment cumple con el Decreto Supremo 594 (DS 594) del MINSAL en Chile, el Plan Nacional de Erradicación de la Silicosis (PLANESI), los lineamientos de la Seremi de Salud y la normativa internacional OSHA 29 CFR 1910.242(b) sobre riesgos del uso de aire comprimido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué industrias está indicada la Cabina de Limpieza de Personal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Cabina de Limpieza de Personal está especialmente indicada para minería (cobre, oro, litio), construcción, cemento, cerámica, manufactura pesada y cualquier industria donde los trabajadores estén expuestos a polvos minerales, sílice o partículas respirables. Es una solución esencial para programas HSEC y salud ocupacional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo ayuda la Cabina de Desempolvado a prevenir la silicosis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Cabina de Desempolvado elimina el polvo de sílice cristalina acumulado en ropa y piel del trabajador mediante chorros de aire controlado, evitando que las partículas sean transportadas a zonas limpias o inhaladas durante el cambio de ropa. Esto reduce significativamente la exposición acumulada a polvo respirable, principal causa de silicosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde está disponible la Cabina de Limpieza de Polvos de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Cabina de Limpieza de Polvos de Standard Equipment está disponible en Chile y toda Latinoamérica, incluyendo Perú, Argentina, Colombia, México, Bolivia, Ecuador, Uruguay y más. Fabricación nacional chilena con estándares internacionales."
+      }
+    }
+  ]
+};
+
 export default function CabinaLimpiezaPolvoPage() {
   return (
     <>
       <Navbar />
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }}
+      />
 
       <main>
         {/* 1. HERO */}
