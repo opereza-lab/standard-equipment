@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     // Polines — tipos
     "polin",
     "polines",
-    "polines correa transportador",
+    "polines correa transportadora",
     "polines correas transportadoras",
     "polin de retorno",
     "polin de carga",
