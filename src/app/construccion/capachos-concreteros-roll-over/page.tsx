@@ -11,20 +11,53 @@ import { CheckIcon } from "@/components/icons";
 import ProductosCarruselConstruccion from "@/components/ProductosCarruselConstruccion";
 
 export const metadata: Metadata = {
-  title: "Capacho Concreteros Roll Over | Vaciado Hormigón Chile",
-  description: "Capacho Roll Over para vaciado controlado de hormigón desde grúa. Sin derrames, volcamiento lateral 180°. 0.5 a 3 m³. Acero ASTM A36 + AR400. Certificado MC, WPS-PQR.",
+  title: "Capachos Roll Over | Capachos Concreteros | Standard Equipment",
+  description: "Capachos Roll Over y Capachos Concreteros para vaciado de hormigón y concreto desde grúa. Alternativa a capachos Mammut y cónicos. Volcamiento 180°, 0.5–3 m³. Fabricación propia.",
   keywords: [
+    // Producto principal
+    "capachos",
+    "capachos roll over",
     "capacho roll over",
-    "capacho concreto",
+    "capachos concreteros",
+    "capacho concretero",
+    "capachos concreteros roll over",
+    "roll over",
+    // Hormigón (Chile, Argentina, Uruguay)
+    "capacho hormigón",
+    "capachos hormigón",
     "vaciado hormigón grúa",
+    "vaciado de hormigón",
+    "hormigón construcción",
     "capacho hormigón construcción",
-    "capacho concreto Chile",
+    // Concreto (Colombia, México, Perú, Venezuela, Bolivia)
+    "capacho concreto",
+    "capachos concreto",
+    "vaciado concreto grúa",
+    "vaciado de concreto",
+    "concreto construcción",
+    // Conquesting — Mammut / Mamut / Cónico
+    "capacho mammut",
+    "capacho mamut",
+    "capachos mammut",
+    "capachos mamut",
+    "capacho cónico",
+    "capachos cónicos",
+    "alternativa capacho mammut",
+    "alternativa capacho cónico",
+    // Construcción LATAM
+    "equipos construcción",
+    "capacho obra",
+    "capacho grúa torre",
     "vaciado hormigón altura",
-    "capacho concreto metro",
-    "metro de Santiago",
-    "construcción metro Santiago",
-    "grúas torre hormigón",
   ],
+  openGraph: {
+    title: "Capachos Roll Over | Capachos Concreteros | Standard Equipment",
+    description: "Capachos Roll Over y Capachos Concreteros para vaciado de hormigón y concreto desde grúa. Alternativa a capachos Mammut y cónicos. Volcamiento 180°, 0.5–3 m³.",
+    url: "https://www.standard-equipment.cl/construccion/capachos-concreteros-roll-over",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
 };
 
 const caracteristicas = [
@@ -105,9 +138,94 @@ const productosRelacionados = [
   },
 ];
 
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Capachos Concreteros Roll Over",
+  "alternateName": ["Capachos Roll Over", "Capacho Roll Over", "Capacho Concretero"],
+  "description": "Capachos Roll Over y Capachos Concreteros para vaciado controlado de hormigón y concreto desde grúa. Sistema de volcamiento lateral 180°. Capacidades de 0.5 a 3 m³. Alternativa superior a capachos tipo Mammut y cónicos. Acero ASTM A36 + AR400.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Standard Equipment"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/construccion/capachos-concreteros-roll-over",
+  "image": "https://www.standard-equipment.cl/images/productos/capacho-roll-ver/roll-over-hero1.png",
+  "category": "Equipos de Construcción",
+  "keywords": "capachos, capachos roll over, capachos concreteros, hormigón, concreto, vaciado hormigón, capacho mammut, capacho cónico",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "seller": {
+      "@type": "Organization",
+      "name": "Standard Equipment"
+    }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Capacho Roll Over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Capacho Roll Over es un equipo para vaciado controlado de hormigón o concreto desde grúa. Su sistema de volcamiento lateral 180° permite descargar el hormigón de forma precisa y sin derrames, desde cualquier punto de la obra, incluso a pie de calle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre un Capacho Roll Over y un Capacho Mammut o Cónico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Capachos Roll Over de Standard Equipment ofrecen volcamiento lateral 180° que elimina la necesidad de que el operador se exponga bajo la carga suspendida. A diferencia de los capachos tipo Mammut o cónicos tradicionales, el Roll Over permite operar la compuerta de descarga de forma segura y desde mayor distancia, reduciendo el riesgo de accidentes fatales en obra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué obras se usan los Capachos Concreteros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Capachos Concreteros Roll Over se usan en edificios en altura, obras civiles, túneles, puentes, obras portuarias y plantas industriales. Son ideales para cualquier obra donde se requiera vaciado de hormigón o concreto con grúa torre o grúa horquilla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué países de Latinoamérica están disponibles los Capachos Roll Over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica y distribuye Capachos Roll Over y Capachos Concreteros para proyectos en Chile, Argentina, Perú, Colombia, México, Bolivia, Ecuador, Uruguay y toda Latinoamérica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son las capacidades disponibles en Capachos Roll Over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Capachos Concreteros Roll Over están disponibles en capacidades de 0.75 m³, 1.0 m³, 1.5 m³ y 2.0 m³. Todos construidos en acero ASTM A36 + AR400 y certificados bajo norma MC y WPS-PQR."
+      }
+    }
+  ]
+};
+
 export default function CapachoRollOverPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }}
+      />
       <Navbar />
 
       <main>
