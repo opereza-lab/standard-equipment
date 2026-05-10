@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   creator: "Standard Equipment",
   metadataBase: new URL("https://www.standard-equipment.cl"),
   alternates: {
-    canonical: "/",
+    canonical: "https://www.standard-equipment.cl",
   },
   openGraph: {
     title: "Standard Equipment | Ingeniería, Diseño, Fabricación",

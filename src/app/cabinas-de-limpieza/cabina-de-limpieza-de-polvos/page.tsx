@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     "higiene industrial",
     "seguridad laboral",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/cabinas-de-limpieza/cabina-de-limpieza-de-polvos",
+  },
   openGraph: {
     title: "Cabina de Limpieza de Polvos | Ducha de Aire | Standard Equipment",
     description: "Cabina de Limpieza de Polvos y Ducha de Aire para prevención de silicosis y control de polvo. Cumple DS 594, PLANESI y OSHA 29 CFR.",

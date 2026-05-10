@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     "mantención equipos mineros",
     "minería a rajo abierto",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/productos/atril-neumaticos-otr",
+  },
   openGraph: {
     title: "Atril Neumáticos OTR | Mantención CAEX y Cargadores Frontales | Standard Equipment",
     description: "Atril y Base de Mantención para Neumáticos OTR. Compatible con Komatsu 930E, CAT 797, WA 1200-6, Le Tourneau L2350, XDR 3. Tallas 53/80R63 y 59/80R63.",

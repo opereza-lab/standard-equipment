@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     "capacho grúa torre",
     "vaciado hormigón altura",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/construccion/capachos-concreteros-roll-over",
+  },
   openGraph: {
     title: "Capachos Roll Over | Capachos Concreteros | Standard Equipment",
     description: "Capachos Roll Over y Capachos Concreteros para vaciado de hormigón y concreto desde grúa. Alternativa a capachos Mammut y cónicos. Volcamiento 180°, 0.5–3 m³.",

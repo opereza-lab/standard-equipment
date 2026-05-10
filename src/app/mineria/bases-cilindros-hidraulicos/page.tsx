@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     "heavy duty minería",
     "equipos mineros gran envergadura",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/mineria/bases-cilindros-hidraulicos",
+  },
   openGraph: {
     title: "Bases Cilindros Hidráulicos | Palas Hidráulicas y CAEX | Standard Equipment",
     description: "Bases de Traslado certificadas para Cilindros Hidráulicos de Palas Hidráulicas y CAEX. PC 8000, CAT 6060, Komatsu 930E, CAT 797 y más. Mantención equipos mineros.",

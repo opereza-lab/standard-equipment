@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     "minería a rajo abierto",
     "rack minería",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-maniobras",
+  },
   openGraph: {
     title: "Rack Maniobras de Izaje | Truckshop Minería | Standard Equipment",
     description: "Rack Maniobras de Izaje para almacenaje de cadenas, grilletes, eslingas, eslingas de cadena, eslingas de cable y eslabones maestros. Equipamiento Truckshop para minería.",

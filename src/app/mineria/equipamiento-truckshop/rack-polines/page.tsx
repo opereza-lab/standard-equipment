@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "minería a rajo abierto",
     "taller mantención minería",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-polines",
+  },
   openGraph: {
     title: "Rack Polines | Correas Transportadoras | Truckshop Minería | Standard Equipment",
     description: "Rack Polines para almacenamiento de Polines de Carga, Polines de Retorno y Estaciones de Polines de Correas Transportadoras. Equipamiento Truckshop para mantención minera.",

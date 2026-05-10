@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "soporte baldes pala hidráulica",
     "minería a rajo abierto",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/productos/soporte-baldes-face-shovel",
+  },
   openGraph: {
     title: "Soporte Baldes Face Shovel | Cucharón Pala Frontal | Standard Equipment",
     description: "Base de Mantenimiento para Baldes Face Shovel y Cucharón de Pala Frontal. Mantención sin retirar el balde. Acero estructural + HB400. Certificado MC, WPS-PQR.",

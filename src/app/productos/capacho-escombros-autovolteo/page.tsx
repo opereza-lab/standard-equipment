@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     "galerías construcción",
     "construcción metro",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/productos/capacho-escombros-autovolteo",
+  },
   openGraph: {
     title: "Capacho Escombros con Autovolteo | Cuna para Escombros | Standard Equipment",
     description: "Capacho Escombros con Autovolteo operado 100% por la grúa, sin maniobra adicional. Para piques, túneles y movimiento de tierras. 1.000 a 3.000 litros.",
