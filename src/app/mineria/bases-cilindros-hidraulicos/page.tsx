@@ -79,11 +79,8 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/mineria/bases-cilindros-hidraulicos",
+  "image": "https://www.standard-equipment.cl/images/productos/bases-cilindro/HERO-1.png",
   "category": "Equipos para Mantención Minera / Bases de Traslado",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Empresas mineras, contratistas de mantención, operadores de palas hidráulicas y CAEX"
-  },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
   "offers": {
     "@type": "Offer",

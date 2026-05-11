@@ -65,6 +65,7 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-polines",
+  "image": "https://www.standard-equipment.cl/images/productos/rack-polines/hero-1.png",
   "category": "Equipamiento Truckshop / Almacenaje Polines",
   "offers": {
     "@type": "Offer",

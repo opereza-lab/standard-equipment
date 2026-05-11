@@ -63,6 +63,7 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/productos/soporte-baldes-face-shovel",
+  "image": "https://www.standard-equipment.cl/images/productos/soporte-faceshovel/hero-1.png",
   "category": "Equipos para Mantención Minera / Soporte Baldes Pala",
   "offers": {
     "@type": "Offer",

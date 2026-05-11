@@ -75,11 +75,8 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/productos/capacho-escombros-autovolteo",
+  "image": "https://www.standard-equipment.cl/images/productos/capacho-autovolteo/hero-1.png",
   "category": "Accesorios Grúa / Equipos para Izaje con Grúa",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Empresas construcción, contratistas mineros, constructoras de piques y túneles"
-  },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
   "offers": {
     "@type": "Offer",

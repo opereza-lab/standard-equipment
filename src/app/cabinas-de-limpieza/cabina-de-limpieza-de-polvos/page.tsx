@@ -110,11 +110,8 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/cabinas-de-limpieza/cabina-de-limpieza-de-polvos",
+  "image": "https://www.standard-equipment.cl/images/productos/cabina-de-limpieza/hero-1.jpg",
   "category": "Equipos de Higiene Industrial",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Industria minera, construcción, manufactura, empresas HSEC"
-  },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
   "offers": {
     "@type": "Offer",

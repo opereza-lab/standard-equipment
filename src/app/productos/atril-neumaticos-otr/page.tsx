@@ -79,11 +79,8 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/productos/atril-neumaticos-otr",
+  "image": "https://www.standard-equipment.cl/images/productos/atril-neumaticos/hero-1.jpeg",
   "category": "Equipos para Mantención Minera / Accesorios Neumáticos OTR",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Empresas mineras, contratistas de mantención CAEX, operadores de cargadores frontales"
-  },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
   "offers": {
     "@type": "Offer",

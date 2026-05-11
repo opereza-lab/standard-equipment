@@ -68,11 +68,8 @@ const schemaProduct = {
     "url": "https://www.standard-equipment.cl"
   },
   "url": "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-maniobras",
+  "image": "https://www.standard-equipment.cl/images/productos/rack-maniobras/hero-1.png",
   "category": "Equipamiento Truckshop / Almacenaje Maniobras de Izaje",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Empresas mineras, contratistas de mantención, supervisores truckshop"
-  },
   "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
   "offers": {
     "@type": "Offer",
