@@ -72,6 +72,8 @@ const schemaProduct = {
     "availability": "https://schema.org/InStock",
     "priceCurrency": "CLP",
     "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
     "url": "https://www.standard-equipment.cl/contacto",
     "seller": {
       "@type": "Organization",
