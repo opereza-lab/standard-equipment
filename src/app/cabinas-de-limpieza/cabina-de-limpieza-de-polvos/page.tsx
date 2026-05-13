@@ -259,7 +259,7 @@ export default function CabinaLimpiezaPolvoPage() {
             </p>
           </div>
           <div style={{ height: "2.5rem" }} />
-          <div className="px-6 md:px-10 lg:px-16 text-center">
+          <div className="px-6 md:px-10 lg:px-16 text-right">
             <p className="font-bold leading-snug" style={{ fontSize: "clamp(1.6rem, 3vw, 2.3rem)", color: "#0d1528" }}>
               Nuestra cabina de limpieza <span style={{ color: "#e07820", textTransform: "uppercase" }}>no modifica la conducta</span> del trabajador,{" "}
               <span style={{ color: "#e07820", textTransform: "uppercase" }}>elimina la fuente</span> del riesgo.
