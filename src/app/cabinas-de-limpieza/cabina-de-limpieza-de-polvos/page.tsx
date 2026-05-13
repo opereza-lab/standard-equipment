@@ -252,13 +252,16 @@ export default function CabinaLimpiezaPolvoPage() {
 
         {/* 2. DESCRIPCIÓN CORTA */}
         <section className="py-14 bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 text-center">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <p className="italic leading-snug" style={{ fontSize: "clamp(1.2rem, 2.3vw, 1.8rem)", color: "#0d1528" }}>
-              &ldquo;La <span style={{ color: "#e07820" }}>conducta</span> del trabajador para eliminar el polvo de su ropa es <span style={{ color: "#e07820" }}>sopletearse</span> con Aire Comprimido, lo que conlleva varios <span style={{ color: "#e07820" }}>riesgos</span> asociados&rdquo;
+              &ldquo;La <span style={{ color: "#e07820" }}>conducta</span> del trabajador para eliminar el polvo de su ropa es{" "}
+              <span style={{ color: "#e07820" }}>sopletearse</span> con Aire Comprimido, lo que conlleva varios{" "}
+              <span style={{ color: "#e07820" }}>riesgos</span>{" "}asociados&rdquo;
             </p>
             <div style={{ height: "2.5rem" }} />
-            <p className="font-bold leading-snug" style={{ fontSize: "clamp(1.6rem, 3vw, 2.3rem)", color: "#0d1528" }}>
-              Nuestra cabina de limpieza <span style={{ color: "#e07820", textTransform: "uppercase" }}>no modifica la conducta</span> del trabajador, <span style={{ color: "#e07820", textTransform: "uppercase" }}>elimina la fuente</span> del riesgo.
+            <p className="font-bold leading-snug text-center" style={{ fontSize: "clamp(1.6rem, 3vw, 2.3rem)", color: "#0d1528" }}>
+              Nuestra cabina de limpieza <span style={{ color: "#e07820", textTransform: "uppercase" }}>no modifica la conducta</span> del trabajador,{" "}
+              <span style={{ color: "#e07820", textTransform: "uppercase" }}>elimina la fuente</span> del riesgo.
             </p>
           </div>
         </section>
