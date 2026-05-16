@@ -52,7 +52,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
-              Más de 20 años diseñando y fabricando equipamiento industrial en acero a medida para construcción, minería y materiales a granel en Chile.
+              Más de 20 años creando soluciones para la industria.
             </p>
 
             {/* Contact info */}
