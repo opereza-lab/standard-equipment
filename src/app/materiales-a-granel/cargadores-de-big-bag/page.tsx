@@ -15,12 +15,90 @@ export const metadata: Metadata = {
     "cargador maxisaco industrial",
     "equipos big bag Chile",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/materiales-a-granel/cargadores-de-big-bag",
+  },
+  openGraph: {
+    title: "Cargadores de Big Bag y Maxisacos | Standard Equipment Chile",
+    description: "Cargadores de Big Bag y maxisacos fabricados a medida. Sistemas de llenado para materiales a granel en industria y minería en Chile.",
+    url: "https://www.standard-equipment.cl/materiales-a-granel/cargadores-de-big-bag",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
 };
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Cargadores de Big Bag y Maxisacos",
+  "alternateName": ["Cargador Big Bag", "Cargador Maxisaco", "Sistema Llenado Big Bag"],
+  "description": "Sistemas de carga y llenado para Big Bags (maxisacos) fabricados a medida en Chile. Permiten el envasado eficiente de materiales a granel en industria química, minería, agricultura y manufactura. Fabricados en acero estructural con certificación MC y WPS-PQR.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/materiales-a-granel/cargadores-de-big-bag",
+  "category": "Materiales a Granel / Sistemas de Envasado Big Bag",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Cargador de Big Bag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Cargador de Big Bag (o cargador de maxisaco) es una estructura metálica diseñada para sostener y llenar big bags con materiales a granel de forma segura y eficiente. Permite posicionar el big bag correctamente durante el llenado, facilitando el proceso de envasado en líneas de producción industrial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué materiales a granel se usan los Cargadores de Big Bag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Cargadores de Big Bag de Standard Equipment se usan para el envasado de materiales a granel como áridos, minerales, fertilizantes, productos químicos, harina, semillas, resinas y cualquier material granular o pulverulento que se comercialice en big bags o maxisacos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Fabrican Cargadores de Big Bag a medida en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, Standard Equipment fabrica Cargadores de Big Bag completamente a medida en Santiago, Chile, adaptando el diseño a las dimensiones del big bag, el tipo de material, el flujo de producción y los requerimientos específicos de cada cliente. Más de 20 años de experiencia en soluciones para materiales a granel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre Big Bag y Maxisaco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Big Bag y Maxisaco son dos nombres para el mismo tipo de contenedor flexible de gran capacidad (FIBC - Flexible Intermediate Bulk Container), con capacidad típica de 500 a 2.000 kg. El término Big Bag es más usado en Chile y Argentina, mientras que Maxisaco es común en otros países de Latinoamérica."
+      }
+    }
+  ]
+};
+
 import Image from "next/image";
 
 export default function CargadoresBigBagPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

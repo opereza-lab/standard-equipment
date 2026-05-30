@@ -15,11 +15,88 @@ export const metadata: Metadata = {
     "construcción en altura Chile",
     "demolición escombros",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/construccion/bandejas-para-escombros",
+  },
+  openGraph: {
+    title: "Bandejas para Escombros | Construcción en Altura | Standard Equipment Chile",
+    description: "Bandejas para retiro de escombros por piso sin uso de grúa. Acero estructural ASTM A36. Certificación MC y WPS-PQR. Construcción en altura Chile.",
+    url: "https://www.standard-equipment.cl/construccion/bandejas-para-escombros",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Bandejas para Escombros",
+  "alternateName": ["Bandejas Escombros Construcción", "Bandejas Retiro Escombros"],
+  "description": "Bandejas metálicas para el retiro de escombros por piso en obras de construcción en altura, sin necesidad de usar la grúa. Fabricadas en acero estructural ASTM A36 con certificación Memoria de Cálculo (MC) y WPS-PQR. Optimizan los tiempos de faena y reducen el uso de grúa torre.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/construccion/bandejas-para-escombros",
+  "category": "Equipos de Construcción / Retiro de Escombros",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué son las Bandejas para Escombros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las Bandejas para Escombros son plataformas metálicas diseñadas para el retiro de material de escombros en pisos de obras de construcción en altura, sin necesidad de usar la grúa torre. Permiten acumular y trasladar escombros horizontalmente por piso, optimizando los tiempos de faena."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué obras se usan las Bandejas para Escombros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las Bandejas para Escombros de Standard Equipment se usan en obras de construcción en altura: edificios residenciales, torres de oficinas, centros comerciales y cualquier proyecto donde se requiera retirar escombros de pisos superiores de forma eficiente sin ocupar la grúa torre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tienen las Bandejas para Escombros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las Bandejas para Escombros de Standard Equipment están fabricadas en acero estructural ASTM A36 y cuentan con certificación Memoria de Cálculo estructural (MC) y procedimientos de soldadura WPS-PQR, cumpliendo los estándares de seguridad para obras de construcción en Chile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Bandejas para Escombros en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Bandejas para Escombros en Santiago, Chile, con más de 20 años de experiencia en equipos para construcción en altura. Fabricación a medida según los requerimientos de cada obra."
+      }
+    }
+  ]
 };
 
 export default function BandejasEscombrosPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

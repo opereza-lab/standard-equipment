@@ -21,11 +21,88 @@ export const metadata: Metadata = {
     "línea 9 metro",
     "retiro escombros obras civiles",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/construccion/capachos-de-escombros-alta-capacidad",
+  },
+  openGraph: {
+    title: "Capachos de Escombros Alta Capacidad | Piques y Túneles | Standard Equipment Chile",
+    description: "Capachos de escombros de alta capacidad para piques, túneles y obras civiles de gran volumen. Acero estructural, certificación MC y WPS-PQR.",
+    url: "https://www.standard-equipment.cl/construccion/capachos-de-escombros-alta-capacidad",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Capachos de Escombros Alta Capacidad",
+  "alternateName": ["Capachos Escombros Piques", "Capachos Escombros Túneles", "Capachos Alta Capacidad Construcción"],
+  "description": "Capachos de escombros de alta capacidad para el retiro de material en obras de gran volumen: piques, túneles, galerías, construcción de metro y obras civiles de infraestructura. Fabricados en acero estructural con certificación Memoria de Cálculo (MC) y WPS-PQR. Operados mediante grúa torre o grúa pluma.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/construccion/capachos-de-escombros-alta-capacidad",
+  "category": "Equipos de Construcción / Retiro de Escombros",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué son los Capachos de Escombros de Alta Capacidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Capachos de Escombros de Alta Capacidad son contenedores metálicos de gran volumen diseñados para el retiro de escombros y material excavado en obras de gran envergadura: piques, túneles, galerías y construcciones civiles. Se operan mediante grúa torre o grúa pluma y están certificados con Memoria de Cálculo y WPS-PQR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué obras se usan los Capachos de Escombros de Alta Capacidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Capachos de Escombros de Alta Capacidad se usan en construcción de piques mineros, túneles viales y ferroviarios, galerías de metro, obras de infraestructura subterránea y cualquier proyecto donde se requiera retirar grandes volúmenes de material excavado o escombros."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tienen los Capachos de Escombros Alta Capacidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Capachos de Escombros de Alta Capacidad de Standard Equipment cuentan con Memoria de Cálculo estructural (MC) y procedimientos de soldadura WPS-PQR, cumpliendo los estándares de seguridad para obras de construcción e infraestructura en Chile y Latinoamérica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Capachos de Escombros de gran volumen en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Capachos de Escombros de Alta Capacidad en Santiago, Chile. Con más de 20 años de experiencia, ha suministrado estos equipos a obras de metro, túneles y piques en Chile y Latinoamérica. Fabricación a medida según el volumen y condiciones de cada obra."
+      }
+    }
+  ]
 };
 
 export default function CapachosAltaCapacidadPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

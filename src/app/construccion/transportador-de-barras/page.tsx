@@ -15,11 +15,88 @@ export const metadata: Metadata = {
     "logística materiales construcción",
     "accesorios izaje construcción Chile",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/construccion/transportador-de-barras",
+  },
+  openGraph: {
+    title: "Transportador de Barras de Acero | Construcción | Standard Equipment Chile",
+    description: "Transportador para traslado seguro de barras de acero en obras de construcción en altura. Certificado MC, WPS-PQR. Fabricación a medida en Chile.",
+    url: "https://www.standard-equipment.cl/construccion/transportador-de-barras",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Transportador de Barras de Acero",
+  "alternateName": ["Transportador Barras Construcción", "Transporte Barras Acero Grúa"],
+  "description": "Equipo diseñado para el traslado seguro y eficiente de barras de acero en obras de construcción en altura mediante grúa torre. Optimiza la logística de materiales, reduce riesgos y aumenta la productividad en faena. Fabricado en acero estructural con certificación MC y WPS-PQR.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/construccion/transportador-de-barras",
+  "category": "Equipos de Construcción / Logística de Materiales",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Transportador de Barras de Acero para construcción?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Transportador de Barras de Acero es un accesorio de izaje que permite el traslado vertical seguro de barras de acero (fierros) en obras de construcción en altura mediante grúa torre. Elimina el riesgo de caída de material y optimiza la logística de abastecimiento de acero por pisos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué tipo de obras se usa el Transportador de Barras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Transportador de Barras de Standard Equipment se usa en edificios residenciales, torres de oficinas y obras de infraestructura donde se trabaja con barras de acero de refuerzo (enfierraduras) en altura, facilitando el abastecimiento por piso sin riesgo para los trabajadores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tiene el Transportador de Barras de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Transportador de Barras de Standard Equipment cuenta con Memoria de Cálculo estructural (MC) y procedimientos de soldadura calificados WPS-PQR, cumpliendo los estándares de seguridad para obras de construcción en Chile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Transportadores de Barras en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Transportadores de Barras en Santiago, Chile, con más de 20 años de experiencia en equipos para construcción en altura. Fabricación a medida según los requerimientos de cada obra y tipo de barra."
+      }
+    }
+  ]
 };
 
 export default function TransportadorDeBarrasPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

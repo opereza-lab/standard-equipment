@@ -14,11 +14,96 @@ export const metadata: Metadata = {
     "bases traslado rajo abierto",
     "bases traslado minería subterránea",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/mineria/bases-de-traslado",
+  },
+  openGraph: {
+    title: "Bases de Traslado Equipos Mineros | Standard Equipment Chile",
+    description: "Bases de traslado diseñadas a medida para equipos pesados en minería. Acero estructural con HB400. Certificación MC y WPS-PQR.",
+    url: "https://www.standard-equipment.cl/mineria/bases-de-traslado",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Bases de Traslado para Equipos Mineros",
+  "alternateName": ["Bases de Traslado Minería", "Bases Traslado Equipos Pesados"],
+  "description": "Bases de traslado diseñadas y fabricadas a medida para el movimiento seguro de equipos pesados en operaciones de minería a rajo abierto y subterránea. Material: acero estructural con acero HB400 en piezas de desgaste. Certificación Memoria de Cálculo, WPS-PQR y certificación de materiales.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/mineria/bases-de-traslado",
+  "category": "Equipos para Mantención Minera / Bases de Traslado",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es una Base de Traslado para equipos mineros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una Base de Traslado es una estructura de acero fabricada a medida que permite el movimiento seguro de equipos pesados de minería — como motores, reductores, bombas y otros componentes de gran envergadura — dentro de la faena. Están certificadas con Memoria de Cálculo estructural (MC) y procedimientos de soldadura WPS-PQR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué equipos mineros se fabrican Bases de Traslado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Bases de Traslado a medida para cualquier equipo minero: CAEX (Komatsu 930E, CAT 797, etc.), palas hidráulicas (PC 8000, CAT 6060), cargadores frontales y otros equipos de gran tonelaje, tanto para minería a rajo abierto como subterránea."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué material se usa en las Bases de Traslado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las Bases de Traslado de Standard Equipment se fabrican en acero estructural con acero HB400 en las piezas de desgaste, garantizando alta resistencia y durabilidad en entornos mineros exigentes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tienen las Bases de Traslado de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las Bases de Traslado de Standard Equipment cuentan con Memoria de Cálculo estructural (MC), procedimientos de soldadura calificados WPS-PQR y certificación de materiales, cumpliendo los estándares de seguridad exigidos en faenas mineras de Chile y Latinoamérica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Bases de Traslado para minería en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Bases de Traslado para minería en Santiago, Chile, con más de 20 años de experiencia en el sector. Atiende faenas de minería a rajo abierto y subterránea en Chile y Latinoamérica, fabricando cada base a medida según los requerimientos específicos del equipo y la operación."
+      }
+    }
+  ]
 };
 
 export default function BasesDeTrasladoPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

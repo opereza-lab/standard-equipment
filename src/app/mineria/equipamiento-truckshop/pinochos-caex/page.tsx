@@ -15,11 +15,88 @@ export const metadata: Metadata = {
     "mantenimiento CAEX",
     "equipamiento truckshop",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/pinochos-caex",
+  },
+  openGraph: {
+    title: "Pinochos CAEX y Cargador Frontal | Minería Chile | Standard Equipment",
+    description: "Pinochos para camiones CAEX y cargadores frontales fabricados en acero de alta resistencia. Certificado MC, WPS-PQR. Equipamiento Truckshop para minería.",
+    url: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/pinochos-caex",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Pinochos CAEX y Cargador Frontal",
+  "alternateName": ["Pinochos CAEX", "Pinochos Cargador Frontal", "Pinochos Camiones Minería"],
+  "description": "Pinochos para camiones de alto tonelaje CAEX y cargadores frontales, fabricados en acero de alta resistencia para operaciones de mantenimiento en faenas mineras a rajo abierto. Certificado MC y WPS-PQR. Equipamiento Truckshop para minería en Chile y Latinoamérica.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/pinochos-caex",
+  "category": "Equipamiento Truckshop / Mantención CAEX",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué son los Pinochos para CAEX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Pinochos para CAEX son accesorios de acero de alta resistencia utilizados en las operaciones de mantenimiento de camiones de alto tonelaje (CAEX) y cargadores frontales en faenas mineras. Son componentes críticos del equipamiento Truckshop para minería a rajo abierto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué camiones CAEX están disponibles los Pinochos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Pinochos compatibles con los principales camiones CAEX de la industria minera: Komatsu 830E, 930E, 960E y 980E, CAT 793, 794, 795, 797 y 798, entre otros. También para cargadores frontales de gran envergadura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tienen los Pinochos CAEX de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Pinochos CAEX de Standard Equipment cuentan con Memoria de Cálculo estructural (MC) y procedimientos de soldadura calificados WPS-PQR, cumpliendo los estándares de seguridad exigidos en faenas mineras de Chile y Latinoamérica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Pinochos para CAEX en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Pinochos para CAEX en Santiago, Chile, con más de 20 años de experiencia en equipamiento para la industria minera. Atiende faenas de minería a rajo abierto en Chile y Latinoamérica."
+      }
+    }
+  ]
 };
 
 export default function PinochosCAEXPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

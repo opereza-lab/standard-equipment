@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductosCarruselMineria from "@/components/ProductosCarruselMineria";
 
 export const metadata: Metadata = {
-  title: "Rack Martillos DTH y Martillos de Fondo | Minería Chile",
+  title: "Rack Martillos DTH y Martillos de Fondo | Minería Chile | Standard Equipment",
   description: "Rack para almacenamiento de martillos DTH y martillos de fondo en faenas de perforación minera. Equipamiento truckshop certificado, fabricado en acero estructural en Chile.",
   keywords: [
     "rack martillos DTH",
@@ -15,11 +15,88 @@ export const metadata: Metadata = {
     "equipamiento truckshop",
     "rack perforación minería Chile",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-martillos-dth",
+  },
+  openGraph: {
+    title: "Rack Martillos DTH y Martillos de Fondo | Truckshop Minería | Standard Equipment",
+    description: "Rack para almacenamiento de martillos DTH y martillos de fondo en faenas de perforación minera. Equipamiento Truckshop certificado MC, WPS-PQR.",
+    url: "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-martillos-dth",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Rack Martillos DTH y Martillos de Fondo",
+  "alternateName": ["Rack Martillos DTH", "Rack Almacenamiento Martillos Perforación", "Rack Truckshop Perforación"],
+  "description": "Rack para el almacenamiento organizado de martillos DTH (Down The Hole) y martillos de fondo utilizados en faenas de perforación minera. Equipamiento Truckshop fabricado en acero estructural con certificación MC y WPS-PQR. Para minería a rajo abierto en Chile y Latinoamérica.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/mineria/equipamiento-truckshop/rack-martillos-dth",
+  "category": "Equipamiento Truckshop / Almacenaje Martillos Perforación",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Rack para Martillos DTH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Rack para Martillos DTH es una estructura metálica diseñada para el almacenamiento organizado y seguro de martillos DTH (Down The Hole) y martillos de fondo en talleres Truckshop de faenas mineras. Permite mantener ordenados los martillos de perforación, protegerlos del daño y tenerlos disponibles para su rápida utilización en operaciones de perforación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué tipo de martillos almacena el Rack DTH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack de Standard Equipment está diseñado para almacenar martillos DTH (Down The Hole) y martillos de fondo de distintos tamaños, utilizados en equipos de perforación rotopercutiva para minería a rajo abierto. El diseño puede adaptarse a los diámetros y longitudes específicos de cada operación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tiene el Rack Martillos DTH de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Rack Martillos DTH de Standard Equipment cuenta con Memoria de Cálculo estructural (MC) y procedimientos de soldadura calificados WPS-PQR, cumpliendo los estándares de seguridad exigidos en faenas mineras de Chile y Latinoamérica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Racks para Martillos DTH en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Racks para Martillos DTH en Santiago, Chile, con más de 20 años de experiencia en equipamiento Truckshop para la industria minera. Fabricación a medida según los requerimientos de cada faena y tipo de martillo."
+      }
+    }
+  ]
 };
 
 export default function RackMartillosDTHPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

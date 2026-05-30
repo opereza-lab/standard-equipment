@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Soplador de Polvo Industrial | Ducha de Aire HSEC",
+  title: "Soplador de Polvo Industrial | Ducha de Aire HSEC | Standard Equipment",
   description: "Soplador de polvo industrial para desempolvado de personal y equipos. Solución para prevención de silicosis y cumplimiento HSEC. Ducha de aire para minería e industria en Chile.",
   keywords: [
     "soplador de polvo",
@@ -17,12 +17,90 @@ export const metadata: Metadata = {
     "desempolvado industrial",
     "soplador polvo minería Chile",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/cabinas-de-limpieza/soplador-de-polvo",
+  },
+  openGraph: {
+    title: "Soplador de Polvo Industrial | Ducha de Aire HSEC | Standard Equipment",
+    description: "Soplador de polvo industrial para desempolvado de personal y equipos. Prevención de silicosis, cumplimiento HSEC y PLANESI. Minería e industria en Chile.",
+    url: "https://www.standard-equipment.cl/cabinas-de-limpieza/soplador-de-polvo",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
 };
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Soplador de Polvo Industrial",
+  "alternateName": ["Ducha de Aire Industrial", "Soplador Polvo Minería", "Desempolvador Industrial"],
+  "description": "Sistema de soplado industrial para limpieza de polvo en personal, equipos y vehículos en entornos con alto nivel de material particulado. Solución para prevención de silicosis y cumplimiento de normativas HSEC, PLANESI y DS 594. Para minería, construcción e industria en Chile y Latinoamérica.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/cabinas-de-limpieza/soplador-de-polvo",
+  "category": "Equipos de Higiene Industrial / Control de Polvo",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Soplador de Polvo Industrial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Soplador de Polvo Industrial es un equipo de higiene industrial que utiliza aire a presión controlada para eliminar el polvo acumulado en la ropa y cuerpo de los trabajadores antes de salir de zonas con material particulado. A diferencia del aire comprimido convencional, opera a presión segura cumpliendo la normativa OSHA 29 CFR 1910.242(b), previniendo enfermedades respiratorias como la silicosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué industrias está indicado el Soplador de Polvo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Soplador de Polvo Industrial de Standard Equipment está indicado para minería (rajo abierto y subterránea), construcción, industria del cemento, industria química, fundiciones y cualquier faena con alto nivel de material particulado donde se requiera proteger la salud de los trabajadores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué normativas cumple el Soplador de Polvo de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Soplador de Polvo de Standard Equipment cumple con el Decreto Supremo 594 (DS 594) del MINSAL en Chile, el Plan Nacional de Erradicación de la Silicosis (PLANESI), los requerimientos HSEC de la industria minera y la normativa internacional OSHA 29 CFR 1910.242(b) sobre riesgos del uso de aire comprimido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre un Soplador de Polvo y aire comprimido convencional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El aire comprimido convencional opera a presiones de 6-8 bar, lo que puede causar embolias aéreas, lesiones oculares y daño auditivo. El Soplador de Polvo Industrial opera a presiones controladas y seguras según OSHA 29 CFR 1910.242(b), eliminando el polvo de forma efectiva sin riesgos para el trabajador."
+      }
+    }
+  ]
+};
+
 import Image from "next/image";
 
 export default function SopladorDePolvoPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

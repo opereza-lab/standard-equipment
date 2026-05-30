@@ -15,12 +15,90 @@ export const metadata: Metadata = {
     "descarga materiales a granel",
     "equipos descarga big bag",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/materiales-a-granel/descargadores-de-big-bag",
+  },
+  openGraph: {
+    title: "Descargadores de Big Bag y Maxisacos | Standard Equipment Chile",
+    description: "Descargadores de Big Bag y maxisacos para vaciado controlado de materiales a granel. Fabricación a medida en Chile para industria y minería.",
+    url: "https://www.standard-equipment.cl/materiales-a-granel/descargadores-de-big-bag",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
 };
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Descargadores de Big Bag y Maxisacos",
+  "alternateName": ["Descargador Big Bag", "Descargador Maxisaco", "Sistema Vaciado Big Bag"],
+  "description": "Sistemas de descarga y vaciado para Big Bags (maxisacos) fabricados a medida en Chile. Permiten el vaciado controlado de materiales a granel en industria química, alimentaria, minería y manufactura. Fabricados en acero estructural con certificación MC y WPS-PQR.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/materiales-a-granel/descargadores-de-big-bag",
+  "category": "Materiales a Granel / Sistemas de Descarga Big Bag",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Descargador de Big Bag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Descargador de Big Bag es una estructura metálica que permite colgar y vaciar big bags (maxisacos) de forma controlada y segura. Facilita la descarga de materiales a granel desde el big bag hacia líneas de proceso, tolvas o sistemas de transporte, sin necesidad de grúa y con control del flujo de material."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué industrias están indicados los Descargadores de Big Bag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los Descargadores de Big Bag de Standard Equipment están indicados para industria química, industria alimentaria, minería, agricultura, manufactura y cualquier proceso industrial donde se manejen materiales a granel envasados en big bags o maxisacos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Fabrican Descargadores de Big Bag a medida en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, Standard Equipment fabrica Descargadores de Big Bag a medida en Santiago, Chile. Cada equipo se diseña según el tipo de material, las dimensiones del big bag, el flujo de descarga requerido y la integración con el proceso productivo del cliente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre un Cargador y un Descargador de Big Bag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Cargador de Big Bag se usa para llenar big bags vacíos con material a granel. Un Descargador de Big Bag se usa para vaciar big bags llenos hacia un proceso o recipiente. Standard Equipment fabrica ambos tipos a medida, pudiendo también integrar ambas funciones en un mismo sistema según los requerimientos del proceso."
+      }
+    }
+  ]
+};
+
 import Image from "next/image";
 
 export default function DescargadoresBigBagPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}

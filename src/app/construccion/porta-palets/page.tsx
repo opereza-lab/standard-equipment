@@ -15,11 +15,88 @@ export const metadata: Metadata = {
     "transporte vertical materiales",
     "porta pallets obras en altura",
   ],
+  alternates: {
+    canonical: "https://www.standard-equipment.cl/construccion/porta-palets",
+  },
+  openGraph: {
+    title: "Porta Pallets Construcción | Izaje Grúa Torre | Standard Equipment Chile",
+    description: "Porta pallets para izaje y distribución de materiales paletizados en obras en altura mediante grúa torre. Certificado MC, WPS-PQR. Fabricación a medida.",
+    url: "https://www.standard-equipment.cl/construccion/porta-palets",
+    siteName: "Standard Equipment",
+    locale: "es_CL",
+    type: "website",
+  },
+};
+
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Porta Pallets para Construcción en Altura",
+  "alternateName": ["Porta Palets Grúa Torre", "Porta Pallets Izaje", "Accesorio Grúa Torre Pallets"],
+  "description": "Accesorio de izaje para el transporte vertical de pallets y cargas paletizadas mediante grúa torre en obras de construcción en altura. Permite el abastecimiento eficiente por piso sin necesidad de equipos adicionales. Fabricado en acero estructural con certificación MC y WPS-PQR.",
+  "brand": { "@type": "Brand", "name": "Standard Equipment" },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Standard Equipment",
+    "url": "https://www.standard-equipment.cl"
+  },
+  "url": "https://www.standard-equipment.cl/construccion/porta-palets",
+  "category": "Equipos de Construcción / Accesorios Grúa Torre",
+  "areaServed": ["Chile", "Perú", "Argentina", "Colombia", "México", "Bolivia", "Ecuador", "Uruguay", "Paraguay", "Venezuela", "Brasil", "Latinoamérica"],
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "CLP",
+    "price": "0",
+    "url": "https://www.standard-equipment.cl/contacto",
+    "seller": { "@type": "Organization", "name": "Standard Equipment" }
+  }
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un Porta Pallets para construcción en altura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Porta Pallets es un accesorio de izaje que se conecta a la grúa torre y permite transportar verticalmente pallets cargados con materiales de construcción (bloques, cerámicos, mortero, etc.) desde el nivel de calle hasta los pisos superiores de la obra. Evita maniobras inseguras y optimiza el abastecimiento por piso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué materiales se puede usar el Porta Pallets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Porta Pallets de Standard Equipment está diseñado para el izaje de cualquier material paletizado utilizado en construcción: bloques de hormigón, ladrillos, cerámicos, bolsas de mortero, yeso, acero en barras cortas y otros materiales de obra embalados en pallet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué certificaciones tiene el Porta Pallets de Standard Equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Porta Pallets de Standard Equipment cuenta con Memoria de Cálculo estructural (MC) y procedimientos de soldadura calificados WPS-PQR, cumpliendo los estándares de seguridad para obras de construcción en Chile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde fabrican Porta Pallets para grúa torre en Chile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard Equipment fabrica Porta Pallets en Santiago, Chile, con más de 20 años de experiencia en accesorios de izaje para construcción en altura. Fabricación a medida según la capacidad de carga requerida y el tipo de grúa utilizada en la obra."
+      }
+    }
+  ]
 };
 
 export default function PortaPaletsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}
