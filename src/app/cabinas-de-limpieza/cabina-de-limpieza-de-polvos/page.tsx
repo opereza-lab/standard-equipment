@@ -312,9 +312,9 @@ export default function CabinaLimpiezaPolvoPage() {
                   { top: "32%", left: "17%", titulo: "Sistema de Limpieza Automática de Filtro" },
                   { top: "58%", left: "35%", titulo: "Potente Extractor Ciclónico" },
                   { top: "88%", left: "18%", titulo: "Manguera Antiestática" },
-                  { top: "10%", left: "72%", titulo: "Pockets para manipulación con Grúa Horquilla" },
+                  { top: "10%", left: "72%", titulo: "Luz testigo de llenado de tambor de residuos" },
                   { top: "35%", left: "78%", titulo: "Cabina en Acero al Carbono con pintura electroestática" },
-                  { top: "88%", left: "70%", titulo: "Luz testigo de llenado de tambor de residuos" },
+                  { top: "88%", left: "70%", titulo: "Pockets para manipulación con Grúa Horquilla" },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
