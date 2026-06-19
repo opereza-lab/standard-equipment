@@ -69,11 +69,11 @@ const caracteristicas = [
 ];
 
 const especificaciones = [
-  { label: "Potencia extractor", value: "Lorem ipsum" },
-  { label: "Fuente de Aire", value: "Lorem ipsum dolor sit amet" },
-  { label: "Sistema de Filtración", value: "Lorem ipsum" },
-  { label: "Presión y Caudal de Aire", value: "Lorem ipsum / Lorem ipsum" },
-  { label: "Nivel de Ruido", value: "Lorem ipsum" },
+  { label: "Potencia extractor", value: "2,2 Kw — 40,8 m³/min" },
+  { label: "Fuente de Aire", value: "Soplador" },
+  { label: "Sistema de Filtración", value: "HEPA" },
+  { label: "Presión y Caudal de Aire de Limpieza", value: "2,5 PSIG — 1640 lt/min" },
+  { label: "Nivel de Ruido", value: "78 dB @ 3 mts" },
 ];
 
 const aplicaciones = [
