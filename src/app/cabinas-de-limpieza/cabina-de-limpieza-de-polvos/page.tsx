@@ -80,17 +80,17 @@ const aplicaciones = [
   {
     industria: "Industria Textil",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
-    image: "/images/inspection-factory.jpg",
+    image: "/images/industrias/textil-banner.png",
   },
   {
     industria: "Minería",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
-    image: "/images/workers-corridor.jpg",
+    image: "/images/industrias/mineria-banner.png",
   },
   {
     industria: "Industria del Cemento, Cal y Yeso",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
-    image: "/images/heavy-factory.jpg",
+    image: "/images/industrias/cementera-banner.png",
   },
 ];
 
