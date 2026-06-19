@@ -391,12 +391,7 @@ export default function CapachoRollOverPage() {
         {/* 4. ESPECIFICACIONES TÉCNICAS */}
         <section
           className="py-16 relative"
-          style={{
-            backgroundImage: "linear-gradient(rgba(6,16,30,0.82), rgba(6,16,30,0.82)), url('/images/construction-site.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
+          style={{ background: "#06101e" }}
         >
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
