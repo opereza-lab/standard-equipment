@@ -379,21 +379,21 @@ export default function CabinaLimpiezaPolvoPage() {
         </section>
 
         {/* 4. ESPECIFICACIONES TÉCNICAS */}
-        <section className="py-16 bg-white">
+        <section className="py-16" style={{ background: "#06101e" }}>
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-            <h2 className="section-heading mb-10">
-              Especificaciones <span className="section-heading-accent">técnicas</span>
+            <h2 className="mb-10" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 300, color: "#ffffff" }}>
+              <strong style={{ fontWeight: 700 }}>Especificaciones</strong> técnicas
               <span style={{ color: "#e07820" }}>.</span>
             </h2>
-            <div className="overflow-x-auto rounded-xl border border-[#e9ecef]">
-              <table className="w-full text-sm specs-table">
+            <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", overflow: "hidden" }}>
+              <table className="w-full" style={{ borderCollapse: "collapse", fontSize: "1rem" }}>
                 <tbody>
                   {especificaciones.map((spec, i) => (
-                    <tr key={spec.label} className={i % 2 === 0 ? "bg-white" : "bg-[#f8f9fa]"}>
-                      <td className="px-6 py-4 font-semibold text-[#212529] w-1/3 border-b border-[#f0f0f0]">
+                    <tr key={spec.label} style={{ background: i % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.08)" }}>
+                      <td className="px-6 py-4 font-bold w-1/3" style={{ color: "#e07820", borderBottom: i < especificaciones.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
                         {spec.label}
                       </td>
-                      <td className="px-6 py-4 text-[#495057] border-b border-[#f0f0f0]">
+                      <td className="px-6 py-4" style={{ color: "rgba(255,255,255,0.85)", borderBottom: i < especificaciones.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
                         {spec.value}
                       </td>
                     </tr>
@@ -401,7 +401,7 @@ export default function CabinaLimpiezaPolvoPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-[#6c757d] text-sm mt-4">
+            <p className="text-sm mt-4" style={{ color: "rgba(255,255,255,0.5)" }}>
               * Especificaciones pueden variar según requerimientos del cliente. Consulta por diseños a medida.
             </p>
           </div>
