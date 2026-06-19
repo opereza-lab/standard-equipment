@@ -309,13 +309,12 @@ export default function CabinaLimpiezaPolvoPage() {
                   sizes="25vw"
                 />
                 {[
-                  { top: "5%",  left: "22%", titulo: "Lorem ipsum componente" },
-                  { top: "32%", left: "17%", titulo: "Lorem ipsum componente" },
-                  { top: "58%", left: "35%", titulo: "Lorem ipsum componente" },
-                  { top: "88%", left: "18%", titulo: "Lorem ipsum componente" },
-                  { top: "10%", left: "72%", titulo: "Lorem ipsum componente" },
-                  { top: "35%", left: "78%", titulo: "Lorem ipsum componente" },
-                  { top: "88%", left: "70%", titulo: "Lorem ipsum componente" },
+                  { top: "32%", left: "17%", titulo: "Sistema de Limpieza Automática de Filtro" },
+                  { top: "58%", left: "35%", titulo: "Potente Extractor Ciclónico" },
+                  { top: "88%", left: "18%", titulo: "Manguera Antiestática" },
+                  { top: "10%", left: "72%", titulo: "Pockets para manipulación con Grúa Horquilla" },
+                  { top: "35%", left: "78%", titulo: "Cabina en Acero al Carbono con pintura electroestática" },
+                  { top: "88%", left: "70%", titulo: "Luz testigo de llenado de tambor de residuos" },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
@@ -343,12 +342,10 @@ export default function CabinaLimpiezaPolvoPage() {
                   sizes="25vw"
                 />
                 {[
-                  { top: "5%",  left: "28%", titulo: "Lorem ipsum componente" },
-                  { top: "33%", left: "30%", titulo: "Lorem ipsum componente" },
-                  { top: "50%", left: "14%", titulo: "Lorem ipsum componente" },
-                  { top: "72%", left: "20%", titulo: "Lorem ipsum componente" },
-                  { top: "10%", left: "78%", titulo: "Lorem ipsum componente" },
-                  { top: "55%", left: "82%", titulo: "Lorem ipsum componente" },
+                  { top: "33%", left: "30%", titulo: "Fitting eléctricos ABB — abisagrados" },
+                  { top: "50%", left: "14%", titulo: "Aire Soplado a baja presión y alto caudal" },
+                  { top: "72%", left: "20%", titulo: "Tablero de control IP 67 incorporado" },
+                  { top: "10%", left: "78%", titulo: "Filtro HEPA" },
                 ].map((h, i) => (
                   <div key={i} className="absolute group"
                     style={{ top: h.top, left: h.left, transform: "translate(-50%,-50%)", zIndex: 10 }}>
