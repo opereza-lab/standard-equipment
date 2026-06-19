@@ -78,17 +78,17 @@ const especificaciones = [
 
 const aplicaciones = [
   {
-    industria: "Lorem ipsum",
+    industria: "Industria del Cemento, Cal y Yeso",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
     image: "/images/inspection-factory.jpg",
   },
   {
-    industria: "Lorem ipsum",
+    industria: "Industria Textil",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
     image: "/images/workers-corridor.jpg",
   },
   {
-    industria: "Lorem ipsum",
+    industria: "Industria de Polvos en General",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
     image: "/images/heavy-factory.jpg",
   },
