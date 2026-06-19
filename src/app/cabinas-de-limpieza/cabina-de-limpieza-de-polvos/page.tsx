@@ -88,7 +88,7 @@ const aplicaciones = [
     image: "/images/workers-corridor.jpg",
   },
   {
-    industria: "Industria de Polvos en General",
+    industria: "Minería",
     descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.",
     image: "/images/heavy-factory.jpg",
   },
