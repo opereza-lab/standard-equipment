@@ -69,11 +69,11 @@ const caracteristicas = [
 ];
 
 const especificaciones = [
-  { label: "Material", value: "Lorem ipsum" },
-  { label: "Sistema", value: "Lorem ipsum dolor sit amet" },
-  { label: "Certificación", value: "Lorem ipsum" },
-  { label: "Aplicación", value: "Lorem ipsum / Lorem ipsum" },
-  { label: "Fabricación", value: "Lorem ipsum" },
+  { label: "Potencia extractor", value: "Lorem ipsum" },
+  { label: "Fuente de Aire", value: "Lorem ipsum dolor sit amet" },
+  { label: "Sistema de Filtración", value: "Lorem ipsum" },
+  { label: "Presión y Caudal de Aire", value: "Lorem ipsum / Lorem ipsum" },
+  { label: "Nivel de Ruido", value: "Lorem ipsum" },
 ];
 
 const aplicaciones = [
